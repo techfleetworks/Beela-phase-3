@@ -16,7 +16,7 @@ Making a career transition is hard. We help immigrant women and non-binary peopl
 
 ###BeelaHive
 
-Beela Learning is an online education platform that delivers resources to immigrant women and non-binary people aspiring to start or boost their careers in tech. Our content ranges from Web development, UI/UX design, Project Management, Backend and Frontend Software Engineering and more. Join our hive today!
+BeelaHive delivers resources to immigrant women and non-binary people aspiring to start or boost their careers in tech. Our content ranges from Web development, UI/UX design, Project Management, Backend and Frontend Software Engineering and more. Join our hive today!
 
 Click [here](https://beela-web.vercel.app/) to visit.
 
