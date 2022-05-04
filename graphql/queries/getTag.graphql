@@ -1,0 +1,7 @@
+query Tag($id:ID){
+    tag(id:$id){
+    data{
+        __typename
+    }
+}
+}
