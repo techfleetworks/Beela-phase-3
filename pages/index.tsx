@@ -55,8 +55,8 @@ const Home: NextPage = () => {
               </div>
 
               <div className="container">
-                <div className="card-deck d-flex flex-row">
-                  <div className="card m-3">
+                <div className="card-deck d-flex flex-row" id="card-deck-steps">
+                  <div className="card m-3" id="card-m3-steps">
                     <div className="card-body">
                       <p className="card-title">
                         <span>Gain Skills</span>
@@ -66,7 +66,7 @@ const Home: NextPage = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="card m-3" id="card-m3-steps">
                     <div className="card-body">
                       <p className="card-title">
                         <span>Get Experience</span>
@@ -76,7 +76,7 @@ const Home: NextPage = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="card m-3" id="card-m3-steps">
                     <div className="card-body">
                       <p className="card-title">
                         <span>Land a Job</span>
@@ -162,8 +162,8 @@ const Home: NextPage = () => {
               </div>
 
               <div className="container">
-                <div className="card-deck d-flex flex-row">
-                  <div className="card m-3">
+                <div className="card-deck d-flex flex-row" id="card-deck-testimonials">
+                  <div className="card m-3" id="card-m3-testimonials">
                     <div className="card-body">
                       <p className="card-title">
                         <div className="header">
@@ -181,7 +181,7 @@ const Home: NextPage = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="card m-3" id="card-m3-testimonials">
                     <div className="card-body">
                       <p className="card-title">
                         <div className="header">
@@ -199,7 +199,7 @@ const Home: NextPage = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="card m-3" id="card-m3-testimonials">
                     <div className="card-body">
                       <p className="card-title">
                         <div className="header">
