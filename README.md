@@ -8,13 +8,13 @@ The backend can be found [here](https://github.com/marcelala/beela-be).
 
 ## Overview
 
-###Beela
+### Beela
 
 At Beela we are committed to decreasing the evident gap in the unemployment rate between foreign-born women, particularly those from non-European countries, and women and men born in Sweden.
 
 Making a career transition is hard. We help immigrant women and non-binary people define their path, get unblocked, and meet their learning goals. Passion brought us here, and we are empowering the next generation of talented immigrant women and non-binary people.
 
-###BeelaHive
+### BeelaHive
 
 BeelaHive delivers resources to immigrant women and non-binary people aspiring to start or boost their careers in tech. Our content ranges from Web development, UI/UX design, Project Management, Backend and Frontend Software Engineering and more. Join our hive today!
 
