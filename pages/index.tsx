@@ -1,5 +1,7 @@
 import type { NextPage } from "next"
 import Head from "next/head"
+import Image from "next/image"
+import avatar from "../public/avatar.png"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
@@ -15,16 +17,17 @@ const Home: NextPage = () => {
         <div className="container-fluid p-0 border" id="wrapper">
           <Navbar />
 
+          {/* Hero */}
           <div className="container-fluid justify-content-center overflow-hidden">
             <div className="row border text-center h-75" id="hero">
               <div className="col d-flex flex-column align-items-center border p-5">
                 <div className="p-3">
-                  <h1>It&apos;s possible to get into tech!</h1>
+                  <h1>Beela best value proposition.</h1>
                 </div>
                 <div className="p-3">
-                  <p>
-                    We offer free resources to help women and non-binary Swedish immigrants start
-                    tech careers.
+                  <p id="header-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
                   </p>
                 </div>
                 <div className="p-3">
@@ -36,17 +39,17 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          {/* Three steps */}
+          {/* Transition steps */}
           <div className="row border text-center" id="steps">
             <div className="col align-items-center border p-5">
               <div className="d-flex flex-column">
                 <div className="p-1">
-                  <h2>3 steps to a new career</h2>
+                  <h2>Career Transition Steps</h2>
                 </div>
                 <div className="p-1">
-                  <p>
-                    We’ve developed a proven, accessible method to pivot careers. We are here to
-                    support you every step of the way.
+                  <p id="header-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
                   </p>
                 </div>
               </div>
@@ -55,7 +58,9 @@ const Home: NextPage = () => {
                 <div className="card-deck d-flex flex-row">
                   <div className="card m-3">
                     <div className="card-body">
-                      <h5 className="card-title">Gain Skills</h5>
+                      <p className="card-title">
+                        <span>Gain Skills</span>
+                      </p>
                       <p className="card-text">
                         Explore various tech fields and learn relevant skills.
                       </p>
@@ -63,7 +68,9 @@ const Home: NextPage = () => {
                   </div>
                   <div className="card m-3">
                     <div className="card-body">
-                      <h5 className="card-title">Get Experience</h5>
+                      <p className="card-title">
+                        <span>Get Experience</span>
+                      </p>
                       <p className="card-text">
                         Put your skills to work with projects from our partners.
                       </p>
@@ -71,7 +78,9 @@ const Home: NextPage = () => {
                   </div>
                   <div className="card m-3">
                     <div className="card-body">
-                      <h5 className="card-title">Land a Job</h5>
+                      <p className="card-title">
+                        <span>Land a Job</span>
+                      </p>
                       <p className="card-text">Receive unparalleled mentorship and resources.</p>
                     </div>
                   </div>
@@ -88,7 +97,7 @@ const Home: NextPage = () => {
                   <h2>Pollination Mentoring Programme</h2>
                 </div>
                 <div className="p-1">
-                  <p>
+                  <p id="header-text">
                     We’ve developed a proven, accessible method to pivot careers. We are here to
                     support you every step of the way.
                   </p>
@@ -137,8 +146,84 @@ const Home: NextPage = () => {
             </div>
           </div>
 
+          {/* Testimonials */}
+          <div className="row border text-center" id="testimonials">
+            <div className="col align-items-center border p-5">
+              <div className="d-flex flex-column">
+                <div className="p-1">
+                  <h2>Testimonials</h2>
+                </div>
+                <div className="p-1">
+                  <p id="header-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua.
+                  </p>
+                </div>
+              </div>
+
+              <div className="container">
+                <div className="card-deck d-flex flex-row">
+                  <div className="card m-3">
+                    <div className="card-body">
+                      <p className="card-title">
+                        <div className="header">
+                          <div className="avatar">
+                            <Image src={avatar} alt="Avatar picture" id="avatar-image" />
+                          </div>
+                        </div>
+                        <span>Jane Doe</span>
+                        <p className="text-muted"> UX Designer</p>
+                        <p className="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                          veniam, quis nostrud exercitation.
+                        </p>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="card m-3">
+                    <div className="card-body">
+                      <p className="card-title">
+                        <div className="header">
+                          <div className="avatar">
+                            <Image src={avatar} alt="Avatar picture" id="avatar-image" />
+                          </div>
+                        </div>
+                        <span>Jane Doe</span>
+                        <p className="text-muted"> UX Designer</p>
+                        <p className="card-text">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                          veniam, quis nostrud exercitation.
+                        </p>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="card m-3">
+                    <div className="card-body">
+                      <p className="card-title">
+                        <div className="header">
+                          <div className="avatar">
+                            <Image src={avatar} alt="Avatar picture" id="avatar-image" />
+                          </div>
+                        </div>
+                        <span>Jane Doe</span>
+                        <p className="text-muted"> UX Designer</p>
+                      </p>
+                      <p className="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Podcast  */}
-          <div className="row border text-center" id="pollination">
+          <div className="row border text-center" id="podcast">
             <div className="col align-items-center p-5">
               <div className="d-flex flex-column ">
                 <div className="p-1">
@@ -172,7 +257,6 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
-
           <Footer />
         </div>
       </main>
