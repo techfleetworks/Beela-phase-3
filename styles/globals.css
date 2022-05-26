@@ -1,9 +1,16 @@
+/* Bootstrap icon import */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
+
+:root {
+  --color-lgrey: #f2f2f2;
+  --color-grey: #cdcbcb;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -11,6 +18,45 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", serif;
+}
+
 * {
   box-sizing: border-box;
+}
+
+/* Custom */
+hr {
+  margin-top: 2rem !important;
+  width: 75%;
+  margin: auto;
+}
+
+#wrapper {
+  height: 100vh !important;
+}
+
+#hero {
+  background-color: var(--color-lgrey);
+}
+
+#steps {
+  background-color: var(--color-grey);
+}
+
+#listen-button {
+  min-width: 250px;
+}
+
+.rectangle {
+  width: 420px;
+  height: 240px;
+  background-color: var(--color-grey);
+  border: 1px solid #000000;
 }
