@@ -31,11 +31,14 @@ h6 {
   box-sizing: border-box;
 }
 
-/* Custom */
 hr {
   margin-top: 2rem !important;
   width: 75%;
   margin: auto;
+}
+
+span {
+  font-weight: 500;
 }
 
 #wrapper {
