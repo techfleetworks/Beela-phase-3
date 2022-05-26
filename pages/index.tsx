@@ -165,7 +165,7 @@ const Home: NextPage = () => {
                 <div className="card-deck d-flex flex-row" id="card-deck-testimonials">
                   <div className="card m-3" id="card-m3-testimonials">
                     <div className="card-body">
-                      <p className="card-title">
+                      <div className="card-title">
                         <div className="header">
                           <div className="avatar">
                             <Image src={avatar} alt="Avatar picture" id="avatar-image" />
@@ -178,12 +178,12 @@ const Home: NextPage = () => {
                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                           veniam, quis nostrud exercitation.
                         </p>
-                      </p>
+                      </div>
                     </div>
                   </div>
                   <div className="card m-3" id="card-m3-testimonials">
                     <div className="card-body">
-                      <p className="card-title">
+                      <div className="card-title">
                         <div className="header">
                           <div className="avatar">
                             <Image src={avatar} alt="Avatar picture" id="avatar-image" />
@@ -196,12 +196,12 @@ const Home: NextPage = () => {
                           tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                           veniam, quis nostrud exercitation.
                         </p>
-                      </p>
+                      </div>
                     </div>
                   </div>
                   <div className="card m-3" id="card-m3-testimonials">
                     <div className="card-body">
-                      <p className="card-title">
+                      <div className="card-title">
                         <div className="header">
                           <div className="avatar">
                             <Image src={avatar} alt="Avatar picture" id="avatar-image" />
@@ -209,7 +209,7 @@ const Home: NextPage = () => {
                         </div>
                         <span>Jane Doe</span>
                         <p className="text-muted"> UX Designer</p>
-                      </p>
+                      </div>
                       <p className="card-text">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
