@@ -88,3 +88,27 @@ span {
   padding-left: 96px;
   padding-right: 96px;
 }
+
+
+
+ 
+#card-deck-steps {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#card-m3-steps {
+  max-width: 370px;
+}
+
+
+#card-deck-testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#card-m3-testimonials {
+  max-width: 390px;
+}
