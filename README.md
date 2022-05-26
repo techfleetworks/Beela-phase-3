@@ -1,10 +1,8 @@
-
 # Beela Web
 
 This is the frontend codebase for Beela's projects. This includes Beela's Website and BeelaHive.
 
 The backend can be found [here](https://github.com/marcelala/beela-be).
-
 
 ## Overview
 
@@ -20,7 +18,6 @@ BeelaHive delivers resources to immigrant women and non-binary people aspiring t
 
 Click [here](https://beela-web.vercel.app/) to visit.
 
-
 ## How to run the project
 
 <br/>
@@ -30,7 +27,7 @@ To run the project in the **development mode**, follow the instructions below:
 Download or clone the repository in your computer:
 
 ```
-$ git clone https://github.com/marcelala/beela-web.git
+$ git clone https://github.com/techfleetworks/Beela-phase-3.git
 ```
 
 In the repository folder:
@@ -52,7 +49,7 @@ yarn dev
 To run the project in the **production mode**, use this command instead:
 
 ```
-yarn build 
+yarn build
 ```
 
 ## Dependencies & Tools Used
@@ -64,7 +61,6 @@ yarn build
 - [Typescript](https://www.typescriptlang.org/): TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.
 - [GraphQL](https://graphql.org/): GraphQL is a query language for APIs and a runtime for fulfilling those queries with your existing data.
 - [Apollo Client](https://www.apollographql.com/docs/react/): Apollo Client is a comprehensive state management library for JavaScript that enables you to manage both local and remote data with GraphQL. Use it to fetch, cache, and modify application data, all while automatically updating your UI.
-
 
 <br/>
 
