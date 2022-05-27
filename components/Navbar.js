@@ -1,31 +1,34 @@
-import Link from "next/link"
+//import Link from "next/link"
 
 const Navbar = () => {
   return (
     <nav className="container navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#">Navbar</a>
+  <a className="navbar-brand" href="#">Beela</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav">
       <li className="nav-item active">
-        <a className="nav-link" href="#">Home </a>
+        <a className="nav-link" href="/">Home </a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Features</a>
+        <a className="nav-link" href="#">About</a>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="#">Pricing</a>
+        <a className="nav-link" href="/pollination">Mentoring</a>
       </li>
       <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown link
+          Community Support
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="#">Action</a>
-          <a className="dropdown-item" href="#">Another action</a>
-          <a className="dropdown-item" href="#">Something else here</a>
+          <a className="dropdown-item" href="#">Beela Slack Community</a>
+          <a className="dropdown-item" href="#">Beela Events</a>
+          <a className="dropdown-item" href="#">Beela Podcast</a>
+          <a className="dropdown-item" href="#">Beela Newsletter</a>
+          <a className="dropdown-item" href="#">Beela Mentoring</a>
+          <a className="dropdown-item" href="#">Partner with Beela</a>
         </div>
       </li>
     </ul>
