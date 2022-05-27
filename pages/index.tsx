@@ -22,11 +22,11 @@ const Home: NextPage = () => {
             <div className="row border text-center h-75" id="hero">
               <div className="col d-flex flex-column align-items-center border p-5">
                 <div className="p-3">
-                  <h1>Beela best value proposition.</h1>
+                  <h1>It’s possible to get into tech!</h1>
                   <div className="p-3">
                     <p id="header-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                      incididunt ut labore et dolore magna ali
+                      We offer free resources to help women and non-binary Swedish immigrants start
+                      tech careers.
                     </p>
                   </div>
                 </div>
@@ -45,19 +45,19 @@ const Home: NextPage = () => {
             <div className="col align-items-center border p-5">
               <div className="d-flex flex-column">
                 <div className="p-1">
-                  <h2>Career Transition Steps</h2>
+                  <h2>3 steps to a new career</h2>
                 </div>
                 <div className="p-1">
                   <p id="header-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    We’ve developed a proven, accessible method to pivot careers. We are here to
+                    support you every step of the way.
                   </p>
                 </div>
               </div>
 
               <div className="container">
                 <div className="row row-cols-1 row-cols-md-3">
-                  <div className="col w-75 mb-4">
+                  <div className="col mb-4">
                     <div className="card h-100">
                       <div className="card-body">
                         <p className="card-title">
@@ -103,12 +103,6 @@ const Home: NextPage = () => {
                 <div className="p-1">
                   <h2>Pollination Mentoring Programme</h2>
                 </div>
-                <div className="p-1">
-                  <p id="header-text">
-                    We’ve developed a proven, accessible method to pivot careers. We are here to
-                    support you every step of the way.
-                  </p>
-                </div>
               </div>
 
               <div className="container align-content-center">
@@ -152,17 +146,17 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+
           {/* Testimonials */}
           <div className="row border text-center" id="testimonials">
             <div className="col align-items-center border p-5">
               <div className="d-flex flex-column">
                 <div className="p-1">
-                  <h2>Testimonials</h2>
+                  <h2>They did it—and so can you</h2>
                 </div>
                 <div className="p-1">
                   <p id="header-text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
+                    We are proud of our community members who have started their tech careers.
                   </p>
                 </div>
               </div>
@@ -187,7 +181,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="card m-3" id="card-m3-testimonials">
+                  <div className="card m-3">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">
@@ -205,7 +199,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="card m-3" id="card-m3-testimonials">
+                  <div className="card m-3">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">
