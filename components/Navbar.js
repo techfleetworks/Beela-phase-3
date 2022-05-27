@@ -3,25 +3,25 @@ import Link from "next/link"
 const Navbar = () => {
   return (
     <nav className="container navbar navbar-expand-lg navbar-light bg-light">
-  <Link className="navbar-brand" href="#">Beela</Link>
+  <a className="navbar-brand" href="#">Beela</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav">
       <li className="nav-item active">
-        <Link className="nav-link" href="/">Home </Link>
+        <a className="nav-link" href="/">Home </a>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" href="#">About</Link>
+        <a className="nav-link" href="/about">About</a>
       </li>
       <li className="nav-item">
-        <Link className="nav-link" href="/pollination">Mentoring</Link>
+        <a className="nav-link" href="/pollination">Mentoring</a>
       </li>
       <li className="nav-item dropdown">
-        <Link className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Community Support
-        </Link>
+        </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <Link className="dropdown-item" href="#">Beela Slack Community</Link>
           <Link className="dropdown-item" href="#">Beela Events</Link>
