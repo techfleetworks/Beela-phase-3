@@ -80,7 +80,7 @@ span {
   border-radius: 50%;
   position: absolute;
   bottom: -42px;
-  border: 4px solid white;
+  border: 5px solid white;
 }
 
 #header-text {
@@ -88,9 +88,6 @@ span {
   padding-right: 96px;
 }
 
-
-
- 
 #card-deck-steps {
   flex-wrap: wrap;
   justify-content: center;
@@ -100,13 +97,11 @@ span {
   max-width: 370px;
 }
 
-
 #card-deck-testimonials {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 
 #card-m3-testimonials {
   max-width: 390px;
@@ -117,15 +112,15 @@ span {
 }
 
 #container-hex {
-  display:flex;
-  --s: 150px;  /* size  */
+  display: flex;
+  --s: 150px; /* size  */
 }
 #card-m5-steps-hex {
   width: var(--s);
   margin: var(--m);
   height: calc(var(--s) * 1.1547);
   display: inline-flexbox;
-  font-size: initial; 
+  font-size: initial;
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 #FAQ {
