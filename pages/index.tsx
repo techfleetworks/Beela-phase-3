@@ -15,8 +15,8 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <div className="container-fluid p-0 border" id="wrapper">
-          <Navbar />
-
+          <Navbar/>
+   
           {/* Hero */}
           <div className="container-fluid justify-content-center overflow-hidden">
             <div className="row border text-center h-75" id="hero">
