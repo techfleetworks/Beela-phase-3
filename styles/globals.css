@@ -97,12 +97,6 @@ span {
   max-width: 370px;
 }
 
-#card-deck-testimonials {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 #card-m3-testimonials {
   max-width: 390px;
 }
