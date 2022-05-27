@@ -23,9 +23,12 @@ const Navbar = () => {
           Community Support
         </a>
         <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <a className="dropdown-item" href="#">Action</a>
-          <a className="dropdown-item" href="#">Another action</a>
-          <a className="dropdown-item" href="#">Something else here</a>
+          <a className="dropdown-item" href="#">Beela Slack Community</a>
+          <a className="dropdown-item" href="#">Beela Events</a>
+          <a className="dropdown-item" href="#">Beela Podcast</a>
+          <a className="dropdown-item" href="#">Beela Newsletter</a>
+          <a className="dropdown-item" href="#">Beela Mentoring</a>
+          <a className="dropdown-item" href="#">Partner with Beela</a>
         </div>
       </li>
     </ul>
