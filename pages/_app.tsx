@@ -11,6 +11,7 @@ import "../styles/globals.css"
 function App({ Component, pageProps }: AppProps) {
   const client = useApollo(pageProps.initialApolloState)
 
+ 
   return (
     <>
       <Head>
