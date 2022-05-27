@@ -187,7 +187,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="card m-3" id="card-m3-testimonials">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">
@@ -205,7 +205,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="card m-3" id="card-m3-testimonials">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">

@@ -11,13 +11,11 @@ import "../styles/globals.css"
 function App({ Component, pageProps }: AppProps) {
   const client = useApollo(pageProps.initialApolloState)
 
+ 
   return (
-    <>
-      <Head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
+    <ApolloProvider client={client}>
       <Component {...pageProps} />
-    </>
+    </ApolloProvider>
   )
 }
 
