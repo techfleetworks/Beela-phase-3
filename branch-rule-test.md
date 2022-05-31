@@ -1,0 +1,1 @@
+Testing branch protection rule to validate that it'll require me to have at least 1 approval before merging!
