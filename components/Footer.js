@@ -95,7 +95,7 @@ const Footer = () => {
     </div>
     <div className="col-md-4 ">
      <b>Sign up for Beela's newsletter</b> <br/>
-     <input type="email" size="30" name="email" placeholder="Email" />
+     <input type="email" size="30" name="email" placeholder="Email" id="newsletter" />
      <input type="submit" width="20" />
      <br/>      <span className="text-muted">© 2021 Company, Inc</span>
      
