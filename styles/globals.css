@@ -120,6 +120,10 @@ span {
 #FAQ {
   background-color: var(--color-lgrey);
 }
+#Hero{
+  height: 594px;
+  align-items: center;
+}
 
 #newsletter{
   height: 66.13333129882812px;
@@ -128,4 +132,30 @@ left: 0px;
 top: 0px;
 border-radius: 5px;
 
+}
+
+
+
+/* About Beela */
+# about-beela {
+
+
+position: absolute;
+width: 379px;
+height: 82px;
+left: 126px;
+top: 61px;
+
+/* Desktop/Heading/H1 (64) */
+
+font-family: 'Lora';
+font-style: normal;
+font-weight: 600;
+font-size: 64px;
+line-height: 82px;
+/* identical to box height */
+
+letter-spacing: 0.03em;
+
+color: #000000;
 }
