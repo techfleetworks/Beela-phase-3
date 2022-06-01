@@ -19,9 +19,9 @@ const Home: NextPage = () => {
           <Navbar/>
       
           {/* Hero */}
-          <div className="container-fluid justify-content-center overflow-hidden">
-            <div className="row border text-center h-75" id="hero">
-              <div className="col d-flex flex-column align-items-center border p-5">
+          <div className="container-fluid justify-content-center overflow-hidden" >
+            <div className="row border text-center " id="Hero">
+              <div className="col d-flex flex-column align-items-center p-5">
                 <div className="p-3">
                   <h1>It’s possible to get into tech!</h1>
                   <div className="p-3">
