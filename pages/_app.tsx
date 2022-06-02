@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css"
 // Custom css
 import "../styles/globals.css"
 
-function MyApp({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }: AppProps) {
   return (
     <StrapiApolloProvider>
       <Component {...pageProps} />
@@ -15,4 +15,4 @@ function MyApp({ Component, pageProps }: AppProps) {
   )
 }
 
-export default MyApp
+export default App
