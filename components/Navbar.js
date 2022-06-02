@@ -10,15 +10,16 @@ const Navbar = () => {
   <div className="collapse navbar-collapse" id="navbarNavDropdown">
     <ul className="navbar-nav">
       <li className="nav-item active">
-        <a className="nav-link" href="/">Home </a>
+        <Link className="nav-link" href="/">Home </Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/about">About</a>
+        <Link className="nav-link" href="/about">About</Link>
       </li>
       <li className="nav-item">
-        <a className="nav-link" href="/pollination">Mentoring</a>
+        <Link className="nav-link" href="/pollination">Mentorin</Link>
       </li>
-      <li className="nav-item dropdown">
+     
+    {/*   <li className="nav-item dropdown">
         <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Community Support
         </a>
@@ -30,7 +31,7 @@ const Navbar = () => {
           <Link className="dropdown-item" href="#">Beela Mentoring</Link>
           <Link className="dropdown-item" href="#">Partner with Beela</Link>
         </div>
-      </li>
+  </li> */}
     </ul>
   </div>
   <div>

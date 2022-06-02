@@ -3,6 +3,7 @@ import Head from "next/head"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 
+
 const Pollination: NextPage = () => {
   return (
     <div>
