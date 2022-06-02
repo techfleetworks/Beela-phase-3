@@ -2,6 +2,9 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import avatar from "../public/avatar.png"
+import Image from "next/image"
+
 const About: NextPage = () => {
   return (
     <div>
@@ -11,39 +14,133 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="container-fluid p-0 m-0 border" id="wrapper">
+        <div className="container" id="wrapper">
           <Navbar />
           {/* Hero */}
-          <div className="container">
-            <div className="container" id="hero">
-              <div className="container row">
-                <div className="col p-lg-5 m-4">
-
-                    <div className="col" id="about-beela">
-                      <h1>About Beela</h1>
-                    </div>
-                    <div className="col-12" id="about-paragraph">
-                      <p>
-                        [OUR STORY / VISION / MISSION] Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                      </p>
-
-                    </div>
-
+          <div className="container" id="hero">
+            {/* About Beela */}
+            <div className="container row py-2" id="hero-container">
+              <div className="col py-4 px-5 m-5">
+                <div className="conatiner">
                   <div className="container">
-                    <button type="button" className="btn btn-dark float-start mx-5">CTA</button>
+                    <h1 id="about-beela">About Beela</h1>
+                  </div>
+                  <div className="container">
+                    <p id="about-paragraph">
+                      Beela was founded in 2021 by Juliana Araújo and Denise Muniz, who are both Brazilian immigrants to Sweden. They met at an event organized by Women Hack. Along with a mentorship program, Denise received career support from Juliana—and landed a developer job. That’s how they realized how important mentorship and support are for female and non-binary immigrants.
+                    </p>
                   </div>
                 </div>
-                <div className="col p-lg-5 m-4" id="about=picture">
-                  <div className="container flex-row" id="picture">
-                    <div className="m-5">
-                      <div className="rectangle"></div>
+                <div className="container text-center">
+                  <button type="button" className="btn btn-dark">CTA</button>
+                </div>
+              </div>
+              <div className="col-5 py-5 px-2 my-5 mx-2">
+                <div className="rectangle" id="about-rectangle"></div>
+              </div>
+            </div>
+          </div>
+
+          {/* Our Community */}
+          <div className="container">
+            <div className="container row px-5">
+              <div className="col p-5 m-4 mx-5">
+                <div className="rectangle" id="our-community-rectangle"></div>
+              </div>
+              <div className="col p-5 m-4">
+                <div className="container">
+                  <h1 id="our-community">Our Community</h1>
+                </div>
+                <div className="container">
+                  <p id="our-community-paragraph">
+                    To date, 34 people have gone through our Pollination Mentoring Programme. Many of the people in the programme landed jobs! We are excited to build on this success and grow our community on Slack and through both virtual and in-person events.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Our Team */}
+            <div className="row border text-center" id="team-container">
+              <div className="col align-items-center border p-5">
+                <div className="d-flex flex-column">
+                  <div className="p-1">
+                    <h2 id="our-team-title">Meet our Team</h2>
+                  </div>
+                  <div className="p-1">
+                    <p id="header-text">
+                      We know from firsthand experience how hard it is to start over in a new country. All of us are here to support you.                  </p>
+                  </div>
+                </div>
+
+                <div className="container">
+                  <div className="card-deck d-flex flex-row flex-wrap flex-md-nowrap justify-content-center">
+                    <div className="col card m-3">
+                      <div className="card-body">
+                        <div className="card-title">
+                          <div className="header">
+                            <div className="avatar">
+                              <Image src={avatar} alt="Avatar picture" id="avatar-image" />
+                            </div>
+                          </div>
+                          <span id="team-name">JULIANA ARAÚJO</span>
+                          <p className="text-muted" id="team-title"> UX Designer</p>
+                          <p className="card-text" id="card-text">
+                            Juliana is a Latina immigrant with 8+ years of experience working in tech, leading product teams to develop data-driven products. She has a Bachelor's in Information Systems and is currently writing her master thesis in IT Project Management from Stockholm University.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col card m-3">
+                      <div className="card-body">
+                        <div className="card-title">
+                          <div className="header">
+                            <div className="avatar">
+                              <Image src={avatar} alt="Avatar picture" id="avatar-image" />
+                            </div>
+                          </div>
+                          <span id="team-name">DENISE MUNIZ</span>
+                          <p className="text-muted" id="team-title"> UX Designer</p>
+                          <p className="card-text" id="card-text">
+                            Denise is a Latina immigrant and fullstack developer. She has over 10 years of experience working as a business analyst, but decided to change her career path to software development after she moved to Sweden. She has a Bachelor's in Information Systems and a Master's in Business & Project Management.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col card m-3">
+                      <div className="card-body">
+                        <div className="card-title">
+                          <div className="header">
+                            <div className="avatar">
+                              <Image src={avatar} alt="Avatar picture" id="avatar-image" />
+                            </div>
+                          </div>
+                          <span id="team-name">MARYAM ARAI</span>
+                          <p className="text-muted" id="team-title"> UX Designer</p>
+                        </div>
+                        <p className="card-text" id="card-text">
+                          Maryam is a social entrepreneur with a passion for diversity, inclusion, and belonging. She has 8 years of experience in HR-related professions, including work with Arbetsförmedlingen with a focus on education, recruitment, and innovation.
+                        </p>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+
           </div>
-          {/* About Beela */}
+
+
+
           {/* Team */}
           {/* Get Voulnted*/}
           <Footer />
