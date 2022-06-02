@@ -39,5 +39,8 @@
   "engines": {
     "npm": "PLEASE-USE-YARN-FOR-THIS-PROJECT-TO-AVOID-ISSSUES-THANK-YOU",
     "yarn": ">= 1.19.1"
+  },
+  "resolutions": {
+    "@types/react": "^17.0.38"
   }
 }
