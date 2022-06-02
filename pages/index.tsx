@@ -4,15 +4,15 @@ import Image from "next/image"
 import avatar from "../public/avatar.png"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import { useQuery } from "@apollo/client"
-import { PostsDocument, PostsQuery, PostsQueryVariables, usePostsQuery } from "../graphql/generated"
+// import { useQuery } from "@apollo/client"
+// import { PostsDocument, PostsQuery, PostsQueryVariables, usePostsQuery } from "../graphql/generated"
 import styles from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
-  const { data, error, loading } = usePostsQuery()
+  // const { data, error, loading } = usePostsQuery()
 
-  if (loading) return <main className={styles.main}>Loading...</main>
-  if (error) return <main className={styles.main}>{error.message}</main>
+  // if (loading) return <main className={styles.main}>Loading...</main>
+  // if (error) return <main className={styles.main}>{error.message}</main>
 
   // From here, { data } can be referenced
   return (
