@@ -164,7 +164,7 @@ const Home: NextPage = () => {
 
               <div className="container">
                 <div className="card-deck d-flex flex-row flex-wrap flex-md-nowrap justify-content-center">
-                  <div className="card m-3">
+                  <div className="col card m-3">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">
@@ -182,7 +182,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="col card m-3">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">
@@ -200,7 +200,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="col card m-3">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">

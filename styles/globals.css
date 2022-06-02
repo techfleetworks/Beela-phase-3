@@ -46,7 +46,7 @@ span {
 }
 
 #hero {
-  background-color: var(--color-lgrey);
+  background-color: #D9D9D9;
 }
 
 #steps {
@@ -107,8 +107,10 @@ span {
 
 #container-hex {
   display: flex;
-  --s: 150px; /* size  */
+  --s: 150px;
+  /* size  */
 }
+
 #card-m5-steps-hex {
   width: var(--s);
   margin: var(--m);
@@ -117,19 +119,119 @@ span {
   font-size: initial;
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
+
 #FAQ {
   background-color: var(--color-lgrey);
 }
-#Hero{
+
+#Hero {
   height: 594px;
   align-items: center;
 }
 
-#newsletter{
+#newsletter {
   height: 66.13333129882812px;
-width: 399px;
-left: 0px;
-top: 0px;
-border-radius: 5px;
+  width: 399px;
+  left: 0px;
+  top: 0px;
+  border-radius: 5px;
 
+}
+
+/* #hero {
+  align-items: center;
+  justify-content: center;
+  display: block;
+} */
+
+/* #hero-container {
+  align-items: center;
+  align-content: center;
+  
+} */
+
+#about-beela {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 82px;
+}
+
+#about-paragraph {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.0005em;
+}
+
+#about-rectangle {
+  height: 300px;
+  width: 460px;
+  background-color: white;
+}
+
+#our-community-rectangle {
+  height: 280px;
+  width: 450px;
+  background-color: white;
+}
+
+#our-community {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 59px;
+}
+
+#our-community-paragraph {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  letter-spacing: 0.0005em;
+}
+
+#our-team-title {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 46px;
+  line-height: 59px;
+  text-align: center;
+}
+
+#team-container {
+  background-color: #E6E6E6;
+}
+
+#team-name {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+#team-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  letter-spacing: 0.0005em;
+}
+
+#card-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.0005em;
 }
