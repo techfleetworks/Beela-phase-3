@@ -27,12 +27,18 @@ const About: NextPage = () => {
                   </div>
                   <div className="container">
                     <p id="about-paragraph">
-                      Beela was founded in 2021 by Juliana Araújo and Denise Muniz, who are both Brazilian immigrants to Sweden. They met at an event organized by Women Hack. Along with a mentorship program, Denise received career support from Juliana—and landed a developer job. That’s how they realized how important mentorship and support are for female and non-binary immigrants.
+                      Beela was founded in 2021 by Juliana Araújo and Denise Muniz, who are both
+                      Brazilian immigrants to Sweden. They met at an event organized by Women Hack.
+                      Along with a mentorship program, Denise received career support from
+                      Juliana—and landed a developer job. That’s how they realized how important
+                      mentorship and support are for female and non-binary immigrants.
                     </p>
                   </div>
                 </div>
                 <div className="container text-center">
-                  <button type="button" className="btn btn-dark">CTA</button>
+                  <button type="button" className="btn btn-dark">
+                    CTA
+                  </button>
                 </div>
               </div>
               <div className="col-5 py-5 px-2 my-5 mx-2">
@@ -53,7 +59,10 @@ const About: NextPage = () => {
                 </div>
                 <div className="container">
                   <p id="our-community-paragraph">
-                    To date, 34 people have gone through our Pollination Mentoring Programme. Many of the people in the programme landed jobs! We are excited to build on this success and grow our community on Slack and through both virtual and in-person events.
+                    To date, 34 people have gone through our Pollination Mentoring Programme. Many
+                    of the people in the programme landed jobs! We are excited to build on this
+                    success and grow our community on Slack and through both virtual and in-person
+                    events.
                   </p>
                 </div>
               </div>
@@ -68,7 +77,9 @@ const About: NextPage = () => {
                   </div>
                   <div className="p-1">
                     <p id="header-text">
-                      We know from firsthand experience how hard it is to start over in a new country. All of us are here to support you.                  </p>
+                      We know from firsthand experience how hard it is to start over in a new
+                      country. All of us are here to support you.{" "}
+                    </p>
                   </div>
                 </div>
 
@@ -83,9 +94,15 @@ const About: NextPage = () => {
                             </div>
                           </div>
                           <span id="team-name">JULIANA ARAÚJO</span>
-                          <p className="text-muted" id="team-title"> UX Designer</p>
+                          <p className="text-muted" id="team-title">
+                            {" "}
+                            UX Designer
+                          </p>
                           <p className="card-text" id="card-text">
-                            Juliana is a Latina immigrant with 8+ years of experience working in tech, leading product teams to develop data-driven products. She has a Bachelor's in Information Systems and is currently writing her master thesis in IT Project Management from Stockholm University.
+                            Juliana is a Latina immigrant with 8+ years of experience working in
+                            tech, leading product teams to develop data-driven products. She has a
+                            Bachelor&apos;s in Information Systems and is currently writing her
+                            master thesis in IT Project Management from Stockholm University.
                           </p>
                         </div>
                       </div>
@@ -99,9 +116,16 @@ const About: NextPage = () => {
                             </div>
                           </div>
                           <span id="team-name">DENISE MUNIZ</span>
-                          <p className="text-muted" id="team-title"> UX Designer</p>
+                          <p className="text-muted" id="team-title">
+                            {" "}
+                            UX Designer
+                          </p>
                           <p className="card-text" id="card-text">
-                            Denise is a Latina immigrant and fullstack developer. She has over 10 years of experience working as a business analyst, but decided to change her career path to software development after she moved to Sweden. She has a Bachelor's in Information Systems and a Master's in Business & Project Management.
+                            Denise is a Latina immigrant and fullstack developer. She has over 10
+                            years of experience working as a business analyst, but decided to change
+                            her career path to software development after she moved to Sweden. She
+                            has a Bachelor&apos;s in Information Systems and a Master&apos;s in
+                            Business & Project Management.
                           </p>
                         </div>
                       </div>
@@ -115,10 +139,16 @@ const About: NextPage = () => {
                             </div>
                           </div>
                           <span id="team-name">MARYAM ARAI</span>
-                          <p className="text-muted" id="team-title"> UX Designer</p>
+                          <p className="text-muted" id="team-title">
+                            {" "}
+                            UX Designer
+                          </p>
                         </div>
                         <p className="card-text" id="card-text">
-                          Maryam is a social entrepreneur with a passion for diversity, inclusion, and belonging. She has 8 years of experience in HR-related professions, including work with Arbetsförmedlingen with a focus on education, recruitment, and innovation.
+                          Maryam is a social entrepreneur with a passion for diversity, inclusion,
+                          and belonging. She has 8 years of experience in HR-related professions,
+                          including work with Arbetsförmedlingen with a focus on education,
+                          recruitment, and innovation.
                         </p>
                       </div>
                     </div>
@@ -126,20 +156,7 @@ const About: NextPage = () => {
                 </div>
               </div>
             </div>
-
-
-
-
-
-
-
-
-
-
-
           </div>
-
-
 
           {/* Team */}
           {/* Get Voulnted*/}
