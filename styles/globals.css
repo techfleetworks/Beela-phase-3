@@ -45,10 +45,6 @@ span {
   height: 100vh !important;
 }
 
-#hero {
-  background-color: #D9D9D9;
-}
-
 #steps {
   background-color: var(--color-grey);
 }
@@ -139,39 +135,37 @@ span {
 }
 
 /* #hero {
-  align-items: center;
-  justify-content: center;
-  display: block;
-} */
+  background-color: #F9F2D4;
 
-/* #hero-container {
-  align-items: center;
-  align-content: center;
-  
+}
+
+#hero-container {
+  background-color: #F9F2D4;
 } */
 
 #about-beela {
-  font-family: 'Lora';
+  /* font-family: 'Lora'; */
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
+  font-size: 85px;
   line-height: 82px;
+  color: #3A4A92;
 }
 
 #about-paragraph {
-  font-family: 'Montserrat';
+  /* font-family: 'Montserrat'; */
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 170%;
   letter-spacing: 0.0005em;
 }
 
-#about-rectangle {
+/* #about-rectangle {
   height: 300px;
   width: 460px;
   background-color: white;
-}
+} */
 
 #our-community-rectangle {
   height: 280px;
@@ -183,15 +177,16 @@ span {
   font-family: 'Lora';
   font-style: normal;
   font-weight: 600;
-  font-size: 46px;
+  font-size: 55px;
   line-height: 59px;
+  color: #3A4A92;
 }
 
 #our-community-paragraph {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 170%;
   letter-spacing: 0.0005em;
 }
@@ -206,7 +201,7 @@ span {
 }
 
 #team-container {
-  background-color: #E6E6E6;
+  background-color: #CCDAFF;
 }
 
 #team-name {
@@ -224,6 +219,7 @@ span {
   font-size: 16px;
   line-height: 170%;
   letter-spacing: 0.0005em;
+
 }
 
 #card-text {
@@ -234,4 +230,47 @@ span {
   line-height: 170%;
   text-align: center;
   letter-spacing: 0.0005em;
+}
+
+#jumbotron {
+  background-color: #F9F2D4;
+}
+
+#community {
+  background-color: #F9F2D4;
+}
+
+#empower {
+  height: 400px;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: xx-large;
+
+
+}
+
+#empower-text {
+  color: #37468A;
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+}
+
+#empower-paragraph {
+  /* font-family: 'Montserrat'; */
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.0005em;
+}
+
+#wrapper {
+  left: 0;
+  right: 0;
 }
