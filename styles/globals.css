@@ -11,6 +11,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  font-size: 18px;
 }
 
 a {
@@ -18,16 +19,115 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lora", serif;
+/* DESKTOP*/
+
+h1{/* SPECIAL 1 */
+  font-family: 'Lora';
+font-style: normal;
+font-weight: 700;
+font-size: 5rem;
+line-height: 115px;
+}
+h2{/* heading 1*/
+  font-family: 'Lora';
+font-style: normal;
+font-weight: 600;
+font-size: 3.556rem;
+line-height: 82px;
+letter-spacing: 0.03em;
+}
+h3{/* heading 2*/
+  font-family: 'Lora';
+font-style: normal;
+font-weight: 600;
+font-size: 2.556rem;
+line-height: 59px;
+}
+h4{/* heading 3*/
+  font-family: 'Lora';
+  font-style: normal;
   font-weight: 600;
+  font-size: 1.778rem;
+  line-height: 41px;
+}
+h5{/* heading 4*/
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 1.333rem;
+line-height: 22px;
+}
+h6 {/* heading 5*/
+  font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 1rem;
+line-height: 22px;
+}
+.S1{
+/* Desktop/Subtitle/S1 (17) */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: .944rem;
+line-height: 21px;
 }
 
+.S2{
+  /* Desktop/ Subtitle/ S2 (15) */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 0.833rem;
+line-height: 18px;
+}
+
+.B1 {
+/* Desktop/Body/B1 (18) */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 170%;
+/* or 31px */
+letter-spacing: 0.0005em;
+}
+.B2{
+  /* Desktop/ Body/ B2 (16) */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 0.889rem;
+line-height: 170%;
+/* or 27px */
+letter-spacing: 0.0005em;
+}
+.Button{
+  /* Desktop/Button/Button (16) */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 0.889rem;
+line-height: 20px;
+/* identical to box height */
+text-transform: capitalize;
+}
+.CT{
+  /* Desktop/Caption/C1 (15) */
+font-family: 'Montserrat';
+font-style: italic;
+font-weight: 500;
+font-size: 0.833rem;
+line-height: 18px;
+}
+.O1{
+  /* Desktop/Overline/O1 (15) */
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 0.833rem;
+line-height: 18px;
+}
 * {
   box-sizing: border-box;
 }
