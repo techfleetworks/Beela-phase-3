@@ -5,21 +5,39 @@ const Navbar = () => {
     <>
       <div className="container-fluid">
         <nav className="navbar navbar-light navbar-expand-md bg-light justify-content-center">
-        <Image src="/temp-logo.png" alt="Empower" width={72} height={72} />
-          <a href="/" className="navbar-brand mr-0">Beela</a>
-          <button className="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+          <Image src="/temp-logo.png" alt="Empower" width={72} height={72} />
+          <Link href="/">
+            <a className="navbar-brand mr-0">Beela</a>
+            <button
+              className="navbar-toggler ml-1"
+              type="button"
+              data-toggle="collapse"
+              data-target="#collapsingNavbar2"
+            >
+              <span className="navbar-toggler-icon"></span>
+            </button>{" "}
+          </Link>
+          <div
+            className="navbar-collapse collapse justify-content-between align-items-center w-100"
+            id="collapsingNavbar2"
+          >
             <ul className="navbar-nav mx-auto text-center">
               <li className="nav-item active">
-                <a className="nav-link h5" href="/"><span className="sr-only">Home</span></a>
+                <Link href="/">
+                  <a className="nav-link h5">
+                    <span className="sr-only">Home</span>
+                  </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link h5" href="/about">About</a>
+                <Link href="/about">
+                  <a className="nav-link h5">About</a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link h5" href="/pollination">Mentoring</a>
+                <Link href="/pollination">
+                  <a className="nav-link h5">Mentoring</a>
+                </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -53,7 +71,6 @@ const Navbar = () => {
                 </div>
               </li>
             </ul>
-
           </div>
           <div>
             <div className="d-flex justify-content-evenly">
