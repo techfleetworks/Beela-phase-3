@@ -7,15 +7,18 @@ const Navbar = () => {
         <nav className="navbar navbar-light navbar-expand-md bg-light justify-content-center">
           <Image src="/temp-logo.png" alt="Empower" width={72} height={72} />
           <Link href="/">
-            <a className="navbar-brand mr-0">Beela</a>
-            <button
-              className="navbar-toggler ml-1"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapsingNavbar2"
-            >
-              <span className="navbar-toggler-icon"></span>
-            </button>{" "}
+
+            <a className="navbar-brand mr-0">
+              Beela
+              <button
+                className="navbar-toggler ml-1"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapsingNavbar2"
+              >
+                <span className="navbar-toggler-icon"></span>
+              </button>
+            </a>
           </Link>
           <div
             className="navbar-collapse collapse justify-content-between align-items-center w-100"

@@ -4,14 +4,14 @@ import Image from "next/image"
 import avatar from "../public/avatar.png"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import { usePostsQuery } from "../graphql/generated"
+// import { usePostsQuery } from "../graphql/generated"
 import styles from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
-  const { data, error, loading } = usePostsQuery()
+  // const { data, error, loading } = usePostsQuery()
 
-  if (loading) return <main className={styles.main}>Loading...</main>
-  if (error) return <main className={styles.main}>{error.message}</main>
+  // if (loading) return <main className={styles.main}>Loading...</main>
+  // if (error) return <main className={styles.main}>{error.message}</main>
 
   // From here, { data } can be referenced
   return (
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
                 <div className="p-3">
                   <h1>
                     It&apos;s possible to get into tech!
-                    {data?.posts?.data[0].attributes?.title}
+                    {/* {data?.posts?.data[0].attributes?.title} */}
                   </h1>
                   <div className="p-3">
                     <p className="B1">
