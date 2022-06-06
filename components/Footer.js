@@ -9,8 +9,8 @@ const Footer = () => {
           <div className="row gy-4 gx-5">
             <div className="col-lg-6 col-md-6">
               <div>
-                <h5 className="h1 e">Our Mission</h5>
-                <p className="small text-muted">
+                <h5 className="h5 e">Our Mission</h5>
+                <p className="small S1">
                   We are committed to decreasing the unemployment gap between foreign-born women and
                   native Swedes. We empower our community to define their path, get unblocked, and
                   trailblaze into tech careers.{" "}
@@ -24,7 +24,7 @@ const Footer = () => {
               </div>
 
               <div>
-                <h5 className="h1 e">Our Partners</h5>
+                <h5 className="h5 e">Our Partners</h5>
                 <Image src={placeholder} className="rounded-circle" alt="Cinque Terre" />
                 &nbsp;
                 <Image src={placeholder} className="rounded-circle" alt="Cinque Terre" />
@@ -36,8 +36,8 @@ const Footer = () => {
             </div>
 
             <div className="col-lg-2 col-md-6">
-              <div>
-                <h5 className="mb-3">Sitemap</h5>
+              <div className="site-map">
+                <h5 className="mb-3 h5">Sitemap</h5>
                 <ul className="list-unstyled ">
                   <li>
                     <a href="#">Home</a>
@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-2 col-md-6">
               <div>
-                <h5 className="mb-3">Contact Us</h5>
+                <h5 className="mb-3 h5">Contact Us</h5>
                 <ul className="list-unstyled ">
                   <li>
                     <a href="#">Home</a>
