@@ -15,9 +15,7 @@ const About: NextPage = () => {
       </Head>
       <Navbar />
       <main className="container-fluid" id="wrapper">
-
         <div className="row p-5" id="jumbotron">
-
           {/* Hero */}
           <div className="container px-5" id="hero">
             {/* About Beela */}
@@ -49,31 +47,43 @@ const About: NextPage = () => {
         <div className="container py-2">
           <div className="row row-cols-1 row-cols-md-3 m-5" id="empower">
             <div className="col px-5">
-              <span style={{ display: "flex", justifyContent: "center", }}>
+              <span style={{ display: "flex", justifyContent: "center" }}>
                 <Image src="/placeholder2.png" alt="Empower" width={72} height={72} />
               </span>
-              <h3 className="text-center" id="empower-text">Empower</h3>
-              <p className="card-text text-center" id="empower-paragraph">We help immigrant women and non-binary people to achieve all their potential through coaching, mentoring, and networking.</p>
+              <h3 className="text-center" id="empower-text">
+                Empower
+              </h3>
+              <p className="card-text text-center" id="empower-paragraph">
+                We help immigrant women and non-binary people to achieve all their potential through
+                coaching, mentoring, and networking.
+              </p>
             </div>
             <div className="col px-5">
-              <span style={{ display: "flex", justifyContent: "center", }}>
+              <span style={{ display: "flex", justifyContent: "center" }}>
                 <Image src="/placeholder2.png" alt="Inform" width={72} height={72} />
               </span>
-              <h3 className="text-center" id="empower-text">Inform</h3>
-              <p className="card-text text-center" id="empower-paragraph">We spread the word about what’s happening in the tech world: bootcamps, code academies, courses,
-                and events.</p>
+              <h3 className="text-center" id="empower-text">
+                Inform
+              </h3>
+              <p className="card-text text-center" id="empower-paragraph">
+                We spread the word about what’s happening in the tech world: bootcamps, code
+                academies, courses, and events.
+              </p>
             </div>
             <div className="col px-5">
-              <span style={{ display: "flex", justifyContent: "center", }}>
+              <span style={{ display: "flex", justifyContent: "center" }}>
                 <Image src="/placeholder2.png" alt="Inspire" width={72} height={72} />
               </span>
-              <h3 className="text-center" id="empower-text">Inspire</h3>
-              <p className="card-text text-center" id="empower-paragraph">We share stories about people who have built a career in tech, as well as employers who have created opportunities
-                for newcomers.</p>
+              <h3 className="text-center" id="empower-text">
+                Inspire
+              </h3>
+              <p className="card-text text-center" id="empower-paragraph">
+                We share stories about people who have built a career in tech, as well as employers
+                who have created opportunities for newcomers.
+              </p>
             </div>
           </div>
         </div>
-
 
         {/* Our Community */}
         <div className="row" id="community">
@@ -88,14 +98,14 @@ const About: NextPage = () => {
                 </div>
                 <div className="container">
                   <p id="our-community-paragraph">
-                    To date, two cohorts have gone through our Pollination Mentoring Programme. Many of the people in the programme landed jobs! We are excited to build on this success and grow our community.
+                    To date, two cohorts have gone through our Pollination Mentoring Programme. Many
+                    of the people in the programme landed jobs! We are excited to build on this
+                    success and grow our community.
                   </p>
                 </div>
               </div>
             </div>
           </div>
-
-
 
           {/* Our Team */}
           <div className="container text-center" id="team-container">
@@ -106,8 +116,8 @@ const About: NextPage = () => {
                 </div>
                 <div className="p-1">
                   <p id="header-text">
-                    We know from firsthand experience how hard it is to start over in a new
-                    country. All of us are here to support you.
+                    We know from firsthand experience how hard it is to start over in a new country.
+                    All of us are here to support you.
                   </p>
                 </div>
               </div>
@@ -128,10 +138,10 @@ const About: NextPage = () => {
                           UX Designer
                         </p>
                         <p className="card-text" id="card-text">
-                          Juliana is a Latina immigrant with 8+ years of experience working in
-                          tech, leading product teams to develop data-driven products. She has a
-                          Bachelor&apos;s in Information Systems and is currently writing her
-                          master thesis in IT Project Management from Stockholm University.
+                          Juliana is a Latina immigrant with 8+ years of experience working in tech,
+                          leading product teams to develop data-driven products. She has a
+                          Bachelor&apos;s in Information Systems and is currently writing her master
+                          thesis in IT Project Management from Stockholm University.
                         </p>
                       </div>
                     </div>
@@ -152,9 +162,9 @@ const About: NextPage = () => {
                         <p className="card-text" id="card-text">
                           Denise is a Latina immigrant and fullstack developer. She has over 10
                           years of experience working as a business analyst, but decided to change
-                          her career path to software development after she moved to Sweden. She
-                          has a Bachelor&apos;s in Information Systems and a Master&apos;s in
-                          Business & Project Management.
+                          her career path to software development after she moved to Sweden. She has
+                          a Bachelor&apos;s in Information Systems and a Master&apos;s in Business &
+                          Project Management.
                         </p>
                       </div>
                     </div>
@@ -174,8 +184,8 @@ const About: NextPage = () => {
                         </p>
                       </div>
                       <p className="card-text" id="card-text">
-                        Maryam is a social entrepreneur with a passion for diversity, inclusion,
-                        and belonging. She has 8 years of experience in HR-related professions,
+                        Maryam is a social entrepreneur with a passion for diversity, inclusion, and
+                        belonging. She has 8 years of experience in HR-related professions,
                         including work with Arbetsförmedlingen with a focus on education,
                         recruitment, and innovation.
                       </p>
@@ -190,7 +200,6 @@ const About: NextPage = () => {
         {/* Team */}
         {/* Get Voulnted*/}
         <Footer />
-
       </main>
     </div>
   )
