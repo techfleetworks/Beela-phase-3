@@ -7,6 +7,7 @@ const Navbar = () => {
         <nav className="navbar navbar-light navbar-expand-md bg-light justify-content-center">
           <Image src="/temp-logo.png" alt="Empower" width={72} height={72} />
           <Link href="/">
+
             <a className="navbar-brand mr-0">
               Beela
               <button
