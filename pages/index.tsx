@@ -30,7 +30,7 @@ const Home: NextPage = () => {
             <div className="row border text-center " id="Hero">
               <div className="col d-flex flex-column align-items-center p-5">
                 <div className="p-3">
-                  <h1>
+                  <h1 className="hero-title">
                     It&apos;s possible to get into tech!
                     {/* {data?.posts?.data[0].attributes?.title} */}
                   </h1>
