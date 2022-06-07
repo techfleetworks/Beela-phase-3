@@ -2,45 +2,6 @@ import Link from "next/link"
 import Image from "next/image"
 const Navbar = () => {
   return (
-<<<<<<< HEAD
-    <nav className="container navbar navbar-expand-lg navbar-light bg-light">
-  <a className="navbar-brand" href="#">Beela</a>
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-    <span className="navbar-toggler-icon"></span>
-  </button>
-  <div className="collapse navbar-collapse" id="navbarNavDropdown">
-    <ul className="navbar-nav">
-      <li className="nav-item active">
-        <Link className="nav-link" href="/">Home </Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" href="/about">About</Link>
-      </li>
-      <li className="nav-item">
-        <Link className="nav-link" href="/pollination">Mentorin</Link>
-      </li>
-     
-    {/*   <li className="nav-item dropdown">
-        <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Community Support
-        </a>
-        <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-          <Link className="dropdown-item" href="#">Beela Slack Community</Link>
-          <Link className="dropdown-item" href="#">Beela Events</Link>
-          <Link className="dropdown-item" href="#">Beela Podcast</Link>
-          <Link className="dropdown-item" href="#">Beela Newsletter</Link>
-          <Link className="dropdown-item" href="#">Beela Mentoring</Link>
-          <Link className="dropdown-item" href="#">Partner with Beela</Link>
-        </div>
-  </li> */}
-    </ul>
-  </div>
-  <div>
-  <div className="d-flex justify-content-evenly">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-spotify" viewBox="0 0 16 16">
-  <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z"/>
-</svg>
-=======
     <>
       <div className="container-fluid">
         <nav className="navbar navbar-light navbar-expand-md bg-light justify-content-center">
@@ -126,7 +87,6 @@ const Navbar = () => {
               >
                 <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.669 11.538a.498.498 0 0 1-.686.165c-1.879-1.147-4.243-1.407-7.028-.77a.499.499 0 0 1-.222-.973c3.048-.696 5.662-.397 7.77.892a.5.5 0 0 1 .166.686zm.979-2.178a.624.624 0 0 1-.858.205c-2.15-1.321-5.428-1.704-7.972-.932a.625.625 0 0 1-.362-1.194c2.905-.881 6.517-.454 8.986 1.063a.624.624 0 0 1 .206.858zm.084-2.268C10.154 5.56 5.9 5.419 3.438 6.166a.748.748 0 1 1-.434-1.432c2.825-.857 7.523-.692 10.492 1.07a.747.747 0 1 1-.764 1.288z" />
               </svg>
->>>>>>> main
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
