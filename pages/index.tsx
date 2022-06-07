@@ -4,8 +4,16 @@ import Image from "next/image"
 import avatar from "../public/avatar.png"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+// import { usePostsQuery } from "../graphql/generated"
+import styles from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
+  // const { data, error, loading } = usePostsQuery()
+
+  // if (loading) return <main className={styles.main}>Loading...</main>
+  // if (error) return <main className={styles.main}>{error.message}</main>
+
+  // From here, { data } can be referenced
   return (
     <div>
       <Head>
@@ -19,20 +27,23 @@ const Home: NextPage = () => {
 
           {/* Hero */}
           <div className="container-fluid justify-content-center overflow-hidden">
-            <div className="row border text-center h-75" id="hero">
-              <div className="col d-flex flex-column align-items-center border p-5">
+            <div className="row border text-center " id="Hero">
+              <div className="col d-flex flex-column align-items-center p-5">
                 <div className="p-3">
-                  <h1>It’s possible to get into tech!</h1>
+                  <h1 className="hero-title">
+                    It&apos;s possible to get into tech!
+                    {/* {data?.posts?.data[0].attributes?.title} */}
+                  </h1>
                   <div className="p-3">
-                    <p id="header-text">
-                      We offer free resources to help women and non-binary Swedish immigrants start
-                      tech careers.
+                    <p className="B1">
+                      We offer free resources to help women and non-binary <br /> Swedish immigrants
+                      start tech careers.
                     </p>
                   </div>
                 </div>
 
                 <div className="p-3">
-                  <button type="button" className="btn btn-dark">
+                  <button type="button" className="btn btn-dark ">
                     Join Our Slack Community
                   </button>
                 </div>
@@ -45,12 +56,12 @@ const Home: NextPage = () => {
             <div className="col align-items-center border p-5">
               <div className="d-flex flex-column">
                 <div className="p-1">
-                  <h2>3 steps to a new career</h2>
+                  <h2 className="text-primary">3 steps to a new career</h2>
                 </div>
                 <div className="p-1">
                   <p id="header-text">
-                    We’ve developed a proven, accessible method to pivot careers. We are here to
-                    support you every step of the way.
+                    We know that it’s not easy to change careers and move to a new country. We are
+                    here to support you every step of the way.
                   </p>
                 </div>
               </div>
@@ -61,10 +72,10 @@ const Home: NextPage = () => {
                     <div className="card h-100">
                       <div className="card-body">
                         <p className="card-title">
-                          <span>Gain Skills</span>
+                          <span className="text-primary">Join Our Community</span>
                         </p>
                         <p className="card-text">
-                          Explore various tech fields and learn relevant skills.
+                          Get support and share your expertise in our forum.
                         </p>
                       </div>
                     </div>
@@ -73,7 +84,7 @@ const Home: NextPage = () => {
                     <div className="card h-100">
                       <div className="card-body">
                         <p className="card-title">
-                          <span>Get Experience</span>
+                          <span className="text-primary">2. Get Experience</span>
                         </p>
                         <p className="card-text">
                           Put your skills to work with projects from our partners.
@@ -85,7 +96,7 @@ const Home: NextPage = () => {
                     <div className="card h-100">
                       <div className="card-body">
                         <p className="card-title">
-                          <span>Land a Job</span>
+                          <span className="text-primary">3. Land a Job</span>
                         </p>
                         <p className="card-text">Receive unparalleled mentorship and resources.</p>
                       </div>
@@ -114,7 +125,12 @@ const Home: NextPage = () => {
                     <div className="rectangle"></div>
                   </div>
                   <div className="m-3">
-                    <p>Our flagship programme offers 1:1 mentorship, along with resources.</p>
+                    <p>
+                      Pollination Mentoring Programme is a free <br /> programme that connects
+                      mentors with
+                      <br /> mentees. Our transformative programme <br /> offers 1:1 mentorship,
+                      along with resources.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -163,7 +179,7 @@ const Home: NextPage = () => {
 
               <div className="container">
                 <div className="card-deck d-flex flex-row flex-wrap flex-md-nowrap justify-content-center">
-                  <div className="card m-3">
+                  <div className="col card m-3">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">
@@ -181,7 +197,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="col card m-3">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">
@@ -199,7 +215,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="card m-3">
+                  <div className="col card m-3">
                     <div className="card-body">
                       <div className="card-title">
                         <div className="header">
@@ -234,7 +250,7 @@ const Home: NextPage = () => {
                 id="video"
               >
                 <div className="col m-3">
-                  <p>
+                  <p className="B1">
                     Our podcast is filled with inspiring stories from Swedish immigrants who have
                     broken into tech. Catch up on all the buzz!
                   </p>
@@ -245,8 +261,8 @@ const Home: NextPage = () => {
               </div>
 
               <div className="container">
-                <div className="p-3">
-                  <button type="button" className="btn btn-dark" id="listen-button">
+                <div className="p-3 ">
+                  <button type="button" className="btn btn-dark text-primary" id="listen-button">
                     Start Listening
                   </button>
                 </div>
