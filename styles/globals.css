@@ -12,6 +12,8 @@
   --color-gray5: rgb(230, 230, 229);
   --color-white: rgb(247, 247, 246);
   --color-berry: rgb(58, 74, 146);
+  --color-berry-30: rgb(44, 55, 109);
+  --color-berry-60: rgb(109, 125, 197);
   --color-honey: rgb(230, 198, 25);
   --color-coral: rgb(240, 219, 238);
   --color-violet: rgb(98, 55, 98);
@@ -43,6 +45,7 @@ a {
   font-size: 5rem;
   line-height: 115px;
 }
+
 h1 {
   /* heading 1*/
   font-family: "Lora";
@@ -52,6 +55,7 @@ h1 {
   line-height: 82px;
   letter-spacing: 0.03em;
 }
+
 h2 {
   /* heading 2*/
   font-family: "Lora";
@@ -59,7 +63,9 @@ h2 {
   font-weight: 600;
   font-size: 2.556rem;
   line-height: 59px;
+  color: var(--color-berry);
 }
+
 h3 {
   /* heading 3*/
   font-family: "Lora";
@@ -68,14 +74,26 @@ h3 {
   font-size: 1.778rem;
   line-height: 41px;
 }
-h4 {
+
+.h4 {
   /* heading 4*/
-  font-family: "Montserrat";
+  font-family: "Lora", serif !important;
+  color: var(--color-berry);
   font-style: normal;
   font-weight: 600;
-  font-size: 1.333rem;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 31px;
 }
+
+h4 {
+  /* heading 4*/
+  font-family: "Lora", serif !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 31px;
+}
+
 h5 {
   /* heading 5*/
   font-family: "Montserrat";
@@ -117,6 +135,7 @@ h5 {
   /* or 31px */
   letter-spacing: 0.0005em;
 }
+
 .B2 {
   /* Desktop/ Body/ B2 (16) */
   font-family: "Montserrat";
@@ -127,16 +146,34 @@ h5 {
   /* or 27px */
   letter-spacing: 0.0005em;
 }
-.Button {
+
+.button {
   /* Desktop/Button/Button (16) */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--color-berry);
   font-size: 0.889rem;
   line-height: 20px;
+  padding: 20px, 50px, 20px, 50px;
   /* identical to box height */
   text-transform: capitalize;
+  height: 46px;
+  width: 318px;
+  border-radius: 25px;
 }
+
+.button:hover {
+  color: var(--color-white);
+  background-color: var(--color-berry-30);
+}
+
+.button:focus {
+  color: var(--color-white);
+  background-color: var(--color-berry-60);
+}
+
 .CT {
   /* Desktop/Caption/C1 (15) */
   font-family: "Montserrat";
@@ -183,14 +220,6 @@ span {
   font-weight: 550;
 }
 
-#wrapper {
-  height: 100vh !important;
-}
-
-#steps {
-  background-color: var(--color-grey);
-}
-
 #testimonials {
   background-color: var(--color-grey);
 }
@@ -224,6 +253,24 @@ span {
 #header-text {
   padding-left: 96px;
   padding-right: 96px;
+}
+
+.card {
+  border: none;
+}
+
+.card-img-top {
+  width: 90px;
+  height: auto;
+  align-self: center;
+}
+
+.steps-grid {
+  /* max-width: 75%; */
+}
+
+.steps-col {
+  max-width: 350px;
 }
 
 #card-deck-steps {
@@ -263,8 +310,12 @@ span {
 }
 
 #Hero {
-  height: 594px;
-  align-items: center;
+  height: 75vh;
+  background-image: linear-gradient(rgba(247, 247, 246, 0.85), rgba(247, 247, 246, 0.85)),
+    url(../public/Hero-Image.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #newsletter {

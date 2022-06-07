@@ -1,10 +1,24 @@
 import type { NextPage } from "next"
+import Popper from "@popperjs/core"
+import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
 import avatar from "../public/avatar.png"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+
+// React-Bootstrap icons
+import { ArrowRight } from "react-bootstrap-icons"
+
+// React-Bootstrap imports
+import Col from "react-bootstrap/Col"
+import Row from "react-bootstrap/Row"
+import Card from "react-bootstrap/Card"
+import Container from "react-bootstrap/Container"
+
 // import { usePostsQuery } from "../graphql/generated"
+
+//
 import styles from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
@@ -22,90 +36,92 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="container-fluid p-0 border" id="wrapper">
-          <Navbar />
+        <Navbar />
 
-          {/* Hero */}
-          <div className="container-fluid justify-content-center overflow-hidden">
-            <div className="row border text-center " id="Hero">
-              <div className="col d-flex flex-column align-items-center p-5">
-                <div className="p-3">
-                  <h1 className="hero-title">
-                    It&apos;s possible to get into tech!
-                    {/* {data?.posts?.data[0].attributes?.title} */}
-                  </h1>
-                  <div className="p-3">
-                    <p className="B1">
-                      We offer free resources to help women and non-binary <br /> Swedish immigrants
-                      start tech careers.
-                    </p>
-                  </div>
-                </div>
-
-                <div className="p-3">
-                  <button type="button" className="btn btn-dark ">
-                    Join Our Slack Community
-                  </button>
-                </div>
-              </div>
+        {/* Hero */}
+        <div className="container-fluid overflow-hidden" id="wrapper">
+          <Row className="text-center align-content-center justify-content-center" id="Hero">
+            <Row className="justify-content-center">
+              <Col sm={5} className="mb-4 pt-4">
+                <h1 className="hero-title">
+                  It&apos;s possible to get into tech!
+                  {/* {data?.posts?.data[0].attributes?.title} */}
+                </h1>
+              </Col>
+            </Row>
+            <Row className="justify-content-center">
+              <Col sm={5} className="mb-4">
+                <p className="B1">
+                  We offer free resources to help women and non-binary Swedish immigrants start tech
+                  careers.
+                </p>
+              </Col>
+            </Row>
+            <div className="mb-4">
+              <button type="button" className="btn button">
+                Join Our Slack Community
+              </button>
             </div>
-          </div>
+          </Row>
 
-          {/* Transition steps */}
-          <div className="row border text-center" id="steps">
-            <div className="col align-items-center border p-5">
-              <div className="d-flex flex-column">
+          {/* Career Steps */}
+          <Row className="text-center align-content-center justify-content-center p-5" id="steps">
+            <Row className="justify-content-center">
+              <Col sm={8}>
                 <div className="p-1">
-                  <h2 className="text-primary">3 steps to a new career</h2>
+                  <h2 className="H2">3 Steps to Start a New Career</h2>
                 </div>
                 <div className="p-1">
-                  <p id="header-text">
-                    We know that it’s not easy to change careers and move to a new country. We are
-                    here to support you every step of the way.
+                  <p className="B1">
+                    We know that it&apos;s not easy to change careers and move to a new country.
+                    <br /> We are here to support you every step of the way.
                   </p>
                 </div>
-              </div>
+              </Col>
+            </Row>
 
-              <div className="container">
-                <div className="row row-cols-1 row-cols-md-3">
-                  <div className="col mb-4">
-                    <div className="card h-100">
-                      <div className="card-body">
-                        <p className="card-title">
-                          <span className="text-primary">Join Our Community</span>
-                        </p>
-                        <p className="card-text">
-                          Get support and share your expertise in our forum.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col mb-4">
-                    <div className="card h-100">
-                      <div className="card-body">
-                        <p className="card-title">
-                          <span className="text-primary">2. Get Experience</span>
-                        </p>
-                        <p className="card-text">
-                          Put your skills to work with projects from our partners.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col mb-4">
-                    <div className="card h-100">
-                      <div className="card-body">
-                        <p className="card-title">
-                          <span className="text-primary">3. Land a Job</span>
-                        </p>
-                        <p className="card-text">Receive unparalleled mentorship and resources.</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+            <Container fluid="md" className="justify-content-center align-content-center ">
+              <Row xs={1} md={3} className="g-4 justify-content-center">
+                <Col className="mb-4 steps-col">
+                  <Card>
+                    <Card.Img variant="top" src="../images/bee1.png" />
+                    <Card.Body>
+                      <Card.Title className="h4">1. Join Our Community</Card.Title>
+                      <Card.Text>Get support and share your expertise in our forum.</Card.Text>
+                      <Card.Text>
+                        <Link href="">
+                          <a>
+                            Call to Action <ArrowRight />
+                          </a>
+                        </Link>
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+
+                <Col className="mb-4 steps-col">
+                  <Card>
+                    <Card.Img variant="top" src="../images/bee2.png" />
+                    <Card.Body>
+                      <Card.Title className="h4">2. Get Experience</Card.Title>
+                      <Card.Text>
+                        Put your skills to work with projects from our partners.
+                      </Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className="mb-4 steps-col">
+                  <Card>
+                    <Card.Img variant="top" src="../images/bee3.png" />
+                    <Card.Body>
+                      <Card.Title className="h4">3. Land a Job</Card.Title>
+                      <Card.Text>Receive unparalleled mentorship and resources.</Card.Text>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              </Row>
+            </Container>
+          </Row>
 
           {/* Pollination */}
           <div className="row border text-center" id="pollination">
@@ -145,7 +161,7 @@ const Home: NextPage = () => {
                       you with your individualized needs.
                     </p>
                     <a href="">
-                      Learn more <i className="bi bi-arrow-right"></i>
+                      Learn more <ArrowRight />
                     </a>
                   </div>
                   <div className="p-3">
@@ -155,7 +171,7 @@ const Home: NextPage = () => {
                       learn through mentoring.
                     </p>
                     <a href="">
-                      Learn more <i className="bi bi-arrow-right"></i>
+                      Learn more <ArrowRight />
                     </a>
                   </div>
                 </div>
