@@ -2,8 +2,21 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
 
 :root {
-  --color-lgrey: #f2f2f2;
-  --color-grey: #cdcbcb;
+  --color-lgrey: rgb(242, 242, 242);
+  --color-grey: rgb(205, 203, 203);
+  --color-black: rgb(28, 28, 25);
+  --color-gray1: rgb(68, 67, 59);
+  --color-gray2: rgb(131, 131, 124);
+  --color-gray3: rgb(183, 182, 174);
+  --color-gray4: rgb(207, 206, 201);
+  --color-gray5: rgb(230, 230, 229);
+  --color-white: rgb(247, 247, 246);
+  --color-berry: rgb(58, 74, 146);
+  --color-honey: rgb(230, 198, 25);
+  --color-coral: rgb(240, 219, 238);
+  --color-violet: rgb(98, 55, 98);
+  --color-cream: rgb(249, 242, 212);
+  --color-cornflower: rgb(204, 218, 255);
 }
 
 html,
@@ -11,6 +24,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", sans-serif;
+  color: var(--color-black);
+  font-size: 18px;
 }
 
 a {
@@ -18,16 +33,143 @@ a {
   text-decoration: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Lora", serif;
+/* DESKTOP*/
+
+.Special1 {
+  /* SPECIAL 1 */
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 115px;
+}
+h1 {
+  /* heading 1*/
+  font-family: "Lora";
+  font-style: normal;
   font-weight: 600;
+  font-size: 3.556rem;
+  line-height: 82px;
+  letter-spacing: 0.03em;
+}
+h2 {
+  /* heading 2*/
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.556rem;
+  line-height: 59px;
+}
+h3 {
+  /* heading 3*/
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.778rem;
+  line-height: 41px;
+}
+h4 {
+  /* heading 4*/
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.333rem;
+  line-height: 22px;
+}
+h5 {
+  /* heading 5*/
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 22px;
 }
 
+.hero-title {
+  color: var(--color-berry);
+}
+
+.S1 {
+  /* Desktop/Subtitle/S1 (17) */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.944rem;
+  line-height: 21px;
+}
+
+.S2 {
+  /* Desktop/ Subtitle/ S2 (15) */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.833rem;
+  line-height: 18px;
+}
+
+.B1 {
+  /* Desktop/Body/B1 (18) */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 170%;
+  /* or 31px */
+  letter-spacing: 0.0005em;
+}
+.B2 {
+  /* Desktop/ Body/ B2 (16) */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.889rem;
+  line-height: 170%;
+  /* or 27px */
+  letter-spacing: 0.0005em;
+}
+.Button {
+  /* Desktop/Button/Button (16) */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.889rem;
+  line-height: 20px;
+  /* identical to box height */
+  text-transform: capitalize;
+}
+.CT {
+  /* Desktop/Caption/C1 (15) */
+  font-family: "Montserrat";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 0.833rem;
+  line-height: 18px;
+}
+.O1 {
+  /* Desktop/Overline/O1 (15) */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.833rem;
+  line-height: 18px;
+}
+.text-primary {
+  color: #3a4a92;
+}
+
+.site-map {
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+  width: 89px;
+  height: 178px;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
 * {
   box-sizing: border-box;
 }
@@ -43,10 +185,6 @@ span {
 
 #wrapper {
   height: 100vh !important;
-}
-
-#hero {
-  background-color: #D9D9D9;
 }
 
 #steps {
@@ -135,43 +273,31 @@ span {
   left: 0px;
   top: 0px;
   border-radius: 5px;
-
 }
 
-/* #hero {
-  align-items: center;
-  justify-content: center;
-  display: block;
-} */
-
-/* #hero-container {
-  align-items: center;
-  align-content: center;
-  
-} */
-
 #about-beela {
-  font-family: 'Lora';
+  /* font-family: 'Lora'; */
   font-style: normal;
   font-weight: 600;
-  font-size: 64px;
+  font-size: 85px;
   line-height: 82px;
+  color: #3a4a92;
 }
 
 #about-paragraph {
-  font-family: 'Montserrat';
+  /* font-family: 'Montserrat'; */
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 170%;
   letter-spacing: 0.0005em;
 }
 
-#about-rectangle {
+/* #about-rectangle {
   height: 300px;
   width: 460px;
   background-color: white;
-}
+} */
 
 #our-community-rectangle {
   height: 280px;
@@ -180,24 +306,25 @@ span {
 }
 
 #our-community {
-  font-family: 'Lora';
+  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
-  font-size: 46px;
+  font-size: 55px;
   line-height: 59px;
+  color: #3a4a92;
 }
 
 #our-community-paragraph {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 22px;
   line-height: 170%;
   letter-spacing: 0.0005em;
 }
 
 #our-team-title {
-  font-family: 'Lora';
+  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 46px;
@@ -206,11 +333,11 @@ span {
 }
 
 #team-container {
-  background-color: #E6E6E6;
+  background-color: #ccdaff;
 }
 
 #team-name {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -218,7 +345,7 @@ span {
 }
 
 #team-title {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -227,11 +354,52 @@ span {
 }
 
 #card-text {
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 170%;
   text-align: center;
   letter-spacing: 0.0005em;
+}
+
+#jumbotron {
+  background-color: #f9f2d4;
+}
+
+#community {
+  background-color: #f9f2d4;
+}
+
+#empower {
+  height: 400px;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: xx-large;
+}
+
+#empower-text {
+  color: var(--color-berry);
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 41px;
+}
+
+#empower-paragraph {
+  /* font-family: 'Montserrat'; */
+  /* font-style: normal; */
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 170%;
+  text-align: center;
+  letter-spacing: 0.0005em;
+}
+
+#wrapper {
+  left: 0;
+  right: 0;
 }
