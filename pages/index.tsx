@@ -22,12 +22,12 @@ const Home: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="container-fluid p-0 border" id="wrapper">
+        <div className="container-fluid p-0" id="wrapper">
           <Navbar />
 
           {/* Hero */}
           <div className="container-fluid justify-content-center overflow-hidden">
-            <div className="row border text-center " id="Hero">
+            <div className="row text-center hero-image-home" id="Hero">
               <div className="col d-flex flex-column align-items-center p-5">
                 <div className="p-3">
                   <h1>
@@ -52,9 +52,9 @@ const Home: NextPage = () => {
           </div>
 
           {/* Transition steps */}
-          <div className="row border text-center" id="steps">
-            <div className="col align-items-center border p-5">
-              <div className="d-flex flex-column">
+          <div className="row  text-center" id="steps">
+            <div className="col align-items-center p-5">
+              <div className="d-flex flex-column" id="career-content">
                 <div className="p-1">
                   <h2 className="text-primary">3 steps to a new career</h2>
                 </div>
@@ -67,8 +67,8 @@ const Home: NextPage = () => {
               </div>
 
               <div className="container">
-                <div className="row row-cols-1 row-cols-md-3">
-                  <div className="col mb-4">
+                <div className="row row-cols-1 row-cols-md-3 " id="three-card-layout">
+                  <div className="col mb-4 content-group-1" >
                     <div className="card h-100">
                       <div className="card-body">
                         <p className="card-title">
@@ -80,7 +80,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col mb-4">
+                  <div className="col mb-4 content-group-2">
                     <div className="card h-100">
                       <div className="card-body">
                         <p className="card-title">
@@ -92,7 +92,7 @@ const Home: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="col mb-4">
+                  <div className="col mb-4 content-group-3">
                     <div className="card h-100">
                       <div className="card-body">
                         <p className="card-title">
@@ -108,7 +108,7 @@ const Home: NextPage = () => {
           </div>
 
           {/* Pollination */}
-          <div className="row border text-center" id="pollination">
+          <div className="row text-center" id="pollination">
             <div className="col align-items-center p-5">
               <div className="d-flex flex-column ">
                 <div className="p-1">

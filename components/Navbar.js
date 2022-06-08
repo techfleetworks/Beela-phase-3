@@ -27,24 +27,24 @@ const Navbar = () => {
             <ul className="navbar-nav mx-auto text-center">
               <li className="nav-item active">
                 <Link href="/">
-                  <a className="nav-link h5">
-                    <span className="sr-only">Home</span>
+                  <a className="nav-link ">
+                    <span className="sr-only nav-h5">Home</span>
                   </a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/about">
-                  <a className="nav-link h5">About</a>
+                  <a className="nav-link nav-h5">About</a>
                 </Link>
               </li>
               <li className="nav-item">
                 <Link href="/pollination">
-                  <a className="nav-link h5">Mentoring</a>
+                  <a className="nav-link nav-h5">Mentoring</a>
                 </Link>
               </li>
               <li className="nav-item dropdown">
                 <a
-                  className="nav-link dropdown-toggle h5"
+                  className="nav-link dropdown-toggle nav-h5"
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -53,22 +53,22 @@ const Navbar = () => {
                   Community Support
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item nav-h5" href="#">
                     Beela Slack Community
                   </Link>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item nav-h5" href="#">
                     Beela Events
                   </Link>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item nav-h5" href="#">
                     Beela Podcast
                   </Link>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item nav-h5" href="#">
                     Beela Newsletter
                   </Link>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item nav-h5" href="#">
                     Beela Mentoring
                   </Link>
-                  <Link className="dropdown-item" href="#">
+                  <Link className="dropdown-item nav-h5" href="#">
                     Partner with Beela
                   </Link>
                 </div>
