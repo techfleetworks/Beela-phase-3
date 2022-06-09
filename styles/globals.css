@@ -63,7 +63,6 @@ h2 {
   font-weight: 600;
   font-size: 2.556rem;
   line-height: 59px;
-  color: var(--color-berry);
 }
 
 h3 {
@@ -103,11 +102,11 @@ h5 {
   line-height: 22px;
 }
 
-.hero-title {
+.home-header__hero {
   color: var(--color-berry);
 }
 
-.S1 {
+.col-grid .S1 {
   /* Desktop/Subtitle/S1 (17) */
   font-family: "Montserrat";
   font-style: normal;
@@ -174,6 +173,26 @@ h5 {
   background-color: var(--color-berry-60);
 }
 
+.button-outline {
+  /* Desktop/Button/Button (16) */
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  border-color: var(--color-berry);
+  color: var(--color-berry);
+  background-color: var(--color-white);
+  border: 2px solid;
+  font-size: 0.889rem;
+  line-height: 20px;
+  padding: 20px, 50px, 20px, 50px;
+  /* identical to box height */
+  text-transform: capitalize;
+  height: 46px;
+  display: block;
+  display: inline-block;
+  border-radius: 25px;
+}
+
 .CT {
   /* Desktop/Caption/C1 (15) */
   font-family: "Montserrat";
@@ -212,7 +231,7 @@ h5 {
 }
 
 hr {
-  width: 75%;
+  width: 75% !important;
   margin: auto;
 }
 
@@ -265,17 +284,16 @@ span {
   align-self: center;
 }
 
-.steps-grid {
-  /* max-width: 75%; */
+.home-steps__title {
+  color: var(--color-berry);
 }
 
 .steps-col {
   max-width: 350px;
 }
 
-#card-deck-steps {
-  flex-wrap: wrap;
-  justify-content: center;
+.home-pollination__img {
+  line-height: 0%;
 }
 
 #card-m3-steps {
@@ -290,10 +308,12 @@ span {
   text-align: left;
 }
 
-#container-hex {
-  display: flex;
-  --s: 150px;
-  /* size  */
+#pollination {
+  background-color: var(--color-cream);
+}
+
+.home-pollination_img {
+  box-shadow: 22px 24px rgb(230, 198, 25);
 }
 
 #card-m5-steps-hex {
@@ -312,7 +332,7 @@ span {
 #Hero {
   height: 75vh;
   background-image: linear-gradient(rgba(247, 247, 246, 0.85), rgba(247, 247, 246, 0.85)),
-    url(../public/Hero-Image.png);
+    url(../public/homehero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

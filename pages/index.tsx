@@ -42,15 +42,15 @@ const Home: NextPage = () => {
         <div className="container-fluid overflow-hidden" id="wrapper">
           <Row className="text-center align-content-center justify-content-center" id="Hero">
             <Row className="justify-content-center">
-              <Col sm={5} className="mb-4 pt-4">
-                <h1 className="hero-title">
+              <Col sm={10} md={8} lg={6} xl={5} className="mb-4 pt-4">
+                <h1 className="home-header__hero">
                   It&apos;s possible to get into tech!
                   {/* {data?.posts?.data[0].attributes?.title} */}
                 </h1>
               </Col>
             </Row>
             <Row className="justify-content-center">
-              <Col sm={5} className="mb-4">
+              <Col sm={10} md={8} lg={6} xl={5} className="mb-4">
                 <p className="B1">
                   We offer free resources to help women and non-binary Swedish immigrants start tech
                   careers.
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
             <Row className="justify-content-center">
               <Col sm={8}>
                 <div className="p-1">
-                  <h2 className="H2">3 Steps to Start a New Career</h2>
+                  <h2 className="H2 home-steps__title">3 Steps to Start a New Career</h2>
                 </div>
                 <div className="p-1">
                   <p className="B1">
@@ -123,65 +123,79 @@ const Home: NextPage = () => {
             </Container>
           </Row>
 
-          {/* Pollination */}
-          <div className="row border text-center" id="pollination">
-            <div className="col align-items-center p-5">
-              <div className="d-flex flex-column ">
-                <div className="p-1">
-                  <h2>Pollination Mentoring Programme</h2>
-                </div>
-              </div>
+          {/* Pollination Programme */}
+          <Row className="text-center justify-content-center align-content-center" id="pollination">
+            <Row className="mt-5">
+              <h2>Pollination Mentoring Programme</h2>
+            </Row>
+            <Container>
+              <Row xs={1} md={2} className="m-5 align-items-center">
+                <Col className="p-3">
+                  <div className="image-wrapper">
+                    <img
+                      src="/images/home-pollination.jpg"
+                      alt="Three women speak to a crowd during a workshop for Beela."
+                      className="img-fluid home-pollination_img"
+                    />
+                  </div>
+                </Col>
+                <Col className="p-3">
+                  <p>
+                    Pollination Mentoring Programme is a free programme that connects mentors with
+                    mentees. Our transformative programme offers 1:1 mentorship, along with
+                    resources.
+                  </p>
+                </Col>
+              </Row>
+            </Container>
 
-              <div className="container align-content-center">
-                <div
-                  className="d-flex flex-row flex-wrap align-items-center justify-content-center flex-md-nowrap p-3"
-                  id="video"
-                >
-                  <div className="m-3">
-                    <div className="rectangle"></div>
-                  </div>
-                  <div className="m-3">
-                    <p>
-                      Pollination Mentoring Programme is a free <br /> programme that connects
-                      mentors with
-                      <br /> mentees. Our transformative programme <br /> offers 1:1 mentorship,
-                      along with resources.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <hr />
+            <hr />
 
-              <div className="container">
-                <div className="d-flex flex-row flex-wrap align-items-center justify-content-center flex-md-nowrap p-3">
-                  <div className="p-3">
-                    <span>Become a Mentee</span>
-                    <p>
-                      Whether you’re exploring a tech field or applying to jobs, a mentor can help
-                      you with your individualized needs.
-                    </p>
-                    <a href="">
-                      Learn more <ArrowRight />
-                    </a>
+            <Container>
+              <Row
+                xs={1}
+                md={2}
+                className="align-items-top justify-content-center display-flex flex-wrap"
+              >
+                <Col xs={8} sm={5} lg={4} className="p-4">
+                  <span>Become a Mentee</span>
+                  <p>
+                    Whether you’re exploring a tech field or applying to jobs, a mentor can help you
+                    with your individualized needs.
+                  </p>
+                  <div>
+                    <Link href="/pollination">
+                      <a>
+                        <button type="button" className="btn button-outline">
+                          Learn More
+                        </button>
+                      </a>
+                    </Link>
                   </div>
-                  <div className="p-3">
-                    <span>Become a Mentor</span>
-                    <p>
-                      Share your experiences and make a difference in a mentee’s career. Continue to
-                      learn through mentoring.
-                    </p>
-                    <a href="">
-                      Learn more <ArrowRight />
-                    </a>
+                </Col>
+                <Col xs={8} sm={5} lg={4} className="p-4">
+                  <span>Become a Mentor</span>
+                  <p>
+                    Share your experiences and make a difference in a mentee’s career. Continue to
+                    learn through mentoring.
+                  </p>
+                  <div>
+                    <Link href="/pollination">
+                      <a>
+                        <button type="button" className="btn button-outline">
+                          Learn More
+                        </button>
+                      </a>
+                    </Link>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
+                </Col>
+              </Row>
+            </Container>
+          </Row>
 
           {/* Testimonials */}
-          <div className="row border text-center" id="testimonials">
-            <div className="col align-items-center border p-5">
+          <div className="row text-center" id="testimonials">
+            <div className="col align-items-center p-5">
               <div className="d-flex flex-column">
                 <div className="p-1">
                   <h2>They did it—and so can you</h2>
@@ -255,7 +269,7 @@ const Home: NextPage = () => {
           </div>
 
           {/* Podcast  */}
-          <div className="row border align-items-center text-center" id="podcast">
+          <div className="row align-items-center text-center" id="podcast">
             <div className="col align-items-center p-5">
               <div className="p-1">
                 <h2>Beela’s Talk Podcast</h2>
