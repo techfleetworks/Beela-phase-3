@@ -69,7 +69,7 @@ const Home: NextPage = () => {
             <Row className="justify-content-center">
               <Col sm={8}>
                 <div className="p-1">
-                  <h2 className="H2 home-steps__title">3 Steps to Start a New Career</h2>
+                  <h2 className="home-steps__title">3 Steps to Start a New Career</h2>
                 </div>
                 <div className="p-1">
                   <p className="B1">
@@ -87,14 +87,14 @@ const Home: NextPage = () => {
                     <Card.Img variant="top" src="../images/bee1.png" />
                     <Card.Body>
                       <Card.Title className="h4">1. Join Our Community</Card.Title>
-                      <Card.Text>Get support and share your expertise in our forum.</Card.Text>
-                      <Card.Text>
+                      <p className="B2">Get support and share your expertise in our forum.</p>
+                      <div>
                         <Link href="">
-                          <a>
+                          <a className="">
                             Call to Action <ArrowRight />
                           </a>
                         </Link>
-                      </Card.Text>
+                      </div>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -104,9 +104,9 @@ const Home: NextPage = () => {
                     <Card.Img variant="top" src="../images/bee2.png" />
                     <Card.Body>
                       <Card.Title className="h4">2. Get Experience</Card.Title>
-                      <Card.Text>
+                      <p className="B2">
                         Put your skills to work with projects from our partners.
-                      </Card.Text>
+                      </p>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -115,7 +115,7 @@ const Home: NextPage = () => {
                     <Card.Img variant="top" src="../images/bee3.png" />
                     <Card.Body>
                       <Card.Title className="h4">3. Land a Job</Card.Title>
-                      <Card.Text>Receive unparalleled mentorship and resources.</Card.Text>
+                      <p className="B2">Receive unparalleled mentorship and resources.</p>
                     </Card.Body>
                   </Card>
                 </Col>
@@ -139,8 +139,8 @@ const Home: NextPage = () => {
                     />
                   </div>
                 </Col>
-                <Col className="p-3">
-                  <p>
+                <Col className="p-3 text-start" id="pollination-text">
+                  <p className="B1">
                     Pollination Mentoring Programme is a free programme that connects mentors with
                     mentees. Our transformative programme offers 1:1 mentorship, along with
                     resources.
