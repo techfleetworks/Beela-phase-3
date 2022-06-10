@@ -241,6 +241,14 @@ span {
   font-weight: 550;
 }
 
+/* SVG Underline  */
+.svg-underline {
+  background: url(/underline.svg) bottom left no-repeat;
+  background-size: 100% auto;
+  padding-bottom: 0px;
+  min-width: 100%;
+}
+
 .text-color__berry {
   color: var(--color-berry);
 }
