@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 :root {
   --color-lgrey: rgb(242, 242, 242);
   --color-grey: rgb(205, 203, 203);
@@ -22,7 +25,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Verdana, sans-serif;
   color: var(--color-black);
   font-size: 18px;
 }
@@ -34,9 +37,18 @@ a {
 
 /* DESKTOP*/
 
+.Special1,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lora", Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
 .Special1 {
   /* SPECIAL 1 */
-  font-family: "Lora";
   font-style: normal;
   font-weight: 700;
   font-size: 5rem;
@@ -44,8 +56,6 @@ a {
 }
 
 h1 {
-  /* heading 1*/
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 3.556rem;
@@ -54,8 +64,6 @@ h1 {
 }
 
 h2 {
-  /* heading 2*/
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 2.556rem;
@@ -63,8 +71,6 @@ h2 {
 }
 
 h3 {
-  /* heading 3*/
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 1.778rem;
@@ -72,8 +78,6 @@ h3 {
 }
 
 .h4 {
-  /* heading 4*/
-  font-family: "Lora", serif !important;
   color: var(--color-berry);
   font-style: normal;
   font-weight: 600;
@@ -82,8 +86,6 @@ h3 {
 }
 
 h4 {
-  /* heading 4*/
-  font-family: "Lora", serif !important;
   font-style: normal;
   font-weight: 600;
   font-size: 1.333rem;
@@ -91,8 +93,6 @@ h4 {
 }
 
 h5 {
-  /* heading 5*/
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
@@ -104,8 +104,6 @@ h5 {
 }
 
 .col-grid .S1 {
-  /* Desktop/Subtitle/S1 (17) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 0.944rem;
@@ -113,8 +111,6 @@ h5 {
 }
 
 .S2 {
-  /* Desktop/ Subtitle/ S2 (15) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 0.833rem;
@@ -122,8 +118,6 @@ h5 {
 }
 
 .B1 {
-  /* Desktop/Body/B1 (18) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -133,8 +127,6 @@ h5 {
 }
 
 .B2 {
-  /* Desktop/ Body/ B2 (16) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 0.889rem;
@@ -145,7 +137,6 @@ h5 {
 
 .button {
   /* Desktop/Button/Button (16) */
-  font-family: "Montserrat";
   align-items: center;
   font-style: normal;
   text-align: center;
@@ -173,7 +164,6 @@ h5 {
 
 .button-outline {
   /* Desktop/Button/Button (16) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   border-color: var(--color-berry);
@@ -197,7 +187,6 @@ h5 {
 
 .CT {
   /* Desktop/Caption/C1 (15) */
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 500;
   font-size: 0.833rem;
@@ -205,7 +194,6 @@ h5 {
 }
 .O1 {
   /* Desktop/Overline/O1 (15) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 0.833rem;
@@ -372,7 +360,6 @@ span {
 }
 
 #about-beela {
-  /* font-family: 'Lora'; */
   font-style: normal;
   font-weight: 600;
   font-size: 85px;
@@ -381,7 +368,6 @@ span {
 }
 
 #about-paragraph {
-  /* font-family: 'Montserrat'; */
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -402,7 +388,6 @@ span {
 }
 
 #our-community {
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 55px;
@@ -411,7 +396,6 @@ span {
 }
 
 #our-community-paragraph {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -420,7 +404,6 @@ span {
 }
 
 #our-team-title {
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 46px;
@@ -433,7 +416,6 @@ span {
 }
 
 #team-name {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -441,7 +423,6 @@ span {
 }
 
 #team-title {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -450,7 +431,6 @@ span {
 }
 
 #card-text {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -478,7 +458,6 @@ span {
 
 #empower-text {
   color: var(--color-berry);
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -486,8 +465,6 @@ span {
 }
 
 #empower-paragraph {
-  /* font-family: 'Montserrat'; */
-  /* font-style: normal; */
   font-weight: 400;
   font-size: 18px;
   line-height: 170%;

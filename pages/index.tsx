@@ -17,14 +17,15 @@ import Row from "react-bootstrap/Row"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 
-// import { usePostsQuery } from "../graphql/generated"
-// import styles from "../styles/Home.module.css"
+import { useTestimonialsQuery } from "../graphql/generated"
+import { usePostsQuery } from "../graphql/generated"
+import styles from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
-  // const { data, error, loading } = usePostsQuery()
+  const { data, error, loading } = useTestimonialsQuery()
 
-  // if (loading) return <main className={styles.main}>Loading...</main>
-  // if (error) return <main className={styles.main}>{error.message}</main>
+  if (loading) return <main className={styles.main}>Loading...</main>
+  if (error) return <main className={styles.main}>{error.message}</main>
 
   // From here, { data } can be referenced
   return (
@@ -46,7 +47,7 @@ const Home: NextPage = () => {
                   Bee <span className="svg-underline"> supported</span>,
                   <span className="svg-underline"> empowered</span>, and
                   <span className="svg-underline"> connected</span>
-                  {/* {data?.posts?.data[0].attributes?.title} */}
+                  {data?.testimonials?.data[0].attributes?.title}
                 </h2>
               </Col>
             </Row>

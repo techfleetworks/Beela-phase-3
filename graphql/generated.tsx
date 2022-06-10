@@ -17,6 +17,8 @@ export type Scalars = {
   Date: any;
   /** A date-time string at UTC, such as 2007-12-03T10:15:30Z, compliant with the `date-time` format outlined in section 5.6 of the RFC 3339 profile of the ISO 8601 standard for representation of dates and times using the Gregorian calendar. */
   DateTime: any;
+  /** A string used to identify an i18n locale */
+  I18NLocaleCode: any;
   /** The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf). */
   JSON: any;
   /** The `Upload` scalar type represents a file upload. */
@@ -44,6 +46,23 @@ export type BooleanFilterInput = {
   null?: InputMaybe<Scalars['Boolean']>;
   or?: InputMaybe<Array<InputMaybe<Scalars['Boolean']>>>;
   startsWith?: InputMaybe<Scalars['Boolean']>;
+};
+
+export type ComponentElementsAuthor = {
+  __typename?: 'ComponentElementsAuthor';
+  authorInfo: Scalars['String'];
+  avatar: UploadFileEntityResponse;
+  id: Scalars['ID'];
+  name: Scalars['String'];
+  optionalAuthorInfo?: Maybe<Scalars['String']>;
+};
+
+export type ComponentElementsAuthorInput = {
+  authorInfo?: InputMaybe<Scalars['String']>;
+  avatar?: InputMaybe<Scalars['ID']>;
+  id?: InputMaybe<Scalars['ID']>;
+  name?: InputMaybe<Scalars['String']>;
+  optionalAuthorInfo?: InputMaybe<Scalars['String']>;
 };
 
 export type ComponentElementsImage = {
@@ -176,7 +195,7 @@ export type FloatFilterInput = {
   startsWith?: InputMaybe<Scalars['Float']>;
 };
 
-export type GenericMorph = ComponentElementsImage | ComponentElementsLink | ComponentLayoutNavigation | ComponentLayoutPage | ComponentLayoutSeo | I18NLocale | Post | Tag | UploadFile | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsUser;
+export type GenericMorph = ComponentElementsAuthor | ComponentElementsImage | ComponentElementsLink | ComponentLayoutNavigation | ComponentLayoutPage | ComponentLayoutSeo | I18NLocale | Post | Tag | Testimonial | UploadFile | UsersPermissionsPermission | UsersPermissionsRole | UsersPermissionsUser;
 
 export type I18NLocale = {
   __typename?: 'I18NLocale';
@@ -287,6 +306,8 @@ export type Mutation = {
   __typename?: 'Mutation';
   createPost?: Maybe<PostEntityResponse>;
   createTag?: Maybe<TagEntityResponse>;
+  createTestimonial?: Maybe<TestimonialEntityResponse>;
+  createTestimonialLocalization?: Maybe<TestimonialEntityResponse>;
   createUploadFile?: Maybe<UploadFileEntityResponse>;
   /** Create a new role */
   createUsersPermissionsRole?: Maybe<UsersPermissionsCreateRolePayload>;
@@ -294,6 +315,7 @@ export type Mutation = {
   createUsersPermissionsUser: UsersPermissionsUserEntityResponse;
   deletePost?: Maybe<PostEntityResponse>;
   deleteTag?: Maybe<TagEntityResponse>;
+  deleteTestimonial?: Maybe<TestimonialEntityResponse>;
   deleteUploadFile?: Maybe<UploadFileEntityResponse>;
   /** Delete an existing role */
   deleteUsersPermissionsRole?: Maybe<UsersPermissionsDeleteRolePayload>;
@@ -313,6 +335,7 @@ export type Mutation = {
   updateFileInfo: UploadFileEntityResponse;
   updatePost?: Maybe<PostEntityResponse>;
   updateTag?: Maybe<TagEntityResponse>;
+  updateTestimonial?: Maybe<TestimonialEntityResponse>;
   updateUploadFile?: Maybe<UploadFileEntityResponse>;
   /** Update an existing role */
   updateUsersPermissionsRole?: Maybe<UsersPermissionsUpdateRolePayload>;
@@ -329,6 +352,19 @@ export type MutationCreatePostArgs = {
 
 export type MutationCreateTagArgs = {
   data: TagInput;
+};
+
+
+export type MutationCreateTestimonialArgs = {
+  data: TestimonialInput;
+  locale?: InputMaybe<Scalars['I18NLocaleCode']>;
+};
+
+
+export type MutationCreateTestimonialLocalizationArgs = {
+  data?: InputMaybe<TestimonialInput>;
+  id?: InputMaybe<Scalars['ID']>;
+  locale?: InputMaybe<Scalars['I18NLocaleCode']>;
 };
 
 
@@ -354,6 +390,12 @@ export type MutationDeletePostArgs = {
 
 export type MutationDeleteTagArgs = {
   id: Scalars['ID'];
+};
+
+
+export type MutationDeleteTestimonialArgs = {
+  id: Scalars['ID'];
+  locale?: InputMaybe<Scalars['I18NLocaleCode']>;
 };
 
 
@@ -427,6 +469,13 @@ export type MutationUpdatePostArgs = {
 export type MutationUpdateTagArgs = {
   data: TagInput;
   id: Scalars['ID'];
+};
+
+
+export type MutationUpdateTestimonialArgs = {
+  data: TestimonialInput;
+  id: Scalars['ID'];
+  locale?: InputMaybe<Scalars['I18NLocaleCode']>;
 };
 
 
@@ -535,6 +584,8 @@ export type Query = {
   posts?: Maybe<PostEntityResponseCollection>;
   tag?: Maybe<TagEntityResponse>;
   tags?: Maybe<TagEntityResponseCollection>;
+  testimonial?: Maybe<TestimonialEntityResponse>;
+  testimonials?: Maybe<TestimonialEntityResponseCollection>;
   uploadFile?: Maybe<UploadFileEntityResponse>;
   uploadFiles?: Maybe<UploadFileEntityResponseCollection>;
   usersPermissionsRole?: Maybe<UsersPermissionsRoleEntityResponse>;
@@ -576,6 +627,21 @@ export type QueryTagArgs = {
 
 export type QueryTagsArgs = {
   filters?: InputMaybe<TagFiltersInput>;
+  pagination?: InputMaybe<PaginationArg>;
+  publicationState?: InputMaybe<PublicationState>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
+};
+
+
+export type QueryTestimonialArgs = {
+  id?: InputMaybe<Scalars['ID']>;
+  locale?: InputMaybe<Scalars['I18NLocaleCode']>;
+};
+
+
+export type QueryTestimonialsArgs = {
+  filters?: InputMaybe<TestimonialFiltersInput>;
+  locale?: InputMaybe<Scalars['I18NLocaleCode']>;
   pagination?: InputMaybe<PaginationArg>;
   publicationState?: InputMaybe<PublicationState>;
   sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
@@ -687,6 +753,72 @@ export type TagInput = {
   publishedAt?: InputMaybe<Scalars['DateTime']>;
   slug?: InputMaybe<Scalars['String']>;
   title?: InputMaybe<Scalars['String']>;
+};
+
+export type Testimonial = {
+  __typename?: 'Testimonial';
+  author: ComponentElementsAuthor;
+  createdAt?: Maybe<Scalars['DateTime']>;
+  locale?: Maybe<Scalars['String']>;
+  localizations?: Maybe<TestimonialRelationResponseCollection>;
+  publishedAt?: Maybe<Scalars['DateTime']>;
+  slug: Scalars['String'];
+  text: Scalars['String'];
+  title: Scalars['String'];
+  updatedAt?: Maybe<Scalars['DateTime']>;
+};
+
+
+export type TestimonialLocalizationsArgs = {
+  filters?: InputMaybe<TestimonialFiltersInput>;
+  pagination?: InputMaybe<PaginationArg>;
+  publicationState?: InputMaybe<PublicationState>;
+  sort?: InputMaybe<Array<InputMaybe<Scalars['String']>>>;
+};
+
+export type TestimonialEntity = {
+  __typename?: 'TestimonialEntity';
+  attributes?: Maybe<Testimonial>;
+  id?: Maybe<Scalars['ID']>;
+};
+
+export type TestimonialEntityResponse = {
+  __typename?: 'TestimonialEntityResponse';
+  data?: Maybe<TestimonialEntity>;
+};
+
+export type TestimonialEntityResponseCollection = {
+  __typename?: 'TestimonialEntityResponseCollection';
+  data: Array<TestimonialEntity>;
+  meta: ResponseCollectionMeta;
+};
+
+export type TestimonialFiltersInput = {
+  and?: InputMaybe<Array<InputMaybe<TestimonialFiltersInput>>>;
+  createdAt?: InputMaybe<DateTimeFilterInput>;
+  id?: InputMaybe<IdFilterInput>;
+  locale?: InputMaybe<StringFilterInput>;
+  localizations?: InputMaybe<TestimonialFiltersInput>;
+  not?: InputMaybe<TestimonialFiltersInput>;
+  or?: InputMaybe<Array<InputMaybe<TestimonialFiltersInput>>>;
+  publishedAt?: InputMaybe<DateTimeFilterInput>;
+  slug?: InputMaybe<StringFilterInput>;
+  text?: InputMaybe<StringFilterInput>;
+  title?: InputMaybe<StringFilterInput>;
+  updatedAt?: InputMaybe<DateTimeFilterInput>;
+};
+
+export type TestimonialInput = {
+  author?: InputMaybe<ComponentElementsAuthorInput>;
+  publishedAt?: InputMaybe<Scalars['DateTime']>;
+  slug?: InputMaybe<Scalars['String']>;
+  text?: InputMaybe<Scalars['String']>;
+  title?: InputMaybe<Scalars['String']>;
+};
+
+export type TestimonialRelationResponseCollection = {
+  __typename?: 'TestimonialRelationResponseCollection';
+  data: Array<TestimonialEntity>;
 };
 
 export type UploadFile = {
@@ -1001,6 +1133,11 @@ export type PostsQueryVariables = Exact<{ [key: string]: never; }>;
 
 export type PostsQuery = { __typename?: 'Query', posts?: { __typename?: 'PostEntityResponseCollection', data: Array<{ __typename?: 'PostEntity', attributes?: { __typename?: 'Post', title: string } | null }> } | null };
 
+export type TestimonialsQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+export type TestimonialsQuery = { __typename?: 'Query', testimonials?: { __typename?: 'TestimonialEntityResponseCollection', data: Array<{ __typename?: 'TestimonialEntity', attributes?: { __typename?: 'Testimonial', title: string, slug: string, author: { __typename?: 'ComponentElementsAuthor', id: string, name: string, avatar: { __typename?: 'UploadFileEntityResponse', data?: { __typename?: 'UploadFileEntity', id?: string | null, attributes?: { __typename?: 'UploadFile', url: string, alternativeText?: string | null } | null } | null } } } | null }> } | null };
+
 
 export const TagDocument = gql`
     query Tag($id: ID) {
@@ -1077,3 +1214,55 @@ export function usePostsLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<Post
 export type PostsQueryHookResult = ReturnType<typeof usePostsQuery>;
 export type PostsLazyQueryHookResult = ReturnType<typeof usePostsLazyQuery>;
 export type PostsQueryResult = Apollo.QueryResult<PostsQuery, PostsQueryVariables>;
+export const TestimonialsDocument = gql`
+    query Testimonials {
+  testimonials {
+    data {
+      attributes {
+        title
+        slug
+        author {
+          id
+          name
+          avatar {
+            data {
+              id
+              attributes {
+                url
+                alternativeText
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+    `;
+
+/**
+ * __useTestimonialsQuery__
+ *
+ * To run a query within a React component, call `useTestimonialsQuery` and pass it any options that fit your needs.
+ * When your component renders, `useTestimonialsQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useTestimonialsQuery({
+ *   variables: {
+ *   },
+ * });
+ */
+export function useTestimonialsQuery(baseOptions?: Apollo.QueryHookOptions<TestimonialsQuery, TestimonialsQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<TestimonialsQuery, TestimonialsQueryVariables>(TestimonialsDocument, options);
+      }
+export function useTestimonialsLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<TestimonialsQuery, TestimonialsQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<TestimonialsQuery, TestimonialsQueryVariables>(TestimonialsDocument, options);
+        }
+export type TestimonialsQueryHookResult = ReturnType<typeof useTestimonialsQuery>;
+export type TestimonialsLazyQueryHookResult = ReturnType<typeof useTestimonialsLazyQuery>;
+export type TestimonialsQueryResult = Apollo.QueryResult<TestimonialsQuery, TestimonialsQueryVariables>;

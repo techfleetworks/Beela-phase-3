@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app"
-// import StrapiApolloProvider from "../graphql/apollo"
+import StrapiApolloProvider from "../graphql/apollo"
 import Head from "next/head"
 
 // Add bootstrap css
@@ -10,9 +10,9 @@ import "../styles/globals.css"
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    // <StrapiApolloProvider>
-    <Component {...pageProps} />
-    // </StrapiApolloProvider>
+    <StrapiApolloProvider>
+      <Component {...pageProps} />
+    </StrapiApolloProvider>
   )
 }
 
