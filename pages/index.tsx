@@ -59,9 +59,15 @@ const Home: NextPage = () => {
               </Col>
             </Row>
             <div className="mb-4">
-              <button type="button" className="btn button">
-                Join Our Slack Community
-              </button>
+              <a
+                href="https://join.slack.com/t/beela/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button type="button" className="btn button">
+                  Join Our Slack Community
+                </button>
+              </a>
             </div>
           </Row>
 
