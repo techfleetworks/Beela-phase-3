@@ -43,9 +43,9 @@ const Home: NextPage = () => {
             <Row className="justify-content-center">
               <Col sm={10} md={8} lg={6} xl={5} className="mb-4 pt-4">
                 <h2 className="home-header__hero">
-                  Bee <span className="svg-underline">supported</span>,
-                  <span className="svg-underline">empowered</span>, and
-                  <span className="svg-underline">connected</span>
+                  Bee <span className="svg-underline"> supported</span>,
+                  <span className="svg-underline"> empowered</span>, and
+                  <span className="svg-underline"> connected</span>
                   {/* {data?.posts?.data[0].attributes?.title} */}
                 </h2>
               </Col>
