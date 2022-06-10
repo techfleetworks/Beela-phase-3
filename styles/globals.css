@@ -1,6 +1,3 @@
-/* Bootstrap icon import */
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css");
-
 :root {
   --color-lgrey: rgb(242, 242, 242);
   --color-grey: rgb(205, 203, 203);
@@ -80,8 +77,8 @@ h3 {
   color: var(--color-berry);
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
-  line-height: 31px;
+  font-size: 1.333rem;
+  line-height: 1.5;
 }
 
 h4 {
@@ -89,8 +86,8 @@ h4 {
   font-family: "Lora", serif !important;
   font-style: normal;
   font-weight: 600;
-  font-size: 1rem;
-  line-height: 31px;
+  font-size: 1.333rem;
+  line-height: 1.5;
 }
 
 h5 {
@@ -149,17 +146,18 @@ h5 {
 .button {
   /* Desktop/Button/Button (16) */
   font-family: "Montserrat";
+  align-items: center;
   font-style: normal;
+  text-align: center;
   font-weight: 500;
   color: var(--color-white);
   background-color: var(--color-berry);
   font-size: 0.889rem;
   line-height: 20px;
-  padding: 20px, 50px, 20px, 50px;
   /* identical to box height */
   text-transform: capitalize;
   height: 46px;
-  width: 318px;
+  min-width: max-content;
   border-radius: 25px;
 }
 
@@ -188,9 +186,13 @@ h5 {
   /* identical to box height */
   text-transform: capitalize;
   height: 46px;
-  display: block;
-  display: inline-block;
+  width: fit-content;
+  min-width: 150px;
   border-radius: 25px;
+}
+
+.home-pollination__spacer {
+  margin: 64px 128px 64px 128px;
 }
 
 .CT {
@@ -239,8 +241,19 @@ span {
   font-weight: 550;
 }
 
+.svg-underline {
+  background: url(/underline.svg) bottom left no-repeat;
+  background-size: 100% auto;
+  padding-bottom: 0px;
+  min-width: 100%;
+}
+
+.text-color__berry {
+  color: var(--color-berry);
+}
+
 #testimonials {
-  background-color: var(--color-grey);
+  background-color: var(--color-cornflower);
 }
 
 #listen-button {
@@ -308,12 +321,24 @@ span {
   text-align: left;
 }
 
+#text-color__berry {
+  color: var(--color-berry);
+}
+
 #pollination {
   background-color: var(--color-cream);
 }
 
-.home-pollination_img {
+.home-pollination__title {
+  padding: 0rem 1rem 0rem 1rem;
+}
+
+.home-shadow_img {
   box-shadow: 22px 24px rgb(230, 198, 25);
+}
+
+.home-pollination__right {
+  margin-right: 80px;
 }
 
 #card-m5-steps-hex {
@@ -473,4 +498,8 @@ span {
 #wrapper {
   left: 0;
   right: 0;
+}
+
+.image-wrapper {
+  width: auto;
 }

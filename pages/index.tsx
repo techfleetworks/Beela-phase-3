@@ -6,6 +6,7 @@ import Image from "next/image"
 import avatar from "../public/avatar.png"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
+import Testimonials from "../components/Testimonials"
 
 // React-Bootstrap icons
 import { ArrowRight } from "react-bootstrap-icons"
@@ -17,9 +18,7 @@ import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 
 // import { usePostsQuery } from "../graphql/generated"
-
-//
-import styles from "../styles/Home.module.css"
+// import styles from "../styles/Home.module.css"
 
 const Home: NextPage = () => {
   // const { data, error, loading } = usePostsQuery()
@@ -43,10 +42,12 @@ const Home: NextPage = () => {
           <Row className="text-center align-content-center justify-content-center" id="Hero">
             <Row className="justify-content-center">
               <Col sm={10} md={8} lg={6} xl={5} className="mb-4 pt-4">
-                <h1 className="home-header__hero">
-                  It&apos;s possible to get into tech!
+                <h2 className="home-header__hero">
+                  Bee <span className="svg-underline"> supported</span>,
+                  <span className="svg-underline"> empowered</span>, and
+                  <span className="svg-underline"> connected</span>
                   {/* {data?.posts?.data[0].attributes?.title} */}
-                </h1>
+                </h2>
               </Col>
             </Row>
             <Row className="justify-content-center">
@@ -58,9 +59,15 @@ const Home: NextPage = () => {
               </Col>
             </Row>
             <div className="mb-4">
-              <button type="button" className="btn button">
-                Join Our Slack Community
-              </button>
+              <a
+                href="https://join.slack.com/t/beela/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button type="button" className="btn button">
+                  Join Our Slack Community
+                </button>
+              </a>
             </div>
           </Row>
 
@@ -125,40 +132,38 @@ const Home: NextPage = () => {
 
           {/* Pollination Programme */}
           <Row className="text-center justify-content-center align-content-center" id="pollination">
-            <Row className="mt-5">
-              <h2>Pollination Mentoring Programme</h2>
-            </Row>
-            <Container>
-              <Row xs={1} md={2} className="m-5 align-items-center">
-                <Col className="p-3">
+            <Container className="home-pollination__spacer">
+              <Row className="home-pollination__title">
+                <h2>Pollination Mentoring Programme</h2>
+              </Row>
+              <Row xs={1} md={2} className="m-4 align-items-center justify-content-center">
+                <Col sm={10} md={8} lg={6} xl={5} className="p-3">
                   <div className="image-wrapper">
                     <img
                       src="/images/home-pollination.jpg"
                       alt="Three women speak to a crowd during a workshop for Beela."
-                      className="img-fluid home-pollination_img"
+                      className="img-fluid home-shadow_img"
                     />
                   </div>
                 </Col>
-                <Col className="p-3">
-                  <p>
+                <Col sm={10} md={8} lg={6} xl={5} className="p-5">
+                  <p className="m-0">
                     Pollination Mentoring Programme is a free programme that connects mentors with
                     mentees. Our transformative programme offers 1:1 mentorship, along with
                     resources.
                   </p>
                 </Col>
               </Row>
-            </Container>
 
-            <hr />
+              <hr />
 
-            <Container>
               <Row
                 xs={1}
                 md={2}
-                className="align-items-top justify-content-center display-flex flex-wrap"
+                className=" align-items-top justify-content-center display-flex flex-wrap"
               >
                 <Col xs={8} sm={5} lg={4} className="p-4">
-                  <span>Become a Mentee</span>
+                  <h4 className="text-color__berry">Become a Mentee</h4>
                   <p>
                     Whether you’re exploring a tech field or applying to jobs, a mentor can help you
                     with your individualized needs.
@@ -173,8 +178,8 @@ const Home: NextPage = () => {
                     </Link>
                   </div>
                 </Col>
-                <Col xs={8} sm={5} lg={4} className="p-4">
-                  <span>Become a Mentor</span>
+                <Col xs={8} sm={5} lg={4} className="p-4 display-flex">
+                  <h4 className="text-color__berry">Become a Mentor</h4>
                   <p>
                     Share your experiences and make a difference in a mentee’s career. Continue to
                     learn through mentoring.
@@ -194,9 +199,9 @@ const Home: NextPage = () => {
           </Row>
 
           {/* Testimonials */}
-          <div className="row text-center" id="testimonials">
-            <div className="col align-items-center p-5">
-              <div className="d-flex flex-column">
+          <Row className="text-center" id="testimonials">
+            <Container className="align-items-center p-5">
+              <Row>
                 <div className="p-1">
                   <h2>They did it—and so can you</h2>
                 </div>
@@ -205,100 +210,45 @@ const Home: NextPage = () => {
                     We are proud of our community members who have started their tech careers.
                   </p>
                 </div>
-              </div>
-
-              <div className="container">
-                <div className="card-deck d-flex flex-row flex-wrap flex-md-nowrap justify-content-center">
-                  <div className="col card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div className="header">
-                          <div className="avatar">
-                            <Image src={avatar} alt="Avatar picture" id="avatar-image" />
-                          </div>
-                        </div>
-                        <span>Jane Doe</span>
-                        <p className="text-muted"> UX Designer</p>
-                        <p className="card-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                          veniam, quis nostrud exercitation.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div className="header">
-                          <div className="avatar">
-                            <Image src={avatar} alt="Avatar picture" id="avatar-image" />
-                          </div>
-                        </div>
-                        <span>Jane Doe</span>
-                        <p className="text-muted"> UX Designer</p>
-                        <p className="card-text">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                          veniam, quis nostrud exercitation.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div className="header">
-                          <div className="avatar">
-                            <Image src={avatar} alt="Avatar picture" id="avatar-image" />
-                          </div>
-                        </div>
-                        <span>Jane Doe</span>
-                        <p className="text-muted"> UX Designer</p>
-                      </div>
-                      <p className="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+              </Row>
+              <Testimonials />
+            </Container>
+          </Row>
 
           {/* Podcast  */}
-          <div className="row align-items-center text-center" id="podcast">
-            <div className="col align-items-center p-5">
-              <div className="p-1">
-                <h2>Beela’s Talk Podcast</h2>
-              </div>
+          <Row className="align-items-center" id="podcast">
+            <Container className="text-center">
+              <Col className="align-items-center p-5">
+                <div className="p-4">
+                  <h2 className="text-color__berry">Beela’s Talk Podcast</h2>
+                </div>
 
-              <div
-                className="d-flex flex-row flex-wrap align-items-center justify-content-center flex-md-nowrap p-3"
-                id="video"
-              >
-                <div className="col m-3">
-                  <p className="B1">
-                    Our podcast is filled with inspiring stories from Swedish immigrants who have
-                    broken into tech. Catch up on all the buzz!
-                  </p>
-                </div>
-                <div className="col d-flex justify-content-center">
-                  <div className="rectangle"></div>
-                </div>
-              </div>
+                <Row xs={1} md={2} className="align-content-center">
+                  <Col>
+                    <p className="B1">
+                      Our podcast is filled with inspiring stories from Swedish immigrants who have
+                      broken into tech. Catch up on all the buzz!
+                    </p>
+                    <div className="pt-3">
+                      <button type="button" className="btn button" id="listen-button">
+                        Start Listening
+                      </button>
+                    </div>
+                  </Col>
 
-              <div className="container">
-                <div className="p-3 ">
-                  <button type="button" className="btn btn-dark text-primary" id="listen-button">
-                    Start Listening
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+                  <Col sm={10} md={8} lg={6} xl={5} className="p-3">
+                    <div className="image-wrapper">
+                      <img
+                        src="/images/home-podcast.svg"
+                        alt="Screenshot of Beela's Talk Podcast"
+                        className="home-shadow_img"
+                      />
+                    </div>
+                  </Col>
+                </Row>
+              </Col>
+            </Container>
+          </Row>
           <Footer />
         </div>
       </main>
