@@ -217,7 +217,7 @@ const Home: NextPage = () => {
                   <h2 className="text-color__berry">Beela’s Talk Podcast</h2>
                 </div>
 
-                <Row xs={1} md={2} calssName="align-content-center">
+                <Row xs={1} md={2} className="align-content-center">
                   <Col>
                     <p className="B1">
                       Our podcast is filled with inspiring stories from Swedish immigrants who have
