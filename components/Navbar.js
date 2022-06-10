@@ -32,16 +32,7 @@ const Navbar = () => {
                   </a>
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link href="/about">
-                  <a className="nav-link nav-h5">About</a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/pollination">
-                  <a className="nav-link nav-h5">Mentoring</a>
-                </Link>
-              </li>
+              
               <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle nav-h5"
@@ -50,7 +41,7 @@ const Navbar = () => {
                   data-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Community Support
+                  Programmes
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <Link className="dropdown-item nav-h5" href="#">
@@ -73,10 +64,20 @@ const Navbar = () => {
                   </Link>
                 </div>
               </li>
+              <li className="nav-item">
+                <Link href="/about">
+                  <a className="nav-link nav-h5">Stay Connected</a>
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link href="/pollination">
+                  <a className="nav-link nav-h5">About</a>
+                </Link>
+              </li>
             </ul>
           </div>
-          <div>
-            <div className="d-flex justify-content-evenly">
+          <div class="d-grid gap-3">
+            <div className="d-flex gap-2 justify-content-evenly">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="40"
