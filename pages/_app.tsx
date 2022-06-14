@@ -1,5 +1,5 @@
 import type { AppProps } from "next/app"
-// import StrapiApolloProvider from "../graphql/apollo"
+import StrapiApolloProvider from "../graphql/apollo"
 import Head from "next/head"
 
 // Add bootstrap css

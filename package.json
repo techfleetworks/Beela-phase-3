@@ -19,7 +19,9 @@
     "react-bootstrap": "^2.4.0",
     "react-bootstrap-icons": "^1.8.2",
     "react-dom": "^18.1.0",
-    "react-responsive-carousel": "^3.2.23"
+    "react-responsive-carousel": "^3.2.23",
+    "sharp": "^0.30.6",
+    "styled-components": "^5.3.5"
   },
   "devDependencies": {
     "@apollo/client": "^3.6.2",

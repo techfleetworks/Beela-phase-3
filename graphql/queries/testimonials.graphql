@@ -1,0 +1,23 @@
+query Testimonials {
+  testimonials {
+    data {
+      attributes {
+        title
+        slug
+        author {
+          id
+          name
+          avatar {
+            data {
+              id
+              attributes {
+                url
+                alternativeText
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

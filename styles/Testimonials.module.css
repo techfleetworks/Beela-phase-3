@@ -5,20 +5,18 @@
 }
 
 .carousel .slide {
-  background: var(--color-white) !important;
-  color: var(--color-black);
+  background: #fff !important;
+  color: black;
   height: 100%;
 }
 
-.carouselImg {
+.carousel .slide img {
   width: 139px !important;
   border-radius: 50%;
 }
 
 .myCarousel {
   background: #fafafa;
-  display: flex;
-  flex-direction: column;
   margin-top: -6%;
   width: 54%;
   margin-left: auto;
@@ -27,8 +25,8 @@
   padding-bottom: 8%;
   padding-left: 5%;
   padding-right: 5%;
-  border: 3px solid rgb(58, 74, 146);
-  height: 100%;
+  border: 1px solid #ddd;
+  height: 286px;
 }
 
 .carousel .control-dots {
@@ -38,27 +36,48 @@
 }
 
 .myCarousel h3 {
-  font-family: "Montserrat", sans-serif;
-  color: var(--color-black);
-  font-size: 1rem;
-  margin: 1rem 0 0 0;
+  color: #222;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 17px;
 }
 
 .myCarousel h4 {
-  font-family: "Montserrat", sans-serif !important;
+  text-transform: uppercase;
   margin-top: 0;
   padding-top: 0;
   font-weight: 500;
   color: #787878;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .myCarousel p {
   font-weight: 100 !important;
   line-height: 29px !important;
   color: #222;
-  font-size: 16px;
+  font-size: 15px;
   font-family: sans-serif;
+  max-height: 67px;
+}
+
+.myCarousel p:before {
+  content: "“";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+}
+
+.myCarousel p:after {
+  content: "”";
+  color: #aaa;
+  font-size: 26px;
+  font-family: monospace;
+  font-weight: 100;
+  line-height: 0;
 }
 
 .carousel .control-dots .dot {
@@ -90,8 +109,6 @@
   }
   .myCarousel {
     background: #fafafa;
-    display: flex;
-    flex-direction: column;
     margin-top: -9%;
     width: 88%;
     margin-left: auto;
@@ -100,22 +117,12 @@
     padding-bottom: 12.5%;
     padding-left: 5%;
     padding-right: 5%;
-    border: 3px solid rgb(58, 74, 146);
-    height: 100%;
+    border: 1px solid #ddd;
+    height: 269px;
   }
 
-  .carouselImgSmall {
+  .carousel .slide img {
     width: 24% !important;
     border-radius: 50%;
-  }
-
-  .hex {
-    display: flex;
-    position: relative;
-    width: 240px;
-    height: 265px;
-    background-color: #424242;
-    -webkit-clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
   }
 }
