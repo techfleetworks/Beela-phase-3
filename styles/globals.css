@@ -395,7 +395,7 @@ span {
 #Hero {
   height: 75vh;
   background-image: linear-gradient(rgba(247, 247, 246, 0.85), rgba(247, 247, 246, 0.85)),
-    url(../public/homehero.jpg);
+    url(/homehero.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
