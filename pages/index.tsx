@@ -15,10 +15,9 @@ import Row from "react-bootstrap/Row"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 
-import { useTestimonialsQuery } from "../graphql/generated"
-import { usePostsQuery } from "../graphql/generated"
-import styles from "../styles/Home.module.css"
-import { fieldNameFromStoreName } from "@apollo/client/cache"
+// import { useTestimonialsQuery } from "../graphql/generated"
+// import { usePostsQuery } from "../graphql/generated"
+// import { fieldNameFromStoreName } from "@apollo/client/cache"
 
 const Home: NextPage = () => {
   // const { data, error, loading } = useTestimonialsQuery()

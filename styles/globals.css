@@ -45,10 +45,13 @@ a {
 h1,
 h2,
 h3,
-h4,
+h4 {
+  font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
 h5,
 h6 {
-  font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
+  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif !important;
 }
 
 .Special1 {
@@ -61,7 +64,7 @@ h6 {
 
 h1 {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 3.556rem;
   line-height: 82px;
   letter-spacing: 0.03em;
@@ -69,14 +72,14 @@ h1 {
 
 h2 {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 2.556rem;
   line-height: 59px;
 }
 
 h3 {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.778rem;
   line-height: 41px;
 }
@@ -84,14 +87,14 @@ h3 {
 .h4 {
   color: var(--color-berry);
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.333rem;
   line-height: 1.5;
 }
 
 h4 {
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.333rem;
   line-height: 1.5;
 }
@@ -152,6 +155,52 @@ h5 {
   border-radius: 25px;
 }
 
+/* Navbar */
+a.active.nav-link {
+  /* margin-top: 4px; */
+}
+
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active::after {
+  content: "";
+  float: left;
+  background: var(--color-honey);
+  width: 100%;
+  height: 4px;
+  border-radius: 3px;
+}
+
+.navbar-nav {
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: var(--color-black);
+}
+
+.navbar-brand {
+  font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-links {
+  display: flex;
+}
+.social-icons {
+  margin: 24px;
+}
+
+#navbar-logo {
+  height: 50px;
+}
+
+@media only screen and (max-width: 992px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* Button */
 .button:hover {
   color: var(--color-white);
   background-color: var(--color-berry-30);
@@ -234,7 +283,7 @@ span {
   background-size: 100% auto;
   padding-bottom: 0px;
   min-width: 100%;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .text-color__berry {
