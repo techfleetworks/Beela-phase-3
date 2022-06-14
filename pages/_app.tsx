@@ -10,9 +10,9 @@ import "../styles/globals.css"
 
 function App({ Component, pageProps }: AppProps) {
   return (
-    <StrapiApolloProvider>
-      <Component {...pageProps} />
-    </StrapiApolloProvider>
+    // <StrapiApolloProvider>
+    <Component {...pageProps} />
+    // </StrapiApolloProvider>
   )
 }
 
