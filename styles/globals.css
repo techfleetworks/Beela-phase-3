@@ -326,7 +326,7 @@ span {
 } */
 
 .card {
-  border: none;
+  border: none !important;
 }
 
 .card-img-top {
@@ -340,7 +340,7 @@ span {
 }
 
 .steps-col {
-  max-width: 350px;
+  max-width: 350px !important;
 }
 
 .home-pollination__img {
