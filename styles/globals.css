@@ -1,3 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@font-face {
+  font-family: "no_name_37";
+  src: url("/fonts/no_name_37_Regular.otf");
+}
+
 :root {
   --color-lgrey: rgb(242, 242, 242);
   --color-grey: rgb(205, 203, 203);
@@ -8,7 +15,7 @@
   --color-gray4: rgb(207, 206, 201);
   --color-gray5: rgb(230, 230, 229);
   --color-white: rgb(247, 247, 246);
-  --color-berry: rgb(58, 74, 146);
+  --color-berry: #3a4a92;
   --color-berry-30: rgb(44, 55, 109);
   --color-berry-60: rgb(109, 125, 197);
   --color-honey: rgb(230, 198, 25);
@@ -22,7 +29,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", Verdana, sans-serif;
   color: var(--color-black);
   font-size: 18px;
 }
@@ -34,9 +41,18 @@ a {
 
 /* DESKTOP*/
 
+.Special1,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
+}
+
 .Special1 {
   /* SPECIAL 1 */
-  font-family: "Lora";
   font-style: normal;
   font-weight: 700;
   font-size: 5rem;
@@ -44,8 +60,6 @@ a {
 }
 
 h1 {
-  /* heading 1*/
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 3.556rem;
@@ -54,8 +68,6 @@ h1 {
 }
 
 h2 {
-  /* heading 2*/
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 2.556rem;
@@ -63,8 +75,6 @@ h2 {
 }
 
 h3 {
-  /* heading 3*/
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 1.778rem;
@@ -72,8 +82,6 @@ h3 {
 }
 
 .h4 {
-  /* heading 4*/
-  font-family: "Lora", serif !important;
   color: var(--color-berry);
   font-style: normal;
   font-weight: 600;
@@ -82,8 +90,6 @@ h3 {
 }
 
 h4 {
-  /* heading 4*/
-  font-family: "Lora", serif !important;
   font-style: normal;
   font-weight: 600;
   font-size: 1.333rem;
@@ -91,21 +97,13 @@ h4 {
 }
 
 h5 {
-  /* heading 5*/
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
   line-height: 22px;
 }
 
-.home-header__hero {
-  color: var(--color-berry);
-}
-
 .col-grid .S1 {
-  /* Desktop/Subtitle/S1 (17) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 0.944rem;
@@ -113,8 +111,6 @@ h5 {
 }
 
 .S2 {
-  /* Desktop/ Subtitle/ S2 (15) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 0.833rem;
@@ -122,8 +118,6 @@ h5 {
 }
 
 .B1 {
-  /* Desktop/Body/B1 (18) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 1rem;
@@ -133,8 +127,6 @@ h5 {
 }
 
 .B2 {
-  /* Desktop/ Body/ B2 (16) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 0.889rem;
@@ -145,7 +137,6 @@ h5 {
 
 .button {
   /* Desktop/Button/Button (16) */
-  font-family: "Montserrat";
   align-items: center;
   font-style: normal;
   text-align: center;
@@ -173,7 +164,6 @@ h5 {
 
 .button-outline {
   /* Desktop/Button/Button (16) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   border-color: var(--color-berry);
@@ -197,7 +187,6 @@ h5 {
 
 .CT {
   /* Desktop/Caption/C1 (15) */
-  font-family: "Montserrat";
   font-style: italic;
   font-weight: 500;
   font-size: 0.833rem;
@@ -205,7 +194,6 @@ h5 {
 }
 .O1 {
   /* Desktop/Overline/O1 (15) */
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 0.833rem;
@@ -246,6 +234,7 @@ span {
   background-size: 100% auto;
   padding-bottom: 0px;
   min-width: 100%;
+  font-weight: 600;
 }
 
 .text-color__berry {
@@ -282,10 +271,10 @@ span {
   border: 5px solid white;
 }
 
-#header-text {
+/* #header-text {
   padding-left: 96px;
   padding-right: 96px;
-}
+} */
 
 .card {
   border: none;
@@ -372,7 +361,6 @@ span {
 }
 
 #about-beela {
-  /* font-family: 'Lora'; */
   font-style: normal;
   font-weight: 600;
   font-size: 85px;
@@ -381,7 +369,6 @@ span {
 }
 
 #about-paragraph {
-  /* font-family: 'Montserrat'; */
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -402,7 +389,6 @@ span {
 }
 
 #our-community {
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 55px;
@@ -411,7 +397,6 @@ span {
 }
 
 #our-community-paragraph {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
@@ -420,7 +405,6 @@ span {
 }
 
 #our-team-title {
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 46px;
@@ -433,7 +417,6 @@ span {
 }
 
 #team-name {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
@@ -441,7 +424,6 @@ span {
 }
 
 #team-title {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -450,7 +432,6 @@ span {
 }
 
 #card-text {
-  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -478,7 +459,6 @@ span {
 
 #empower-text {
   color: var(--color-berry);
-  font-family: "Lora";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -486,8 +466,6 @@ span {
 }
 
 #empower-paragraph {
-  /* font-family: 'Montserrat'; */
-  /* font-style: normal; */
   font-weight: 400;
   font-size: 18px;
   line-height: 170%;
@@ -502,4 +480,122 @@ span {
 
 .image-wrapper {
   width: auto;
+}
+
+/* Testimonials Carousel */
+.carousel-root {
+  width: 64% !important;
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+.carousel .slide {
+  color: black;
+  height: 100%;
+}
+
+.hexagon {
+  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  display: inline-block;
+}
+
+.carousel .slide img {
+  width: 88px !important;
+}
+
+.myCarousel {
+  background: #fafafa;
+  margin-top: -6%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: 1px solid #ddd;
+}
+
+.carousel .control-dots {
+  padding-left: 5px !important;
+  outline: 0;
+  bottom: 5% !important;
+}
+
+.myCarousel h3 {
+  color: #222;
+  font-weight: 100;
+  letter-spacing: 0.2px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.myCarousel h4 {
+  margin-top: 0;
+  padding-top: 0;
+  font-weight: 500;
+  color: #787878;
+  font-size: 14px;
+}
+
+.myCarousel p {
+  line-height: 29px !important;
+  color: #222;
+  font-size: 15px;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none !important;
+  background: var(--color-berry) !important;
+  outline: 0;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #3a4a92 !important;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #3a4a92 !important;
+}
+
+.carousel.carousel-slider .control-arrow {
+  background: var(--color-white) !important;
+  border: 1px solid #3a4a92 !important;
+  height: min-content;
+  position: absolute;
+  top: 50% !important;
+  border-radius: 50%;
+  padding: 0px 10px 0px 10px !important;
+}
+
+.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow {
+  opacity: 1 !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .carousel-root {
+    outline: 0;
+    width: 93% !important;
+    margin: auto !important;
+  }
+
+  .carousel.carousel-slider .control-arrow {
+    display: none !important;
+  }
+
+  .myCarousel {
+    background: #fafafa;
+    margin-top: -9%;
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8%;
+    padding-bottom: 12.5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border: 1px solid #ddd;
+    min-height: fit-content !important;
+  }
 }
