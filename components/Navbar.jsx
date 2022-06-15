@@ -15,38 +15,54 @@ const NavBar = () => {
   const router = useRouter() // to set active links
   return (
     <>
-      <Navbar bg="light" expand="lg" className="nav-fill w-100">
-        <Link href="/">
-          <a>
-            <img src="/logoprimary.png" alt="placeholder" id="navbar-logo" />
-          </a>
-        </Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav>
-            <div className="nav-links">
-              <Nav.Link href="/" className={router.asPath == "/" ? "active" : ""}>
-                Home
-              </Nav.Link>
-              <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>
-                About
-              </Nav.Link>
-              <Nav.Link
-                href="/pollination"
-                className={router.asPath == "/pollination" ? "active" : ""}
-              >
-                Pollination
-              </Nav.Link>
-            </div>
-          </Nav>
-        </Navbar.Collapse>
-        <div className="nav-socials">
-          <Navbar.Text>
-            <Instagram size={24} className="social-icons" />
-            <Linkedin size={24} className="social-icons" />
-            <Spotify size={24} className="social-icons" />
-          </Navbar.Text>
-        </div>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Link href="/">
+            <a>
+              <img src="/logoprimary.png" alt="placeholder" id="navbar-logo" />
+            </a>
+          </Link>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse className="justif-items-center" id="basic-navbar-nav">
+            <Container>
+              <Nav>
+                <div className="nav-links">
+                  <Nav.Link href="/" className={router.asPath == "/" ? "active" : ""}>
+                    Home
+                  </Nav.Link>
+                  <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>
+                    About
+                  </Nav.Link>
+                  <Nav.Link
+                    href="/pollination"
+                    className={router.asPath == "/pollination" ? "active" : ""}
+                  >
+                    Pollination
+                  </Nav.Link>
+                </div>
+              </Nav>
+            </Container>
+          </Navbar.Collapse>
+          <div className="nav-socials">
+            <Navbar.Text>
+              <Link href="https://www.instagram.com/beela.se/">
+                <a target="_blank">
+                  <Instagram size={24} className="social-icons" />
+                </a>
+              </Link>
+              <Link href="https://www.linkedin.com/company/beela-se/">
+                <a target="_blank">
+                  <Linkedin size={24} className="social-icons" />
+                </a>
+              </Link>
+              <Link href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786">
+                <a target="_blank">
+                  <Spotify size={24} className="social-icons" />
+                </a>
+              </Link>
+            </Navbar.Text>
+          </div>
+        </Container>
       </Navbar>
     </>
   )

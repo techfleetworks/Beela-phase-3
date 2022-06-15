@@ -157,6 +157,10 @@ h5 {
 
 /* Navbar */
 
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
 // Active underline
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active::after {
@@ -175,8 +179,6 @@ h5 {
 .navbar-nav {
   align-items: center;
   justify-content: center;
-  display: flex;
-  flex-direction: row;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -189,8 +191,18 @@ h5 {
 .nav-links {
   display: flex;
 }
+.nav-socials {
+  margin-left: auto;
+  :hover svg {
+    cursor: pointer;
+  }
+}
 .social-icons {
   margin: 24px;
+  color: var(--color-black);
+  :hover {
+    color: var(--color-berry);
+  }
 }
 
 #navbar-logo {
@@ -209,6 +221,9 @@ h5 {
   }
   .navbar-nav {
     justify-content: center;
+  }
+  .nav-socials {
+    display: none;
   }
 }
 /* Button */
