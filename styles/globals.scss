@@ -156,10 +156,8 @@ h5 {
 }
 
 /* Navbar */
-a.active.nav-link {
-  /* margin-top: 4px; */
-}
 
+// Active underline
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active::after {
   content: "";
@@ -170,9 +168,15 @@ a.active.nav-link {
   border-radius: 3px;
 }
 
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
+}
+
 .navbar-nav {
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -198,6 +202,13 @@ a.active.nav-link {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  .nav-socials {
+    display: none;
+  }
+  .navbar-nav {
+    justify-content: center;
   }
 }
 /* Button */
@@ -327,6 +338,9 @@ span {
 
 .card {
   border: none !important;
+}
+.card-body {
+  background-color: var(--color-honey);
 }
 
 .card-img-top {
