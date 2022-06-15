@@ -156,9 +156,6 @@ h5 {
 }
 
 /* Navbar */
-a.active.nav-link {
-  /* margin-top: 4px; */
-}
 
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active::after {
@@ -172,7 +169,6 @@ a.active.nav-link {
 
 .navbar-nav {
   align-items: center;
-  justify-content: space-evenly;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -185,8 +181,18 @@ a.active.nav-link {
 .nav-links {
   display: flex;
 }
+.nav-socials {
+  margin-left: auto;
+  :hover svg {
+    cursor: pointer;
+  }
+}
 .social-icons {
   margin: 24px;
+  color: var(--color-black);
+  :hover {
+    color: var(--color-berry);
+  }
 }
 
 #navbar-logo {
