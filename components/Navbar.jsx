@@ -25,7 +25,7 @@ const NavBar = () => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse className="justif-items-center" id="basic-navbar-nav">
             <Container>
-              <Nav className="me-auto">
+              <Nav>
                 <div className="nav-links">
                   <Nav.Link href="/" className={router.asPath == "/" ? "active" : ""}>
                     Home
@@ -40,28 +40,28 @@ const NavBar = () => {
                     Pollination
                   </Nav.Link>
                 </div>
-                <div className="nav-socials">
-                  <Navbar.Text>
-                    <Link href="https://www.instagram.com/beela.se/">
-                      <a target="_blank">
-                        <Instagram size={24} className="social-icons" />
-                      </a>
-                    </Link>
-                    <Link href="https://www.linkedin.com/company/beela-se/">
-                      <a target="_blank">
-                        <Linkedin size={24} className="social-icons" />
-                      </a>
-                    </Link>
-                    <Link href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786">
-                      <a target="_blank">
-                        <Spotify size={24} className="social-icons" />
-                      </a>
-                    </Link>
-                  </Navbar.Text>
-                </div>
               </Nav>
             </Container>
           </Navbar.Collapse>
+          <div className="nav-socials">
+            <Navbar.Text>
+              <Link href="https://www.instagram.com/beela.se/">
+                <a target="_blank">
+                  <Instagram size={24} className="social-icons" />
+                </a>
+              </Link>
+              <Link href="https://www.linkedin.com/company/beela-se/">
+                <a target="_blank">
+                  <Linkedin size={24} className="social-icons" />
+                </a>
+              </Link>
+              <Link href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786">
+                <a target="_blank">
+                  <Spotify size={24} className="social-icons" />
+                </a>
+              </Link>
+            </Navbar.Text>
+          </div>
         </Container>
       </Navbar>
     </>
