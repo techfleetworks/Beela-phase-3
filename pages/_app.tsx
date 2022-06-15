@@ -4,6 +4,7 @@ import Head from "next/head"
 
 // Add bootstrap css
 import "bootstrap/dist/css/bootstrap.css"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 // Custom css
 import "../styles/globals.css"
