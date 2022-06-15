@@ -161,6 +161,7 @@ h5 {
   border: none;
 }
 
+// Active underline
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active::after {
   content: "";
@@ -169,6 +170,10 @@ h5 {
   width: 100%;
   height: 4px;
   border-radius: 3px;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  justify-content: center;
 }
 
 .navbar-nav {
@@ -209,6 +214,13 @@ h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+  }
+  .nav-socials {
+    display: none;
+  }
+  .navbar-nav {
+    justify-content: center;
   }
   .nav-socials {
     display: none;
@@ -342,6 +354,9 @@ span {
 .card {
   border: none !important;
 }
+.card-body {
+  background-color: var(--color-honey);
+}
 
 .card-img-top {
   width: 90px;
@@ -393,12 +408,36 @@ span {
   margin-right: 80px;
 }
 
+#hero-poll {
+  background-color: var(--color-cream);
+}
+#poll-img {
+  max-width: 60%;
+}
+#apply-btn {
+  background-color: var(--color-berry);
+}
+#container-hex {
+  display: flex;
+  --s: 150px; /* size  */
+}
 #card-m5-steps-hex {
   width: var(--s);
   margin: var(--m);
   height: calc(var(--s) * 1.1547);
   display: inline-flexbox;
   font-size: initial;
+  background-color: var(--color-honey);
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
+
+#card-m5-steps-hex-1 {
+  width: var(--s);
+  margin: var(--m);
+  height: calc(var(--s) * 1.1547);
+  display: inline-flexbox;
+  font-size: initial;
+  background-color: var(--color-honey);
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
