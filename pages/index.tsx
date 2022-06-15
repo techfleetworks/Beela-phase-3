@@ -153,7 +153,61 @@ const Home: NextPage = () => {
                 </Col>
               </Row>
 
-              <hr />
+              {/*<hr />*/}
+
+              <Container className="container"  id="container-hex">
+                <Row className="xs={1} md={2} align-items-center justify-content-center display-flex flex-wrap" id="card-deck-steps-hex">
+                  <Col className="card m-5 " id="card-m5-steps-hex">
+                    <Card>
+                    <Card.Body className="card-body">
+                    <p className="card-text">
+                    July 1 2022
+                      </p>
+                      <p className="card-title">
+                        <span>Applications Open</span>
+                      </p>
+                    </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col className="card m-5 " id="card-m5-steps-hex-1">
+                  <Card>
+                  <Card.Body className="card-body">
+                    <p className="card-text">
+                    July 24 2022
+                      </p>
+                      <p className="card-title">
+                        <span>Applications Close</span>
+                      </p>
+                    </Card.Body>
+                    </Card>
+                  </Col>
+                  <Col className="card m-5 " id="card-m5-steps-hex">
+                  <Card>
+                  <Card.Body className="card-body">
+                    <p className="card-text">
+                    Aug 14 2022
+                      </p>
+                      <p className="card-title">
+                        <span>Decisions sent</span>
+                      </p>
+                    </Card.Body>
+                  </Card>
+                </Col>
+                <Col className="card m-5" id="card-m5-steps-hex-1">
+                <Card className="card-body">
+                <Card.Body className="card-body">
+                    <p className="card-text">
+                    Aug 25 2022
+                      </p>
+                      <p className="card-title">
+                        <span>Kickoff</span>
+                      </p>
+                    </Card.Body>
+                    </Card>
+                  </Col>
+              </Row>
+            </Container>
+          
 
               <Row
                 xs={1}

@@ -328,6 +328,9 @@ span {
 .card {
   border: none !important;
 }
+.card-body {
+  background-color: var(--color-honey);
+}
 
 .card-img-top {
   width: 90px;
