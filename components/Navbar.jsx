@@ -42,9 +42,21 @@ const NavBar = () => {
                 </div>
                 <div className="nav-socials">
                   <Navbar.Text>
-                    <Instagram size={24} className="social-icons" />
-                    <Linkedin size={24} className="social-icons" />
-                    <Spotify size={24} className="social-icons" />
+                    <Link href="https://www.instagram.com/beela.se/">
+                      <a target="_blank">
+                        <Instagram size={24} className="social-icons" />
+                      </a>
+                    </Link>
+                    <Link href="https://www.linkedin.com/company/beela-se/">
+                      <a target="_blank">
+                        <Linkedin size={24} className="social-icons" />
+                      </a>
+                    </Link>
+                    <Link href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786">
+                      <a target="_blank">
+                        <Spotify size={24} className="social-icons" />
+                      </a>
+                    </Link>
                   </Navbar.Text>
                 </div>
               </Nav>
