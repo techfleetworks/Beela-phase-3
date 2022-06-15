@@ -16,10 +16,42 @@ const Pollination: NextPage = () => {
         <div className="container-fluid p-0 border" id="wrapper">
           <Navbar />
 
+          {/*Mentoring*/}
+          <div className="container-fluid justify-content-center overflow-hidden">
+            <div className="row border text-center h-55" >
+              <div className="col d-flex flex-column align-items-center border p-5 " id="hero-poll">
+          <div>
+                  <h1>Beela Programmes</h1>
+                </div>
+                <div>
+                  <h3>How can Beela help?</h3>
+                  <ul id="bullet-list">
+                    <li>Our Pollination Programme connects you with mentors for 1-on-1 guidance</li>
+                    <li>Find projects and apprenticeships  to hone your skills in the #announcements, #job-leads, and #projects-pro-bono Slack channels</li>
+                  </ul>
+                </div>
+                <div className="container">
+                <div
+                  className="d-flex flex-row align-items-center justify-content-right "
+                  id="picture"
+                >
+                  <div className="image-wrapper" id="poll-img">
+                    <img
+                      src="/images/home-pollination.jpg"
+                      alt="Three women speak to a crowd during a workshop for Beela."
+                      className="img-fluid"
+                    />
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>      
+                </div>          
+
           {/* Welcome */}
           <div className="container-fluid justify-content-center overflow-hidden">
-            <div className="row border text-center h-55" id="hero">
-              <div className="col d-flex flex-column align-items-center border p-5">
+            <div className="row border text-center h-55" >
+              <div className="col d-flex flex-column align-items-center border p-5 " id="hero-poll">
                 <div className="p-3">
                   <h1>Pollination Mentoring Programme</h1>
                   <h2>Next Cohort starts: Summer 2022 </h2>
@@ -29,9 +61,13 @@ const Pollination: NextPage = () => {
                   className="d-flex flex-row align-items-center justify-content-center "
                   id="picture"
                 >
-                  <div className="m-3">
-                    <div className="rectangle"></div>
-                  </div>
+                  <div className="image-wrapper" id="poll-img">
+                    <img
+                      src="/images/home-pollination.jpg"
+                      alt="Three women speak to a crowd during a workshop for Beela."
+                      className="img-fluid"
+                    />
+                </div>
                   <div className="m-3">
                     <p>
                     <h3>What is Pollination?</h3>
@@ -43,13 +79,16 @@ const Pollination: NextPage = () => {
                     <li>Completely FREE!!!</li>
                     </ul>
                     </p>
+                    <div>
+                    <button type="button" className="btn btn-primary" id="apply-btn">
+                    Apply for Next Cohort
+                  </button>
+                  </div>
                   </div>
                 </div>
               </div>
                 <div className="p-3">
-                  <button type="button" className="btn btn-dark">
-                    Apply for Next Cohort
-                  </button>
+                 
                 </div>
               </div>
             </div>
@@ -57,15 +96,15 @@ const Pollination: NextPage = () => {
 
           {/* Timeline */}
           <div className="row border text-center" id="steps">
-            <div className="col align-items-center border h-25">
+            <div className="col align-items-center border h-25" >
               <div className="d-flex flex-column">
                 <div className="p-1">
                   <h2>Pollination Programme Timeline</h2>
                 </div>
               </div>
 
-              <div className="container" id="container-hex">
-                <div className="card-deck d-flex flex-row" id="card-deck-steps-hex">
+              <div className="container"  id="container-hex">
+                <div className="card-deck d-flex flex-row " id="card-deck-steps-hex">
                   <div className="card m-5 " id="card-m5-steps-hex">
                     <div className="card-body">
                       <p className="card-title">
@@ -76,7 +115,7 @@ const Pollination: NextPage = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="card m-5 " id="card-m5-steps-hex">
+                  <div className="card m-5 " id="card-m5-steps-hex-1">
                     <div className="card-body">
                       <p className="card-title">
                         <span>Month 2</span>
@@ -95,7 +134,7 @@ const Pollination: NextPage = () => {
                       </p>
                   </div>
                 </div>
-                <div className="card m-5" id="card-m5-steps-hex">
+                <div className="card m-5" id="card-m5-steps-hex-1">
                     <div className="card-body">
                       <p className="card-title">
                         <span>Month 4</span>
