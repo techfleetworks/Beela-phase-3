@@ -7,7 +7,7 @@ import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/css/bootstrap.min.css"
 
 // Custom css
-import "../styles/globals.css"
+import "../styles/globals.scss"
 
 function App({ Component, pageProps }: AppProps) {
   return (
