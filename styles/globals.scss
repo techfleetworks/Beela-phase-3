@@ -379,12 +379,36 @@ span {
   margin-right: 80px;
 }
 
+#hero-poll {
+  background-color: var(--color-cream);
+}
+#poll-img {
+  max-width: 60%;
+}
+#apply-btn {
+  background-color: var(--color-berry);
+}
+#container-hex {
+  display: flex;
+  --s: 150px; /* size  */
+}
 #card-m5-steps-hex {
   width: var(--s);
   margin: var(--m);
   height: calc(var(--s) * 1.1547);
   display: inline-flexbox;
   font-size: initial;
+  background-color: var(--color-honey);
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+}
+
+#card-m5-steps-hex-1 {
+  width: var(--s);
+  margin: var(--m);
+  height: calc(var(--s) * 1.1547);
+  display: inline-flexbox;
+  font-size: initial;
+  background-color: var(--color-honey);
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
