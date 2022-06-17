@@ -15,10 +15,10 @@
   --color-gray4: rgb(207, 206, 201);
   --color-gray5: rgb(230, 230, 229);
   --color-white: rgb(247, 247, 246);
-  --color-berry: #3a4a92;
+  --color-berry: rgb(58, 74, 146);
   --color-berry-30: rgb(44, 55, 109);
   --color-berry-60: rgb(109, 125, 197);
-  --color-honey: rgb(230, 198, 25);
+  --color-honey: #e6c619;
   --color-coral: rgb(240, 219, 238);
   --color-violet: rgb(98, 55, 98);
   --color-cream: rgb(249, 242, 212);
@@ -37,6 +37,12 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+a:hover {
+  color: var(--color-berry-30) !important;
+}
+a:active {
+  color: var(--color-berry-60);
 }
 
 /* DESKTOP*/
@@ -172,6 +178,10 @@ h5 {
   border-radius: 3px;
 }
 
+.navbar {
+  background-color: var(--color-white) !important;
+}
+
 .navbar-expand-lg .navbar-collapse {
   justify-content: center;
 }
@@ -304,6 +314,11 @@ span {
   font-weight: 550;
 }
 
+.italics {
+  font-style: italic;
+  font-weight: 400;
+}
+
 .svg-underline {
   background: url(/underline.svg) bottom left no-repeat;
   background-size: 100% auto;
@@ -353,15 +368,21 @@ span {
 
 .card {
   border: none !important;
+  background-color: var(--color-white);
 }
-.card-body {
+
+.card-body-hex {
   background-color: var(--color-honey);
 }
 
 .card-img-top {
-  width: 90px;
-  height: auto;
+  width: auto;
+  max-height: 138px;
   align-self: center;
+}
+
+#steps {
+  background-color: var(--color-white);
 }
 
 .home-steps__title {
@@ -408,6 +429,42 @@ span {
   margin-right: 80px;
 }
 
+.left-center-text {
+  text-align: left;
+}
+
+@media only screen and (max-width: 768px) {
+  .left-center-text {
+    text-align: center;
+  }
+  .hero-text-wrapper {
+    padding: 0 0 1rem 0 !important;
+  }
+}
+
+#hero-height {
+  height: 75vh;
+}
+
+#blaze {
+  background-color: white;
+  border: 16px solid #e6c619;
+  a {
+    padding: 0;
+  }
+}
+
+#podcast {
+  background-color: white;
+  a {
+    color: #000000;
+  }
+}
+
+.podcast-icon {
+  height: 40px;
+}
+
 #hero-poll {
   background-color: var(--color-cream);
 }
@@ -446,9 +503,13 @@ span {
 }
 
 #Hero {
-  height: 75vh;
-  background-image: linear-gradient(rgba(247, 247, 246, 0.85), rgba(247, 247, 246, 0.85)),
-    url(/homehero.jpg);
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    circle at 75% 50%,
+    rgba(204, 218, 255, 1) 0%,
+    rgba(247, 247, 246, 1) 39%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -586,7 +647,7 @@ span {
 
 /* Testimonials Carousel */
 .carousel-root {
-  width: 64% !important;
+  width: 80% !important;
   margin: auto !important;
   margin-top: 3% !important;
 }
@@ -606,22 +667,22 @@ span {
 }
 
 .myCarousel {
-  background: #fafafa;
+  background: white;
   margin-top: -6%;
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 6%;
   padding-bottom: 8%;
   padding-left: 5%;
   padding-right: 5%;
-  border: 1px solid #ddd;
+  border: 3px solid #3a4a92;
 }
 
 .carousel .control-dots {
   padding-left: 5px !important;
   outline: 0;
-  bottom: 5% !important;
+  bottom: 2% !important;
 }
 
 .myCarousel h3 {
@@ -662,11 +723,11 @@ span {
 }
 
 .carousel.carousel-slider .control-arrow {
-  background: var(--color-white) !important;
-  border: 1px solid #3a4a92 !important;
+  background: white !important;
+  border: 2px solid #3a4a92 !important;
   height: min-content;
   position: absolute;
-  top: 50% !important;
+  top: 90% !important;
   border-radius: 50%;
   padding: 0px 10px 0px 10px !important;
 }
@@ -679,13 +740,13 @@ span {
 @media only screen and (max-width: 768px) {
   .carousel-root {
     outline: 0;
-    width: 93% !important;
+    width: 95% !important;
     margin: auto !important;
   }
 
-  .carousel.carousel-slider .control-arrow {
-    display: none !important;
-  }
+  // .carousel.carousel-slider .control-arrow {
+  //   display: none !important;
+  // }
 
   .myCarousel {
     background: #fafafa;
