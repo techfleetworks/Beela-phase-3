@@ -15,7 +15,7 @@ const NavBar = () => {
   const router = useRouter() // to set active links
   return (
     <>
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="light" expand="lg" fixed="top">
         <Container>
           <Link href="/">
             <a>
@@ -34,7 +34,7 @@ const NavBar = () => {
                     About
                   </Nav.Link>
                   <Nav.Link
-                    href="/pollination"
+                    href="#section-pollination"
                     className={router.asPath == "/pollination" ? "active" : ""}
                   >
                     Pollination
