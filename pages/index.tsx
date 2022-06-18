@@ -57,7 +57,7 @@ const Home: NextPage = () => {
                     {/* {data?.testimonials?.data[0].attributes?.title} */}
                   </h2>
                   <div className="left-center-text">
-                    <p className="B1 p-3">
+                    <p className="B1">
                       We offer free resources to help women and non-binary Swedish immigrants start
                       tech careers.
                     </p>
