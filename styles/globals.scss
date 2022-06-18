@@ -382,6 +382,13 @@ span {
 
 .card-body-hex {
   background-color: var(--color-honey);
+  white-space: pre-line;
+  margin-top: px;
+}
+
+.card-span{
+  white-space: pre-line;
+  
 }
 
 .card-img-top {
@@ -746,6 +753,43 @@ padding: 23px 26px;
 .carousel .control-arrow,
 .carousel.carousel-slider .control-arrow {
   opacity: 1 !important;
+}
+
+#footer-top {
+  background-color: var(--color-honey);
+  font-size: small;
+}
+
+#copyright {
+  font-size: 10pt;
+}
+
+.site-map-footer {
+ font-size: 10pt;
+ width: 120px !important;
+ margin-top: 75px;
+}
+#join-community{
+  margin-left: 100px;
+}
+
+#contact {
+  margin-top: 100px;
+}
+
+#mission {
+  width:325px;
+}
+
+#newsletter{
+  margin-left: 350px;
+}
+#email {
+  margin-top: 20px;
+}
+#our-mission{
+  margin-left: 100px;
+  margin-top: 100px;
 }
 
 @media only screen and (max-width: 768px) {
