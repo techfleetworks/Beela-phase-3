@@ -34,8 +34,8 @@ const NavBar = () => {
                     About
                   </Nav.Link>
                   <Nav.Link
-                    href="#section-pollination"
-                    className={router.asPath == "/pollination" ? "active" : ""}
+                    href=""
+                    className={router.asPath == "#" ? "active" : ""}
                   >
                     Pollination
                   </Nav.Link>

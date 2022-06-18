@@ -210,47 +210,47 @@ const Home: NextPage = () => {
                   </Col>
                 </Row>
 
-                <Container className="container" id="container-hex">
+                <Container className="container  justify-content-center" id="container-hex">
                   <Row
                     className="xs={1} md={2} align-items-center justify-content-center display-flex flex-wrap"
                     id="card-deck-steps-hex"
                   >
-                    <Col className="card m-5 " id="card-m5-steps-hex">
+                    <Col className="card m-5  justify-content-center " id="card-m5-steps-hex">
                       <Card>
                         <Card.Body className="card-body-hex">
-                          <p className="card-text">July 1 2022</p>
+                          <p className="card-text">July 01 2022</p>
                           <p className="card-title">
-                            <span>Applications Open</span>
+                            <span  className="small  card-span">Applications Open</span>
                           </p>
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col className="card m-5 " id="card-m5-steps-hex-1">
+                    <Col className="card m-5 justify-content-center" id="card-m5-steps-hex">
                       <Card>
                         <Card.Body className="card-body-hex">
                           <p className="card-text">July 24 2022</p>
                           <p className="card-title">
-                            <span>Applications Close</span>
+                            <span className="small card-span">Applications Close</span>
                           </p>
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col className="card m-5 " id="card-m5-steps-hex">
+                    <Col className="card m-5 justify-content-center " id="card-m5-steps-hex">
                       <Card>
                         <Card.Body className="card-body-hex">
                           <p className="card-text">Aug 14 2022</p>
                           <p className="card-title">
-                            <span>Decisions sent</span>
+                          <span className="small card-span">Decisions sent</span>
                           </p>
                         </Card.Body>
                       </Card>
                     </Col>
-                    <Col className="card m-5" id="card-m5-steps-hex-1">
+                    <Col className="card m-5 justify-content-center" id="card-m5-steps-hex">
                       <Card className="card-body-hex">
                         <Card.Body className="card-body-hex">
                           <p className="card-text">Aug 25 2022</p>
                           <p className="card-title">
-                            <span>Kickoff</span>
+                          <span className="small card-span">Kickoff</span>
                           </p>
                         </Card.Body>
                       </Card>
@@ -330,7 +330,7 @@ const Home: NextPage = () => {
             <Row className="text-center justify-content-center align-content-center" id="podcast">
               <Container className="home-pollination__spacer">
                 <Row className="text-color__berry">
-                  <h2 className="text-center">Beela’s Talk Podcast</h2>
+                  <h2 className="text-center">Beela s Talk Podcast</h2>
                 </Row>
                 <Row xs={1} md={2} className="m-4 align-items-center justify-content-center">
                   <Col
