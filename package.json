@@ -16,6 +16,7 @@
     "bootstrap-icons": "^1.8.3",
     "graphql": "^16.4.0",
     "next": "^12.1.6",
+    "node-sass": "^7.0.1",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-bootstrap-icons": "^1.8.2",
