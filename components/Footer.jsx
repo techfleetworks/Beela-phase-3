@@ -76,14 +76,17 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="container">
-        <div className="d-flex flex-wrap justify-content-between  py-3 my-4 border-top">
+
+      <div className="container" id="footer_of_the_footer">
+       
+        <div className="d-flex flex-wrap justify-content-between  py-3 my-4">
           <div className="nav col-md-4  list-unstyled d-flex">
+            <p className="subtitle">JOIN OUR COMMUNITY</p>
             <div className=" w-100 ">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="40"
+                height="40"
                 fill="currentColor"
                 className="bi bi-spotify mx-2"
                 viewBox="0 0 16 16"
@@ -93,8 +96,8 @@ const Footer = () => {
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="40"
+                height="40"
                 fill="currentColor"
                 className="bi bi-linkedin mx-2"
                 viewBox="0 0 16 16"
@@ -104,8 +107,8 @@ const Footer = () => {
 
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="32"
-                height="32"
+                width="40"
+                height="40"
                 fill="currentColor"
                 className="bi bi-instagram mx-2"
                 viewBox="0 0 16 16"
@@ -115,12 +118,12 @@ const Footer = () => {
             </div>
           </div>
           <div className="col-md-4 ">
-            <b>Sign up for Beela&apos;s newsletter</b> <br />
-            <input type="email" size="30" name="email" placeholder="Email" id="newsletter" />
+            <b className="subtitle">Sign up for Beela&apos;s newsletter</b> <br />
+            <input type="email" size="30" name="email" placeholder="Enter your email here" id="newsletter" />
             <input type="submit" width="20" />
-            <br /> <span className="text-muted">© 2021 Company, Inc</span>
           </div>
         </div>
+        <p className="S2">©  2022 Beela Stockholm, Sweden </p>
       </div>
     </>
   )

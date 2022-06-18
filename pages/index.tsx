@@ -186,10 +186,10 @@ const Home: NextPage = () => {
             <Row
               className="text-center justify-content-center align-content-center"
               id="pollination"
-            >
+            >       
               <Container className="home-pollination__spacer">
                 <Row className="home-pollination__title">
-                  <h2>Pollination Mentoring Programme</h2>
+                  <h2 className="text-center">Pollination Mentoring Programme</h2>
                 </Row>
                 <Row xs={1} md={2} className="m-4 align-items-center justify-content-center">
                   <Col sm={10} md={8} lg={6} xl={5} className="p-3">
@@ -202,7 +202,7 @@ const Home: NextPage = () => {
                     </div>
                   </Col>
                   <Col sm={10} md={8} lg={6} xl={5} className="p-5">
-                    <p className="m-0">
+                    <p className="m-0 text-start">
                       Our free programme connects mentors with mentees based on interests and
                       availability. It offers 1-on-1 mentorship, along with networking events and
                       career workshops.
@@ -261,7 +261,7 @@ const Home: NextPage = () => {
                 <Row
                   xs={1}
                   md={2}
-                  className=" align-items-top justify-content-center display-flex flex-wrap"
+                  className=" align-items-top justify-content-center display-flex flex-wrap text-start"
                 >
                   <Col xs={8} sm={5} lg={4} className="p-4">
                     <h4 className="text-color__berry">Become a Mentee</h4>
@@ -330,7 +330,7 @@ const Home: NextPage = () => {
             <Row className="text-center justify-content-center align-content-center" id="podcast">
               <Container className="home-pollination__spacer">
                 <Row className="text-color__berry">
-                  <h2>Beela’s Talk Podcast</h2>
+                  <h2 className="text-center">Beela’s Talk Podcast</h2>
                 </Row>
                 <Row xs={1} md={2} className="m-4 align-items-center justify-content-center">
                   <Col
@@ -341,7 +341,7 @@ const Home: NextPage = () => {
                     xl={5}
                     className="p-5"
                   >
-                    <p className="m-0 left-center-text">
+                    <p className="m-0 left-center-text B1">
                       Our podcast is filled with inspiring stories from Swedish immigrants who have
                       broken into tech. <br />
                       Catch up on all the buzz!

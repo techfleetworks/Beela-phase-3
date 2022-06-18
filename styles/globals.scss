@@ -112,7 +112,7 @@ h5 {
   line-height: 22px;
 }
 
-.col-grid .S1 {
+.col-grid .S1, .S1 {
   font-style: normal;
   font-weight: 400;
   font-size: 0.944rem;
@@ -160,7 +160,15 @@ h5 {
   min-width: max-content;
   border-radius: 25px;
 }
+.subtitle{
+font-style: normal;
+font-weight: 600;
+font-size: 1rem;
+line-height: 1.4rem;
+/* identical to box height */
 
+text-transform: uppercase;
+}
 /* Navbar */
 
 .navbar-light .navbar-toggler {
@@ -517,11 +525,12 @@ span {
 }
 
 #newsletter {
-  height: 66.13333129882812px;
-  width: 399px;
+  height: 66px;
+  max-width: 383px;
   left: 0px;
   top: 0px;
   border-radius: 5px;
+padding: 23px 26px;
 }
 
 #about-beela {
@@ -640,6 +649,7 @@ span {
 #wrapper {
   left: 0;
   right: 0;
+  padding: 0px;
 }
 
 .image-wrapper {
@@ -762,4 +772,11 @@ span {
     border: 1px solid #ddd;
     min-height: fit-content !important;
   }
+}
+footer{
+  background-color: #E6C619;
+}
+#footer_of_the_footer{
+  min-height: 240px;
+  padding: 43px 0px 43px 0px;
 }
