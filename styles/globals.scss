@@ -246,7 +246,9 @@ h5 {
   color: var(--color-white);
   background-color: var(--color-berry-60);
 }
-
+.slack-btn{
+  padding: 13px 50px;
+}
 .button-outline {
   /* Desktop/Button/Button (16) */
   font-style: normal;
@@ -805,4 +807,22 @@ span {
     border: 1px solid #ddd;
     min-height: fit-content !important;
   }
+}
+
+.no_name_37{
+  font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
+  color: #3A4A92;
+}
+
+#wearegrowing{
+  background-color: #F0DBEE;
+  padding: 3% 0%;
+}
+
+#growing-p{
+  max-width: 600px;
+}
+
+#growing-apprentice{
+  max-width: 304px;
 }

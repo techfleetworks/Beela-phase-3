@@ -39,6 +39,9 @@ const NavBar = () => {
                   >
                     Pollination
                   </Nav.Link>
+                  <Nav.Link href="/programmes" className={router.asPath == "/programmes" ? "active" : ""}>
+                   Programmes
+                  </Nav.Link>
                 </div>
               </Nav>
             </Container>
