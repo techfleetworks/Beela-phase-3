@@ -811,7 +811,7 @@ span {
 
 .no_name_37{
   font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
-  color: #3A4A92;
+  color: #3A4A92 !important;
 }
 
 #wearegrowing{
@@ -825,4 +825,16 @@ span {
 
 #growing-apprentice{
   max-width: 304px;
+}
+
+.img-card-relative{
+  display: inline;
+  position: absolute;
+  top: -120px;
+  display: inline-flexbox;
+  font-size: initial;
+  background-color: var(--color-honey);
+  -webkit-clip-path:polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+
 }
