@@ -4,7 +4,7 @@ import Link from "next/link"
 import Head from "next/head"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-
+import Testimonials from "../components/Testimonials"
 
 // React-Bootstrap icons
 import { Spotify } from "react-bootstrap-icons"
@@ -70,7 +70,7 @@ const PollinationForMentees : NextPage = () => {
             <h2 className="text-center no_name_37 mb-5 py-5">What to expect as a mentee</h2>
             <Row className="mt-4">
                 <Col md={6} lg={4} className="text-center">
-                    <Card style={{ width: '18rem', position: "relative" }}>
+                    <Card style={{ width: '18rem', position: "relative", backgroundColor:'#E6C619'  }}>
                         <Card.Img variant="top" src="/avatar.png"  className="img-card-relative"/>
                         <Card.Body  className="py-5">
                             <h5>Mentor Matching</h5>
@@ -83,7 +83,7 @@ const PollinationForMentees : NextPage = () => {
                 </Col>
 
                 <Col md={6} lg={4} className="text-center">
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '18rem' , backgroundColor:'#E6C619' }}>
                         <Card.Img variant="top" src="/avatar.png" className="img-card-relative" />
                         <Card.Body  className="py-5">
                         <h5>Networking</h5>
@@ -96,7 +96,7 @@ const PollinationForMentees : NextPage = () => {
                 </Col>
 
                 <Col md={6} lg={4} className="text-center">
-                    <Card style={{ width: '18rem' }}>
+                    <Card style={{ width: '18rem', backgroundColor:'#E6C619' }}>
                        
                         <Card.Img variant="top" src="/avatar.png"  className="img-card-relative"/>
                         <Card.Body  className="py-5">
@@ -112,7 +112,8 @@ const PollinationForMentees : NextPage = () => {
             </Row>
         </Container>
 
-        <Container className="py-5">
+        <Container fluid className="py-5" style={{ backgroundColor:'#F9F2D4' }}>
+            <Container>
             <h3 className="no_name_37 text-center">Frequently Asked Questions</h3>
             <Accordion defaultActiveKey="0" className="my-5">
             <Accordion.Item eventKey="0">
@@ -133,7 +134,7 @@ const PollinationForMentees : NextPage = () => {
                         <span className="mb-0 no_name_37">  What are you looking for in applicants?</span> 
                         </Accordion.Header>
                         <Accordion.Body   className="B1">
-                           We are open to applicants from a range of backgrounds. Diversity only helps enhance the tech community! We’ve had mentees in our programme who are exploring tech careers, as well as those who are actively applying to jobs.
+                       We are looking for applicants who are focused on self-development, curious, and ready to make a mark on Sweden’s tech scene! 
                         </Accordion.Body>
                     </Accordion.Item>
               
@@ -144,7 +145,7 @@ const PollinationForMentees : NextPage = () => {
                         <span className="mb-0 no_name_37">   What qualifications will my mentor have?</span> 
                         </Accordion.Header>
                         <Accordion.Body   className="B1">
-                            We are open to applicants from a range of backgrounds. Diversity only helps enhance the tech community! We’ve had mentees in our programme who are exploring tech careers, as well as those who are actively applying to jobs. 
+                We ask that mentors have successfully landed their first tech job in Sweden. Whether they’re in their first tech job or 10th, we believe everyone can offer a valuable perspective.
                         </Accordion.Body>
                 </Accordion.Item>
 
@@ -153,7 +154,7 @@ const PollinationForMentees : NextPage = () => {
                         <span className="mb-0 no_name_37">  Are the mentor meetings in person or virtual?</span> 
                         </Accordion.Header>
                         <Accordion.Body  className="B1">
-                          We are open to applicants from a range of backgrounds. Diversity only helps enhance the tech community! We’ve had mentees in our programme who are exploring tech careers, as well as those who are actively applying to jobs. 
+                   Most of the mentor sessions are virtual. However, if mentors and mentees live in the same city and feel comfortable meeting up, we encourage that.
                         </Accordion.Body>
                 </Accordion.Item>
 
@@ -162,18 +163,109 @@ const PollinationForMentees : NextPage = () => {
                        <span className="mb-0 no_name_37">I still have questions. Who should I ask? </span> 
                         </Accordion.Header>
                         <Accordion.Body  className="B1">
-                           We are open to applicants from a range of backgrounds. Diversity only helps enhance the tech community! We’ve had mentees in our programme who are exploring tech careers, as well as those who are actively applying to jobs.
+                            Email us at contact@beela.se!
                         </Accordion.Body>
                 </Accordion.Item>
               
                 </Accordion>
 
-
+            </Container>
         </Container>
 
-       
+        <Testimonials /> 
 
+        <Container style={{minHeight: '160px', alignItems: 'center', marginTop: '3rem'}}>
         
+            <h2 className="no_name_37 text-center " style={{color: '#623762' }}>Beela has a community for you</h2>
+            <h5 className=" text-center " >Find out how you can engage with Beela members</h5>
+        </Container >
+
+              {/* Podcast  */}
+          <section id="section-podcast">
+            <Row className="text-center justify-content-center align-content-center" id="podcast">
+              <Container className="home-pollination__spacer">
+                
+                <Row xs={1} md={2} className="m-4 align-items-center justify-content-center">
+                <Col xs={{ order: 1 }} sm={10} md={{ span: 6, order: 2 }} lg={6} xl={5} className="p-3">
+                    <div className="image-wrapper">
+                      <img
+                        src="/images/home-podcast.svg"
+                        alt="The Podcast image for Beela Talk, an illustraion of two women in Rosie the Riveter pose with the text Beela's Talk underneath them"
+                        className="img-fluid home-shadow_img"
+                      />
+                    </div>
+                  </Col>
+                  <Col
+                    xs={{ order: 2 }}
+                    sm={10}
+                    md={{ span: 6}}
+                    lg={6}
+                    xl={5}
+                    className="p-2"
+                  >
+                    <h3 className="no_name_37" style={{textAlign: 'start'}}>Podcast</h3>
+                    <p className="m-0 B1" style={{maxWidth: '268px',textAlign: 'start'}}>
+                    Audio inspiration is a click away. Absorb unique insights around diversity, equity, and inclusion in the tech industry.
+                    </p>
+                    <div className="pt-3 left-center-text">
+                    <Link href="https://beela.slack.com/join/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ#/shared-invite/email">
+                        <a target="_blank" >
+                          <button type="button" className="btn button-outline">
+                          Listen to Beela’s Talk
+                          </button>
+                        </a>
+                      </Link>
+                    </div>
+                  </Col>
+                
+                </Row>
+              </Container>
+            </Row>
+          </section>
+
+          <section id="section-podcast">
+            <Row className="text-center justify-content-center align-content-center" id="podcast">
+              <Container className="home-pollination__spacer">
+                
+                <Row xs={1} md={2} className="m-4 align-items-center justify-content-center">
+                <Col xs={{ order: 1 }} sm={10} md={{ span: 6, order: 2 }} lg={6} xl={5} className="p-3">
+                    <div className="image-wrapper">
+                      <img
+                        src="/images/home-podcast.svg"
+                        alt="The Podcast image for Beela Talk, an illustraion of two women in Rosie the Riveter pose with the text Beela's Talk underneath them"
+                        className="img-fluid home-shadow_img"
+                      />
+                    </div>
+                  </Col>
+                  <Col
+                    xs={{ order: 2 }}
+                    sm={10}
+                    md={{ span: 6}}
+                    lg={6}
+                    xl={5}
+                    className="p-2"
+                  >
+                    <h3 className="no_name_37" style={{textAlign: 'start'}}>Slack</h3>
+                    <p className="m-0 B1" style={{maxWidth: '268px',textAlign: 'start'}}>
+                    Ask questions, network, and stay up-to-date about upcoming events. We’re an inclusive bunch, and we’d love to have you!
+                    </p>
+                    <div className="pt-3 left-center-text">
+                    <Link href="https://beela.slack.com/join/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ#/shared-invite/email">
+                        <a target="_blank" >
+                          <button type="button" className="btn button-outline">
+                          Join Slack
+                          </button>
+                        </a>
+                      </Link>
+                    </div>
+                  </Col>
+                
+                </Row>
+              </Container>
+            </Row>
+          </section>
+
+
           <Footer />
         </div>
       </main>

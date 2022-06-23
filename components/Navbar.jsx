@@ -10,6 +10,7 @@ import { Spotify } from "react-bootstrap-icons"
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
 import Container from "react-bootstrap/Container"
+import NavDropdown from "react-bootstrap/NavDropdown"
 
 const NavBar = () => {
   const router = useRouter() // to set active links
@@ -30,17 +31,19 @@ const NavBar = () => {
                   <Nav.Link href="/" className={router.asPath == "/" ? "active" : ""}>
                     Home
                   </Nav.Link>
+
+                  <NavDropdown title="Programmes" id="basic-nav-dropdown" href="/programmes">
+                        <NavDropdown.Item href="/pollination-for-mentees">Polination for Mentees</NavDropdown.Item>
+                        <NavDropdown.Item href="/pollination-for-mentor">Beela Programees</NavDropdown.Item>
+                   </NavDropdown>
+
+               
+            
+                  <Nav.Link href="/stay-conected" className={router.asPath == "/programmes" ? "active" : ""}>
+                   Stay Connected
+                  </Nav.Link>
                   <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>
                     About
-                  </Nav.Link>
-                  <Nav.Link
-                    href=""
-                    className={router.asPath == "#" ? "active" : ""}
-                  >
-                    Pollination
-                  </Nav.Link>
-                  <Nav.Link href="/programmes" className={router.asPath == "/programmes" ? "active" : ""}>
-                   Programmes
                   </Nav.Link>
                 </div>
               </Nav>
