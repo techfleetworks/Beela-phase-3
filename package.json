@@ -22,11 +22,8 @@
     "react-bootstrap-icons": "^1.8.2",
     "react-dom": "^18.1.0",
     "react-responsive-carousel": "^3.2.23",
-<<<<<<< HEAD
     "react-scripts": "^5.0.1",
-=======
     "sass": "^1.52.3",
->>>>>>> main
     "sharp": "^0.30.6",
     "styled-components": "^5.3.5",
     "yarn": "^1.22.19"
