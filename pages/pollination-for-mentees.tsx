@@ -76,7 +76,7 @@ const PollinationForMentees : NextPage = () => {
                             <h5>Mentor Matching</h5>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                bulk of the card&apos;s content.
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -89,7 +89,7 @@ const PollinationForMentees : NextPage = () => {
                         <h5>Networking</h5>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                bulk of the card&apos;s content.
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -103,7 +103,7 @@ const PollinationForMentees : NextPage = () => {
                         <h5>Workshops</h5>
                             <Card.Text>
                                 Some quick example text to build on the card title and make up the
-                                bulk of the card's content.
+                                bulk of the card&apos;s content.
                             </Card.Text>
                         </Card.Body>
                     </Card>
@@ -124,7 +124,7 @@ const PollinationForMentees : NextPage = () => {
                         </Accordion.Header>
                     
                         <Accordion.Body  className="B1">
-                            We are open to applicants from a range of backgrounds. Diversity only helps enhance the tech community! We’ve had mentees in our programme who are exploring tech careers, as well as those who are actively applying to jobs.
+                            We are open to applicants from a range of backgrounds. Diversity only helps enhance the tech community! We&apos;ve had mentees in our programme who are exploring tech careers, as well as those who are actively applying to jobs.
                         </Accordion.Body>
                     
             </Accordion.Item>
@@ -134,7 +134,7 @@ const PollinationForMentees : NextPage = () => {
                         <span className="mb-0 no_name_37">  What are you looking for in applicants?</span> 
                         </Accordion.Header>
                         <Accordion.Body   className="B1">
-                       We are looking for applicants who are focused on self-development, curious, and ready to make a mark on Sweden’s tech scene! 
+                       We are looking for applicants who are focused on self-development, curious, and ready to make a mark on Sweden&apos;s tech scene! 
                         </Accordion.Body>
                     </Accordion.Item>
               
@@ -211,7 +211,7 @@ const PollinationForMentees : NextPage = () => {
                     <Link href="https://beela.slack.com/join/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ#/shared-invite/email">
                         <a target="_blank" >
                           <button type="button" className="btn button-outline">
-                          Listen to Beela’s Talk
+                          Listen to Beela&apos;s Talk
                           </button>
                         </a>
                       </Link>
@@ -247,7 +247,7 @@ const PollinationForMentees : NextPage = () => {
                   >
                     <h3 className="no_name_37" style={{textAlign: 'start'}}>Slack</h3>
                     <p className="m-0 B1" style={{maxWidth: '268px',textAlign: 'start'}}>
-                    Ask questions, network, and stay up-to-date about upcoming events. We’re an inclusive bunch, and we’d love to have you!
+                    Ask questions, network, and stay up-to-date about upcoming events. We&apos;re an inclusive bunch, and we&apos;d love to have you!
                     </p>
                     <div className="pt-3 left-center-text">
                     <Link href="https://beela.slack.com/join/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ#/shared-invite/email">
