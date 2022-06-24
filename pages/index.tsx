@@ -145,7 +145,8 @@ const Home: NextPage = () => {
                   </div>
                 </div>
                 <div className="col-5 py-5">
-                  <Image src="/Denise-Juliana.png" alt="About Beela" layout='fill' />
+                  <img src="Denise-Juliana.png" alt="placeholder" />
+                  {/* <Image src="/Denise-Juliana.png" alt="About Beela" layout='fill' /> */}
                 </div>
               </div>
             </div>
