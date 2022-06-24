@@ -536,7 +536,7 @@ span {
 #about-beela {
   font-style: normal;
   font-weight: 600;
-  font-size: 85px;
+  font-size: 75px;
   line-height: 82px;
   color: #3a4a92;
 }
@@ -544,7 +544,7 @@ span {
 #about-paragraph {
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 170%;
   letter-spacing: 0.0005em;
 }
@@ -812,6 +812,7 @@ span {
   }
 }
 
+
 .no_name_37{
   font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
   color: #3A4A92 !important;
@@ -840,5 +841,14 @@ span {
   -webkit-clip-path:polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 
+}
+
+
+.card-text {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 170%;
 }
 

@@ -1,15 +1,15 @@
-.abouthero{
+.abouthero {
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-background: #F9F2D4;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    background: #F9F2D4;
 
-/* Inside auto layout */
-padding-top: 125px;
-padding-bottom: 125px;
-flex: none;
-order: 0;
-flex-grow: 0;
+    /* Inside auto layout */
+    padding-top: 125px;
+    padding-bottom: 125px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
