@@ -5,9 +5,9 @@ import placeholder from "../public/placeholder.png"
 const Footer = () => {
   return (
     <>
-      <footer className="w-100 py-4 flex-shrink-0" >
-        <div className="container py-4" id="footer-top">
-          <div className="row gy-4 gx-5">
+      <footer className="w-100 py-4 flex-shrink-0" id="footer-top">
+        <div className="container py-4" >
+          <div className="row gy-4 gx-5 fnt-sml" >
             <div className="col-lg-6 col-md-6" id="our-mission">
               <div>
                 <h5 className="h5 e" >Our Mission</h5>
