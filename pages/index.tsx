@@ -174,7 +174,7 @@ const Home: NextPage = () => {
                     <div className="card-body">
                       <div className="card-title">
                         <div>
-                          <img src="juliana.png" alt="placeholder" />
+                          <img src="juliana.png" alt="placeholder"/>
                         </div>
                         <div className="header">
                         </div>
