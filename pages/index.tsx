@@ -5,6 +5,7 @@ import Head from "next/head"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Testimonials from "../components/Testimonials"
+// import avatar from "../public/avatar.png"
 
 // React-Bootstrap icons
 import { Spotify } from "react-bootstrap-icons"
@@ -15,6 +16,7 @@ import Row from "react-bootstrap/Row"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
+import { wrap } from "module"
 
 // import { useTestimonialsQuery } from "../graphql/generated"
 // import { usePostsQuery } from "../graphql/generated"
@@ -119,6 +121,223 @@ const Home: NextPage = () => {
               </a>
             </Col>
           </Row>
+
+          {/* About Beela */}
+          <div className="row p-5" id="jumbotron">
+            {/* Hero */}
+            <div className="container px-5" id="hero">
+              {/* About Beela */}
+              <div className="row" id="hero-container">
+                <div className="col py-4 px-5 m-5">
+                  <div className="conatiner">
+                    <div className="container pb-4 pt-2">
+                      <h1 id="about-beela">About Beela</h1>
+                    </div>
+                    <div className="container">
+                      <p id="about-paragraph">
+                        Beela was founded in 2021 by Juliana Araújo and Denise Muniz, who are both
+                        Brazilian immigrants to Sweden. They met at an event organized by Women Hack.
+                        Along with a mentorship program, Denise received career support from
+                        Juliana—and landed a developer job. That’s how they realized how important
+                        mentorship and support are for female and non-binary immigrants.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-5 py-5">
+                  <img src="Denise-Juliana.png" alt="placeholder" />
+                  {/* <Image src="/Denise-Juliana.png" alt="About Beela" layout='fill' /> */}
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Our Team */}
+          <div className="container text-center" id="team-container">
+            <div className="col align-items-center border p-5">
+              <div className="d-flex flex-column">
+                <div className="p-1">
+                  <h2 id="our-team-title">Meet our Team</h2>
+                </div>
+                <div className="p-1">
+                  <p id="header-text">
+                    We know from firsthand experience how hard it is to start over in a new country.
+                    All of us are here to support you.
+                  </p>
+                </div>
+              </div>
+
+              <div className="row">
+                <div className="card-deck d-flex flex-row flex-wrap justify-content-center">
+
+                  <div className="col-sm-12 col-lg-4 card m-3">
+                    <div className="card-body">
+                      <div className="card-title">
+                        <div>
+                          <img src="juliana.png" alt="placeholder" />
+                        </div>
+                        <div className="header">
+                        </div>
+                        <span id="team-name">JULIANA ARAÚJO</span>
+                        <p className="text-muted" id="team-title">
+                          UX Designer
+                        </p>
+                        <p className="card-text" id="card-text">
+                          Juliana is a Latina immigrant with 8+ years of experience working in tech,
+                          leading product teams to develop data-driven products. She has a
+                          Bachelor&apos;s in Information Systems and is currently writing her master
+                          thesis in IT Project Management from Stockholm University.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="col-sm-12 col-lg-4 card m-3">
+                    <div className="card-body">
+                      <div className="card-title">
+                        <div className="header">
+                          <div>
+                            <img src="denise.png" alt="placeholder" />
+                          </div>
+                        </div>
+                        <span id="team-name">DENISE MUNIZ</span>
+                        <p className="text-muted" id="team-title">
+                          UX Designer
+                        </p>
+                        <p className="card-text" id="card-text">
+                          Denise is a Latina immigrant and fullstack developer. She has over 10
+                          years of experience working as a business analyst, but decided to change
+                          her career path to software development after she moved to Sweden. She has
+                          a Bachelor&apos;s in Information Systems and a Master&apos;s in Business &
+                          Project Management.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div className="row">
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="zoe.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Zoe Xuan Qin</span>
+                  <p className="text-muted" id="team-title">
+                    Marketing & Ops<br></br>Coordinator
+                  </p>
+                </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="anja.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Anja Woracek</span>
+                  <p className="text-muted" id="team-title">
+                    Pollination Programme<br></br>Manager
+                  </p>
+                </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="estefanny.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Estefanny Moran</span>
+                  <p className="text-muted" id="team-title">
+                    Graphic Designer
+                  </p>
+                </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="raquel.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Raquel Almeida</span>
+                  <p className="text-muted" id="team-title">
+                    Volunteer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="milena.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Milena Matrone</span>
+                  <p className="text-muted" id="team-title">
+                    Video & Podcast<br></br>
+                    Producer
+                  </p>
+                </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="marcela.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Marcela Feliz Fortiz</span>
+                  <p className="text-muted" id="team-title">
+                    Software Engineer
+                  </p>
+                </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="mae.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Mae Tadena</span>
+                  <p className="text-muted" id="team-title">
+                    Social Media Manager
+                  </p>
+                </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="nidhi.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Nidhi Pathak</span>
+                  <p className="text-muted" id="team-title">
+                    Volunteer
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="row justify-content-center">
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="bee1.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Rebecca</span>
+                  <p className="text-muted" id="team-title">
+                    Volunteer
+                  </p>
+                </div>
+              </div>
+              <div className="col-sm-6 col-lg-3">
+                <div className="card-title">
+                  <div>
+                    <img src="bee1.png" alt="placeholder" />
+                  </div>
+                  <span id="team-name">Hellen</span>
+                  <p className="text-muted" id="team-title">
+                    Volunteer
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
 
           {/* Career Steps */}
           <section id="section-career">

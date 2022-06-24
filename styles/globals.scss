@@ -533,7 +533,7 @@ span {
 #about-beela {
   font-style: normal;
   font-weight: 600;
-  font-size: 85px;
+  font-size: 75px;
   line-height: 82px;
   color: #3a4a92;
 }
@@ -541,7 +541,7 @@ span {
 #about-paragraph {
   font-style: normal;
   font-weight: 400;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 170%;
   letter-spacing: 0.0005em;
 }
@@ -805,4 +805,15 @@ span {
     border: 1px solid #ddd;
     min-height: fit-content !important;
   }
+}
+
+.card-text {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 170%;
+/* or 27px */
+
+// text-align: center;
 }
