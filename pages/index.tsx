@@ -157,7 +157,7 @@ const Home: NextPage = () => {
             <div className="col align-items-center border p-5">
               <div className="d-flex flex-column">
                 <div className="p-1">
-                  <h2 id="our-team-title">Meet our Team</h2>
+                  <h2 id="our-team-title">Meet Our Team</h2>
                 </div>
                 <div className="p-1">
                   <p id="header-text">
