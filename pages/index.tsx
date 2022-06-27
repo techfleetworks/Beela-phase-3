@@ -128,7 +128,7 @@ const Home: NextPage = () => {
             <div className="container px-5" id="hero">
               {/* About Beela */}
               <div className="row" id="hero-container">
-                <div className="col py-4 px-5 m-5">
+                <div className="col-sm-12 col-lg-6 p-5 my-4">
                   <div className="conatiner">
                     <div className="container pb-4 pt-2">
                       <h1 id="about-beela">About Beela</h1>
@@ -144,7 +144,7 @@ const Home: NextPage = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-5 py-5">
+                <div className="col-sm-12 col-lg-6 p-5 my-5">
                   <img src="Denise-Juliana.png" alt="placeholder" />
                   {/* <Image src="/Denise-Juliana.png" alt="About Beela" layout='fill' /> */}
                 </div>
