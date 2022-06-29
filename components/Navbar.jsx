@@ -34,8 +34,10 @@ const NavBar = () => {
 
                   <NavDropdown title="Programmes" id="basic-nav-dropdown" >
                   <NavDropdown.Item href="/programmes">Programmes</NavDropdown.Item>
-                        <NavDropdown.Item href="/pollination-for-mentees">Polination for Mentees</NavDropdown.Item>
+                        
                         <NavDropdown.Item href="/pollination-for-mentor">Beela Programees</NavDropdown.Item>
+                        <NavDropdown.Item href="/pollination-for-mentees">Polination for Mentees</NavDropdown.Item>
+                        <NavDropdown.Item href="/pollination-for-mentors">Polination for Mentors</NavDropdown.Item>
                    </NavDropdown>
 
                
