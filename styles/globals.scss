@@ -852,3 +852,31 @@ font-size: 16px;
 line-height: 170%;
 }
 
+#support-beela-about-us{
+  background-color: #F9F2D4;
+  #support-beela-section1{
+text-align: center;
+padding: 3rem 0;
+  }
+  #support-beela-section2{
+    margin: 0 auto;
+    gap:8rem;
+   
+  }
+  .about-support-p{
+    max-width: 305px;
+    margin: 1rem auto;
+  }
+  button{
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.pod-mente{
+  background-color: #EDDEED ;
+}
+
+.new-mente{
+  background-color: #DABEDA;
+}

@@ -19,7 +19,7 @@ import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
 import Accordion from "react-bootstrap/Accordion"
 
-const PollinationForMentees: NextPage = () => {
+const PollinationForMentors: NextPage = () => {
 
   return (
     <div>
@@ -345,4 +345,4 @@ const PollinationForMentees: NextPage = () => {
   )
 }
 
-export default PollinationForMentees
+export default PollinationForMentors
