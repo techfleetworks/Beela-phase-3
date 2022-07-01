@@ -102,7 +102,7 @@ const PollinationForMentors: NextPage = () => {
                   <Card.Body className="py-5">
                     
                     <Card.Text>
-                    Our mentorship community is here to support you, whether you’re a first-time mentor or very experienced.
+                    Our mentorship community is here to support you, whether you&apos;re a first-time mentor or very experienced.
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -123,7 +123,7 @@ const PollinationForMentors: NextPage = () => {
                   </Accordion.Header>
 
                   <Accordion.Body className="B1">
-                  We ask that you have successfully landed your first tech job in Sweden. Whether you’re in your first tech job or 10th, we believe everyone can offer a valuable perspective.  </Accordion.Body>
+                  We ask that you have successfully landed your first tech job in Sweden. Whether you&apos;re in your first tech job or 10th, we believe everyone can offer a valuable perspective.  </Accordion.Body>
 
                 </Accordion.Item>
 
