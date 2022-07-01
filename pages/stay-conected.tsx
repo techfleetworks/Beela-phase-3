@@ -33,8 +33,8 @@ const StayConnected: NextPage = () => {
                   <div className="container">
                     <h4 className="no_name_37">Come join us</h4>
                     <p id="about-paragraph">
-                    We're ready to support your tech journey in Sweden in a variety of ways. We want to welcome you and encourage you along the way. <br/>
-                   <br/> We can't wait to connect with you. </p>
+                    We&apos;re ready to support your tech journey in Sweden in a variety of ways. We want to welcome you and encourage you along the way. <br/>
+                   <br/> We can&apos;t wait to connect with you. </p>
                   </div>
                 </div>
               </div>
@@ -60,7 +60,7 @@ const StayConnected: NextPage = () => {
                 <div className="container">
                   <h4 className="no_name_37">Our community uses Slack to connect</h4>
                   <p className="B1">
-                  If you’ve never used Slack before, it’s okay! It’s a discussion platform that many tech companies use to communicate. We promise you’ll get the hang of it quickly. Here are some of our most popular channels:  </p>
+                  If you&apos;ve never used Slack before, it&apos;s okay! It’s a discussion platform that many tech companies use to communicate. We promise you&apos;ll get the hang of it quickly. Here are some of our most popular channels:  </p>
                   <ul>
                     <li> <b>#welcome</b> Introduce yourself and connect with other immigrants to Sweden. </li>
                     <li><b>#encouragement</b> Ask questions, share your experiences, and receive support.</li>
