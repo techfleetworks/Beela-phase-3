@@ -147,7 +147,7 @@ const PollinationForMentees: NextPage = () => {
                     <span className="mb-0 no_name_37">   What qualifications will my mentor have?</span>
                   </Accordion.Header>
                   <Accordion.Body className="B1">
-                    We ask that mentors have successfully landed their first tech job in Sweden. Whether they’re in their first tech job or 10th, we believe everyone can offer a valuable perspective.
+                    We ask that mentors have successfully landed their first tech job in Sweden. Whether they&apos;re in their first tech job or 10th, we believe everyone can offer a valuable perspective.
                   </Accordion.Body>
                 </Accordion.Item>
 
@@ -183,7 +183,7 @@ const PollinationForMentees: NextPage = () => {
             <h3>Yatwan Hui</h3>
             <h4>Mentee</h4>
             <p>
-            I loved the Beela Pollination Programme's focus on immigrant women in Sweden transitioning into tech. This was a clear thread in all of the workshops so that even well-trodden topics like CV writing were much more tailored to our specific needs. It's also exciting to see the programme grow, adapt and experiment with new ideas such as getting involved in real-life projects to practice our new skills.
+            I loved the Beela Pollination Programme&apos;s focus on immigrant women in Sweden transitioning into tech. This was a clear thread in all of the workshops so that even well-trodden topics like CV writing were much more tailored to our specific needs. It&apos;s also exciting to see the programme grow, adapt and experiment with new ideas such as getting involved in real-life projects to practice our new skills.
 
             </p>
           </div>
