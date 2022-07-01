@@ -33,8 +33,8 @@ const StayConnected: NextPage = () => {
                   <div className="container">
                     <h4 className="no_name_37">Come join us</h4>
                     <p id="about-paragraph">
-                    We're ready to support your tech journey in Sweden in a variety of ways. We want to welcome you and encourage you along the way. <br/>
-                   <br/> We can't wait to connect with you. </p>
+                    We&apos;re ready to support your tech journey in Sweden in a variety of ways. We want to welcome you and encourage you along the way. <br/>
+                   <br/> We can&apos;t wait to connect with you. </p>
                   </div>
                 </div>
               </div>

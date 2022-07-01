@@ -202,7 +202,7 @@ Most of the mentor sessions are virtual. However, if mentors and mentees live in
             <h3>Rachael Ahn  </h3>
             <h4>Beela Mentor - Data Scientist</h4>
             <p>
-            Beela's mentorship program allowed me to connect with other immigrant women in Sweden and prompt meaningful discussions about data, adjusting to a new culture, self-assurance in applying for jobs, and more. Highly recommend others entering the tech industry to join the Beela community and especially the mentorship program to grow your network.  </p>
+            Beela&apos;s mentorship program allowed me to connect with other immigrant women in Sweden and prompt meaningful discussions about data, adjusting to a new culture, self-assurance in applying for jobs, and more. Highly recommend others entering the tech industry to join the Beela community and especially the mentorship program to grow your network.  </p>
               </div>
         </div>
       </Carousel>

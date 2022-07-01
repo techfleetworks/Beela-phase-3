@@ -183,7 +183,7 @@ const PollinationForMentees: NextPage = () => {
             <h3>Yatwan Hui</h3>
             <h4>Mentee</h4>
             <p>
-            I loved the Beela Pollination Programme's focus on immigrant women in Sweden transitioning into tech. This was a clear thread in all of the workshops so that even well-trodden topics like CV writing were much more tailored to our specific needs. It's also exciting to see the programme grow, adapt and experiment with new ideas such as getting involved in real-life projects to practice our new skills.
+            I loved the Beela Pollination Programme&apos;s focus on immigrant women in Sweden transitioning into tech. This was a clear thread in all of the workshops so that even well-trodden topics like CV writing were much more tailored to our specific needs. It&apos;s also exciting to see the programme grow, adapt and experiment with new ideas such as getting involved in real-life projects to practice our new skills.
 
             </p>
           </div>
