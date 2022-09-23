@@ -43,7 +43,7 @@ const NavBar = () => {
                
             
                   <Nav.Link href="/stay-conected" className={router.asPath == "/programmes" ? "active" : ""}>
-                   Stay Connected
+                  Stay Connected 
                   </Nav.Link>
                   <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>
                     About

@@ -7,7 +7,8 @@
     "build": "next build && next export",
     "start": "next start",
     "lint": "next lint",
-    "generate-types": "graphql-codegen --config codegen.yml"
+    "generate-types": "graphql-codegen --config codegen.yml",
+    "w-sass": "sass --watch  styles/sass:styles/css"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.5",
