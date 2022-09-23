@@ -17,7 +17,7 @@ import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
 import { wrap } from "module"
-
+import TestingComponent from "../components/testingcomponent"
 // import { useTestimonialsQuery } from "../graphql/generated"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
@@ -87,6 +87,10 @@ const Home: NextPage = () => {
             </Row>
           </section>
 
+{/* calling the testing component ,which i imported at the top of the page */}
+          <TestingComponent/>
+
+          
           {/* Blaze Award*/}
           <Row
             xs={1}
