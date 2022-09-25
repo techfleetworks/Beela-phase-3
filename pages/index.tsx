@@ -5,6 +5,8 @@ import Head from "next/head"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import Testimonials from "../components/Testimonials"
+import { Hero } from "../components/Hero"
+import { TeamCard } from "../components/TeamCard"
 // import avatar from "../public/avatar.png"
 
 // React-Bootstrap icons
@@ -17,6 +19,9 @@ import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
 import { wrap } from "module"
+
+// mock data
+import teamData from "../mockdata/team.json"
 
 // import { useTestimonialsQuery } from "../graphql/generated"
 // import { usePostsQuery } from "../graphql/generated"
@@ -38,55 +43,9 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Navbar />
-
-        {/* Hero */}
         <div className="container-fluid overflow-hidden" id="wrapper">
-          <section id="section-hero">
-            <Row className="text-center align-content-center justify-content-center" id="Hero">
-              <Row xs={1} s={2} md={2} className="m-4 align-items-center justify-content-center">
-                <Col
-                  xs={{ order: 2 }}
-                  sm={10}
-                  md={{ span: 6, order: 1 }}
-                  lg={6}
-                  xl={5}
-                  className="p-5 hero-text-wrapper"
-                >
-                  <h2 className="text-color__berry">
-                    Bee <span className="svg-underline"> supported</span>,
-                    <span className="svg-underline"> empowered</span>, and
-                    <span className="svg-underline"> connected</span>
-                    {/* {data?.testimonials?.data[0].attributes?.title} */}
-                  </h2>
-                  <div className="left-center-text">
-                    <p className="B1 p-3">
-                      We offer free resources to help women and non-binary Swedish immigrants start
-                      tech careers.
-                    </p>
-                    <div className="">
-                      <a
-                        href="https://join.slack.com/t/beela/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <button type="button" className="btn button">
-                          Join Our Slack Community
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </Col>
-                <Col sm={{ order: 1 }} md={6} className="p-3">
-                  <Image
-                    src="/queenbees.png"
-                    alt="Illustraion of three women, one wearing glasses and a blue shirt, one wearing a shirt with the letter B and a crown, and the other in a polkadot shirt and a hijab."
-                    fluid
-                  />
-                </Col>
-              </Row>
-            </Row>
-          </section>
-
+          {/* Hero */}
+          <Hero />
           {/* Blaze Award*/}
           <Row
             xs={1}
@@ -169,52 +128,14 @@ const Home: NextPage = () => {
 
               <div className="row">
                 <div className="card-deck d-flex flex-row flex-wrap justify-content-center">
-
-                  <div className="col-sm-12 col-lg-4 card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div>
-                          <img src="juliana.png" alt="placeholder"/>
-                        </div>
-                        <div className="header">
-                        </div>
-                        <span id="team-name">JULIANA ARAÚJO</span>
-                        <p className="text-muted" id="team-title">
-                          UX Designer
-                        </p>
-                        <p className="card-text" id="card-text">
-                          Juliana is a Latina immigrant with 8+ years of experience working in tech,
-                          leading product teams to develop data-driven products. She has a
-                          Bachelor&apos;s in Information Systems and is currently writing her master
-                          thesis in IT Project Management from Stockholm University.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-sm-12 col-lg-4 card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div className="header">
-                          <div>
-                            <img src="denise.png" alt="placeholder" />
-                          </div>
-                        </div>
-                        <span id="team-name">DENISE MUNIZ</span>
-                        <p className="text-muted" id="team-title">
-                          UX Designer
-                        </p>
-                        <p className="card-text" id="card-text">
-                          Denise is a Latina immigrant and fullstack developer. She has over 10
-                          years of experience working as a business analyst, but decided to change
-                          her career path to software development after she moved to Sweden. She has
-                          a Bachelor&apos;s in Information Systems and a Master&apos;s in Business &
-                          Project Management.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
+                  {teamData && teamData.map(data =>
+                    <TeamCard
+                      imgSource={data.imgSource}
+                      name={data.name}
+                      title={data.title}
+                      description={data.description}
+                    />
+                  )}
                 </div>
               </div>
             </div>
