@@ -23,6 +23,7 @@ import { wrap } from "module"
 // mock data
 import teamData from "../mockdata/team.json"
 
+import TestingComponent from "../components/testingcomponent"
 // import { useTestimonialsQuery } from "../graphql/generated"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
