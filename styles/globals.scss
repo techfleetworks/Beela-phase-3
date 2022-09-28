@@ -2,7 +2,20 @@
 
 @font-face {
   font-family: "no_name_37";
-  src: url("/fonts/no_name_37_Regular.otf");
+  src: url("../public/fonts/no_name_37_Regular.otf") format("opentype"),
+    url("../public/fonts/no_name_37_Regular.woff") format("woff"),
+    url("../public/fonts/no_name_37_Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "no_name_37";
+  src: url("../public/fonts/no_name_37_Light.otf") format("opentype"),
+    url("../public/fonts/no_name_37_Light.woff") format("woff"),
+    url("../public/fonts/no_name_37_Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
 }
 
 :root {
@@ -24,7 +37,6 @@
   --color-cream: rgb(249, 242, 212);
   --color-cornflower: rgb(204, 218, 255);
 }
-
 
 html,
 body {
@@ -247,7 +259,7 @@ h5 {
   color: var(--color-white);
   background-color: var(--color-berry-60);
 }
-.slack-btn{
+.slack-btn {
   padding: 13px 50px;
 }
 .button-outline {
@@ -380,9 +392,8 @@ span {
   margin-top: px;
 }
 
-.card-span{
+.card-span {
   white-space: pre-line;
-  
 }
 
 .card-img-top {
@@ -749,9 +760,8 @@ span {
 
 #footer-top {
   background-color: var(--color-honey);
- 
 }
-.fnt-sml{
+.fnt-sml {
   font-size: small;
 }
 #copyright {
@@ -759,11 +769,11 @@ span {
 }
 
 .site-map-footer {
- font-size: 10pt;
- width: 120px !important;
- margin-top: 75px;
+  font-size: 10pt;
+  width: 120px !important;
+  margin-top: 75px;
 }
-#join-community{
+#join-community {
   margin-left: 100px;
 }
 
@@ -772,16 +782,16 @@ span {
 }
 
 #mission {
-  width:325px;
+  width: 325px;
 }
 
-#newsletter{
+#newsletter {
   margin-left: 350px;
 }
 #email {
   margin-top: 20px;
 }
-#our-mission{
+#our-mission {
   margin-left: 100px;
   margin-top: 100px;
 }
@@ -812,71 +822,67 @@ span {
   }
 }
 
-
-.no_name_37{
+.no_name_37 {
   font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
-  color: #3A4A92 !important;
+  color: #3a4a92 !important;
 }
 
-#wearegrowing{
-  background-color: #F0DBEE;
+#wearegrowing {
+  background-color: #f0dbee;
   padding: 3% 0%;
 }
 
-#growing-p{
+#growing-p {
   max-width: 600px;
 }
 
-#growing-apprentice{
+#growing-apprentice {
   max-width: 304px;
 }
 
-.img-card-relative{
+.img-card-relative {
   display: inline;
   position: absolute;
   top: -120px;
   display: inline-flexbox;
   font-size: initial;
   background-color: var(--color-honey);
-  -webkit-clip-path:polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  -webkit-clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-
 }
-
 
 .card-text {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 170%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
 }
 
-#support-beela-about-us{
-  background-color: #F9F2D4;
-  #support-beela-section1{
-text-align: center;
-padding: 3rem 0;
+#support-beela-about-us {
+  background-color: #f9f2d4;
+  #support-beela-section1 {
+    text-align: center;
+    padding: 3rem 0;
   }
-  #support-beela-section2{
+  #support-beela-section2 {
     margin: 0 auto;
-    gap:8rem;
-   
+    gap: 8rem;
   }
-  .about-support-p{
+  .about-support-p {
     max-width: 305px;
     margin: 1rem auto;
   }
-  button{
+  button {
     padding-left: 2rem;
     padding-right: 2rem;
   }
 }
 
-.pod-mente{
-  background-color: #EDDEED ;
+.pod-mente {
+  background-color: #eddeed;
 }
 
-.new-mente{
-  background-color: #DABEDA;
+.new-mente {
+  background-color: #dabeda;
 }

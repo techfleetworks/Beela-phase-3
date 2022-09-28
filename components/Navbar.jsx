@@ -20,7 +20,7 @@ const NavBar = () => {
         <Container>
           <Link href="/">
             <a>
-              <img src="/logoprimary.png" alt="placeholder" id="navbar-logo" />
+              <img src="/images/logoprimary.png" alt="placeholder" id="navbar-logo" />
             </a>
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -32,18 +32,23 @@ const NavBar = () => {
                     Home
                   </Nav.Link>
 
-                  <NavDropdown title="Programmes" id="basic-nav-dropdown" >
-                  <NavDropdown.Item href="/programmes">Programmes</NavDropdown.Item>
-                        
-                        <NavDropdown.Item href="/programmes">Beela Programees</NavDropdown.Item>
-                        <NavDropdown.Item href="/pollination-for-mentees">Polination for Mentees</NavDropdown.Item>
-                        <NavDropdown.Item href="/pollination-for-mentors">Polination for Mentors</NavDropdown.Item>
-                   </NavDropdown>
+                  <NavDropdown title="Programmes" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="/programmes">Programmes</NavDropdown.Item>
 
-               
-            
-                  <Nav.Link href="/stay-conected" className={router.asPath == "/programmes" ? "active" : ""}>
-                  Stay Connected 
+                    <NavDropdown.Item href="/programmes">Beela Programees</NavDropdown.Item>
+                    <NavDropdown.Item href="/pollination-for-mentees">
+                      Polination for Mentees
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/pollination-for-mentors">
+                      Polination for Mentors
+                    </NavDropdown.Item>
+                  </NavDropdown>
+
+                  <Nav.Link
+                    href="/stay-conected"
+                    className={router.asPath == "/programmes" ? "active" : ""}
+                  >
+                    Stay Connected
                   </Nav.Link>
                   <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>
                     About
