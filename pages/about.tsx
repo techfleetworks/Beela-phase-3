@@ -2,7 +2,7 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import avatar from "../public/avatar.png"
+import avatar from "../public/images/avatar.png"
 import Image from "next/image"
 
 const About: NextPage = () => {
@@ -37,7 +37,7 @@ const About: NextPage = () => {
                 </div>
               </div>
               <div className="col-5 py-5 px-2 my-5 mx-2">
-                <Image src="/Hero-Image.png" alt="About Beela" width={500} height={340} />
+                <Image src="/images/Hero-Image.png" alt="About Beela" width={500} height={340} />
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ const About: NextPage = () => {
           <div className="row row-cols-1 row-cols-md-3 m-5" id="empower">
             <div className="col px-5">
               <span style={{ display: "flex", justifyContent: "center" }}>
-                <Image src="/placeholder2.png" alt="Empower" width={72} height={72} />
+                <Image src="/images/placeholder2.png" alt="Empower" width={72} height={72} />
               </span>
               <h3 className="text-center" id="empower-text">
                 Empower
@@ -60,7 +60,7 @@ const About: NextPage = () => {
             </div>
             <div className="col px-5">
               <span style={{ display: "flex", justifyContent: "center" }}>
-                <Image src="/placeholder2.png" alt="Inform" width={72} height={72} />
+                <Image src="/images/placeholder2.png" alt="Inform" width={72} height={72} />
               </span>
               <h3 className="text-center" id="empower-text">
                 Inform
@@ -72,7 +72,7 @@ const About: NextPage = () => {
             </div>
             <div className="col px-5">
               <span style={{ display: "flex", justifyContent: "center" }}>
-                <Image src="/placeholder2.png" alt="Inspire" width={72} height={72} />
+                <Image src="/images/placeholder2.png" alt="Inspire" width={72} height={72} />
               </span>
               <h3 className="text-center" id="empower-text">
                 Inspire
@@ -90,7 +90,7 @@ const About: NextPage = () => {
           <div className="container">
             <div className="row gx-0 p-5 m-5 align-items-center">
               <div className="col px-5 mx-4">
-                <Image src="/about-us2 1.png" alt="Our Community" width={520} height={330} />
+                <Image src="/images/about-us2 1.png" alt="Our Community" width={520} height={330} />
               </div>
               <div className="col px-5 mx-5">
                 <div className="container">
@@ -198,36 +198,40 @@ const About: NextPage = () => {
         </div>
 
         <div className="container-fluid" id="support-beela-about-us">
-        <div className="container" >
+          <div className="container">
             <div id="support-beela-section1">
               <h2 className="no_name_37">Support Beela</h2>
-              <p className="B1">Beela is a 100% volunteer-run organization. <br/>
-We’re grateful for your support in any capacity. </p>
+              <p className="B1">
+                Beela is a 100% volunteer-run organization. <br />
+                We’re grateful for your support in any capacity.{" "}
+              </p>
             </div>
             <div id="support-beela-section2" className=" d-flex justify-content-center ">
               <div className="justify-content-center">
                 <h5 className="text-center">Volunteer</h5>
-                <p className="B2 about-support-p">Our team is always on the lookout for new volunteers. Tell us about your skills (this could be writing, social media, or design), and we’ll see if there’s a match!</p>
+                <p className="B2 about-support-p">
+                  Our team is always on the lookout for new volunteers. Tell us about your skills
+                  (this could be writing, social media, or design), and we’ll see if there’s a
+                  match!
+                </p>
               </div>
               <div className="justify-content-center">
                 <h5 className="text-center">Donate</h5>
-                <p className="B2 about-support-p">We are a nonprofit organization, and any monetary donation helps us reach more female and non-binary immigrants in Sweden.</p>
+                <p className="B2 about-support-p">
+                  We are a nonprofit organization, and any monetary donation helps us reach more
+                  female and non-binary immigrants in Sweden.
+                </p>
               </div>
             </div>
             <div className=" d-flex justify-content-center text-center py-5">
-              <a
-                        href="mailto:contact@beela.se"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <button type="button" className="btn button">
-                          Email Us
-                        </button>
-                      </a>
-              </div>
-              </div>
+              <a href="mailto:contact@beela.se" target="_blank" rel="noreferrer">
+                <button type="button" className="btn button">
+                  Email Us
+                </button>
+              </a>
+            </div>
+          </div>
         </div>
-
 
         {/* Team */}
         {/* Get Voulnted*/}
