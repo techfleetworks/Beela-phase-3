@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import avatar from "../public/images/avatar.png"
 import Image from "next/image"
+import { AboutBeela } from "./components/about/AboutBeela/AboutBeela"
 
 const About: NextPage = () => {
   return (
@@ -14,34 +15,8 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="container-fluid" id="wrapper">
-        <div className="row p-5" id="jumbotron">
-          {/* Hero */}
-          <div className="container px-5" id="hero">
-            {/* About Beela */}
-            <div className="row" id="hero-container">
-              <div className="col py-4 px-5 m-5">
-                <div className="conatiner">
-                  <div className="container pb-4 pt-2">
-                    <h1 id="about-beela">About Beela</h1>
-                  </div>
-                  <div className="container">
-                    <p id="about-paragraph">
-                      Beela was founded in 2021 by Juliana Araújo and Denise Muniz, who are both
-                      Brazilian immigrants to Sweden. They met at an event organized by Women Hack.
-                      Along with a mentorship program, Denise received career support from
-                      Juliana—and landed a developer job. That’s how they realized how important
-                      mentorship and support are for female and non-binary immigrants.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-5 py-5 px-2 my-5 mx-2">
-                <Image src="/images/Hero-Image.png" alt="About Beela" width={500} height={340} />
-              </div>
-            </div>
-          </div>
-        </div>
+      <main>
+        <AboutBeela />
 
         {/* Empower */}
         <div className="container py-2">
