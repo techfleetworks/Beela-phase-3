@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import avatar from "../public/images/avatar.png"
 import Image from "next/image"
-import { AboutBeela } from "./components/about/AboutBeela/AboutBeela"
+import AboutBeela from "./components/about/AboutBeela"
 
 const About: NextPage = () => {
   return (
