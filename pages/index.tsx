@@ -40,6 +40,7 @@ const Home: NextPage = () => {
         <Navbar />
 
         {/* Hero */}
+        
         <div className="container-fluid overflow-hidden" id="wrapper">
           <section id="section-hero">
             <Row className="text-center align-content-center justify-content-center" id="Hero">
