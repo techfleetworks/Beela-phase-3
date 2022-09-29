@@ -1,7 +1,7 @@
 import { SectionWrapper } from "../../../../components/layout/SectionWrapper"
 import styles from "./AboutBeela.module.css"
 
-export const AboutBeela = () => {
+export default function AboutBeela() {
   return (
     <SectionWrapper backgroundColor="#f9f2d4" padding={"8rem 7.9rem"}>
       <h1 className={styles.styled}>About Beela</h1>
