@@ -1,10 +1,9 @@
 import { SectionWrapper } from "../../../../components/layout/SectionWrapper"
 import styles from "./AboutBeela.module.css"
-import colors from "../../../../theme/colors"
 
-export const AboutBeela = () => {
+export default function AboutBeela() {
   return (
-    <SectionWrapper backgroundColor={colors.core.SECONDARY_CREAM} padding={"8rem 7.9rem"}>
+    <SectionWrapper backgroundColor="#f9f2d4" padding={"8rem 7.9rem"}>
       <h1 className={styles.styled}>About Beela</h1>
 
       <div>
