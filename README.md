@@ -52,16 +52,19 @@ To run the project in the **production mode**, use this command instead:
 yarn build
 ```
 
-<!-- 
-how to use sass
 
-create a new terminal. 
-(the first terminal should be bussy with the nextjs server; therefore you need to add a new terminal in which you can write commands in)
- use `w-sass`
-  so that SASS can watch the SASS folder and output the results into the CSS folder automatically on every change to a SASS file. 
+## how to use sass
+<br/>
+-create a new terminal. 
+-(the first terminal should be bussy with the nextjs server; therefore you need to add a new terminal in which you can write commands in)
+ ```
+  yarn w-sass
+ ```
+
+  -so that SASS can watch the SASS folder and output the results into the CSS folder automatically on every change to a SASS file. 
  this is so that you can always see the changed while in develop mode.
   otherwise changes will only reflect once you restart the next.js server, untill you run yarn dev again. 
-   -->
+   
 
 ## Dependencies & Tools Used
 
