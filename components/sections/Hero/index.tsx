@@ -2,7 +2,7 @@
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
 import Image from "react-bootstrap/Image"
-import { Button } from "../elements/Button"
+import { Button } from "../../elements/Button"
 
 export const Hero = () => {
   return (

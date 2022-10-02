@@ -51,6 +51,11 @@ To run the project in the **production mode**, use this command instead:
 ```
 yarn build
 ```
+## test your branch locally before making a Pull Request to ensure no errors 
+```
+use yarn start
+```
+
 
 
 ## how to use sass
