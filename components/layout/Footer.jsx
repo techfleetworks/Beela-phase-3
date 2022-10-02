@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import placeholder from "../public/images/placeholder.png"
+import placeholder from "../../public/images/placeholder.png"
 
 const Footer = () => {
   return (
