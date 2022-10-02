@@ -3,9 +3,9 @@ import Popper from "@popperjs/core"
 import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import Testimonials from "../components/Testimonials"
+import Navbar from "../components/layout/Navbar"
+import Footer from "../components/layout/Footer"
+import Testimonials from "../components/sections/Testimonials"
 
 // React-Bootstrap icons
 import { ArrowRight } from "react-bootstrap-icons"

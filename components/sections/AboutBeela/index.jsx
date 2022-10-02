@@ -1,4 +1,4 @@
-import { SectionWrapper } from "../../../../components/layout/SectionWrapper"
+import { SectionWrapper } from "../../layout/SectionWrapper"
 import styles from "./AboutBeela.module.css"
 
 export default function AboutBeela() {
