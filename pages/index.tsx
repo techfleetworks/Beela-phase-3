@@ -2,11 +2,11 @@ import type { NextPage } from "next"
 import Popper from "@popperjs/core"
 import Link from "next/link"
 import Head from "next/head"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import Testimonials from "../components/Testimonials"
-import { Hero } from "../components/Hero"
-import { TeamCard } from "../components/TeamCard"
+import Navbar from "../components/layout/Navbar"
+import Footer from "../components/layout/Footer"
+import Testimonials from "../components/sections/Testimonials"
+import { Hero } from "../components/sections/Hero"
+import { TeamCard } from "../components/elements/TeamCard"
 // import avatar from "../public/avatar.png"
 import { SectionWrapper } from "../components/layout/SectionWrapper"
 
@@ -24,7 +24,7 @@ import { wrap } from "module"
 // mock data
 import teamData from "../mockdata/team.json"
 
-import TestingComponent from "../components/testingcomponent"
+import TestingComponent from "../components/elements/testingcomponent"
 // import { useTestimonialsQuery } from "../graphql/generated"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
@@ -45,6 +45,10 @@ const Home: NextPage = () => {
       </Head>
       <main>
         <Navbar />
+
+        {/* TESTING COMPONENT THAT USES SASS  */}
+        <TestingComponent/>
+
         <div className="container-fluid overflow-hidden" id="wrapper">
           {/* Hero */}
           <Hero />

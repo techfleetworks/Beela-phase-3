@@ -19,9 +19,9 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "pages/components/about/AboutBeela/index.jsx",
-    "pages/components/about/AboutBeela/index.jsx",
-    "pages/components/about/AboutBeela/AboutBeela.jsx"
+    "components/sections/AboutBeela/index.jsx",
+    "components/sections/AboutBeela/index.jsx",
+    "components/sections/AboutBeela/AboutBeela.jsx"
   ],
   "exclude": ["node_modules"]
 }
