@@ -52,9 +52,11 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
   color: var(--color-berry-30) !important;
 }
+
 a:active {
   color: var(--color-berry-60);
 }
@@ -175,81 +177,117 @@ h5 {
   border-radius: 25px;
 }
 
-/* Navbar */
-
-.navbar-light .navbar-toggler {
-  border: none;
+/*------NAVIGATION SECTION ------*/
+.navbar {
+  background-color: var(--color-white) !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 600;
+  height: 125px;
+  top: 0;
 }
 
-// Active underline
-.navbar-light .navbar-nav .show > .nav-link,
-.navbar-light .navbar-nav .nav-link.active::after {
+a.nav-link {
+  display: flex;
+  margin: 0 auto;
+}
+
+//Navigation - Logo Wrapper
+.navbar-logo-wrapper {
+  margin: 5%;
+}
+
+//Navigation - Links Wrapper
+.navbar-nav-wrapper {
+  margin: 0 auto;
+}
+
+//Navigation - Link Section
+.nav-links {
+  display: inline-flex;
+  width: 100%;
+}
+
+.nav-link {
+  display: inline;
+}
+
+//Navigation - Links
+.nav-links a {
+  display: inline-block;
+  margin: 0 25px;
+}
+
+//Navigation - Programmes Dropdown Links
+a.dropdown-item {
+  color: var(--color-black);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-left: 15px;
+  width: 276px;
+  position: 10px;
+
+  &:hover {
+    width: 90%;
+  }
+}
+
+//Navigation - Donate Button
+.donate-button {
+  background-color: var(--color-honey);
+  border: none;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 1rem;
+  height: 46px;
+  margin-left: 20px;
+  padding: 0px 25px;
+  text-transform: capitalize;
+
+  &:hover {
+    background-color: #D0B316;
+    transition: 0.5s;
+  }
+}
+
+// ACTIVE UNDERLINE
+/*.nav-link.active::after {
   content: "";
   float: left;
   background: var(--color-honey);
   width: 100%;
   height: 4px;
   border-radius: 3px;
-}
-
-.navbar {
-  background-color: var(--color-white) !important;
-}
+  width: 100%;
+} 
+*/
 
 .navbar-expand-lg .navbar-collapse {
   justify-content: center;
 }
 
-.navbar-nav {
-  align-items: center;
-  justify-content: center;
-}
+
 
 .navbar-light .navbar-nav .nav-link {
   color: var(--color-black);
 }
 
-.navbar-brand {
-  font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif;
-}
-.nav-links {
-  display: flex;
-}
-.nav-socials {
-  margin-left: auto;
-  :hover svg {
-    cursor: pointer;
-  }
-}
-.social-icons {
-  margin: 24px;
-  color: var(--color-black);
-  :hover {
-    color: var(--color-berry);
-  }
-}
-
-#navbar-logo {
-  height: 50px;
-}
 
 @media only screen and (max-width: 992px) {
   .nav-links {
+    background-color: var(--color-white);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
-  .nav-socials {
-    display: none;
-  }
+
   .navbar-nav {
     justify-content: center;
   }
-  .nav-socials {
-    display: none;
-  }
 }
+
 /* Button */
 .button:hover {
   color: var(--color-white);
@@ -260,9 +298,11 @@ h5 {
   color: var(--color-white);
   background-color: var(--color-berry-60);
 }
+
 .slack-btn {
   padding: 13px 50px;
 }
+
 .button-outline {
   /* Desktop/Button/Button (16) */
   font-style: normal;
@@ -293,6 +333,7 @@ h5 {
   font-size: 0.833rem;
   line-height: 18px;
 }
+
 .O1 {
   /* Desktop/Overline/O1 (15) */
   font-style: normal;
@@ -300,6 +341,7 @@ h5 {
   font-size: 0.833rem;
   line-height: 18px;
 }
+
 .text-primary {
   color: #3a4a92;
 }
@@ -317,6 +359,7 @@ h5 {
   order: 1;
   flex-grow: 0;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -459,6 +502,7 @@ span {
   .left-center-text {
     text-align: center;
   }
+
   .hero-text-wrapper {
     padding: 0 0 1rem 0 !important;
   }
@@ -471,6 +515,7 @@ span {
 #blaze {
   background-color: white;
   border: 16px solid #e6c619;
+
   a {
     padding: 0;
   }
@@ -478,6 +523,7 @@ span {
 
 #podcast {
   background-color: white;
+
   a {
     color: #000000;
   }
@@ -490,16 +536,21 @@ span {
 #hero-poll {
   background-color: var(--color-cream);
 }
+
 #poll-img {
   max-width: 60%;
 }
+
 #apply-btn {
   background-color: var(--color-berry);
 }
+
 #container-hex {
   display: flex;
-  --s: 150px; /* size  */
+  --s: 150px;
+  /* size  */
 }
+
 #card-m5-steps-hex {
   width: var(--s);
   margin: var(--m);
@@ -527,11 +578,9 @@ span {
 #Hero {
   justify-content: center;
   align-items: center;
-  background: radial-gradient(
-    circle at 75% 50%,
-    rgba(204, 218, 255, 1) 0%,
-    rgba(247, 247, 246, 1) 39%
-  );
+  background: radial-gradient(circle at 75% 50%,
+      rgba(204, 218, 255, 1) 0%,
+      rgba(247, 247, 246, 1) 39%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -762,9 +811,11 @@ span {
 #footer-top {
   background-color: var(--color-honey);
 }
+
 .fnt-sml {
   font-size: small;
 }
+
 #copyright {
   font-size: 10pt;
 }
@@ -774,6 +825,7 @@ span {
   width: 120px !important;
   margin-top: 75px;
 }
+
 #join-community {
   margin-left: 100px;
 }
@@ -789,9 +841,11 @@ span {
 #newsletter {
   margin-left: 350px;
 }
+
 #email {
   margin-top: 20px;
 }
+
 #our-mission {
   margin-left: 100px;
   margin-top: 100px;
@@ -862,18 +916,22 @@ span {
 
 #support-beela-about-us {
   background-color: #f9f2d4;
+
   #support-beela-section1 {
     text-align: center;
     padding: 3rem 0;
   }
+
   #support-beela-section2 {
     margin: 0 auto;
     gap: 8rem;
   }
+
   .about-support-p {
     max-width: 305px;
     margin: 1rem auto;
   }
+
   button {
     padding-left: 2rem;
     padding-right: 2rem;
