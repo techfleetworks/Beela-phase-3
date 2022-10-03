@@ -1,0 +1,46 @@
+
+.ic{
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  margin-top: 15px;
+  background: red;
+  color: white;
+  line-height: 50px;
+  font-size: 24px;
+  border-radius: 5px 0 0 5px;
+}
+.wrapper {
+  input, button{
+    height: 50px;
+    width: 95%;
+    border-radius: 3px;
+  }
+  input{
+    margin-top: 15px;
+    padding: 0 65px;
+    font-size: 18px;
+    outline: none;
+    border: 2px solid #0b8cd7;
+  }
+  input::placeholder{
+    color: #8c8c8c;
+  }
+  button{
+    margin-top: 15px;
+    background: #0b8cd7;
+    color: white;
+    font-size: 25px;
+    border: 1px solid #0b8cd7;
+    letter-spacing: 1px;
+    cursor: pointer;
+    outline: none;
+    transition: .3s;
+  }
+  button:hover{
+    background: #1ed2fa;
+    border: 1px solid #05cdfa;
+    letter-spacing: 2px;
+  }
+}
+
