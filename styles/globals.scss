@@ -44,120 +44,92 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Montserrat", Verdana, sans-serif;
-  color: var(--color-black);
-  font-size: 18px;
+  color: $TRUE_BLACK;
+  font-size: 62.5%;
+}
+
+/***********TYPOGRAPHY************/
+//COLORS
+.primary-berry {
+  color: $PRIMARY_BERRY;
 }
 
 a {
   color: inherit;
   text-decoration: none;
 }
-
-a:hover {
-  color: var(--color-berry-30) !important;
-}
-
-a:active {
-  color: var(--color-berry-60);
-}
-
-/* DESKTOP*/
+/* DESKTOP TYPOGRAPHY*/
 
 .Special1,
 h1,
 h2,
 h3,
 h4 {
-  font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
+  font: {
+    family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
+    weight: 400;
+    style: normal;
+  }
+  line-height: 1.03em;
 }
 
 h5,
-h6 {
-  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif !important;
+.Subtitle1,
+.Subtitle2,
+.B1,
+.B2 {
+  font: {
+    family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif !important;
+    weight: 400;
+  }
+  line-height: 1.2em;
 }
 
 .Special1 {
-  /* SPECIAL 1 */
-  font-style: normal;
-  font-weight: 700;
-  font-size: 5rem;
-  line-height: 115px;
+  font-size: 9rem;
 }
 
 h1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3.556rem;
-  line-height: 82px;
-  letter-spacing: 0.03em;
+  font-size: 6.4rem;
 }
 
 h2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2.556rem;
-  line-height: 59px;
+  font-size: 4.6rem;
+  line-height: 1.04em;
 }
 
 h3 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.778rem;
-  line-height: 41px;
-}
-
-.h4 {
-  color: var(--color-berry);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.333rem;
-  line-height: 1.5;
+  font-size: 3.2rem;
 }
 
 h4 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.333rem;
-  line-height: 1.5;
+  font-size: 2.4rem;
+  line-height: 1.04em;
 }
 
-h5 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1rem;
-  line-height: 22px;
+h5,
+.nav-links a {
+  font: {
+    size: 1.8rem;
+    weight: 600;
+  }
 }
 
-.col-grid .S1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.944rem;
-  line-height: 21px;
+.S1 {
+  font-size: 1.7rem;
 }
 
 .S2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.833rem;
-  line-height: 18px;
+  font-size: 1.5rem;
 }
 
 .B1 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1rem;
-  line-height: 170%;
-  /* or 31px */
-  letter-spacing: 0.0005em;
+  font-size: 1.8rem;
 }
 
 .B2 {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 0.889rem;
-  line-height: 170%;
-  /* or 27px */
-  letter-spacing: 0.0005em;
+  font-size: 1.6rem;
+  line-height: 1.25em;
 }
 
 .button {
@@ -168,13 +140,70 @@ h5 {
   font-weight: 500;
   color: var(--color-white);
   background-color: var(--color-berry);
-  font-size: 0.889rem;
+  font-size: 1.6rem;
   line-height: 20px;
   /* identical to box height */
   text-transform: capitalize;
   height: 46px;
   min-width: max-content;
   border-radius: 25px;
+}
+
+/* MOBILE TYPOGRAPHY*/
+@media (max-width: 576px) {
+  .Special1 {
+    font-size: 6.4rem;
+    line-height: 1.03em;
+  }
+
+  h1 {
+    font-size: 4.6rem;
+    line-height: 1.13em;
+  }
+
+  h2 {
+    font-size: 3.2rem;
+    line-height: 1.28em;
+  }
+
+  h3 {
+    font-size: 2.4rem;
+    line-height: 1.33em;
+  }
+
+  h4 {
+    font-size: 1.6rem;
+    line-height: 1.375em;
+  }
+
+  h5,
+  .nav-links a {
+    font: {
+      size: 1.6rem;
+      weight: 600;
+    }
+    line-height: 1.375em;
+  }
+
+  .S1 {
+    font-size: 1.8rem;
+    line-height: 1.5em;
+  }
+
+  .S2 {
+    font-size: 1.5rem;
+    line-height: 1.5em;
+  }
+
+  .B1 {
+    font-size: 1.6rem;
+    line-height: 1.68em;
+  }
+
+  .B2 {
+    font-size: 1.4rem;
+    line-height: 1.7em;
+  }
 }
 
 /*------NAVIGATION SECTION ------*/
@@ -246,7 +275,7 @@ a.dropdown-item {
   text-transform: capitalize;
 
   &:hover {
-    background-color: #D0B316;
+    background-color: #d0b316;
     transition: 0.5s;
   }
 }
@@ -267,12 +296,9 @@ a.dropdown-item {
   justify-content: center;
 }
 
-
-
 .navbar-light .navbar-nav .nav-link {
   color: var(--color-black);
 }
-
 
 @media only screen and (max-width: 992px) {
   .nav-links {
@@ -330,7 +356,7 @@ a.dropdown-item {
   /* Desktop/Caption/C1 (15) */
   font-style: italic;
   font-weight: 500;
-  font-size: 0.833rem;
+  font-size: 1.5rem;
   line-height: 18px;
 }
 
@@ -338,7 +364,7 @@ a.dropdown-item {
   /* Desktop/Overline/O1 (15) */
   font-style: normal;
   font-weight: 500;
-  font-size: 0.833rem;
+  font-size: 1.5rem;
   line-height: 18px;
 }
 
@@ -578,9 +604,11 @@ span {
 #Hero {
   justify-content: center;
   align-items: center;
-  background: radial-gradient(circle at 75% 50%,
-      rgba(204, 218, 255, 1) 0%,
-      rgba(247, 247, 246, 1) 39%);
+  background: radial-gradient(
+    circle at 75% 50%,
+    rgba(204, 218, 255, 1) 0%,
+    rgba(247, 247, 246, 1) 39%
+  );
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
