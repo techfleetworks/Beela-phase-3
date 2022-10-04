@@ -1,5 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "variables";
+
+/******** FONTS ********/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @font-face {
   font-family: "no_name_37";
@@ -43,13 +45,13 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Montserrat", Verdana, sans-serif;
+  font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif !important;
   color: $TRUE_BLACK;
   font-size: 62.5%;
 }
 
-/***********TYPOGRAPHY************/
-//COLORS
+/******************************TYPOGRAPHY************/
+/* COLORS */
 .primary-berry {
   color: $PRIMARY_BERRY;
 }
@@ -77,7 +79,9 @@ h5,
 .Subtitle1,
 .Subtitle2,
 .B1,
-.B2 {
+.B2,
+.C1,
+.O1 {
   font: {
     family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif !important;
     weight: 400;
@@ -132,21 +136,18 @@ h5,
   line-height: 1.25em;
 }
 
-.button {
-  /* Desktop/Button/Button (16) */
-  align-items: center;
-  font-style: normal;
-  text-align: center;
+.C1 {
+  font-style: italic;
   font-weight: 500;
-  color: var(--color-white);
-  background-color: var(--color-berry);
-  font-size: 1.6rem;
-  line-height: 20px;
-  /* identical to box height */
-  text-transform: capitalize;
-  height: 46px;
-  min-width: max-content;
-  border-radius: 25px;
+  font-size: 1.5rem;
+  line-height: 1.2em;
+}
+
+.O1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  text-transform: uppercase;
 }
 
 /* MOBILE TYPOGRAPHY*/
@@ -203,6 +204,14 @@ h5,
   .B2 {
     font-size: 1.4rem;
     line-height: 1.7em;
+  }
+  .C1 {
+    font-size: 1.4rem;
+    line-height: 1.3em;
+  }
+  .O1 {
+    font-size: 1.4rem;
+    line-height: 0.86em;
   }
 }
 
@@ -315,6 +324,22 @@ a.dropdown-item {
 }
 
 /* Button */
+
+.button {
+  align-items: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--color-berry);
+  font-size: 1.6rem;
+  line-height: 1.25em;
+  /* identical to box height */
+  text-transform: capitalize;
+  height: 46px;
+  min-width: max-content;
+  border-radius: 25px;
+}
 .button:hover {
   color: var(--color-white);
   background-color: var(--color-berry-30);
@@ -350,14 +375,6 @@ a.dropdown-item {
 
 .home-pollination__spacer {
   margin: 64px 128px 64px 128px;
-}
-
-.CT {
-  /* Desktop/Caption/C1 (15) */
-  font-style: italic;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 18px;
 }
 
 .O1 {
