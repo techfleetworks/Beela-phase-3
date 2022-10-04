@@ -56,7 +56,7 @@ const Home: NextPage = () => {
           <Row
             xs={1}
             md={3}
-            className="text-center align-content-center align-items-center justify-content-center justify-items-center p-3"
+            className="align-items-center justify-around px-5"
             id="blaze"
           >
             <Col xs={3} md={2}>
@@ -67,15 +67,15 @@ const Home: NextPage = () => {
                 fluid
               />
             </Col>
-            <Col md={8}>
-              <h3 className="text-color__berry">
+            <Col md={6}>
+              <h3 className="text-color__berry leading-none text-xs">
                 Proud to announce Beela won the{" "}
                 <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
                   2022 BLAZE Catalyst award!
                 </a>
               </h3>
             </Col>
-            <Col xs={3} md={2}>
+            <Col xs={3} md={4}>
               <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
                 <Image
                   src="/icons/blazelogo.svg"
