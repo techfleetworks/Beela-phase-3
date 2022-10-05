@@ -11,11 +11,17 @@ type SectionWrapperProps = {
   backgroundColor?: string
   children?: React.ReactNode
   padding?: string
+  className?: string
 }
 
 export const SectionWrapper = (props: SectionWrapperProps) => {
-  const { backgroundColor = colors.TRUE_WHITE, children, padding = "4rem" } = props
+  const { backgroundColor = colors.TRUE_WHITE, children, padding = "4rem", className } = props
   return (
-    <section style={{ padding: padding, backgroundColor: backgroundColor }}>{children}</section>
+    <section
+      className={className}
+      style={{ padding: padding, backgroundColor: backgroundColor, marginTop: "125px" }}
+    >
+      {children}
+    </section>
   )
 }

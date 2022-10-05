@@ -1,0 +1,19 @@
+.container {
+  position: relative;
+  max-width: 945px;
+  margin: auto;
+}
+
+.imgContainer {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1024px) {
+  .imgContainer {
+    position: relative;
+    top: 0;
+  }
+}
