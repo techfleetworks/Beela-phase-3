@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
 import avatar from "../public/avatar.png"
 import Image from "next/image"
-// import Button from "../components/Button"
+import Button from "../components/Button/Button"
 
 const About: NextPage = () => {
   return (
@@ -224,6 +224,7 @@ We’re grateful for your support in any capacity. </p>
                         <button type="button" className="btn button">
                           Email Us
                         </button>
+                        <Button name="Contact us" />
                       </a>
               </div>
               </div>
