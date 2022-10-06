@@ -204,10 +204,7 @@ const About: NextPage = () => {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <button type="button" className="btn button">
-                          Email Us
-                        </button>
-                        <Button name="Contact us" />
+                        <Button name="Email Us" />
                       </a>
               </div>
               </div>
