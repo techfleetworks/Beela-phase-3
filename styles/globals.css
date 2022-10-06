@@ -1,10 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
 @font-face {
   font-family: "no_name_37";
   src: url("/fonts/no_name_37_Regular.otf");
 }
-
 :root {
   --color-lgrey: rgb(242, 242, 242);
   --color-grey: rgb(205, 203, 203);
@@ -25,7 +23,6 @@
   --color-cornflower: rgb(204, 218, 255);
 }
 
-
 html,
 body {
   padding: 0;
@@ -39,15 +36,16 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 a:hover {
   color: var(--color-berry-30) !important;
 }
+
 a:active {
   color: var(--color-berry-60);
 }
 
 /* DESKTOP*/
-
 .Special1,
 h1,
 h2,
@@ -145,30 +143,11 @@ h5 {
   letter-spacing: 0.0005em;
 }
 
-// .button {
-//   /* Desktop/Button/Button (16) */
-//   align-items: center;
-//   font-style: normal;
-//   text-align: center;
-//   font-weight: 500;
-//   color: var(--color-white);
-//   background-color: var(--color-berry);
-//   font-size: 0.889rem;
-//   line-height: 20px;
-//   /* identical to box height */
-//   text-transform: capitalize;
-//   height: 46px;
-//   min-width: max-content;
-//   border-radius: 25px;
-// }
-
 /* Navbar */
-
 .navbar-light .navbar-toggler {
   border: none;
 }
 
-// Active underline
 .navbar-light .navbar-nav .show > .nav-link,
 .navbar-light .navbar-nav .nav-link.active::after {
   content: "";
@@ -199,21 +178,24 @@ h5 {
 .navbar-brand {
   font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif;
 }
+
 .nav-links {
   display: flex;
 }
+
 .nav-socials {
   margin-left: auto;
-  :hover svg {
-    cursor: pointer;
-  }
 }
+.nav-socials :hover svg {
+  cursor: pointer;
+}
+
 .social-icons {
   margin: 24px;
   color: var(--color-black);
-  :hover {
-    color: var(--color-berry);
-  }
+}
+.social-icons :hover {
+  color: var(--color-berry);
 }
 
 #navbar-logo {
@@ -237,19 +219,10 @@ h5 {
     display: none;
   }
 }
-// /* Button */
-// .button:hover {
-//   color: var(--color-white);
-//   background-color: var(--color-berry-30);
-// }
-
-// .button:focus {
-//   color: var(--color-white);
-//   background-color: var(--color-berry-60);
-// }
-.slack-btn{
+.slack-btn {
   padding: 13px 50px;
 }
+
 .button-outline {
   /* Desktop/Button/Button (16) */
   font-style: normal;
@@ -264,6 +237,8 @@ h5 {
   /* identical to box height */
   text-transform: capitalize;
   height: 46px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   min-width: 150px;
   border-radius: 25px;
@@ -280,6 +255,7 @@ h5 {
   font-size: 0.833rem;
   line-height: 18px;
 }
+
 .O1 {
   /* Desktop/Overline/O1 (15) */
   font-style: normal;
@@ -287,6 +263,7 @@ h5 {
   font-size: 0.833rem;
   line-height: 18px;
 }
+
 .text-primary {
   color: #3a4a92;
 }
@@ -304,6 +281,7 @@ h5 {
   order: 1;
   flex-grow: 0;
 }
+
 * {
   box-sizing: border-box;
 }
@@ -368,7 +346,6 @@ span {
   padding-left: 96px;
   padding-right: 96px;
 } */
-
 .card {
   border: none !important;
   background-color: var(--color-white);
@@ -380,9 +357,8 @@ span {
   margin-top: px;
 }
 
-.card-span{
+.card-span {
   white-space: pre-line;
-  
 }
 
 .card-img-top {
@@ -451,7 +427,6 @@ span {
     padding: 0 0 1rem 0 !important;
   }
 }
-
 #hero-height {
   height: 75vh;
 }
@@ -459,16 +434,16 @@ span {
 #blaze {
   background-color: white;
   border: 16px solid #e6c619;
-  a {
-    padding: 0;
-  }
+}
+#blaze a {
+  padding: 0;
 }
 
 #podcast {
   background-color: white;
-  a {
-    color: #000000;
-  }
+}
+#podcast a {
+  color: #000000;
 }
 
 .podcast-icon {
@@ -478,16 +453,20 @@ span {
 #hero-poll {
   background-color: var(--color-cream);
 }
+
 #poll-img {
   max-width: 60%;
 }
+
 #apply-btn {
   background-color: var(--color-berry);
 }
+
 #container-hex {
   display: flex;
   --s: 150px; /* size  */
 }
+
 #card-m5-steps-hex {
   width: var(--s);
   margin: var(--m);
@@ -495,7 +474,8 @@ span {
   display: inline-flexbox;
   font-size: initial;
   background-color: var(--color-honey);
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  -webkit-clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+          clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
 #card-m5-steps-hex-1 {
@@ -505,7 +485,8 @@ span {
   display: inline-flexbox;
   font-size: initial;
   background-color: var(--color-honey);
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  -webkit-clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+          clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
 }
 
 #FAQ {
@@ -515,18 +496,14 @@ span {
 #Hero {
   justify-content: center;
   align-items: center;
-  background: radial-gradient(
-    circle at 75% 50%,
-    rgba(204, 218, 255, 1) 0%,
-    rgba(247, 247, 246, 1) 39%
-  );
+  background: radial-gradient(circle at 75% 50%, rgb(204, 218, 255) 0%, rgb(247, 247, 246) 39%);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 #newsletter {
-  height: 66.13333129882812px;
+  height: 66.1333312988px;
   width: 399px;
   left: 0px;
   top: 0px;
@@ -554,7 +531,6 @@ span {
   width: 460px;
   background-color: white;
 } */
-
 #our-community-rectangle {
   height: 280px;
   width: 450px;
@@ -668,7 +644,8 @@ span {
 }
 
 .hexagon {
-  clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  -webkit-clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+          clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
   display: inline-block;
 }
 
@@ -735,6 +712,8 @@ span {
 .carousel.carousel-slider .control-arrow {
   background: white !important;
   border: 2px solid #3a4a92 !important;
+  height: -webkit-min-content;
+  height: -moz-min-content;
   height: min-content;
   position: absolute;
   top: 90% !important;
@@ -749,21 +728,23 @@ span {
 
 #footer-top {
   background-color: var(--color-honey);
- 
 }
-.fnt-sml{
+
+.fnt-sml {
   font-size: small;
 }
+
 #copyright {
   font-size: 10pt;
 }
 
 .site-map-footer {
- font-size: 10pt;
- width: 120px !important;
- margin-top: 75px;
+  font-size: 10pt;
+  width: 120px !important;
+  margin-top: 75px;
 }
-#join-community{
+
+#join-community {
   margin-left: 100px;
 }
 
@@ -772,16 +753,18 @@ span {
 }
 
 #mission {
-  width:325px;
+  width: 325px;
 }
 
-#newsletter{
+#newsletter {
   margin-left: 350px;
 }
+
 #email {
   margin-top: 20px;
 }
-#our-mission{
+
+#our-mission {
   margin-left: 100px;
   margin-top: 100px;
 }
@@ -792,11 +775,6 @@ span {
     width: 95% !important;
     margin: auto !important;
   }
-
-  // .carousel.carousel-slider .control-arrow {
-  //   display: none !important;
-  // }
-
   .myCarousel {
     background: #fafafa;
     margin-top: -9%;
@@ -808,75 +786,72 @@ span {
     padding-left: 5%;
     padding-right: 5%;
     border: 1px solid #ddd;
+    min-height: -webkit-fit-content !important;
+    min-height: -moz-fit-content !important;
     min-height: fit-content !important;
   }
 }
-
-
-.no_name_37{
+.no_name_37 {
   font-family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
   color: #3A4A92 !important;
 }
 
-#wearegrowing{
+#wearegrowing {
   background-color: #F0DBEE;
   padding: 3% 0%;
 }
 
-#growing-p{
+#growing-p {
   max-width: 600px;
 }
 
-#growing-apprentice{
+#growing-apprentice {
   max-width: 304px;
 }
 
-.img-card-relative{
+.img-card-relative {
   display: inline;
   position: absolute;
   top: -120px;
   display: inline-flexbox;
   font-size: initial;
   background-color: var(--color-honey);
-  -webkit-clip-path:polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+  -webkit-clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-
 }
-
 
 .card-text {
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 170%;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 170%;
 }
 
-#support-beela-about-us{
+#support-beela-about-us {
   background-color: #F9F2D4;
-  #support-beela-section1{
-text-align: center;
-padding: 3rem 0;
-  }
-  #support-beela-section2{
-    margin: 0 auto;
-    gap:8rem;
-   
-  }
-  .about-support-p{
-    max-width: 305px;
-    margin: 1rem auto;
-  }
-  button{
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
+}
+#support-beela-about-us #support-beela-section1 {
+  text-align: center;
+  padding: 3rem 0;
+}
+#support-beela-about-us #support-beela-section2 {
+  margin: 0 auto;
+  gap: 8rem;
+}
+#support-beela-about-us .about-support-p {
+  max-width: 305px;
+  margin: 1rem auto;
+}
+#support-beela-about-us button {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-.pod-mente{
-  background-color: #EDDEED ;
+.pod-mente {
+  background-color: #EDDEED;
 }
 
-.new-mente{
+.new-mente {
   background-color: #DABEDA;
-}
+}/*# sourceMappingURL=globals.css.map */

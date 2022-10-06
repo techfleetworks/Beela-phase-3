@@ -1,0 +1,29 @@
+.button {
+  /* Desktop/Button/Button (16) */
+  align-items: center;
+  font-style: normal;
+  text-align: center;
+  font-weight: 500;
+  color: var(--color-white);
+  background-color: var(--color-berry);
+  font-size: 0.889rem;
+  line-height: 20px;
+  /* identical to box height */
+  text-transform: capitalize;
+  height: 46px;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  border-radius: 25px;
+}
+
+/* Button */
+.button:hover {
+  color: var(--color-white);
+  background-color: var(--color-berry-30);
+}
+
+.button:focus {
+  color: var(--color-white);
+  background-color: var(--color-berry-60);
+}/*# sourceMappingURL=button.module.css.map */
