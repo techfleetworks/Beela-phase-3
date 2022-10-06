@@ -60,6 +60,7 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 /* DESKTOP TYPOGRAPHY*/
 
 .Special1,
@@ -323,8 +324,79 @@ a.dropdown-item {
   }
 }
 
-/* Button */
+/*------HERO SECTION ------*/
 
+// Hero - Gradiant Background + Section Height
+#Hero {
+background: radial-gradient(circle at 75% 55%,
+  rgba(204, 218, 255, .5) 10%,
+  rgba(247, 247, 246, .15) 40%);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+justify-content: center;
+height: 90vh;
+}
+
+// Hero - Left Wrapper
+.hero-left-section {
+  margin-left: 15%;
+  margin-top: 10%;
+  text-align: left;
+}
+
+// Hero - Main Heading
+.hero-heading {
+  color: var(--color-berry);
+  letter-spacing: .1rem;
+  line-height: 110%;
+  margin-bottom: 30px;
+}
+
+// Hero - Subheading
+.hero-text {
+  font-size: 1.6rem;
+  line-height: 175%;
+  margin-bottom: 30px; 
+}
+
+// Hero - Fancy Yellow Underline
+.svg-underline {
+  background: url("../public/images/underline.png") bottom left no-repeat;
+  background-size: 100% auto;
+  padding-bottom: 0px;
+  min-width: 100%;
+}
+
+// Hero - Image
+.hero-image {
+  margin-top: 5%;
+}
+
+// CTA - Join Our Slack Community 
+.hero-button {
+  background-color: var(--color-berry);
+  border: none;
+  border-radius: 25px;
+  color: var(--color-white);
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.25em;
+  /* identical to box height */
+  text-transform: capitalize;
+  height: 46px;
+  min-width: max-content;
+  text-align: center;
+  width: 318px;
+}
+.hero-button:hover {
+  color: var(--color-white);
+  background-color: var(--color-berry-30);
+}
+
+
+/* Button */
 .button {
   align-items: center;
   font-style: normal;
@@ -340,6 +412,7 @@ a.dropdown-item {
   min-width: max-content;
   border-radius: 25px;
 }
+
 .button:hover {
   color: var(--color-white);
   background-color: var(--color-berry-30);
@@ -419,18 +492,6 @@ span {
 .italics {
   font-style: italic;
   font-weight: 400;
-}
-
-.svg-underline {
-  background: url(/underline.svg) bottom left no-repeat;
-  background-size: 100% auto;
-  padding-bottom: 0px;
-  min-width: 100%;
-  font-weight: 400;
-}
-
-.text-color__berry {
-  color: var(--color-berry);
 }
 
 #testimonials {
@@ -537,10 +598,6 @@ span {
   margin-right: 80px;
 }
 
-.left-center-text {
-  text-align: left;
-}
-
 @media only screen and (max-width: 768px) {
   .left-center-text {
     text-align: center;
@@ -616,19 +673,6 @@ span {
 
 #FAQ {
   background-color: var(--color-lgrey);
-}
-
-#Hero {
-  justify-content: center;
-  align-items: center;
-  background: radial-gradient(
-    circle at 75% 50%,
-    rgba(204, 218, 255, 1) 0%,
-    rgba(247, 247, 246, 1) 39%
-  );
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 #newsletter {
