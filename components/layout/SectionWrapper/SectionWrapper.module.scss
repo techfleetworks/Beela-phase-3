@@ -1,0 +1,42 @@
+@import "../../../styles/variables.scss";
+
+.SECONDARY_CREAM {
+  background-color: $SECONDARY_CREAM;
+}
+.SECONDARY_CORNFLOWER {
+  background-color: $SECONDARY_CORNFLOWER;
+}
+.PRIMARY_CORAL {
+  background-color: $PRIMARY_CORAL;
+}
+.VIOLET_8 {
+  background-color: $VIOLET_8;
+}
+
+.hero {
+  padding: 6rem;
+}
+.maim {
+  padding: 4rem;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    padding: 5rem;
+  }
+  .main {
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 4rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .hero {
+    padding: 3rem;
+  }
+}
