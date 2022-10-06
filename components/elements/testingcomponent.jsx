@@ -1,5 +1,7 @@
 import React from 'react'
-import style from '../styles/css/testingcomponent.module.css'
+import style from "../../styles/css/elements/testingcomponent.module.css";
+
+
 
 export default function testingcomponent() {
   return (

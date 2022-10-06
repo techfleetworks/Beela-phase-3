@@ -2,10 +2,13 @@ import type { NextPage } from "next"
 import Popper from "@popperjs/core"
 import Link from "next/link"
 import Head from "next/head"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import Testimonials from "../components/Testimonials"
+import Navbar from "../components/layout/Navbar"
+import Footer from "../components/layout/Footer"
+import Testimonials from "../components/sections/Testimonials"
+import { Hero } from "../components/sections/Hero"
+import { TeamCard } from "../components/elements/TeamCard"
 // import avatar from "../public/avatar.png"
+import { SectionWrapper } from "../components/layout/SectionWrapper"
 
 // React-Bootstrap icons
 import { Spotify } from "react-bootstrap-icons"
@@ -17,7 +20,11 @@ import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
 import { wrap } from "module"
-import TestingComponent from "../components/testingcomponent"
+
+// mock data
+import teamData from "../mockdata/team.json"
+
+import TestingComponent from "../components/elements/testingcomponent"
 // import { useTestimonialsQuery } from "../graphql/generated"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
@@ -39,58 +46,12 @@ const Home: NextPage = () => {
       <main>
         <Navbar />
 
-        {/* Hero */}
+        {/* TESTING COMPONENT THAT USES SASS  */}
+        <TestingComponent/>
+
         <div className="container-fluid overflow-hidden" id="wrapper">
-          <section id="section-hero">
-            <Row className="text-center align-content-center justify-content-center" id="Hero">
-              <Row xs={1} s={2} md={2} className="m-4 align-items-center justify-content-center">
-                <Col
-                  xs={{ order: 2 }}
-                  sm={10}
-                  md={{ span: 6, order: 1 }}
-                  lg={6}
-                  xl={5}
-                  className="p-5 hero-text-wrapper"
-                >
-                  <h2 className="text-color__berry">
-                    Bee <span className="svg-underline"> supported</span>,
-                    <span className="svg-underline"> empowered</span>, and
-                    <span className="svg-underline"> connected</span>
-                    {/* {data?.testimonials?.data[0].attributes?.title} */}
-                  </h2>
-                  <div className="left-center-text">
-                    <p className="B1 p-3">
-                      We offer free resources to help women and non-binary Swedish immigrants start
-                      tech careers.
-                    </p>
-                    <div className="">
-                      <a
-                        href="https://join.slack.com/t/beela/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ"
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <button type="button" className="btn button">
-                          Join Our Slack Community
-                        </button>
-                      </a>
-                    </div>
-                  </div>
-                </Col>
-                <Col sm={{ order: 1 }} md={6} className="p-3">
-                  <Image
-                    src="/queenbees.png"
-                    alt="Illustraion of three women, one wearing glasses and a blue shirt, one wearing a shirt with the letter B and a crown, and the other in a polkadot shirt and a hijab."
-                    fluid
-                  />
-                </Col>
-              </Row>
-            </Row>
-          </section>
-
-{/* calling the testing component ,which i imported at the top of the page */}
-          <TestingComponent/>
-
-          
+          {/* Hero */}
+          <Hero />
           {/* Blaze Award*/}
           <Row
             xs={1}
@@ -100,7 +61,7 @@ const Home: NextPage = () => {
           >
             <Col xs={3} md={2}>
               <Image
-                src="/images/bee_announcement.svg"
+                src="/icons/bee_announcement.svg"
                 alt="Illustration of a bee shouting into a blue megaphone"
                 height={186}
                 fluid
@@ -117,7 +78,7 @@ const Home: NextPage = () => {
             <Col xs={3} md={2}>
               <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
                 <Image
-                  src="/images/blazelogo.svg"
+                  src="/icons/blazelogo.svg"
                   alt="Logo of Blaze, a sanserif text colored with oranges and red"
                   width={286}
                   fluid
@@ -125,36 +86,6 @@ const Home: NextPage = () => {
               </a>
             </Col>
           </Row>
-
-          {/* About Beela */}
-          <div className="row p-5" id="jumbotron">
-            {/* Hero */}
-            <div className="container px-5" id="hero">
-              {/* About Beela */}
-              <div className="row" id="hero-container">
-                <div className="col-sm-12 col-lg-6 p-5 my-4">
-                  <div className="conatiner">
-                    <div className="container pb-4 pt-2">
-                      <h1 id="about-beela">About Beela</h1>
-                    </div>
-                    <div className="container">
-                      <p id="about-paragraph">
-                        Beela was founded in 2021 by Juliana Araújo and Denise Muniz, who are both
-                        Brazilian immigrants to Sweden. They met at an event organized by Women Hack.
-                        Along with a mentorship program, Denise received career support from
-                        Juliana—and landed a developer job. That’s how they realized how important
-                        mentorship and support are for female and non-binary immigrants.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-sm-12 col-lg-6 p-5 my-5">
-                  <img src="Denise-Juliana.png" alt="placeholder" />
-                  {/* <Image src="/Denise-Juliana.png" alt="About Beela" layout='fill' /> */}
-                </div>
-              </div>
-            </div>
-          </div>
 
           {/* Our Team */}
           <div className="container text-center" id="team-container">
@@ -173,52 +104,16 @@ const Home: NextPage = () => {
 
               <div className="row">
                 <div className="card-deck d-flex flex-row flex-wrap justify-content-center">
-
-                  <div className="col-sm-12 col-lg-4 card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div>
-                          <img src="juliana.png" alt="placeholder"/>
-                        </div>
-                        <div className="header">
-                        </div>
-                        <span id="team-name">JULIANA ARAÚJO</span>
-                        <p className="text-muted" id="team-title">
-                          UX Designer
-                        </p>
-                        <p className="card-text" id="card-text">
-                          Juliana is a Latina immigrant with 8+ years of experience working in tech,
-                          leading product teams to develop data-driven products. She has a
-                          Bachelor&apos;s in Information Systems and is currently writing her master
-                          thesis in IT Project Management from Stockholm University.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="col-sm-12 col-lg-4 card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div className="header">
-                          <div>
-                            <img src="denise.png" alt="placeholder" />
-                          </div>
-                        </div>
-                        <span id="team-name">DENISE MUNIZ</span>
-                        <p className="text-muted" id="team-title">
-                          UX Designer
-                        </p>
-                        <p className="card-text" id="card-text">
-                          Denise is a Latina immigrant and fullstack developer. She has over 10
-                          years of experience working as a business analyst, but decided to change
-                          her career path to software development after she moved to Sweden. She has
-                          a Bachelor&apos;s in Information Systems and a Master&apos;s in Business &
-                          Project Management.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
+                  {teamData &&
+                    teamData.map((data) => (
+                      <TeamCard
+                        key={data.id}
+                        imgSource={data.imgSource}
+                        name={data.name}
+                        title={data.title}
+                        description={data.description}
+                      />
+                    ))}
                 </div>
               </div>
             </div>
@@ -227,7 +122,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="zoe.png" alt="placeholder" />
+                    <img src="images/zoe.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Zoe Xuan Qin</span>
                   <p className="text-muted" id="team-title">
@@ -238,7 +133,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="anja.png" alt="placeholder" />
+                    <img src="images/anja.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Anja Woracek</span>
                   <p className="text-muted" id="team-title">
@@ -249,7 +144,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="estefanny.png" alt="placeholder" />
+                    <img src="images/estefanny.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Estefanny Moran</span>
                   <p className="text-muted" id="team-title">
@@ -260,7 +155,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="raquel.png" alt="placeholder" />
+                    <img src="images/raquel.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Raquel Almeida</span>
                   <p className="text-muted" id="team-title">
@@ -273,7 +168,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="milena.png" alt="placeholder" />
+                    <img src="images/milena.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Milena Matrone</span>
                   <p className="text-muted" id="team-title">
@@ -285,7 +180,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="marcela.png" alt="placeholder" />
+                    <img src="images/marcela.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Marcela Feliz Fortiz</span>
                   <p className="text-muted" id="team-title">
@@ -296,7 +191,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="mae.png" alt="placeholder" />
+                    <img src="images/mae.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Mae Tadena</span>
                   <p className="text-muted" id="team-title">
@@ -307,7 +202,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="nidhi.png" alt="placeholder" />
+                    <img src="images/nidhi.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Nidhi Pathak</span>
                   <p className="text-muted" id="team-title">
@@ -320,7 +215,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="bee1.png" alt="placeholder" />
+                    <img src="images/bee1.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Rebecca</span>
                   <p className="text-muted" id="team-title">
@@ -331,7 +226,7 @@ const Home: NextPage = () => {
               <div className="col-sm-6 col-lg-3">
                 <div className="card-title">
                   <div>
-                    <img src="bee1.png" alt="placeholder" />
+                    <img src="images/bee1.png" alt="placeholder" />
                   </div>
                   <span id="team-name">Hellen</span>
                   <p className="text-muted" id="team-title">
@@ -340,7 +235,6 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-
           </div>
 
           {/* Career Steps */}
@@ -369,7 +263,7 @@ const Home: NextPage = () => {
                 <Row xs={1} md={3} className="g-4 justify-content-center">
                   <Col className="mb-4 steps-col">
                     <Card>
-                      <Card.Img variant="top" src="../images/bee1.svg" />
+                      <Card.Img variant="top" src="../icons/bee1.svg" />
                       <Card.Body>
                         <Card.Title className="h4">1. Join our community</Card.Title>
                         <Card.Text>Get support and share your experiences in our forum.</Card.Text>
@@ -379,7 +273,7 @@ const Home: NextPage = () => {
 
                   <Col className="mb-4 steps-col">
                     <Card>
-                      <Card.Img variant="top" src="../images/bee2.svg" />
+                      <Card.Img variant="top" src="../icons/bee2.svg" />
                       <Card.Body>
                         <Card.Title className="h4">2. Get experience</Card.Title>
                         <Card.Text>
@@ -390,7 +284,7 @@ const Home: NextPage = () => {
                   </Col>
                   <Col className="mb-4 steps-col">
                     <Card>
-                      <Card.Img variant="top" src="../images/bee3.svg" />
+                      <Card.Img variant="top" src="../icons/bee3.svg" />
                       <Card.Body>
                         <Card.Title className="h4">3. Land a job</Card.Title>
                         <Card.Text>
@@ -438,7 +332,7 @@ const Home: NextPage = () => {
                     className="xs={1} md={2} align-items-center justify-content-center display-flex flex-wrap"
                     id="card-deck-steps-hex"
                   >
-                    <Col className="card m-5 justify-content-center " id="card-m5-steps-hex" >
+                    <Col className="card m-5 justify-content-center " id="card-m5-steps-hex">
                       <Card>
                         <Card.Body className="card-body-hex">
                           <p className="card-text">July 01 2022</p>
@@ -583,7 +477,7 @@ const Home: NextPage = () => {
                         rel="noreferrer"
                       >
                         <Image
-                          src="/podcast-apple.svg"
+                          src="/icons/podcast-apple.svg"
                           className="m-3 podcast-icon"
                           alt="Icon for Apple Podcasts, an icon of a person with two semi circles above them"
                         />
@@ -594,7 +488,7 @@ const Home: NextPage = () => {
                         rel="noreferrer"
                       >
                         <Image
-                          src="/podcast-google.svg"
+                          src="/icons/podcast-google.svg"
                           className="podcast-icon"
                           alt="Icon for Google Podcasts, an row of five divided lines in a diamond shape"
                         />
@@ -611,7 +505,7 @@ const Home: NextPage = () => {
                   >
                     <div className="image-wrapper">
                       <img
-                        src="/images/home-podcast.svg"
+                        src="/icons/home-podcast.svg"
                         alt="The Podcast image for Beela Talk, an illustraion of two women in Rosie the Riveter pose with the text Beela's Talk underneath them"
                         className="img-fluid home-shadow_img"
                       />

@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import placeholder from "../public/placeholder.png"
+import placeholder from "../../public/images/placeholder.png"
 
 const Footer = () => {
   return (
@@ -21,7 +21,7 @@ const Footer = () => {
               <div>
                 <h5 className="h5 e">Our Partners</h5>
                 <a href="https://www.newtosweden.org" target="_blank" rel="noreferrer">
-                  <img src="/newtosweden.png" className="rounded-circle" alt="NewtoSweden" />
+                  <img src="/images/newtosweden.png" className="rounded-circle" alt="NewtoSweden" />
                   &nbsp;
                 </a>
                 <a
@@ -29,11 +29,15 @@ const Footer = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src="/TechFleet.png" className="rounded-circle" alt="TechFleet" />
+                  <img src="/images/TechFleet.png" className="rounded-circle" alt="TechFleet" />
                   &nbsp;
                 </a>
                 <a href="https://beetrootacademy.com/" target="_blank" rel="noreferrer">
-                  <img src="/Beetroot.png" className="rounded-circle" alt="Beetrootacademy" />
+                  <img
+                    src="/images/Beetroot.png"
+                    className="rounded-circle"
+                    alt="Beetrootacademy"
+                  />
                   &nbsp;
                 </a>
               </div>

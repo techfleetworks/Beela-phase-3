@@ -1,8 +1,8 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import avatar from "../public/avatar.png"
+import Navbar from "../components/layout/Navbar"
+import Footer from "../components/layout/Footer"
+import avatar from "../public/images/avatar.png"
 import Image from "next/image"
 import Button from "../components/Button/Button"
 
@@ -15,41 +15,15 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="container-fluid" id="wrapper">
-        <div className="row p-5" id="jumbotron">
-          {/* Hero */}
-          <div className="container px-5" id="hero">
-            {/* About Beela */}
-            <div className="row" id="hero-container">
-              <div className="col py-4 px-5 m-5">
-                <div className="conatiner">
-                  <div className="container pb-4 pt-2">
-                    <h1 id="about-beela">About Beela</h1>
-                  </div>
-                  <div className="container">
-                    <p id="about-paragraph">
-                      Beela was founded in 2021 by Juliana Araújo and Denise Muniz, who are both
-                      Brazilian immigrants to Sweden. They met at an event organized by Women Hack.
-                      Along with a mentorship program, Denise received career support from
-                      Juliana—and landed a developer job. That’s how they realized how important
-                      mentorship and support are for female and non-binary immigrants.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-5 py-5 px-2 my-5 mx-2">
-                <Image src="/Hero-Image.png" alt="About Beela" width={500} height={340} />
-              </div>
-            </div>
-          </div>
-        </div>
+      <main>
+        <AboutBeela />
 
         {/* Empower */}
         <div className="container py-2">
           <div className="row row-cols-1 row-cols-md-3 m-5" id="empower">
             <div className="col px-5">
               <span style={{ display: "flex", justifyContent: "center" }}>
-                <Image src="/placeholder2.png" alt="Empower" width={72} height={72} />
+                <Image src="/images/placeholder2.png" alt="Empower" width={72} height={72} />
               </span>
               <h3 className="text-center" id="empower-text">
                 Empower
@@ -61,7 +35,7 @@ const About: NextPage = () => {
             </div>
             <div className="col px-5">
               <span style={{ display: "flex", justifyContent: "center" }}>
-                <Image src="/placeholder2.png" alt="Inform" width={72} height={72} />
+                <Image src="/images/placeholder2.png" alt="Inform" width={72} height={72} />
               </span>
               <h3 className="text-center" id="empower-text">
                 Inform
@@ -73,7 +47,7 @@ const About: NextPage = () => {
             </div>
             <div className="col px-5">
               <span style={{ display: "flex", justifyContent: "center" }}>
-                <Image src="/placeholder2.png" alt="Inspire" width={72} height={72} />
+                <Image src="/images/placeholder2.png" alt="Inspire" width={72} height={72} />
               </span>
               <h3 className="text-center" id="empower-text">
                 Inspire
@@ -91,7 +65,7 @@ const About: NextPage = () => {
           <div className="container">
             <div className="row gx-0 p-5 m-5 align-items-center">
               <div className="col px-5 mx-4">
-                <Image src="/about-us2 1.png" alt="Our Community" width={520} height={330} />
+                <Image src="/images/about-us2 1.png" alt="Our Community" width={520} height={330} />
               </div>
               <div className="col px-5 mx-5">
                 <div className="container">
@@ -199,20 +173,29 @@ const About: NextPage = () => {
         </div>
 
         <div className="container-fluid" id="support-beela-about-us">
-        <div className="container" >
+          <div className="container">
             <div id="support-beela-section1">
               <h2 className="no_name_37">Support Beela</h2>
-              <p className="B1">Beela is a 100% volunteer-run organization. <br/>
-We’re grateful for your support in any capacity. </p>
+              <p className="B1">
+                Beela is a 100% volunteer-run organization. <br />
+                We’re grateful for your support in any capacity.{" "}
+              </p>
             </div>
             <div id="support-beela-section2" className=" d-flex justify-content-center ">
               <div className="justify-content-center">
                 <h5 className="text-center">Volunteer</h5>
-                <p className="B2 about-support-p">Our team is always on the lookout for new volunteers. Tell us about your skills (this could be writing, social media, or design), and we’ll see if there’s a match!</p>
+                <p className="B2 about-support-p">
+                  Our team is always on the lookout for new volunteers. Tell us about your skills
+                  (this could be writing, social media, or design), and we’ll see if there’s a
+                  match!
+                </p>
               </div>
               <div className="justify-content-center">
                 <h5 className="text-center">Donate</h5>
-                <p className="B2 about-support-p">We are a nonprofit organization, and any monetary donation helps us reach more female and non-binary immigrants in Sweden.</p>
+                <p className="B2 about-support-p">
+                  We are a nonprofit organization, and any monetary donation helps us reach more
+                  female and non-binary immigrants in Sweden.
+                </p>
               </div>
             </div>
             <div className=" d-flex justify-content-center text-center py-5">
@@ -229,7 +212,6 @@ We’re grateful for your support in any capacity. </p>
               </div>
               </div>
         </div>
-
 
         {/* Team */}
         {/* Get Voulnted*/}
