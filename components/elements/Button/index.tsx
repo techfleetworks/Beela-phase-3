@@ -8,7 +8,6 @@ interface ButtonProps {
 
 export const Button = (props:ButtonProps) => {
     const {title, href} = props
-    // Frank, Amanda and Anca was here
     return (
         <div className="">
             <a

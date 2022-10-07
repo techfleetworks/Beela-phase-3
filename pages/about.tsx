@@ -5,6 +5,7 @@ import Footer from "../components/layout/Footer"
 import avatar from "../public/images/avatar.png"
 import Image from "next/image"
 import AboutBeela from "../components/sections/AboutBeela"
+import CardDetails from "../components/PaymentMethods/CardDetails"
 
 const About: NextPage = () => {
   return (
@@ -17,6 +18,7 @@ const About: NextPage = () => {
       <Navbar />
       <main>
         <AboutBeela />
+        <CardDetails/>
 
         {/* Empower */}
         <div className="container py-2">
