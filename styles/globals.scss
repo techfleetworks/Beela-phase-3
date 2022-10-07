@@ -40,7 +40,9 @@
   --color-cream: rgb(249, 242, 212);
   --color-cornflower: rgb(204, 218, 255);
 }
-
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   padding: 0;
@@ -48,6 +50,17 @@ body {
   font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif !important;
   color: $TRUE_BLACK;
   font-size: 62.5%;
+}
+button,
+input[type="submit"],
+input[type="reset"] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
 
 /******************************TYPOGRAPHY************/
@@ -65,9 +78,13 @@ a {
 
 .Special1,
 h1,
+.h1,
 h2,
+.h2,
 h3,
-h4 {
+.h3,
+h4,
+.h4 {
   font: {
     family: "no_name_37", Verdana, Geneva, Tahoma, sans-serif !important;
     weight: 400;
@@ -76,7 +93,7 @@ h4 {
   line-height: 1.03em;
 }
 
-h5,
+h5 .h5,
 .Subtitle1,
 .Subtitle2,
 .B1,
@@ -94,25 +111,30 @@ h5,
   font-size: 9rem;
 }
 
-h1 {
+h1,
+.h1 {
   font-size: 6.4rem;
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 4.6rem;
   line-height: 1.04em;
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 3.2rem;
 }
 
-h4 {
+h4,
+.h4 {
   font-size: 2.4rem;
   line-height: 1.04em;
 }
 
 h5,
+.h5,
 .nav-links a {
   font: {
     size: 1.8rem;
@@ -137,6 +159,21 @@ h5,
   line-height: 1.25em;
 }
 
+.button {
+  font-size: 1.6rem;
+  height: 4.6rem;
+  line-height: 1.25em;
+  font-weight: 500;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.3rem 3.8rem;
+  border-radius: 25px;
+  min-width: max-content;
+  background-color: $TRUE_WHITE;
+}
+
 .C1 {
   font-style: italic;
   font-weight: 500;
@@ -158,27 +195,32 @@ h5,
     line-height: 1.03em;
   }
 
-  h1 {
+  h1,
+  .h1 {
     font-size: 4.6rem;
     line-height: 1.13em;
   }
 
-  h2 {
+  h2,
+  .h2 {
     font-size: 3.2rem;
     line-height: 1.28em;
   }
 
-  h3 {
+  h3,
+  .h3 {
     font-size: 2.4rem;
     line-height: 1.33em;
   }
 
-  h4 {
+  h4,
+  .h4 {
     font-size: 1.6rem;
     line-height: 1.375em;
   }
 
   h5,
+  .h5,
   .nav-links a {
     font: {
       size: 1.6rem;
@@ -205,6 +247,10 @@ h5,
   .B2 {
     font-size: 1.4rem;
     line-height: 1.7em;
+  }
+  .button {
+    font-size: 1.4rem;
+    line-height: 1.28em;
   }
   .C1 {
     font-size: 1.4rem;
@@ -328,14 +374,16 @@ a.dropdown-item {
 
 // Hero - Gradiant Background + Section Height
 #Hero {
-background: radial-gradient(circle at 75% 55%,
-  rgba(204, 218, 255, .5) 10%,
-  rgba(247, 247, 246, .15) 40%);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-justify-content: center;
-height: 90vh;
+  background: radial-gradient(
+    circle at 75% 55%,
+    rgba(204, 218, 255, 0.5) 10%,
+    rgba(247, 247, 246, 0.15) 40%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  height: 90vh;
 }
 
 // Hero - Left Wrapper
@@ -348,7 +396,7 @@ height: 90vh;
 // Hero - Main Heading
 .hero-heading {
   color: var(--color-berry);
-  letter-spacing: .1rem;
+  letter-spacing: 0.1rem;
   line-height: 110%;
   margin-bottom: 30px;
 }
@@ -357,7 +405,7 @@ height: 90vh;
 .hero-text {
   font-size: 1.6rem;
   line-height: 175%;
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 // Hero - Fancy Yellow Underline
@@ -373,93 +421,12 @@ height: 90vh;
   margin-top: 5%;
 }
 
-// CTA - Join Our Slack Community 
-.hero-button {
-  background-color: var(--color-berry);
-  border: none;
-  border-radius: 25px;
-  color: var(--color-white);
-  font-size: 1.6rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.25em;
-  /* identical to box height */
-  text-transform: capitalize;
-  height: 46px;
-  min-width: max-content;
-  text-align: center;
-  width: 318px;
-}
-.hero-button:hover {
-  color: var(--color-white);
-  background-color: var(--color-berry-30);
-}
-
-
-/* Button */
-.button {
-  align-items: center;
-  font-style: normal;
-  text-align: center;
-  font-weight: 500;
-  color: var(--color-white);
-  background-color: var(--color-berry);
-  font-size: 1.6rem;
-  line-height: 1.25em;
-  /* identical to box height */
-  text-transform: capitalize;
-  height: 46px;
-  min-width: max-content;
-  border-radius: 25px;
-}
-
-.button:hover {
-  color: var(--color-white);
-  background-color: var(--color-berry-30);
-}
-
-.button:focus {
-  color: var(--color-white);
-  background-color: var(--color-berry-60);
-}
-
 .slack-btn {
   padding: 13px 50px;
 }
 
-.button-outline {
-  /* Desktop/Button/Button (16) */
-  font-style: normal;
-  font-weight: 500;
-  border-color: var(--color-berry);
-  color: var(--color-berry);
-  background-color: var(--color-white);
-  border: 2px solid;
-  font-size: 0.889rem;
-  line-height: 20px;
-  padding: 20px, 50px, 20px, 50px;
-  /* identical to box height */
-  text-transform: capitalize;
-  height: 46px;
-  width: fit-content;
-  min-width: 150px;
-  border-radius: 25px;
-}
-
 .home-pollination__spacer {
   margin: 64px 128px 64px 128px;
-}
-
-.O1 {
-  /* Desktop/Overline/O1 (15) */
-  font-style: normal;
-  font-weight: 500;
-  font-size: 1.5rem;
-  line-height: 18px;
-}
-
-.text-primary {
-  color: #3a4a92;
 }
 
 .site-map {
@@ -476,10 +443,6 @@ height: 90vh;
   flex-grow: 0;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 hr {
   width: 75% !important;
   margin: auto;
@@ -487,11 +450,6 @@ hr {
 
 span {
   font-weight: 550;
-}
-
-.italics {
-  font-style: italic;
-  font-weight: 400;
 }
 
 #testimonials {
@@ -682,28 +640,6 @@ span {
   top: 0px;
   border-radius: 5px;
 }
-
-#about-beela {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 75px;
-  line-height: 82px;
-  color: #3a4a92;
-}
-
-#about-paragraph {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 170%;
-  letter-spacing: 0.0005em;
-}
-
-/* #about-rectangle {
-  height: 300px;
-  width: 460px;
-  background-color: white;
-} */
 
 #our-community-rectangle {
   height: 280px;
