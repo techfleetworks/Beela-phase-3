@@ -8,7 +8,7 @@ import styles from "./Button.module.scss"
 
 interface ButtonProps {
   href?: string
-  title: string
+  title: any
   type?: any
   variant: string
 }

@@ -1,7 +1,31 @@
+import { loadStripe } from '@stripe/stripe-js';
+import {
+  Elements
+} from '@stripe/react-stripe-js';
+
+// component
 import { SectionWrapper } from "../../layout/SectionWrapper"
 import { Button } from "../../elements/Button"
+import CardDetails from './CardDetails';
+
+// css
+import "./paymentform.module.scss"
+const { APP_STRIPE_PUBLIC_KEY } = process.env;
+// let stripePromise: any;
+// if (APP_STRIPE_PUBLIC_KEY) {
+//     stripePromise = loadStripe(APP_STRIPE_PUBLIC_KEY);
+// }
+
+// QlzeHnqRWmoM9eV8tKwyaCnXISCFbLN1T3CAElaCrqhQQO1sK8
+const stripePromise = loadStripe('pk_test_51LorkjDYz8H8zXUaIt4Wmaqzxh733VUpQxYgA3sTgF1abExg9FlO3v69yzp7v1EZG3RqVofn36ugrdNg6WCkme2B00eA2cKoyg');
+
 
 export default function PaymentForm() {
+
+  const options = {
+    // passing the client secret obtained from the server
+    clientSecret: '{{CLIENT_SECRET}}',
+  };
   return (
     <>
       <SectionWrapper color="SECONDARY_CREAM" padding="hero" maxWidth={728} className="mx-auto">
@@ -33,65 +57,24 @@ export default function PaymentForm() {
           </div>
         </div>
         <div className="d-flex justify-content-between">
-          <Button variant="secondary_lightBG" title="200 kr" />
-          <Button variant="secondary_lightBG" title="500 kr" />
+          <Button
+            variant="secondary_lightBG"
+            title="200 kr"
+          />
+          <Button
+            variant="secondary_lightBG"
+            title="500 kr"
+          />
           <Button variant="secondary_lightBG" title="1000 kr" />
           <Button variant="secondary_lightBG" title="Other Kr" />
         </div>
       </SectionWrapper>
       <SectionWrapper padding="hero">
-        <form>
-          <h3>Personal Information</h3>
-
-          <div className="form-group">
-            <label htmlFor="FirstName">First Name</label>
-            <input id="FirstName" className="form-control" type="text"></input>
-          </div>
-          <div className="form-group">
-            <label htmlFor="LastName">Last Name</label>
-            <input id="LastName" className="form-control" type="text"></input>
-          </div>
-          <div className="form-group">
-            <label htmlFor="PhoneNumber">Phone Number</label>
-            <input id="PhoneNumber" className="form-control" type="text"></input>
-          </div>
-          <div className="form-group">
-            <label htmlFor="Email">Email Address</label>
-            <input id="Email" className="form-control" type="text"></input>
-          </div>
-          <h3>Payment Information</h3>
-
-          <div className="form-group">
-            <label htmlFor="CreditCardNumber">Card Number</label>
-            <input
-              id="CreditCardNumber"
-              className="null card-image form-control"
-              type="text"
-            ></input>
-          </div>
-          <div className="expiry-date-group form-group">
-            <label htmlFor="ExpiryDate">Expiration date</label>
-            <input
-              id="ExpiryDate"
-              className="form-control"
-              type="text"
-              placeholder="MM / YY"
-            ></input>
-          </div>
-          <div className="security-code-group form-group">
-            <label htmlFor="SecurityCode">CVV</label>
-            <div className="input-container">
-              <input id="SecurityCode" className="form-control" type="text"></input>
-            </div>
-          </div>
-          <div className="country-code-group form-group">
-            <label htmlFor="CountryCode">Country</label>
-            <div className="input-container">
-              <input id="CountryCode" className="form-control" type="text"></input>
-            </div>
-          </div>
-          <Button type="submit" variant="primary_darkBG" title="Submit Donation" />
-        </form>
+        <Elements stripe={stripePromise} >
+          <CardDetails
+            stripePromise={stripePromise}
+          />
+        </Elements>
       </SectionWrapper>
     </>
   )
