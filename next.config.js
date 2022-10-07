@@ -6,6 +6,7 @@ const nextConfig = {
   images: {
     loader: 'akamai',
     path: '',
+    domains: ["via.placeholder.com"],
   },
   reactStrictMode: true,
 }
