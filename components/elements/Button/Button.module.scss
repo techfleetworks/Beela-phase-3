@@ -1,0 +1,49 @@
+@import "../../../styles/variables.scss";
+
+.primary_lightBG {
+  background-color: $PRIMARY_BERRY;
+  color: $TRUE_WHITE;
+  &:hover {
+    background-color: $BERRY_3;
+    color: $TRUE_WHITE;
+  }
+  &:focus {
+    background-color: $BERRY_6;
+    color: $TRUE_WHITE;
+  }
+}
+
+.primary_darkBG {
+  background-color: $PRIMARY_HONEY;
+  color: $BLACK;
+  &:hover {
+    background-color: $HONEY_4;
+    color: $BLACK;
+  }
+  &:focus {
+    background-color: $HONEY_7;
+    color: $BLACK;
+  }
+}
+
+.secondary_lightBG {
+  border: 2px solid $PRIMARY_BERRY;
+  color: $PRIMARY_BERRY;
+  &:hover,
+  &:focus {
+    border: 0.2rem solid $PRIMARY_BERRY;
+    color: $PRIMARY_BERRY;
+    background-color: $CORNFLOWER_9;
+  }
+}
+
+.secondary_darkBG {
+  border: 2px solid $PRIMARY_HONEY;
+  color: $BLACK;
+  // &:hover,
+  // &:focus {
+  //   border: 0.2rem solid $;
+  //   color: $PRIMARY_BERRY;
+  //   background-color: $CORNFLOWER_9;
+  // }
+}
