@@ -59,7 +59,9 @@ const CardDetails = (props: any) => {
         //         setClientSecret(data.clientSecret);
         //     });
 
-        // const {error, paymentMethod} = await stripe.createPaymentMethod({
+       
+        // const kk = async () => {
+        //   const {error, paymentMethod} = await stripePromise.createPaymentMethod({
         //     type: 'card',
         //     card: cardElement,
         //   });
@@ -71,12 +73,10 @@ const CardDetails = (props: any) => {
         //     // ... SEND to your API server to process payment intent
         //   }
         // }
-        const kk = async () => {
-           let l =  await stripePromise
-        console.log('check client secrete', l)
+        // console.log('check client secrete', l)
 
-        }
-        kk()
+        // }
+        // kk()
         }, []);
 
     let elementStyles = {
@@ -121,18 +121,18 @@ const CardDetails = (props: any) => {
         ev.preventDefault();
         setProcessing(true);
 
-        const cardElement: StripeCardNumberElement | null =
-            elements.getElement(CardNumberElement);
+        // const cardElement: StripeCardNumberElement | null = 
+        //     elements.getElement(CardNumberElement);
 
-        if (!cardElement) {
-            return;
-        }
-        console.log("check elements", cardElement)
+        // if (!cardElement) {
+        //     return;
+        // }
+        // console.log("check elements", cardElement)
 
         const payload: any = stripe && await stripe.confirmCardPayment(clientSecret, {
-            payment_method: {
-                card: cardElement
-            }
+            // payment_method: {
+            //     card: cardElement
+            // }
         });
 
         if (payload.error) {
