@@ -1,0 +1,14 @@
+.mainContainer {
+  margin-top: 125px;
+}
+
+@media (max-width: 1024px) {
+  .mainContainer {
+    margin-top: 111px;
+  }
+}
+@media (max-width: 360px) {
+  .mainContainer {
+    margin-top: 90px;
+  }
+}

@@ -5,6 +5,8 @@ import Footer from "../components/layout/Footer"
 import avatar from "../public/images/avatar.png"
 import Image from "next/image"
 import AboutBeela from "../components/sections/AboutBeela"
+import { PageWrapper } from "../components/layout/PageWrapper"
+import React from "react"
 import CardDetails from "../components/PaymentMethods/CardDetails"
 
 const About: NextPage = () => {
@@ -16,7 +18,7 @@ const About: NextPage = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main>
+      <PageWrapper>
         <AboutBeela />
         <CardDetails/>
 
@@ -213,7 +215,7 @@ const About: NextPage = () => {
         {/* Team */}
         {/* Get Voulnted*/}
         <Footer />
-      </main>
+      </PageWrapper>
     </div>
   )
 }

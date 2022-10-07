@@ -88,6 +88,7 @@ const Home: NextPage = () => {
           </Row>
 
           {/* Our Team */}
+          {/*
           <div className="container text-center" id="team-container">
             <div className="col align-items-center border p-5">
               <div className="d-flex flex-column">
@@ -236,6 +237,7 @@ const Home: NextPage = () => {
               </div>
             </div>
           </div>
+                    */}
 
           {/* Career Steps */}
           <section id="section-career">
