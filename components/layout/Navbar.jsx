@@ -16,7 +16,7 @@ const NavBar = () => {
         <Container>
           <Link href="/">
             <a>
-              <img src="/images/logoprimary.png" alt="placeholder" id="navbar-logo" />
+              <img src="/images/logoprimary.png" alt="Beela Logo" id="navbar-logo" />
             </a>
           </Link>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -37,9 +37,9 @@ const NavBar = () => {
                   </NavDropdown>
 
                   <Nav.Link href="/stay-conected"className={router.asPath == "/programmes" ? "active" : ""}>Stay Connected</Nav.Link>
-                  <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>About</Nav.Link>
-                  <Link href="/donate" className={router.asPath == "/donate" ? "active" : ""}>
-                    <button className="donate-button">Support Beela</button>
+                  <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>About Us</Nav.Link>
+                  <Link href="/donation" className={router.asPath == "/donation" ? "active" : ""}>
+                    <button className="donate-button">Donate</button>
                   </Link>
                 </div>
               </Nav>

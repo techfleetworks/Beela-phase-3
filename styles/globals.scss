@@ -263,58 +263,52 @@ h5,
 }
 
 /*------NAVIGATION SECTION ------*/
+//Navigation - Bar
 .navbar {
-  background-color: var(--color-white) !important;
+  background-color: #ffffff !important;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   display: flex;
   font-size: 1.125rem;
   font-weight: 600;
   height: 125px;
+  margin: 0 auto;
   top: 0;
 }
 
-a.nav-link {
-  display: flex;
-  margin: 0 auto;
-}
-
 //Navigation - Logo Wrapper
-.navbar-logo-wrapper {
+#navbar-logo {
   margin: 5%;
-}
-
-//Navigation - Links Wrapper
-.navbar-nav-wrapper {
-  margin: 0 auto;
 }
 
 //Navigation - Link Section
 .nav-links {
-  display: inline-flex;
+  //background-color: red;
+  display: flex;
+  margin: 0 auto;
+  padding-left: 100px;
   width: 100%;
-}
-
-.nav-link {
-  display: inline;
 }
 
 //Navigation - Links
 .nav-links a {
   display: inline-block;
   margin: 0 25px;
+  margin-top: 0.4rem;
 }
 
 //Navigation - Programmes Dropdown Links
 a.dropdown-item {
   color: var(--color-black);
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 500;
-  margin-left: 15px;
+  margin: 1rem;
+  margin-left: 1rem;
   width: 276px;
   position: 10px;
 
   &:hover {
-    width: 90%;
+    background-color: var(--color-gray5);
+    height: 100%;
   }
 }
 
@@ -324,11 +318,12 @@ a.dropdown-item {
   border: none;
   border-radius: 25px;
   font-weight: 500;
-  font-size: 1rem;
+  font-size: 1.8rem;
   height: 46px;
-  margin-left: 20px;
-  padding: 0px 25px;
+  margin-left: 6rem;
+  padding: 0px 3rem;
   text-transform: capitalize;
+  width: 18rem;
 
   &:hover {
     background-color: #d0b316;
@@ -369,6 +364,7 @@ a.dropdown-item {
     justify-content: center;
   }
 }
+
 
 /*------HERO SECTION ------*/
 
