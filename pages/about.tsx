@@ -7,7 +7,7 @@ import Image from "next/image"
 import AboutBeela from "../components/sections/AboutBeela"
 import { PageWrapper } from "../components/layout/PageWrapper"
 import React from "react"
-import CardDetails from "../components/PaymentMethods/CardDetails"
+import CardDetails from "../components/sections/PaymentForm/CardDetails"
 
 const About: NextPage = () => {
   return (
