@@ -7,8 +7,6 @@ import Image from "next/image"
 import AboutBeela from "../components/sections/AboutBeela"
 import { PageWrapper } from "../components/layout/PageWrapper"
 import React from "react"
-import CardDetails from "../components/sections/PaymentForm/CardDetails"
-
 const About: NextPage = () => {
   return (
     <div>
@@ -20,7 +18,6 @@ const About: NextPage = () => {
       <Navbar />
       <PageWrapper>
         <AboutBeela />
-        <CardDetails/>
 
         {/* Empower */}
         <div className="container py-2">
