@@ -372,8 +372,8 @@ a.dropdown-item {
 #Hero {
   background: radial-gradient(
     circle at 75% 55%,
-    rgba(204, 218, 255, 0.5) 10%,
-    rgba(247, 247, 246, 0.15) 40%
+    rgba(204, 218, 255, 0.6) 30%,
+    rgba(247, 247, 246, 1) 70%
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -384,7 +384,7 @@ a.dropdown-item {
 
 // Hero - Left Wrapper
 .hero-left-section {
-  margin-left: 15%;
+  margin-left: 25%;
   margin-top: 10%;
   text-align: left;
 }
@@ -394,14 +394,37 @@ a.dropdown-item {
   color: var(--color-berry);
   letter-spacing: 0.1rem;
   line-height: 110%;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 // Hero - Subheading
 .hero-text {
   font-size: 1.6rem;
   line-height: 175%;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
+  width: 50rem;
+}
+
+// Hero - Button
+.hero-button {
+background-color: var(--color-berry);
+border: none;
+border-radius: 25px;
+color: var(--color-white);
+font-weight: 500;
+font-size: 1.8rem;
+height: 46px;
+padding: 0px 3rem;
+text-transform: capitalize;
+width: 36rem;
+  &:hover {
+    background-color: var(--color-berry-30);
+    transition: 0.5s;
+    }
+
+  &:hover a {
+    color: inherit;
+  }
 }
 
 // Hero - Fancy Yellow Underline
@@ -415,6 +438,7 @@ a.dropdown-item {
 // Hero - Image
 .hero-image {
   margin-top: 5%;
+  margin-right: 5%;
 }
 
 .slack-btn {
@@ -560,10 +584,6 @@ span {
   .hero-text-wrapper {
     padding: 0 0 1rem 0 !important;
   }
-}
-
-#hero-height {
-  height: 75vh;
 }
 
 #blaze {

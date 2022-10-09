@@ -28,9 +28,11 @@ export const Hero = () => {
               <p className="hero-text">
                 Our welcoming community helps women and non-binary Swedish immigrants break into tech.
               </p>
+
               <button className="hero-button">
                 <a href="https://join.slack.com/t/beela/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ">Join Our Slack Community</a>
               </button>
+
             </div>
           </Col>
 
