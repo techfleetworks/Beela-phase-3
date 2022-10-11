@@ -52,40 +52,6 @@ const Home: NextPage = () => {
         <div className="container-fluid overflow-hidden" id="wrapper">
           {/* Hero */}
           <Hero />
-          {/* Blaze Award*/}
-          <Row
-            xs={1}
-            md={3}
-            className="text-center align-content-center align-items-center justify-content-center justify-items-center p-3"
-            id="blaze"
-          >
-            <Col xs={3} md={2}>
-              <Image
-                src="/icons/bee_announcement.svg"
-                alt="Illustration of a bee shouting into a blue megaphone"
-                height={186}
-                fluid
-              />
-            </Col>
-            <Col md={8}>
-              <h3 className="text-color__berry">
-                Proud to announce Beela won the{" "}
-                <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
-                  2022 BLAZE Catalyst award!
-                </a>
-              </h3>
-            </Col>
-            <Col xs={3} md={2}>
-              <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
-                <Image
-                  src="/icons/blazelogo.svg"
-                  alt="Logo of Blaze, a sanserif text colored with oranges and red"
-                  width={286}
-                  fluid
-                />
-              </a>
-            </Col>
-          </Row>
 
           {/* Our Team */}
           {/*
@@ -299,6 +265,41 @@ const Home: NextPage = () => {
               </Container>
             </Row>
           </section>
+
+          {/* Blaze Award*/}
+          <Row
+            xs={1}
+            md={3}
+            className="text-center align-content-center align-items-center justify-content-center justify-items-center p-3"
+            id="blaze"
+          >
+            <Col xs={3} md={2}>
+              <Image
+                src="/icons/bee_announcement.svg"
+                alt="Illustration of a bee shouting into a blue megaphone"
+                height={186}
+                fluid
+              />
+            </Col>
+            <Col md={8}>
+              <h3 className="text-color__berry">
+                Proud to announce Beela won the{" "}
+                <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
+                  2022 BLAZE Catalyst award!
+                </a>
+              </h3>
+            </Col>
+            <Col xs={3} md={2}>
+              <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
+                <Image
+                  src="/icons/blazelogo.svg"
+                  alt="Logo of Blaze, a sanserif text colored with oranges and red"
+                  width={286}
+                  fluid
+                />
+              </a>
+            </Col>
+          </Row>
 
           {/* Pollination Programme */}
           <section id="section-pollination">
