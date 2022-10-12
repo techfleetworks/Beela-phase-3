@@ -46,9 +46,8 @@ const routerResDonate = router.asPath == "/donate" ? styles.active : "";
                       </a>
                     </Link>
                   {/*DROPDOWN SECTION*/}
-                    <NavDropdown title="Programmes"  className={styles.link}>
+                    <NavDropdown title="Programmes" className={styles.link}>
                       <NavDropdown.Item href="/programmes" >Programmes</NavDropdown.Item>
-                      <NavDropdown.Item href="/programmes" >Beela Programees</NavDropdown.Item>
                       <NavDropdown.Item href="/pollination-for-mentees" >Polination for Mentees</NavDropdown.Item>
                       <NavDropdown.Item href="/pollination-for-mentors" >Polination for Mentors</NavDropdown.Item>
                     </NavDropdown>
