@@ -134,13 +134,11 @@ h4,
 }
 
 h5,
-.h5,
-.nav-links a {
-  font: {
-    size: 1.8rem;
-    weight: 600;
-  }
+.h5 {
+font-size: 1.8;
+font-weight: 600;
 }
+
 
 .S1 {
   font-size: 1.7rem;
@@ -219,15 +217,6 @@ h5,
     line-height: 1.375em;
   }
 
-  h5,
-  .h5,
-  .nav-links a {
-    font: {
-      size: 1.6rem;
-      weight: 600;
-    }
-    line-height: 1.375em;
-  }
 
   .S1 {
     font-size: 1.8rem;
@@ -262,108 +251,6 @@ h5,
   }
 }
 
-/*------NAVIGATION SECTION ------*/
-//Navigation - Bar
-.navbar {
-  background-color: #ffffff !important;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  display: flex;
-  font-size: 1.125rem;
-  font-weight: 600;
-  height: 125px;
-  margin: 0 auto;
-  top: 0;
-}
-
-//Navigation - Logo Wrapper
-#navbar-logo {
-  margin: 5%;
-}
-
-//Navigation - Link Section
-.nav-links {
-  //background-color: red;
-  display: flex;
-  margin: 0 auto;
-  padding-left: 100px;
-  width: 100%;
-}
-
-//Navigation - Links
-.nav-links a {
-  display: inline-block;
-  margin: 0 25px;
-  margin-top: 0.4rem;
-}
-
-//Navigation - Programmes Dropdown Links
-a.dropdown-item {
-  color: var(--color-black);
-  font-size: 1.6rem;
-  font-weight: 500;
-  margin: 1rem;
-  margin-left: 1rem;
-  width: 276px;
-  position: 10px;
-
-  &:hover {
-    background-color: var(--color-gray5);
-    height: 100%;
-  }
-}
-
-//Navigation - Donate Button
-.donate-button {
-  background-color: var(--color-honey);
-  border: none;
-  border-radius: 25px;
-  font-weight: 500;
-  font-size: 1.8rem;
-  height: 46px;
-  margin-left: 6rem;
-  padding: 0px 3rem;
-  text-transform: capitalize;
-  width: 18rem;
-
-  &:hover {
-    background-color: #d0b316;
-    transition: 0.5s;
-  }
-}
-
-// ACTIVE UNDERLINE
-/*.nav-link.active::after {
-  content: "";
-  float: left;
-  background: var(--color-honey);
-  width: 100%;
-  height: 4px;
-  border-radius: 3px;
-  width: 100%;
-} 
-*/
-
-.navbar-expand-lg .navbar-collapse {
-  justify-content: center;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: var(--color-black);
-}
-
-@media only screen and (max-width: 992px) {
-  .nav-links {
-    background-color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navbar-nav {
-    justify-content: center;
-  }
-}
 
 
 /*------HERO SECTION ------*/
@@ -728,9 +615,7 @@ span {
   align-items: center;
 }
 
-.navbar-brand {
-  font-size: xx-large;
-}
+
 
 #empower-text {
   color: var(--color-berry);
