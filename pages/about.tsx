@@ -6,7 +6,7 @@ import avatar from "../public/images/avatar.png"
 import Image from "next/image"
 import AboutBeela from "../components/sections/AboutBeela"
 import { PageWrapper } from "../components/layout/PageWrapper"
-
+import React from "react"
 const About: NextPage = () => {
   return (
     <div>
