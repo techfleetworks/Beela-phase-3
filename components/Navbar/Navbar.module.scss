@@ -3,7 +3,7 @@
   background-color: #ffffff !important;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   display: flex;
-  font-weight: 600;
+  //font-weight: 600;
   height: 125px;
   width: 100%;
   top: 0;
@@ -13,6 +13,9 @@
 .navlinks {
   display: flex;
   margin: 0 auto;
+  align-items: center;
+  width: 100%;
+  justify-content:space-around;
 }
 
 //INDIVIDUAL LINKS
@@ -24,12 +27,18 @@
   font-size: 1.8rem;
   height: 46px;
   text-transform: capitalize;
-  width: 18rem;
+  //width: 18rem;
   &:hover {
     background-color: #ffffff;
     color: #3a4a92;
     transition: 0.5s;
   }
+  a{
+    padding-top: 0px;
+  }
+}
+.active{
+  color: rgb(255, 0, 0) !important;
 }
 
 
@@ -41,15 +50,15 @@
 .navbar-nav-wrapper {
   margin: 0 auto;
 }
-
-.dropdown_item {
-  color: var(--color-black);
-  font-size: 2rem;
-  font-weight: 500;
-  margin-left: 15px;
-  width: 276px;
-  position: 10px;
-}
+// this wasnt being called anywhere so i commented it out 
+// .dropdown_item {
+//   color: var(--color-black);
+//   font-size: 2rem;
+//   font-weight: 500;
+//   margin-left: 15px;
+//   width: 276px;
+//   position: 10px;
+// }
 
 //DONATE BUTTON
 .donate_button {

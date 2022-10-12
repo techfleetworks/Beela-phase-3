@@ -12,13 +12,25 @@ import Container from "react-bootstrap/Container"
 import NavDropdown from "react-bootstrap/NavDropdown"
 
 const NavBar = () => {
-  const router = useRouter() // to set active links
+  const router = useRouter(); // to set active links
+  const routerResHome = router.asPath == "/" ? styles.active : "" ;
+
+  // needs to be able to detect any of the links inside the dropdown. needs editing.
+const routerResStayContected = router.asPath == "/stay-conected" ? styles.active : "";
+
+const routerResAboutUs = router.asPath == "/about" ? styles.active : "";
+const routerResDonate = router.asPath == "/donate" ? styles.active : "";
   return (
     <>
-      <Navbar className={styles.navbar} fixed="top">
-        <Container>
+      <Navbar className={styles.navbar} fixed="top" expand="xl"> 
+      {/* // display: flex; 
+       flex-wrap: inherit; 
+       align-items: center; 
+       justify-content: space-between; */}
+
+      <Container>
           <Link href="/">
-            <a>
+            <a className=""> 
               <img src="/images/logoprimary.png" className={styles.logoWrapper} alt="Beela" />
             </a>
           </Link>
@@ -28,34 +40,29 @@ const NavBar = () => {
             <Container>
               <Nav>
                 <div className={styles.navlinks}>
-                  <button className={styles.link}>
-                    <Nav.Link href="/" className={router.asPath == "/" ? "active" : ""}>
-                    Home
-                    </Nav.Link>
-                  </button>
-
+                    <Link href="/" >
+                      <a className={`${styles.link} ${routerResHome}`}>
+                      Home
+                      </a>
+                    </Link>
                   {/*DROPDOWN SECTION*/}
-                  <button className={styles.link}>
-                    <NavDropdown title="Programmes">
-                      <NavDropdown.Item href="/programmes">Programmes</NavDropdown.Item>
-                      <NavDropdown.Item href="/programmes">Beela Programees</NavDropdown.Item>
-                      <NavDropdown.Item href="/pollination-for-mentees">Polination for Mentees</NavDropdown.Item>
-                      <NavDropdown.Item href="/pollination-for-mentors">Polination for Mentors</NavDropdown.Item>
+                    <NavDropdown title="Programmes"  className={styles.link}>
+                      <NavDropdown.Item href="/programmes" >Programmes</NavDropdown.Item>
+                      <NavDropdown.Item href="/programmes" >Beela Programees</NavDropdown.Item>
+                      <NavDropdown.Item href="/pollination-for-mentees" >Polination for Mentees</NavDropdown.Item>
+                      <NavDropdown.Item href="/pollination-for-mentors" >Polination for Mentors</NavDropdown.Item>
                     </NavDropdown>
-                  </button>
                   
-                  <button className={styles.link}>
-                    <Nav.Link href="/stay-conected"className={router.asPath == "/programmes" ? "active" : ""}>Stay Connected
-                    </Nav.Link>
-                  </button>
-
-                  <button className={styles.link}>
-                    <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>About Us
-                    </Nav.Link>
-                  </button>
+                    <Link href="/stay-conected">
+                      <a className={`${styles.link} ${routerResStayContected}`}>Stay Connected</a>
+                    </Link>
                   
-                  <Link href="/donate" className={router.asPath == "/donate" ? "active" : ""}>
-                    <button className={styles.donate_button}>Donate</button>
+                    <Link href="/about" >
+                      <a className={`${routerResAboutUs} ${styles.link}`}> About Us</a>
+                    </Link>
+                  
+                  <Link href="/donate">
+                   <a className={`${routerResDonate}  ${styles.donate_button}`}>Donate </a>
                   </Link>
                 </div>
 
@@ -63,9 +70,9 @@ const NavBar = () => {
             </Container>
           </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar> 
     </>
   )
 }
 
-export default NavBar
+export default NavBar;
