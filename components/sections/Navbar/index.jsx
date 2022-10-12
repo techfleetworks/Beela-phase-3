@@ -32,12 +32,23 @@ const NavBar = () => {
                   <NavDropdown title="Programmes" id="basic-nav-dropdown">
                     <NavDropdown.Item href="/programmes">Programmes</NavDropdown.Item>
                     <NavDropdown.Item href="/programmes">Beela Programees</NavDropdown.Item>
-                    <NavDropdown.Item href="/pollination-for-mentees">Polination for Mentees</NavDropdown.Item>
-                    <NavDropdown.Item href="/pollination-for-mentors">Polination for Mentors</NavDropdown.Item>
+                    <NavDropdown.Item href="/pollination-for-mentees">
+                      Polination for Mentees
+                    </NavDropdown.Item>
+                    <NavDropdown.Item href="/pollination-for-mentors">
+                      Polination for Mentors
+                    </NavDropdown.Item>
                   </NavDropdown>
 
-                  <Nav.Link href="/stay-conected"className={router.asPath == "/programmes" ? "active" : ""}>Stay Connected</Nav.Link>
-                  <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>About Us</Nav.Link>
+                  <Nav.Link
+                    href="/stay-conected"
+                    className={router.asPath == "/programmes" ? "active" : ""}
+                  >
+                    Stay Connected
+                  </Nav.Link>
+                  <Nav.Link href="/about" className={router.asPath == "/about" ? "active" : ""}>
+                    About Us
+                  </Nav.Link>
                   <Link href="/donation" className={router.asPath == "/donation" ? "active" : ""}>
                     <button className="donate-button">Donate</button>
                   </Link>
@@ -45,9 +56,6 @@ const NavBar = () => {
               </Nav>
             </Container>
           </Navbar.Collapse>
-
-
-
         </Container>
       </Navbar>
     </>

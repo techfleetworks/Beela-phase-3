@@ -2,7 +2,7 @@ import type { NextPage } from "next"
 import Popper from "@popperjs/core"
 import Link from "next/link"
 import Head from "next/head"
-import Navbar from "../components/layout/Navbar"
+import Navbar from "../components/sections/Navbar"
 import Footer from "../components/layout/Footer"
 import Testimonials from "../components/sections/Testimonials"
 import { Hero } from "../components/sections/Hero"
@@ -47,7 +47,7 @@ const Home: NextPage = () => {
         <Navbar />
 
         {/* TESTING COMPONENT THAT USES SASS  */}
-        <TestingComponent/>
+        <TestingComponent />
 
         <div className="container-fluid overflow-hidden" id="wrapper">
           {/* Hero */}
