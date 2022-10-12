@@ -26,7 +26,7 @@ export const SectionWrapper = ({
 }: SectionWrapperProps) => {
   return (
     <section className={`${styles[color]} ${styles[padding]}`}>
-      <div className={className} style={{ maxWidth: `${maxWidth}px` }}>
+      <div className={`mx-auto ${className}`} style={{ maxWidth: `${maxWidth}px` }}>
         {children}
       </div>
     </section>
