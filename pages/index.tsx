@@ -322,7 +322,7 @@ const Home: NextPage = () => {
                     </div>
                   </Col>
                   <Col sm={10} md={8} lg={6} xl={5} className="p-5">
-                    <p className="m-0">
+                    <p className="m-0 B2">
                       Our free programme connects mentors with mentees based on interests and
                       availability. It offers 1-on-1 mentorship, along with networking events and
                       career workshops.
@@ -385,14 +385,14 @@ const Home: NextPage = () => {
                 >
                   <Col xs={8} sm={5} lg={4} className="p-4">
                     <h4 className="text-color__berry">Become a Mentee</h4>
-                    <p>
+                    <p className="B2">
                       Whether you’re exploring a tech field or applying to jobs, a mentor can help
                       you with your individualized needs.
                     </p>
                     <div>
                       <Link href="/pollination">
                         <a>
-                          <button type="button" className="btn button-outline">
+                          <button type="button" className="btn button-outline B2">
                             Learn More
                           </button>
                         </a>
@@ -401,14 +401,14 @@ const Home: NextPage = () => {
                   </Col>
                   <Col xs={8} sm={5} lg={4} className="p-4 display-flex">
                     <h4 className="text-color__berry">Become a Mentor</h4>
-                    <p>
+                    <p  className="B2">
                       Share your experiences and make a difference in a mentee’s career. Continue to
                       learn through mentoring.
                     </p>
                     <div>
                       <Link href="/pollination">
                         <a>
-                          <button type="button" className="btn button-outline">
+                          <button type="button" className="btn button-outline B2">
                             Learn More
                           </button>
                         </a>
@@ -433,7 +433,7 @@ const Home: NextPage = () => {
                       <h2>They did it—and so can you</h2>
                     </div>
                     <div className="p-1">
-                      <p id="header-text">
+                      <p id="header-text" className="B2">
                         We are proud of our podcast guests who have started their tech careers in
                         Sweden.
                       </p>
@@ -461,7 +461,7 @@ const Home: NextPage = () => {
                     xl={5}
                     className="p-5"
                   >
-                    <p className="m-0 left-center-text">
+                    <p className="m-0 left-center-text B2">
                       Our podcast is filled with inspiring stories from Swedish immigrants who have
                       broken into tech. <br />
                       Catch up on all the buzz!
