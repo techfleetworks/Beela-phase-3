@@ -3,7 +3,6 @@ import Popper from "@popperjs/core";
 import Link from "next/link";
 import Head from "next/head";
 import Navbar from "../components/Navbar";
-import Footer from "../components/layout/Footer";
 import Testimonials from "../components/sections/Testimonials";
 import { Hero } from "../components/sections/Hero";
 import { TeamCard } from "../components/elements/TeamCard";
@@ -28,6 +27,9 @@ import Image from "react-bootstrap/Image";
 // import { useTestimonialsQuery } from "../graphql/generated"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
+import Footer from "../components/Footer/footer";
+
+
 
 const Home: NextPage = () => {
   // const { data, error, loading } = useTestimonialsQuery()
