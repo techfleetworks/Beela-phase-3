@@ -28,7 +28,11 @@ export default function PaymentForm() {
   };
   return (
     <>
-      <SectionWrapper color="SECONDARY_CREAM" padding="hero" maxWidth={728} className="mx-auto">
+      <SectionWrapper
+        color="SECONDARY_CREAM"
+        padding="hero"
+        maxWidth={728}
+        className="mx-auto">
         <h2 className="primary-berry text-center my-4">Bee a Supporter</h2>
         <div className="my-4 d-flex justify-content-center">
           <div className="mx-3">
