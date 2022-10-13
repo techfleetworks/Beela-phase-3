@@ -1,0 +1,38 @@
+.footer1{
+    background-color: var(--color-cream);
+    height: 363px;
+    padding-top: 66px;
+    padding-bottom: 66px;
+    @media screen and (max-width: 768px) {
+
+      height: 1000px;
+    }
+  }
+  /* breakpoints when its smaller screensize increase its size. */
+  
+  .input {
+    height: 35px;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+    border-color: var(--color-berry-v4);
+    border-bottom-width: 2px;
+  }
+
+  .ul{
+    margin-top: 1.6rem;
+    list-style: none !important;
+    padding-left: 0px;
+
+    li{
+      margin-bottom: 1.6rem;
+    }
+  }
+
+
+  
+
+
+ 
