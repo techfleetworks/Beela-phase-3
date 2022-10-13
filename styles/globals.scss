@@ -257,41 +257,41 @@ font-weight: 600;
 /*------HERO SECTION ------*/
 
 // Hero - Gradiant Background + Section Height
-#Hero {
-  background: radial-gradient(
-    circle at 75% 55%,
-    rgba(204, 218, 255, 0.6) 30%,
-    rgba(247, 247, 246, 1) 70%
-  );
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: center;
-  height: 90vh;
-}
+// #Hero {
+//   background: radial-gradient(
+//     circle at 75% 55%,
+//     rgba(204, 218, 255, 0.6) 30%,
+//     rgba(247, 247, 246, 1) 70%
+//   );
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   justify-content: center;
+//   height: 90vh;
+// }
 
 // Hero - Left Wrapper
-.hero-left-section {
-  margin-left: 25%;
-  margin-top: 10%;
-  text-align: left;
-}
+// .hero-left-section {
+//   margin-left: 25%;
+//   margin-top: 10%;
+//   text-align: left;
+// }
 
 // Hero - Main Heading
-.hero-heading {
-  color: var(--color-berry);
-  letter-spacing: 0.1rem;
-  line-height: 110%;
-  margin-bottom: 3rem;
-}
+// .hero-heading {
+//   color: var(--color-berry);
+//   letter-spacing: 0.1rem;
+//   line-height: 110%;
+//   margin-bottom: 3rem;
+// }
 
 // Hero - Subheading
-.hero-text {
-  font-size: 1.6rem;
-  line-height: 175%;
-  margin-bottom: 3rem;
-  width: 50rem;
-}
+// .hero-text {
+//   font-size: 1.6rem;
+//   line-height: 175%;
+//   margin-bottom: 3rem;
+//   width: 50rem;
+// }
 
 // Hero - Button
 .hero-button {

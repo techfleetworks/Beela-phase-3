@@ -1,0 +1,56 @@
+// :root {
+//     --color-berry: rgb(58, 74, 146);
+// }
+
+#section-hero {
+    margin: 0;
+    padding: 0;
+}
+
+#Hero {
+    background: radial-gradient(
+    circle at 75% 55%,
+    rgba(204, 218, 255, 0.6) 30%,
+    rgba(247, 247, 246, 1) 70%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    height: 90vh;
+    width: 100vw;
+}
+
+.hero-left-section {
+    width: 440px;
+    margin-right: 77px;
+    margin-left: 25%;
+    margin-top: 10%;
+    text-align: left;
+
+}
+.hero-heading {
+    width: 440px;
+    height: 172px;
+    font-size: 46px;
+    font-weight: 400;
+    color: rgb(58, 74, 146);
+    letter-spacing: 0.1rem;
+    line-height: 110%;
+    margin-bottom: 3rem;
+}
+
+.hero-text {
+    font-size: 1.6rem;
+    line-height: 175%;
+    margin-bottom: 3rem;
+    width: 50rem;
+}
+
+.hero-image {
+    width: 410px;
+    margin-left: 7px;
+    margin-top: 5%;
+    margin-right: 5%;
+    right: 97px;
+}
