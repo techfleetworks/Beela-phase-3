@@ -12,8 +12,10 @@ import styles from "./SectionWrapper.module.scss"
 type SectionWrapperProps = {
   children?: React.ReactNode
   className?: string
+  classNameSection?: string
   color?: string
   maxWidth?: number
+
   padding?: string
 }
 
@@ -21,11 +23,15 @@ export const SectionWrapper = ({
   color = "TRUE_WHITE",
   children,
   className,
+  classNameSection,
   maxWidth = 945,
+
   padding = "main",
 }: SectionWrapperProps) => {
   return (
-    <section className={`${styles[color]} ${styles[padding]}`}>
+    <section
+      className={`${styles[color]} ${styles[padding]} ${classNameSection} d-flex justify-content-center`}
+    >
       <div className={className} style={{ maxWidth: `${maxWidth}px` }}>
         {children}
       </div>
