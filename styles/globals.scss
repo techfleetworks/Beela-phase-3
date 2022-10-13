@@ -33,6 +33,7 @@
   --color-white: rgb(247, 247, 246);
   --color-berry: rgb(58, 74, 146);
   --color-berry-30: rgb(44, 55, 109);
+  --color-berry-v4: rgb(58, 74, 146);
   --color-berry-60: rgb(109, 125, 197);
   --color-honey: #e6c619;
   --color-coral: rgb(240, 219, 238);
@@ -134,13 +135,11 @@ h4,
 }
 
 h5,
-.h5,
-.nav-links a {
-  font: {
-    size: 1.8rem;
-    weight: 600;
-  }
+.h5 {
+font-size: 1.8;
+font-weight: 600;
 }
+
 
 .S1 {
   font-size: 1.7rem;
@@ -219,15 +218,6 @@ h5,
     line-height: 1.375em;
   }
 
-  h5,
-  .h5,
-  .nav-links a {
-    font: {
-      size: 1.6rem;
-      weight: 600;
-    }
-    line-height: 1.375em;
-  }
 
   .S1 {
     font-size: 1.8rem;
@@ -262,113 +252,7 @@ h5,
   }
 }
 
-/*------NAVIGATION SECTION ------*/
-.navbar {
-  background-color: var(--color-white) !important;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-  display: flex;
-  font-size: 1.125rem;
-  font-weight: 600;
-  height: 125px;
-  top: 0;
-}
 
-a.nav-link {
-  display: flex;
-  margin: 0 auto;
-}
-
-//Navigation - Logo Wrapper
-.navbar-logo-wrapper {
-  margin: 5%;
-}
-
-//Navigation - Links Wrapper
-.navbar-nav-wrapper {
-  margin: 0 auto;
-}
-
-//Navigation - Link Section
-.nav-links {
-  display: inline-flex;
-  width: 100%;
-}
-
-.nav-link {
-  display: inline;
-}
-
-//Navigation - Links
-.nav-links a {
-  display: inline-block;
-  margin: 0 25px;
-}
-
-//Navigation - Programmes Dropdown Links
-a.dropdown-item {
-  color: var(--color-black);
-  font-size: 1rem;
-  font-weight: 500;
-  margin-left: 15px;
-  width: 276px;
-  position: 10px;
-
-  &:hover {
-    width: 90%;
-  }
-}
-
-//Navigation - Donate Button
-.donate-button {
-  background-color: var(--color-honey);
-  border: none;
-  border-radius: 25px;
-  font-weight: 500;
-  font-size: 1rem;
-  height: 46px;
-  margin-left: 20px;
-  padding: 0px 25px;
-  text-transform: capitalize;
-
-  &:hover {
-    background-color: #d0b316;
-    transition: 0.5s;
-  }
-}
-
-// ACTIVE UNDERLINE
-/*.nav-link.active::after {
-  content: "";
-  float: left;
-  background: var(--color-honey);
-  width: 100%;
-  height: 4px;
-  border-radius: 3px;
-  width: 100%;
-} 
-*/
-
-.navbar-expand-lg .navbar-collapse {
-  justify-content: center;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: var(--color-black);
-}
-
-@media only screen and (max-width: 992px) {
-  .nav-links {
-    background-color: var(--color-white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .navbar-nav {
-    justify-content: center;
-  }
-}
 
 /*------HERO SECTION ------*/
 
@@ -376,8 +260,8 @@ a.dropdown-item {
 #Hero {
   background: radial-gradient(
     circle at 75% 55%,
-    rgba(204, 218, 255, 0.5) 10%,
-    rgba(247, 247, 246, 0.15) 40%
+    rgba(204, 218, 255, 0.6) 30%,
+    rgba(247, 247, 246, 1) 70%
   );
   background-size: cover;
   background-repeat: no-repeat;
@@ -388,7 +272,7 @@ a.dropdown-item {
 
 // Hero - Left Wrapper
 .hero-left-section {
-  margin-left: 15%;
+  margin-left: 25%;
   margin-top: 10%;
   text-align: left;
 }
@@ -398,14 +282,37 @@ a.dropdown-item {
   color: var(--color-berry);
   letter-spacing: 0.1rem;
   line-height: 110%;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
 }
 
 // Hero - Subheading
 .hero-text {
   font-size: 1.6rem;
   line-height: 175%;
-  margin-bottom: 30px;
+  margin-bottom: 3rem;
+  width: 50rem;
+}
+
+// Hero - Button
+.hero-button {
+background-color: var(--color-berry);
+border: none;
+border-radius: 25px;
+color: var(--color-white);
+font-weight: 500;
+font-size: 1.8rem;
+height: 46px;
+padding: 0px 3rem;
+text-transform: capitalize;
+width: 36rem;
+  &:hover {
+    background-color: var(--color-berry-30);
+    transition: 0.5s;
+    }
+
+  &:hover a {
+    color: inherit;
+  }
 }
 
 // Hero - Fancy Yellow Underline
@@ -419,6 +326,7 @@ a.dropdown-item {
 // Hero - Image
 .hero-image {
   margin-top: 5%;
+  margin-right: 5%;
 }
 
 .slack-btn {
@@ -566,10 +474,6 @@ span {
   }
 }
 
-#hero-height {
-  height: 75vh;
-}
-
 #blaze {
   background-color: white;
   border: 16px solid #e6c619;
@@ -712,9 +616,7 @@ span {
   align-items: center;
 }
 
-.navbar-brand {
-  font-size: xx-large;
-}
+
 
 #empower-text {
   color: var(--color-berry);

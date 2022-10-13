@@ -1,33 +1,35 @@
-import type { NextPage } from "next"
-import Popper from "@popperjs/core"
-import Link from "next/link"
-import Head from "next/head"
-import Navbar from "../components/layout/Navbar"
-import Footer from "../components/layout/Footer"
-import Testimonials from "../components/sections/Testimonials"
-import { Hero } from "../components/sections/Hero"
-import { TeamCard } from "../components/elements/TeamCard"
+import type { NextPage } from "next";
+import Popper from "@popperjs/core";
+import Link from "next/link";
+import Head from "next/head";
+import Navbar from "../components/Navbar";
+import Testimonials from "../components/sections/Testimonials";
+import { Hero } from "../components/sections/Hero";
+import { TeamCard } from "../components/elements/TeamCard";
 // import avatar from "../public/avatar.png"
-import { SectionWrapper } from "../components/layout/SectionWrapper"
+import { SectionWrapper } from "../components/layout/SectionWrapper";
 
 // React-Bootstrap icons
-import { Spotify } from "react-bootstrap-icons"
+import { Spotify } from "react-bootstrap-icons";
 
 // React-Bootstrap imports
-import Col from "react-bootstrap/Col"
-import Row from "react-bootstrap/Row"
-import Card from "react-bootstrap/Card"
-import Container from "react-bootstrap/Container"
-import Image from "react-bootstrap/Image"
-import { wrap } from "module"
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import Card from "react-bootstrap/Card";
+import Container from "react-bootstrap/Container";
+import Image from "react-bootstrap/Image";
+//import { wrap } from "module"
 
 // mock data
-import teamData from "../mockdata/team.json"
+//import teamData from "../mockdata/team.json"
 
-import TestingComponent from "../components/elements/testingcomponent"
+// import TestingComponent from "../components/elements/testingcomponent"
 // import { useTestimonialsQuery } from "../graphql/generated"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
+import Footer from "../components/Footer/footer";
+
+
 
 const Home: NextPage = () => {
   // const { data, error, loading } = useTestimonialsQuery()
@@ -46,46 +48,10 @@ const Home: NextPage = () => {
       <main>
         <Navbar />
 
-        {/* TESTING COMPONENT THAT USES SASS  */}
-        <TestingComponent/>
 
         <div className="container-fluid overflow-hidden" id="wrapper">
           {/* Hero */}
           <Hero />
-          {/* Blaze Award*/}
-          <Row
-            xs={1}
-            md={3}
-            className="text-center align-content-center align-items-center justify-content-center justify-items-center p-3"
-            id="blaze"
-          >
-            <Col xs={3} md={2}>
-              <Image
-                src="/icons/bee_announcement.svg"
-                alt="Illustration of a bee shouting into a blue megaphone"
-                height={186}
-                fluid
-              />
-            </Col>
-            <Col md={8}>
-              <h3 className="text-color__berry">
-                Proud to announce Beela won the{" "}
-                <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
-                  2022 BLAZE Catalyst award!
-                </a>
-              </h3>
-            </Col>
-            <Col xs={3} md={2}>
-              <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
-                <Image
-                  src="/icons/blazelogo.svg"
-                  alt="Logo of Blaze, a sanserif text colored with oranges and red"
-                  width={286}
-                  fluid
-                />
-              </a>
-            </Col>
-          </Row>
 
           {/* Our Team */}
           {/*
@@ -300,6 +266,41 @@ const Home: NextPage = () => {
             </Row>
           </section>
 
+          {/* Blaze Award*/}
+          <Row
+            xs={1}
+            md={3}
+            className="text-center align-content-center align-items-center justify-content-center justify-items-center p-3"
+            id="blaze"
+          >
+            <Col xs={3} md={2}>
+              <Image
+                src="/icons/bee_announcement.svg"
+                alt="Illustration of a bee shouting into a blue megaphone"
+                height={186}
+                fluid
+              />
+            </Col>
+            <Col md={8}>
+              <h3 className="text-color__berry">
+                Proud to announce Beela won the{" "}
+                <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
+                  2022 BLAZE Catalyst award!
+                </a>
+              </h3>
+            </Col>
+            <Col xs={3} md={2}>
+              <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
+                <Image
+                  src="/icons/blazelogo.svg"
+                  alt="Logo of Blaze, a sanserif text colored with oranges and red"
+                  width={286}
+                  fluid
+                />
+              </a>
+            </Col>
+          </Row>
+
           {/* Pollination Programme */}
           <section id="section-pollination">
             <Row
@@ -321,7 +322,7 @@ const Home: NextPage = () => {
                     </div>
                   </Col>
                   <Col sm={10} md={8} lg={6} xl={5} className="p-5">
-                    <p className="m-0">
+                    <p className="m-0 B2">
                       Our free programme connects mentors with mentees based on interests and
                       availability. It offers 1-on-1 mentorship, along with networking events and
                       career workshops.
@@ -384,14 +385,14 @@ const Home: NextPage = () => {
                 >
                   <Col xs={8} sm={5} lg={4} className="p-4">
                     <h4 className="text-color__berry">Become a Mentee</h4>
-                    <p>
+                    <p className="B2">
                       Whether you’re exploring a tech field or applying to jobs, a mentor can help
                       you with your individualized needs.
                     </p>
                     <div>
                       <Link href="/pollination">
                         <a>
-                          <button type="button" className="btn button-outline">
+                          <button type="button" className="btn button-outline B2">
                             Learn More
                           </button>
                         </a>
@@ -400,14 +401,14 @@ const Home: NextPage = () => {
                   </Col>
                   <Col xs={8} sm={5} lg={4} className="p-4 display-flex">
                     <h4 className="text-color__berry">Become a Mentor</h4>
-                    <p>
+                    <p  className="B2">
                       Share your experiences and make a difference in a mentee’s career. Continue to
                       learn through mentoring.
                     </p>
                     <div>
                       <Link href="/pollination">
                         <a>
-                          <button type="button" className="btn button-outline">
+                          <button type="button" className="btn button-outline B2">
                             Learn More
                           </button>
                         </a>
@@ -432,7 +433,7 @@ const Home: NextPage = () => {
                       <h2>They did it—and so can you</h2>
                     </div>
                     <div className="p-1">
-                      <p id="header-text">
+                      <p id="header-text" className="B2">
                         We are proud of our podcast guests who have started their tech careers in
                         Sweden.
                       </p>
@@ -460,7 +461,7 @@ const Home: NextPage = () => {
                     xl={5}
                     className="p-5"
                   >
-                    <p className="m-0 left-center-text">
+                    <p className="m-0 left-center-text B2">
                       Our podcast is filled with inspiring stories from Swedish immigrants who have
                       broken into tech. <br />
                       Catch up on all the buzz!
