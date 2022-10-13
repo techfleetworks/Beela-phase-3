@@ -5,7 +5,7 @@ import Footer from "../components/layout/Footer"
 import { PageWrapper } from "../components/layout/PageWrapper"
 
 import PaymentForm from "../components/sections/PaymentForm"
-const Donation: NextPage = () => {
+const Donate: NextPage = () => {
   return (
     <div>
       <Head>
@@ -21,4 +21,4 @@ const Donation: NextPage = () => {
     </div>
   )
 }
-export default Donation
+export default Donate
