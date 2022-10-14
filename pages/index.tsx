@@ -30,8 +30,9 @@ import Image from "react-bootstrap/Image"
 
 import { PageWrapper } from "../components/layout/PageWrapper"
 import Footer from "../components/Footer/footer"
-import BlazeAnnoucement from "../components/sections/Homepage/BlazeAnnouncement"
-import BlazeAnnouncement from "../components/sections/Homepage/BlazeAnnouncement"
+
+import BlazeAnnouncement from "../components/sections/homepage/BlazeAnnouncement"
+import Career from "../components/sections/homepage/Career"
 
 const Home: NextPage = () => {
   // const { data, error, loading } = useTestimonialsQuery()
@@ -51,6 +52,7 @@ const Home: NextPage = () => {
       <PageWrapper>
         <Hero />
         <BlazeAnnouncement />
+        <Career />
 
         {/* Our Team */}
         {/*
@@ -203,65 +205,6 @@ const Home: NextPage = () => {
             </div>
           </div>
                     */}
-
-        {/* Career Steps */}
-        <section id="section-career">
-          <Row
-            className="text-center align-items-center align-content-center justify-content-center p-5"
-            id="steps"
-          >
-            <Row className="justify-content-center">
-              <Col sm={8}>
-                <div className="p-1">
-                  <h2 className="H2 home-steps__title">3 Steps to Start a New Career</h2>
-                </div>
-                <div className="p-1">
-                  <p className="B1">
-                    We know that it’s not easy to change careers and move to a new country. We are
-                    here to support you every step of the way.
-                    <br />
-                    <span className="italics">Bzz: tech isn’t just coding!</span>
-                  </p>
-                </div>
-              </Col>
-            </Row>
-
-            <Container fluid="md" className="justify-content-center align-content-center ">
-              <Row xs={1} md={3} className="g-4 justify-content-center">
-                <Col className="mb-4 steps-col">
-                  <Card>
-                    <Card.Img variant="top" src="../icons/bee1.svg" />
-                    <Card.Body>
-                      <Card.Title className="h4">1. Join our community</Card.Title>
-                      <Card.Text>Get support and share your experiences in our forum.</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-
-                <Col className="mb-4 steps-col">
-                  <Card>
-                    <Card.Img variant="top" src="../icons/bee2.svg" />
-                    <Card.Body>
-                      <Card.Title className="h4">2. Get experience</Card.Title>
-                      <Card.Text>Explore tech fields and learn skills from our partners.</Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-                <Col className="mb-4 steps-col">
-                  <Card>
-                    <Card.Img variant="top" src="../icons/bee3.svg" />
-                    <Card.Body>
-                      <Card.Title className="h4">3. Land a job</Card.Title>
-                      <Card.Text>
-                        Receive mentorship and leverage your transferrable skills.
-                      </Card.Text>
-                    </Card.Body>
-                  </Card>
-                </Col>
-              </Row>
-            </Container>
-          </Row>
-        </section>
 
         {/* Blaze Award*/}
 
