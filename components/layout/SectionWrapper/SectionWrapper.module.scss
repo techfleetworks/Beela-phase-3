@@ -14,29 +14,32 @@
 }
 
 .hero {
-  padding: 8rem;
+  padding: 6rem;
 }
 .main {
-  padding: 6rem;
+  padding: 4rem;
 }
 .none {
   padding: 0;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
   .hero {
-    padding: 7rem 6rem;
+    padding: 5rem;
   }
   .main {
-    padding: 6rem 5rem;
+    padding: 3rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    padding: 4rem;
   }
 }
 
 @media (max-width: 900px) {
   .hero {
-    padding: 5rem 4rem;
-  }
-  .main {
-    padding: 4rem 3rem;
+    padding: 3rem;
   }
 }

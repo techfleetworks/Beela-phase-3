@@ -154,7 +154,7 @@ h5,
 
 .B2 {
   font-size: 1.6rem;
-  line-height: 1.7em;
+  line-height: 1.25em;
 }
 
 .button {
@@ -352,6 +352,10 @@ hr {
   margin: auto;
 }
 
+span {
+  font-weight: 550;
+}
+
 #testimonials {
   background-color: var(--color-cornflower);
 }
@@ -389,6 +393,7 @@ hr {
 
 .card {
   border: none !important;
+  background-color: var(--color-white);
 }
 
 .card-body-hex {
@@ -407,12 +412,24 @@ hr {
   align-self: center;
 }
 
+#steps {
+  background-color: var(--color-white);
+}
+
+.home-steps__title {
+  color: var(--color-berry);
+}
+
 .steps-col {
   max-width: 350px !important;
 }
 
 .home-pollination__img {
   line-height: 0%;
+}
+
+#card-m3-steps {
+  max-width: 370px;
 }
 
 #card-m3-testimonials {
