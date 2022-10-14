@@ -136,10 +136,9 @@ h4,
 
 h5,
 .h5 {
-font-size: 1.8;
-font-weight: 600;
+  font-size: 1.8;
+  font-weight: 600;
 }
-
 
 .S1 {
   font-size: 1.7rem;
@@ -155,7 +154,7 @@ font-weight: 600;
 
 .B2 {
   font-size: 1.6rem;
-  line-height: 1.25em;
+  line-height: 1.7em;
 }
 
 .button {
@@ -218,7 +217,6 @@ font-weight: 600;
     line-height: 1.375em;
   }
 
-
   .S1 {
     font-size: 1.8rem;
     line-height: 1.5em;
@@ -251,8 +249,6 @@ font-weight: 600;
     line-height: 0.86em;
   }
 }
-
-
 
 /*------HERO SECTION ------*/
 
@@ -295,20 +291,20 @@ font-weight: 600;
 
 // Hero - Button
 .hero-button {
-background-color: var(--color-berry);
-border: none;
-border-radius: 25px;
-color: var(--color-white);
-font-weight: 500;
-font-size: 1.8rem;
-height: 46px;
-padding: 0px 3rem;
-text-transform: capitalize;
-width: 36rem;
+  background-color: var(--color-berry);
+  border: none;
+  border-radius: 25px;
+  color: var(--color-white);
+  font-weight: 500;
+  font-size: 1.8rem;
+  height: 46px;
+  padding: 0px 3rem;
+  text-transform: capitalize;
+  width: 36rem;
   &:hover {
     background-color: var(--color-berry-30);
     transition: 0.5s;
-    }
+  }
 
   &:hover a {
     color: inherit;
@@ -356,10 +352,6 @@ hr {
   margin: auto;
 }
 
-span {
-  font-weight: 550;
-}
-
 #testimonials {
   background-color: var(--color-cornflower);
 }
@@ -397,7 +389,6 @@ span {
 
 .card {
   border: none !important;
-  background-color: var(--color-white);
 }
 
 .card-body-hex {
@@ -416,24 +407,12 @@ span {
   align-self: center;
 }
 
-#steps {
-  background-color: var(--color-white);
-}
-
-.home-steps__title {
-  color: var(--color-berry);
-}
-
 .steps-col {
   max-width: 350px !important;
 }
 
 .home-pollination__img {
   line-height: 0%;
-}
-
-#card-m3-steps {
-  max-width: 370px;
 }
 
 #card-m3-testimonials {
@@ -615,8 +594,6 @@ span {
   height: 400px;
   align-items: center;
 }
-
-
 
 #empower-text {
   color: var(--color-berry);
