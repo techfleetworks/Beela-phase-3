@@ -28,11 +28,14 @@ import Image from "react-bootstrap/Image"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
 
+
 import { PageWrapper } from "../components/layout/PageWrapper"
 import Footer from "../components/Footer/footer"
 
 import BlazeAnnouncement from "../components/sections/homepage/BlazeAnnouncement"
 import Career from "../components/sections/homepage/Career"
+
+
 
 const Home: NextPage = () => {
   // const { data, error, loading } = useTestimonialsQuery()
@@ -52,7 +55,9 @@ const Home: NextPage = () => {
       <PageWrapper>
         <Hero />
         <BlazeAnnouncement />
+
         <Career />
+
 
         {/* Our Team */}
         {/*
@@ -205,6 +210,7 @@ const Home: NextPage = () => {
             </div>
           </div>
                     */}
+
 
         {/* Blaze Award*/}
 
