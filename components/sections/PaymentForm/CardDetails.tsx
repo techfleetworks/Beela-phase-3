@@ -7,16 +7,16 @@ import {
     CardExpiryElement,
     CardCvcElement
 } from "@stripe/react-stripe-js";
-
+import axios from "axios";
+import { StripeCardNumberElement } from "@stripe/stripe-js";
 
 // component
 import { Button } from '../../elements/Button';
 import BeelaLoader from "../../elements/Loader";
-import { StripeCardNumberElement } from "@stripe/stripe-js";
 
-const CardDetails = (props: any) => {
 
-    const { stripePromise } = props;
+const CardDetails = () => {
+
     const [succeeded, setSucceeded] = useState(false);
     const [error, setError] = useState("");
     const [processing, setProcessing] = useState(false);
@@ -43,41 +43,8 @@ const CardDetails = (props: any) => {
 
 
     useEffect(() => {
-        // Create PaymentIntent as soon as the page loads
-        // window
-        //     .fetch("/create-payment-intent", {
-        //         method: "POST",
-        //         headers: {
-        //             "Content-Type": "application/json"
-        //         },
-        //         body: JSON.stringify({ items: [{ id: "xl-tshirt" }] })
-        //     })
-        //     .then(res => {
-        //         return res.json();
-        //     })
-        //     .then(data => {
-        //         setClientSecret(data.clientSecret);
-        //     });
 
-       
-        // const kk = async () => {
-        //   const {error, paymentMethod} = await stripePromise.createPaymentMethod({
-        //     type: 'card',
-        //     card: cardElement,
-        //   });
-
-        //   if (error) {
-        //     console.log('[error]', error);
-        //   } else {
-        //     console.log('[PaymentMethod]', paymentMethod);
-        //     // ... SEND to your API server to process payment intent
-        //   }
-        // }
-        // console.log('check client secrete', l)
-
-        // }
-        // kk()
-        }, []);
+    });
 
     let elementStyles = {
         base: {
@@ -105,43 +72,69 @@ const CardDetails = (props: any) => {
         setError(event.error ? event.error.message : "");
     };
 
-    // const {error, paymentMethod} = await stripePromise.createPaymentMethod({
-    //     type: 'card',
-    //     // card: cardElement,
-    //   });
 
-    //   if (error) {
-    //     console.log('[error]', error);
-    //   } else {
-    //     console.log('[PaymentMethod]', paymentMethod);
-    //     // ... SEND to your API server to process payment intent
-    //   }
 
     const handleSubmit = async (ev: any) => {
+
+        if (!stripe || !elements || !name || !surname) {
+            return;
+        }
+
         ev.preventDefault();
         setProcessing(true);
+        console.log('handl start')
 
-        // const cardElement: StripeCardNumberElement | null = 
-        //     elements.getElement(CardNumberElement);
+        const cardElement: StripeCardNumberElement | null =
+            elements.getElement(CardNumberElement);
 
-        // if (!cardElement) {
-        //     return;
-        // }
-        // console.log("check elements", cardElement)
+        if (!cardElement) {
+            return;
+        }
+        console.log('check element', cardElement)
 
-        const payload: any = stripe && await stripe.confirmCardPayment(clientSecret, {
-            // payment_method: {
-            //     card: cardElement
-            // }
-        });
+        try {
+            const { data: clientSecret } = await axios.post("/api/payment_intents", {
+                amount: 100
+            });
 
-        if (payload.error) {
-            setError(`Payment failed ${payload.error.message}`);
-            setProcessing(false);
-        } else {
-            setError(null as any);
-            setProcessing(false);
-            setSucceeded(true);
+            console.log('check secret', clientSecret)
+
+            const paymentMethodReq = await stripe?.createPaymentMethod({
+                type: "card",
+                card: cardElement || '',
+                billing_details: {
+                    name: `${name} ${surname}`,
+                    email: 'frank@gmail.com',
+                    address: {
+                        city: 'sadf',
+                        line1: 'sdfa',
+                        state: 'lagos',
+                        postal_code: '31434'
+                    }
+                }
+            });
+
+            if (paymentMethodReq?.error) {
+                console.log('paymentMethodReq', paymentMethodReq.error)
+                //   setCheckoutError(paymentMethodReq.error.message);
+                //   setProcessingTo(false);
+                return;
+            }
+
+            const { error }: any = await stripe?.confirmCardPayment(clientSecret, {
+                payment_method: paymentMethodReq?.paymentMethod.id
+            });
+
+            if (error) {
+                //   setCheckoutError(error.message);
+                //   setProcessingTo(false);
+                return;
+            }
+
+            // onSuccessfulCheckout();
+        } catch (err:any) {
+            console.log(err.message)
+            // setCheckoutError(err.message);
         }
     };
 

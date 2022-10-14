@@ -76,7 +76,6 @@ export default function PaymentForm() {
       <SectionWrapper padding="hero">
         <Elements stripe={stripePromise} >
           <CardDetails
-            stripePromise={stripePromise}
           />
         </Elements>
       </SectionWrapper>
