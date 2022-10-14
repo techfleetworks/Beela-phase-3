@@ -22,7 +22,7 @@ export const DonationTest = () => {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({items: [{ id: "xl-tshirt" }]})
+        body: JSON.stringify({ items: [{ id: "xl-tshirt" }] })
       })
       .then(res => {
         return res.json();
@@ -51,21 +51,21 @@ export const DonationTest = () => {
     }
   };
 
-  const handleChange = async (event:any) => {
+  const handleChange = async (event: any) => {
     // Listen for changes in the CardElement
     // and display any errors as the customer types their card details
     setDisabled(event.empty);
     setError(event.error ? event.error.message : "");
   };
 
-  const handleSubmit = async (ev:any) => {
+  const handleSubmit = async (ev: any) => {
     ev.preventDefault();
     setProcessing(true);
 
-    const payload: any = stripe && await  stripe.confirmCardPayment(clientSecret, {
-    //   payment_method: {
-    //     card: elements.getElement(CardElement)
-    //   }
+    const payload: any = stripe && await stripe.confirmCardPayment(clientSecret, {
+      //   payment_method: {
+      //     card: elements.getElement(CardElement)
+      //   }
     });
 
     if (payload.error) {
