@@ -30,7 +30,8 @@ import Image from "react-bootstrap/Image"
 
 import { PageWrapper } from "../components/layout/PageWrapper"
 import Footer from "../components/Footer/footer"
-import BlazeAnnouncement from "../components/sections/Homepage/BlazeAnnouncement"
+
+import BlazeAnnouncement from "../components/sections/homepage/BlazeAnnouncement"
 import Career from "../components/sections/homepage/Career"
 
 const Home: NextPage = () => {
@@ -204,6 +205,8 @@ const Home: NextPage = () => {
             </div>
           </div>
                     */}
+
+        {/* Blaze Award*/}
 
         {/* Pollination Programme */}
         <section id="section-pollination">
