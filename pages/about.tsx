@@ -1,10 +1,10 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import Navbar from "../components/Navbar"
+import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer"
 import avatar from "../public/images/avatar.png"
 import Image from "next/image"
-import AboutBeela from "../components/sections/AboutBeela"
+import AboutBeela from "../components/sections/about/AboutBeela"
 import { PageWrapper } from "../components/layout/PageWrapper"
 import React from "react"
 const About: NextPage = () => {

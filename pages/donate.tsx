@@ -4,7 +4,7 @@ import Navbar from "../components/Navbar"
 import Footer from "../components/layout/Footer"
 import { PageWrapper } from "../components/layout/PageWrapper"
 
-import PaymentForm from "../components/sections/PaymentForm"
+import PaymentForm from "../components/sections/donate/PaymentForm"
 const Donation: NextPage = () => {
   return (
     <div>
