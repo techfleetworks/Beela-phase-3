@@ -329,10 +329,6 @@ h5,
   padding: 13px 50px;
 }
 
-.home-pollination__spacer {
-  margin: 64px 128px 64px 128px;
-}
-
 .site-map {
   /* Auto layout */
   display: flex;
@@ -435,34 +431,14 @@ hr {
   padding: 0rem 1rem 0rem 1rem;
 }
 
-.home-shadow_img {
-  box-shadow: 22px 24px rgb(230, 198, 25);
-}
-
 .home-pollination__right {
   margin-right: 80px;
 }
 
 @media only screen and (max-width: 768px) {
-  .left-center-text {
-    text-align: center;
-  }
-
   .hero-text-wrapper {
     padding: 0 0 1rem 0 !important;
   }
-}
-
-#podcast {
-  background-color: white;
-
-  a {
-    color: #000000;
-  }
-}
-
-.podcast-icon {
-  height: 40px;
 }
 
 #hero-poll {
@@ -605,10 +581,6 @@ hr {
 #wrapper {
   left: 0;
   right: 0;
-}
-
-.image-wrapper {
-  width: auto;
 }
 
 /* Testimonials Carousel */

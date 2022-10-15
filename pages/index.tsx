@@ -10,7 +10,6 @@ import { TeamCard } from "../components/elements/TeamCard"
 import { SectionWrapper } from "../components/layout/SectionWrapper"
 
 // React-Bootstrap icons
-import { Spotify } from "react-bootstrap-icons"
 
 // React-Bootstrap imports
 import Col from "react-bootstrap/Col"
@@ -28,14 +27,12 @@ import Image from "react-bootstrap/Image"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
 
-
 import { PageWrapper } from "../components/layout/PageWrapper"
 import Footer from "../components/Footer/footer"
 
 import BlazeAnnouncement from "../components/sections/homepage/BlazeAnnouncement"
 import Career from "../components/sections/homepage/Career"
-
-
+import BeelasTalkPodcast from "../components/sections/homepage/BeelasTalkPodcast"
 
 const Home: NextPage = () => {
   // const { data, error, loading } = useTestimonialsQuery()
@@ -57,7 +54,6 @@ const Home: NextPage = () => {
         <BlazeAnnouncement />
 
         <Career />
-
 
         {/* Our Team */}
         {/*
@@ -211,7 +207,6 @@ const Home: NextPage = () => {
           </div>
                     */}
 
-
         {/* Blaze Award*/}
 
         {/* Pollination Programme */}
@@ -355,79 +350,7 @@ const Home: NextPage = () => {
           </Row>
         </section>
 
-        {/* Podcast  */}
-        <section id="section-podcast">
-          <Row className="text-center justify-content-center align-content-center" id="podcast">
-            <Container className="home-pollination__spacer">
-              <Row className="text-color__berry">
-                <h2>Beela s Talk Podcast</h2>
-              </Row>
-              <Row xs={1} md={2} className="m-4 align-items-center justify-content-center">
-                <Col
-                  xs={{ order: 2 }}
-                  sm={10}
-                  md={{ span: 6, order: 1 }}
-                  lg={6}
-                  xl={5}
-                  className="p-5"
-                >
-                  <p className="m-0 left-center-text B2">
-                    Our podcast is filled with inspiring stories from Swedish immigrants who have
-                    broken into tech. <br />
-                    Catch up on all the buzz!
-                  </p>
-                  <div className="pt-3 left-center-text">
-                    <a
-                      href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Spotify size={40} className=" podcast-icon" />
-                    </a>
-                    <a
-                      href="https://podcasts.apple.com/us/podcast/beelas-talk/id1624447735"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Image
-                        src="/icons/podcast-apple.svg"
-                        className="m-3 podcast-icon"
-                        alt="Icon for Apple Podcasts, an icon of a person with two semi circles above them"
-                      />
-                    </a>
-                    <a
-                      href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81YTE1NDIwOC9wb2RjYXN0L3Jzcw"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <Image
-                        src="/icons/podcast-google.svg"
-                        className="podcast-icon"
-                        alt="Icon for Google Podcasts, an row of five divided lines in a diamond shape"
-                      />
-                    </a>
-                  </div>
-                </Col>
-                <Col
-                  xs={{ order: 1 }}
-                  sm={10}
-                  md={{ span: 6, order: 2 }}
-                  lg={6}
-                  xl={5}
-                  className="p-3"
-                >
-                  <div className="image-wrapper">
-                    <img
-                      src="/icons/home-podcast.svg"
-                      alt="The Podcast image for Beela Talk, an illustraion of two women in Rosie the Riveter pose with the text Beela's Talk underneath them"
-                      className="img-fluid home-shadow_img"
-                    />
-                  </div>
-                </Col>
-              </Row>
-            </Container>
-          </Row>
-        </section>
+        <BeelasTalkPodcast />
       </PageWrapper>
       <Footer />
     </div>
