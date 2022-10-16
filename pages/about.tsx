@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 import Navbar from "../components/layout/Navbar"
-import Footer from "../components/layout/Footer"
+import Footer from "../components/layout/Footer/footer"
 import avatar from "../public/images/avatar.png"
 import Image from "next/image"
 import AboutBeela from "../components/sections/about/AboutBeela"

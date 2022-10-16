@@ -4,7 +4,7 @@ import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
 import Navbar from "../components/Navbar"
-import Footer from "../components/layout/Footer"
+import Footer from "../components/layout/Footer/footer"
 import Testimonials from "../components/sections/homepage/Testimonials"
 
 // React-Bootstrap icons
