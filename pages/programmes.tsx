@@ -1,6 +1,6 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import Navbar from "../components/Navbar"
+import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer/footer"
 import Image from "next/image"
 import Link from "next/link"
