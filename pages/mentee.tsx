@@ -3,7 +3,7 @@ import Popper from "@popperjs/core"
 import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
-import Navbar from "../components/Navbar"
+import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer/footer"
 import Testimonials from "../components/sections/homepage/Testimonials"
 
