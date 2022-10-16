@@ -12,7 +12,7 @@ import partner2 from "../../public/images/Partner2.svg";
 import {useState} from "react";
 import axios from "axios"
 
-export default function footer() {
+export default function Footer() {
 
 
   const [email, setEmail] = useState("");
