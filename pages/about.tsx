@@ -60,7 +60,7 @@ const About: NextPage = () => {
             </div>
           </div>
         </div>
-
+        
         {/* Our Community */}
         <div className="row" id="community">
           <div className="container">

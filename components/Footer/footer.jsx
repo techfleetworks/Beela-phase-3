@@ -8,8 +8,36 @@ import slack from "../../public/images/slack.svg";
 import partner1 from "../../public/images/Partner1.svg";
 import techfleet from "../../public/images/techfleet.svg";
 import partner2 from "../../public/images/Partner2.svg";
+//mailchimp needed the below imports
+import {useState} from "react";
+import axios from "axios"
 
 export default function footer() {
+
+
+  const [email, setEmail] = useState("");
+  const [state, setState] = useState("");
+  const [errorMessage, setErrorMessage] = useState(null);
+
+  const subscribe = async ()=>{
+
+      setState("LOADING");
+      setErrorMessage(null);
+
+      try{
+          const response = await axios.post("/api/newsletter", {email});
+          setState("SUCCESS");
+      } catch(e){
+          setErrorMessage(e.response.data.error);
+          setState("ERROR");
+      }
+
+  }
+
+
+
+
+
   return (
     <div>
       <div className={`container-fluid ${styles.footer1}`}>
@@ -20,8 +48,29 @@ export default function footer() {
               <div className="d-flex flex-column">
 
                 <div>
-                      <h4 className="mb-4 primary-berry">Sign Up for Beelas Newsletter</h4>
-                      <input type="email" placeholder="Enter your email here    ->" className={`B2 ${styles.input} mb-4 w-75`}/>
+                      <h4 className="mb-4 primary-berry H4">Sign Up for Beelas Newsletter</h4>
+                      {/* <input type="email" placeholder="Enter your email here    ->" className={`B2 ${styles.input} mb-4 w-75`} /> */}
+
+                      {/* <div className='input-group'>
+                          <input type="email" placeholder="Enter email "  onChange={(e)=> setEmail(e.target.value)} value={email}/>
+                          <button type="button"  disabled={state == "LOADING"} onClick={subscribe}>
+                              Subscribe
+                          </button>
+                          {state == "ERROR" &&(<p>this is error message</p>)}
+                          {state == "SUCCESS" &&(<p>this is success message</p>)}
+                      </div> */}
+                      <div className="input-group mb-3">
+                        <input type="email"  onChange={(e)=> setEmail(e.target.value)} value={email}    className="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                        <button type="button" className="input-group-append"   disabled={state == "LOADING"}  onClick={subscribe}>
+                          <span className="input-group-text" id="basic-addon2">Submit</span>
+                        </button>
+                        <br/>
+                        </div>
+                        {state == "ERROR" &&( <h4>Please enter a valid email.</h4>)}
+                          {state == "SUCCESS" &&(<h4>You are now subscribed!</h4>)}
+                      
+
+
                 </div>
                 <div className="mt-4 pt-4">
                       <p className="S2 mt-4">©  2022 Beela Stockholm, Sweden </p>
