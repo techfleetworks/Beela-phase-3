@@ -129,10 +129,11 @@ export default function Footer() {
                   <h4 className='primary-berry mb-4'>Beela Community</h4>
                   <div className="logos mt-2">
               
-                    <Link href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786&nd=1" target="_blank" rel='noreferrer'>
+                    <Link href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786&nd=1" target="_blank" rel=' noopener noreferrer'>
                     <a>
-                  <Image alt="Spotify logo" src={spotify} width={33} height={33}/>
-                    </a>
+                  <Image alt="Spotify logo" src={spotify} width={33} height={33} />
+                  </a>
+                    
                   </Link>
                   
                   <Image alt="LinkedIn logo" src={linkedin} width={33} height={33} />
