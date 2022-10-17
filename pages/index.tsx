@@ -52,7 +52,6 @@ const Home: NextPage = () => {
       <PageWrapper>
         <Hero />
         <BlazeAnnouncement />
-
         <Career />
 
         {/* Our Team */}

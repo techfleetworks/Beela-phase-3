@@ -22,6 +22,6 @@
     "components/sections/AboutBeela/index.jsx",
     "components/sections/AboutBeela/index.jsx",
     "components/sections/AboutBeela/AboutBeela.jsx"
-, "api/payment_intents.js"  ],
+, "pages/api/payment_intents.js"  ],
   "exclude": ["node_modules"]
 }

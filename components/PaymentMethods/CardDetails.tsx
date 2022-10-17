@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+
+// stripe
 import {
     CardElement,
     useStripe,
@@ -10,12 +12,16 @@ import {
 import axios from "axios";
 import { StripeCardNumberElement } from "@stripe/stripe-js";
 
+// scss
+import styles from "./paymentform.module.scss"
+
 // component
-import { Button } from '../../elements/Button';
-import BeelaLoader from "../../elements/Loader";
+import { Button } from '../elements/Button';
+import BeelaLoader from "../elements/Loader";
+import { InputField } from "../elements/InputField";
 
-
-const CardDetails = () => {
+const CardDetails = (props: any) => {
+    const { amount } = props
 
     const [succeeded, setSucceeded] = useState(false);
     const [error, setError] = useState("");
@@ -25,7 +31,6 @@ const CardDetails = () => {
     const stripe = useStripe();
     const elements = useElements();
 
-
     const [isInputComplete, setIsInputComplete] = useState({
         firstName: true,
         lastName: true,
@@ -34,18 +39,19 @@ const CardDetails = () => {
         expiryDate: true,
     })
 
-    const [name, setName] = useState('')
-    const [surname, setSurname] = useState('')
+    const [firstName, setFirstName] = useState('')
+    const [lastName, setLastName] = useState('')
+    const [emailAddress, setEmailAddress] = useState('')
+    const [phone, setPhone] = useState()
 
     useEffect(() => {
 
-    }, [isInputComplete.cardNumber, isInputComplete.cardCvc, isInputComplete.expiryDate])
+    }, [isInputComplete.cardNumber,
+    isInputComplete.cardCvc,
+    isInputComplete.expiryDate
+    ])
 
-
-    useEffect(() => {
-
-    });
-
+    // Stripe Element Base style
     let elementStyles = {
         base: {
             fontFamily: 'sans-serif',
@@ -64,7 +70,6 @@ const CardDetails = () => {
         },
     };
 
-
     const handleChange = async (event: any) => {
         // Listen for changes in the CardElement
         // and display any errors as the customer types their card details
@@ -72,47 +77,54 @@ const CardDetails = () => {
         setError(event.error ? event.error.message : "");
     };
 
-
-
     const handleSubmit = async (ev: any) => {
 
-        if (!stripe || !elements || !name || !surname) {
+        // check if !!
+        if (!stripe || !elements || !firstName || !lastName) {
             return;
         }
 
         ev.preventDefault();
         setProcessing(true);
-        console.log('handl start')
 
         const cardElement: StripeCardNumberElement | null =
             elements.getElement(CardNumberElement);
 
+        // check if cardElement is null
         if (!cardElement) {
             return;
         }
+
+        // test logs
         console.log('check element', cardElement)
+        console.log('check amount', amount)
 
         try {
+
+            // create Stripe intent
             const { data: clientSecret } = await axios.post("/api/payment_intents", {
-                amount: 100
+                amount: 200 * 100
             });
 
             console.log('check secret', clientSecret)
 
+            // Create Payment Request
             const paymentMethodReq = await stripe?.createPaymentMethod({
                 type: "card",
                 card: cardElement || '',
                 billing_details: {
-                    name: `${name} ${surname}`,
+                    name: `${firstName} ${lastName}`,
                     email: 'frank@gmail.com',
                     address: {
-                        city: 'sadf',
+                        city: 'Toronto',
                         line1: 'sdfa',
-                        state: 'lagos',
+                        state: 'Ontario',
                         postal_code: '31434'
                     }
                 }
             });
+
+            console.log('check secret', paymentMethodReq)
 
             if (paymentMethodReq?.error) {
                 console.log('paymentMethodReq', paymentMethodReq.error)
@@ -132,7 +144,7 @@ const CardDetails = () => {
             }
 
             // onSuccessfulCheckout();
-        } catch (err:any) {
+        } catch (err: any) {
             console.log(err.message)
             // setCheckoutError(err.message);
         }
@@ -186,56 +198,106 @@ const CardDetails = () => {
         }
     }
 
-    const handleFirstName = (value: any) => {
+    const handleFirstName = (e: any) => {
+        const { value } = e.target
+        console.log(value)
         setIsInputComplete((state) => ({
             ...state,
             firstName: !value
         }))
-        setName(value)
+        setFirstName(value)
 
     }
 
-    const handleLastName = (value: any) => {
+
+
+    const handleLastName = (e: any) => {
+        const { value } = e.target
         console.log(value)
         setIsInputComplete((state) => ({
             ...state,
             lastName: !value
         }))
-        setSurname(value)
+        setLastName(value)
+    }
+
+    const handleEmail = (e: any) => {
+        const { value } = e.target
+        console.log(value)
+        // setIsInputComplete((state) => ({
+        //     ...state,
+        //     lastName: !value
+        // }))
+        setEmailAddress(value)
+    }
+
+    const handlePhone = (e: any) => {
+        const { value } = e.target
+        console.log(value)
+        setPhone(value)
     }
 
     return (
-        <div>
-            <form id="payment-form" onSubmit={handleSubmit}>
+        <div className={styles.setupcard}>
+            <form className={styles.setupcardform} id="payment-form" onSubmit={handleSubmit}>
                 <h3>Personal Information</h3>
+                <div className={styles.setupcardWrapper}>
+                    <div className={styles.setupcardinputwrapper}>
+                        <div>
+                            <InputField
+                                type="text"
+                                label="First Name"
+                                id="FirstName"
+                                className={styles.inputfield}
+                                required
+                                onChange={handleFirstName}
+                            />
+                        </div>
+                        <div>
+                            <InputField
+                                type="text"
+                                label="Last Name"
+                                id="LastName"
+                                className={styles.inputfield}
+                                required
+                                onChange={handleLastName}
+                            />
+                        </div>
+                    </div>
+                    <div>
+                        <InputField
+                            type="text"
+                            label="Corporation"
+                            id="Corporation"
+                            className={styles.inputfield}
+                            required
+                            onChange={handleLastName}
+                        />
+                    </div>
+                </div>
+                <div className={styles.setupcardinputwrapper}>
+                    <div>
+                        <InputField
+                            type="number"
+                            label="Phone Number"
+                            id="PhoneNumber"
+                            required
+                            className={styles.inputfield}
+                            onChange={handlePhone}
+                        />
+                    </div>
+                    <div>
+                        <InputField
+                            type="email"
+                            label="Email Address"
+                            required
+                            id="emailAddress"
+                            className={styles.inputfield}
+                            onChange={handleEmail}
+                        />
+                    </div>
+                </div>
 
-                <div className="form-group">
-                    <label htmlFor="FirstName">First Name</label>
-                    <input
-                        id="FirstName"
-                        className="form-control"
-                        type="text"
-                        onChange={handleFirstName}
-                    />
-                </div>
-                <div className="form-group">
-                    <label htmlFor="LastName">Last Name</label>
-                    <input
-                        id="LastName"
-                        className="form-control"
-                        onChange={handleLastName}
-                        type="text"
-                    />
-                </div>
-                {/* <div className="form-group">
-            <label htmlFor="PhoneNumber">Phone Number</label>
-            <input id="PhoneNumber" className="form-control" type="text"></input>
-          </div>
-          <div className="form-group">
-            <label htmlFor="Email">Email Address</label>
-            <input id="Email" className="form-control" type="text"></input>
-          </div>
-           */}
                 <h3>Payment Information</h3>
                 <label htmlFor="CreditCardNumber">Card Number</label>
                 <CardNumberElement
@@ -248,13 +310,6 @@ const CardDetails = () => {
                     className="stripe-card-input"
                     id="card-number"
                 />
-                {/* <input
-                        id="CreditCardNumber"
-                        className="null card-image form-control"
-                        type="text"
-                    >
-
-                    </input> */}
 
                 <label htmlFor="ExpiryDate">Expiration date</label>
                 <CardExpiryElement
@@ -262,7 +317,9 @@ const CardDetails = () => {
                         style: elementStyles
                     }}
                     onChange={handleCardExpiry}
-                    className="stripe-card-input" />
+                    className="stripe-card-input"
+                    id="card-number"
+                />
 
                 {/* <input
                         id="ExpiryDate"
@@ -281,17 +338,6 @@ const CardDetails = () => {
                     className="stripe-card-input" />
 
                 <br />
-                {/* <div className="input-container">
-                        <input id="SecurityCode" className="form-control" type="text"></input>
-                    </div> */}
-
-                {/* <div className="country-code-group form-group">
-                    <label htmlFor="CountryCode">Country</label>
-                    <div className="input-container">
-                        <input id="CountryCode" className="form-control" type="text"></input>
-                    </div>
-                </div> */}
-
                 <Button
                     type="submit"
                     variant="primary_darkBG"

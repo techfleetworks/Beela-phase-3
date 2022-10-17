@@ -3,14 +3,14 @@
 
 $layout-padding:80px 48px 48px;
 
-.setup-card {
+.setupcard {
   border-radius: 10px;
   display: flex;
   flex-direction: row;
   min-height: 570px;
   flex-wrap: wrap;
-    .setup-card-form {
-      background-color: $WHITE;
+    .setupcardform {
+      background-color: $TRUE_WHITE;
       flex-direction: row;
       padding: 20px;
       // flex: 1.5;
@@ -24,59 +24,23 @@ $layout-padding:80px 48px 48px;
         top: 0;
         background: red;
     }
-      .btn-wrapper {
-         display: flex;
-         justify-content: flex-end;
-        .btn-continue {
-          box-sizing: content-box;
-          padding: 18px 40px;
-          font-size: 20px;
-          font-weight: 700;
-          border-radius: 8px;
-          // background: #6A29FF;
-          border: none;
-          color: #fff;
-          // cursor: pointer;
-          width: 144px;
-
-          .ant-spin-dot-item {
-            // background-color:$ppl-white;
-          }
-
-      }
-          .ant-btn-primary[disabled],
-          .btn-continue[disabled]:hover {
-            background: #b9a4e6;
-            color: #ffffff;
-            
-          }
-          
-          .btn-continue[disabled]:focus {
-            background: #b9a4e6;
-
-          }
-        
-     
-      }
       //container for the form inputs
           input, .StripeElement { 
             width: 100%; 
             border-radius: 3px; 
             border: 0.75px solid #aaa; 
             padding: 0 10px; 
-            margin-bottom:20px;
-
-            background: #f7f8fe;
-          border-radius: 8px;
+            margin-bottom:10px;
+            background: $WHITE !important;
+            border-radius: 1px;
         //   border-left: 1px solid $color-neutral;
           font-size: 20px;
-
           transition: all 0.4s;
           line-height: 1.5715;
 
+
           }
-       
-         input { line-height:36px; }
+         input { line-height:35px; }
 
         // styles for Chrome autofill
           .StripeElement--webkit-autofill { 
@@ -101,12 +65,13 @@ $layout-padding:80px 48px 48px;
       
     }
     
-    .setup-card-input-wrapper {
+    
+    .setupcardinputwrapper {
       // padding: 80px 48px 48px;
       display: flex;
       justify-content: space-between;
       gap: 2%;
-    margin-bottom: 15px;
+      margin-bottom: 15px;
 
       div {
         flex:1;
@@ -116,7 +81,7 @@ $layout-padding:80px 48px 48px;
         margin-bottom: 0px;
       }
 
-      .input-field {
+      .inputfield {
         // width: fit-content;
         flex: 1;
       }
@@ -131,7 +96,7 @@ $layout-padding:80px 48px 48px;
       width: 320px;
       height: 198px;
       border-radius: 8px;
-    //   background: $card-gradient-navy-blue;
+      background: red;
       display: flex;
       flex-direction: column;
   
@@ -145,7 +110,7 @@ $layout-padding:80px 48px 48px;
     
       }
       .payment-card-body {
-        // background:$card-gradient-navy-transparent;
+        background:red;
         border-bottom-right-radius: 8px;
         border-bottom-left-radius: 8px;
         height: 100%;
@@ -174,4 +139,31 @@ $layout-padding:80px 48px 48px;
         }
       }
     }
+}
+
+.StripeElement {
+  display: block;
+  margin: 10px 0 20px 0;
+  background-color: #fafafa;
+  padding: 10px 14px;
+  font-size: 1em;
+  font-family: "Source Code Pro", monospace;
+  border-bottom: 2px solid #e2e8f0;
+  outline: 0;
+}
+
+.StripeElement--focus {
+    border-bottom: 2px solid #01896a;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.StripeElement.IdealBankElement,
+.StripeElement.FpxBankElement,
+.StripeElement.PaymentRequestButton {
+  padding: 0;
+}
+
+.StripeElement.PaymentRequestButton {
+  height: 40px;
 }
