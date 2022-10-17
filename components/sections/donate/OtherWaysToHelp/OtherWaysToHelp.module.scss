@@ -1,0 +1,44 @@
+@import "../../../../styles/variables.scss";
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5.6rem;
+  padding: 3rem;
+}
+
+.list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list > .listItem {
+  color: $PRIMARY_BERRY;
+  width: 50%;
+  margin: 1.5rem 0;
+  white-space: nowrap;
+  //   font-size: 1.8rem;
+}
+
+@media (max-width: 960px) {
+  .list > .listItem {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 790px) {
+  .contentContainer {
+    gap: 3rem;
+  }
+  .list {
+    width: 100%;
+    flex-direction: column;
+  }
+  .list > .listItem {
+    text-align: center;
+    white-space: inherit;
+    width: 100%;
+  }
+} ;
