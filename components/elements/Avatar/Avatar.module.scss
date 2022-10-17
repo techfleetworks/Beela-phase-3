@@ -1,0 +1,19 @@
+@import "../../../styles//variables.scss";
+
+.imageContainer {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: -13rem;
+}
+.testimonialImageContainer {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: -5rem;
+}
+
+.image {
+  border-radius: 50%;
+  background-color: $TRUE_WHITE;
+}
