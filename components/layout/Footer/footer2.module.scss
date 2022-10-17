@@ -16,9 +16,31 @@
     border-right-style: hidden;
     border-left-style: hidden;
     border-bottom-style: groove;
-    background-color: #eee;
+    background-color: var(--color-cream);
     border-color: var(--color-berry-v4);
     border-bottom-width: 2px;
+  }
+
+  .enter-email {
+    /* Enter your email here */
+
+position: absolute;
+left: 10.67%;
+right: 68.54%;
+top: 30.3%;
+bottom: 62.1%;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 16.8349px;
+line-height: 170%;
+/* identical to box height, or 29px */
+
+/* Neutral/Gray 1 */
+color: #44433B;
+
+
   }
 
   .ul{

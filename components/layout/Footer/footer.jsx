@@ -64,7 +64,7 @@ export default function Footer() {
                           {state == "SUCCESS" &&(<p>this is success message</p>)}
                       </div> */}
                       <div className="input-group mb-3">
-                        <input type="email"  onChange={(e)=> setEmail(e.target.value)} value={email}    className="form-control" placeholder="Enter your email here" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
+                        <input type="email"  onChange={(e)=> setEmail(e.target.value)} value={email}   className={`B2 ${styles.input} mb-4 w-75`} placeholder="Enter your email here" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
                         <button type="button" className="input-group-append"   disabled={state == "LOADING"}  onClick={subscribe}>
                           <span className="input-group-text" id="basic-addon2">Submit</span>
                         </button>
@@ -72,11 +72,9 @@ export default function Footer() {
                         </div>
                         {state == "ERROR" &&( <h4>Please enter a valid email.</h4>)}
                           {state == "SUCCESS" &&(<h4>You are now subscribed!</h4>)}
-                          <br/>
-                          <br/>
-                          <br/>
 
-                </div>
+                      </div>
+
                 <div className="mt-5 pt-5">
                       <p className="S2 mt-5">©  2022 Beela Stockholm, Sweden </p>
                       <p className="S2 ">Stopvagen 60 Bromma, Stockholms län 16835 Sweden</p>
@@ -111,8 +109,8 @@ export default function Footer() {
                     </Link>
                     </li>
                     <li>
-                    <Link href="/contact??" >
-                      <a className='S2'>Contact Us</a>
+                    <Link href="https://beela.se/" >
+                      <a target="_blank" className='S2'>Contact Us</a>
                     </Link>
                     </li>
                     <li>
@@ -125,29 +123,65 @@ export default function Footer() {
             </div>
 
             <div className="col-12 col-md-3">
-                <div className='mb-4'>
-                  <h4 className='primary-berry mb-4'>Beela Community</h4>
-                  <div className="logos mt-2">
-              
-                    <Link href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786&nd=1" target="_blank" rel=' noopener noreferrer'>
-                    <a>
+              <div className="mb-4">
+                <h4 className="primary-berry mb-4">Beela Community </h4>
+                <div className="logos mt-2">
+                  <br/>
+                 
+                  <Link href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786&nd=1">
+                    <a target="_blank" >
                   <Image alt="Spotify logo" src={spotify} width={33} height={33} />
                   </a>
-                    
+                  </Link>
+                
+                  <Link href="https://www.linkedin.com/company/beela-se/">
+                    <a target="_blank">
+                  <Image alt="LinkedIn logo" src={linkedin} width={53} height={33} style={{paddingLeft: '1.5rem', paddingRight:'0.6rem' }}/>
+                  </a>
+                  </Link>
+            
+
+                  <Link href="https://www.instagram.com/beela.se/">
+                    <a target="_blank">
+                  <Image alt="Instagram logo" src={instagram} width={50} height={33} style={{paddingLeft: '0.3rem' }} />
+                  </a>
                   </Link>
                   
-                  <Image alt="LinkedIn logo" src={linkedin} width={33} height={33} />
-                  <Image alt="Instagram logo" src={instagram} width={33} height={33} />
-                  <Image alt="Slack logo" src={slack} width={33} height={33} />
-                  </div>
+
+                  <Link href="https://beela.slack.com/join/shared_invite/zt-12kargaye-5R2bP0qwqNpFwPiiDAiwQQ#/shared-invite/email">
+                    <a target="_blank">
+                  <Image alt="Slack logo" src={slack} width={40} height={33} style={{ paddingLeft: '1rem' }}/>
+                  </a>
+                  </Link>
                 </div>
+              </div>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
+              <br/>
 
                 <div className="my-4">
                   <h4 className="primary-berry my-4">Beela Partners</h4>
                   <div className="logos">
-                  <Image alt="Spotify logo" src={partner1} width={33} height={33} />
-                  <Image alt="Spotify logo" src={techfleet} width={33} height={33} />
-                  <Image alt="Spotify logo" src={partner2} width={33} height={33} />
+
+                  <Link href="https://www.newtosweden.org/">
+                    <a target="_blank">
+                  <Image alt="NewToSweden logo" src={partner1} width={33} height={33} />
+                  </a>
+                  </Link>
+
+                  <Link href="https://www.linkedin.com/company/tech-fleet-community/mycompany/">
+                  <a target="_blank">
+                  <Image alt="TechFleet logo" src={techfleet} width={53} height={33} style={{paddingLeft: '1.5rem' }} />
+                  </a>
+                  </Link>
+
+                  <Link href="https://beetrootacademy.com/">
+                    <a target="_blank">
+                  <Image alt="Academy logo" src={partner2} width={50} height={33} style={{paddingLeft: '0.1rem' }}  />
+                  </a>
+                  </Link>
                   </div>
                 </div>
             </div>
