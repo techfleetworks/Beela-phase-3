@@ -1,38 +1,38 @@
 import React from "react"
-import TeamAvatar from "../Avatar"
+import Avatar from "../Avatar"
+
+import styles from "./TeamCard.module.scss"
 
 interface ITeamCard {
+  description?: string
   imgSource: any
+  isTestimonial: boolean
+  isVolunteer: boolean
   name: string
   title: string
-  description?: string
 }
 
 export const TeamCard = (props: ITeamCard) => {
-  const { imgSource, name, title, description } = props
+  const {
+    description = "Some description here blah blah",
+    imgSource = "../images/denise.png",
+    isTestimonial = true,
+    isVolunteer,
+    name = "Beela Volunteer",
+    title = "CEO of Meow",
+  } = props
   return (
-    <div className="col-sm-12 col-lg-4 card m-3">
-      <div className="card-body">
-        <div className="card-title">
-          <TeamAvatar
-            imgSource={imgSource}
-          />
-          <div className="header">
-          </div>
-          <span id="team-name">{name}</span>
-          <p className="text-muted" id="team-title">
-            {title}
-          </p>
-          <p className="card-text" id="card-text">
-            {description}
-          </p>
+    <div className="d-flex justify-content-center">
+      <div className={styles.cardContainer}>
+        <Avatar imgSource={imgSource} isTestimonial={isTestimonial} />
+
+        <div className={!isVolunteer ? styles.bodyContainer : styles.volunteerBodyContainer}>
+          {!isVolunteer ? <h3>{name}</h3> : <h5 className="h5 primary-berry m-0">{name}</h5>}
+          <p className={!isVolunteer ? "B2" : "S2 primary-berry"}> {title}</p>
+
+          {!isVolunteer && <p className="B2 m-0">{description}</p>}
         </div>
       </div>
     </div>
-
-
-
-
   )
 }
-
