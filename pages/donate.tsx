@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import Head from "next/head"
-import Navbar from "../components/Navbar"
-import Footer from "../components/layout/Footer"
+import Navbar from "../components/layout/Navbar"
+import Footer from "../components/layout/Footer/footer"
 import { PageWrapper } from "../components/layout/PageWrapper"
 import { SupportBee } from "../components/sections/Donation"
 const Donation: NextPage = () => {

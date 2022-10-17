@@ -1,7 +1,5 @@
-import { loadStripe } from '@stripe/stripe-js';
-import {
-  Elements
-} from '@stripe/react-stripe-js';
+import { loadStripe } from "@stripe/stripe-js"
+import { Elements } from "@stripe/react-stripe-js"
 
 // component
 import { SectionWrapper } from "../layout/SectionWrapper"
@@ -18,8 +16,9 @@ const { APP_STRIPE_PUBLIC_KEY } = process.env;
 // }
 
 // QlzeHnqRWmoM9eV8tKwyaCnXISCFbLN1T3CAElaCrqhQQO1sK8
-const stripePromise = loadStripe('pk_test_51LorkjDYz8H8zXUaIt4Wmaqzxh733VUpQxYgA3sTgF1abExg9FlO3v69yzp7v1EZG3RqVofn36ugrdNg6WCkme2B00eA2cKoyg');
-
+const stripePromise = loadStripe(
+  "pk_test_51LorkjDYz8H8zXUaIt4Wmaqzxh733VUpQxYgA3sTgF1abExg9FlO3v69yzp7v1EZG3RqVofn36ugrdNg6WCkme2B00eA2cKoyg"
+)
 
 export default function PaymentForm(props: any) {
   const { amount } = props
