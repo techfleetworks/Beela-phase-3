@@ -136,7 +136,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.8;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -387,12 +387,6 @@ hr {
   border: none !important;
 }
 
-.card-body-hex {
-  background-color: var(--color-honey);
-  white-space: pre-line;
-  margin-top: px;
-}
-
 .card-span {
   white-space: pre-line;
 }
@@ -453,114 +447,25 @@ hr {
   background-color: var(--color-berry);
 }
 
-#container-hex {
-  display: flex;
-  --s: 150px;
-  /* size  */
-}
+// #card-m5-steps-hex {
+//   width: var(--s);
+//   margin: var(--m);
+//   height: calc(var(--s) * 1.1547);
+//   display: inline-flexbox;
+//   font-size: initial;
+//   background-color: var(--color-honey);
+//   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+// }
 
-#card-m5-steps-hex {
-  width: var(--s);
-  margin: var(--m);
-  height: calc(var(--s) * 1.1547);
-  display: inline-flexbox;
-  font-size: initial;
-  background-color: var(--color-honey);
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-}
-
-#card-m5-steps-hex-1 {
-  width: var(--s);
-  margin: var(--m);
-  height: calc(var(--s) * 1.1547);
-  display: inline-flexbox;
-  font-size: initial;
-  background-color: var(--color-honey);
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-}
-
-#FAQ {
-  background-color: var(--color-lgrey);
-}
-
-#newsletter {
-  height: 66.13333129882812px;
-  width: 399px;
-  left: 0px;
-  top: 0px;
-  border-radius: 5px;
-}
-
-#our-community-rectangle {
-  height: 280px;
-  width: 450px;
-  background-color: white;
-}
-
-#our-community {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 59px;
-  color: #3a4a92;
-}
-
-#our-community-paragraph {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 170%;
-  letter-spacing: 0.0005em;
-}
-
-#our-team-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 46px;
-  line-height: 59px;
-  text-align: center;
-}
-
-#team-container {
-  background-color: #ccdaff;
-}
-
-#team-name {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-#team-title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 170%;
-  letter-spacing: 0.0005em;
-}
-
-#card-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 170%;
-  text-align: center;
-  letter-spacing: 0.0005em;
-}
-
-#jumbotron {
-  background-color: #f9f2d4;
-}
-
-#community {
-  background-color: #f9f2d4;
-}
-
-#empower {
-  height: 400px;
-  align-items: center;
-}
+// #card-m5-steps-hex-1 {
+//   width: var(--s);
+//   margin: var(--m);
+//   height: calc(var(--s) * 1.1547);
+//   display: inline-flexbox;
+//   font-size: initial;
+//   background-color: var(--color-honey);
+//   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+// }
 
 #empower-text {
   color: var(--color-berry);
