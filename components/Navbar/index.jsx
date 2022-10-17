@@ -5,6 +5,9 @@ import { useRouter } from "next/router"
 // Styles
 import styles from "./Navbar.module.scss"
 
+// Importing Components
+import { Button } from "../elements/Button"
+
 // React-Bootstrap Components
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
@@ -16,10 +19,9 @@ const NavBar = () => {
   const routerResHome = router.asPath == "/" ? styles.active : "" ;
 
   // needs to be able to detect any of the links inside the dropdown. needs editing.
-const routerResStayContected = router.asPath == "/stay-conected" ? styles.active : "";
-
-const routerResAboutUs = router.asPath == "/about" ? styles.active : "";
-const routerResDonate = router.asPath == "/donate" ? styles.active : "";
+  const routerResStayContected = router.asPath == "/stay-conected" ? styles.active : "";
+  const routerResAboutUs = router.asPath == "/about" ? styles.active : "";
+  const routerResDonate = router.asPath == "/donate" ? styles.active : "";
   return (
     <>
       <Navbar className={styles.navbar} fixed="top" expand="xl"> 
@@ -47,9 +49,9 @@ const routerResDonate = router.asPath == "/donate" ? styles.active : "";
                     </Link>
                   {/*DROPDOWN SECTION*/}
                     <NavDropdown title="Programmes" className={styles.link}>
-                      <NavDropdown.Item href="/programmes" >Programmes</NavDropdown.Item>
-                      <NavDropdown.Item href="/pollination-for-mentees" >Polination for Mentees</NavDropdown.Item>
-                      <NavDropdown.Item href="/pollination-for-mentors" >Polination for Mentors</NavDropdown.Item>
+                      <NavDropdown.Item href="/programmes" className={styles.dropdownItem}>Programmes</NavDropdown.Item>
+                      <NavDropdown.Item href="/pollination-for-mentees" className={styles.dropdownItem}>Polination for Mentees</NavDropdown.Item>
+                      <NavDropdown.Item href="/pollination-for-mentors" className={styles.dropdownItem}>Polination for Mentors</NavDropdown.Item>
                     </NavDropdown>
                   
                     <Link href="/stay-conected">
@@ -59,10 +61,12 @@ const routerResDonate = router.asPath == "/donate" ? styles.active : "";
                     <Link href="/about" >
                       <a className={`${routerResAboutUs} ${styles.link}`}> About Us</a>
                     </Link>
-                  
-                  <Link href="/donate">
-                   <a className={`${routerResDonate}  ${styles.donate_button}`}>Donate </a>
-                  </Link>
+
+                <Button
+                    href="/about"
+                    variant="primary_darkBG"
+                    title="Donate"
+                />
                 </div>
 
               </Nav>
