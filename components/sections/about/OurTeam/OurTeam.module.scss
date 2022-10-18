@@ -1,0 +1,83 @@
+.headingContainer {
+  max-width: 624px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.teamContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 8rem auto 0;
+}
+
+.leaderContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 6rem;
+  gap: 6.4rem;
+}
+.leaderContainer > div > div {
+  width: 380px;
+  margin: 9rem 0 0;
+}
+
+.volunteerContainer {
+  display: flex;
+  gap: 6.4rem;
+  flex-wrap: wrap;
+  margin: 18rem 0 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.volunteerContainer > div {
+  margin: 2rem 0;
+}
+
+@media (max-width: 1085px) {
+  .leaderContainer {
+    padding: 0;
+  }
+}
+
+@media (max-width: 951px) {
+  .leaderContainer > div > div {
+    width: 350px;
+  }
+}
+@media (max-width: 850px) {
+  .leaderContainer > div > div {
+    width: 310px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headingText {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  .teamContainer {
+    margin: 0;
+  }
+  .leaderContainer {
+    flex-direction: column;
+
+    padding: 0;
+    gap: 0;
+  }
+  .leaderContainer > div > div {
+    width: 100%;
+    max-width: 500px;
+  }
+  .volunteerContainer {
+    margin: 9rem 0 0;
+  }
+}
+
+@media (min-width: 475px) and (max-width: 600px) {
+  .teamContainer {
+    padding: 0 2rem;
+  }
+}
