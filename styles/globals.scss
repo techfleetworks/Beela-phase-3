@@ -21,6 +21,23 @@
   font-style: normal;
 }
 
+// stripe element
+.StripeElement { 
+  width: 100%; 
+  border-radius: 3px; 
+  border: 0.75px solid #aaa; 
+  padding: 0 10px; 
+  margin-bottom:10px;
+  background: $WHITE !important;
+  border-radius: 1px;
+//   border-left: 1px solid $color-neutral;
+font-size: 20px;
+transition: all 0.4s;
+line-height: 1.5715;
+
+
+}
+
 :root {
   --color-lgrey: rgb(242, 242, 242);
   --color-grey: rgb(205, 203, 203);
@@ -136,7 +153,7 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.8;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
@@ -329,10 +346,6 @@ h5,
   padding: 13px 50px;
 }
 
-.home-pollination__spacer {
-  margin: 64px 128px 64px 128px;
-}
-
 .site-map {
   /* Auto layout */
   display: flex;
@@ -391,12 +404,6 @@ hr {
   border: none !important;
 }
 
-.card-body-hex {
-  background-color: var(--color-honey);
-  white-space: pre-line;
-  margin-top: px;
-}
-
 .card-span {
   white-space: pre-line;
 }
@@ -435,34 +442,14 @@ hr {
   padding: 0rem 1rem 0rem 1rem;
 }
 
-.home-shadow_img {
-  box-shadow: 22px 24px rgb(230, 198, 25);
-}
-
 .home-pollination__right {
   margin-right: 80px;
 }
 
 @media only screen and (max-width: 768px) {
-  .left-center-text {
-    text-align: center;
-  }
-
   .hero-text-wrapper {
     padding: 0 0 1rem 0 !important;
   }
-}
-
-#podcast {
-  background-color: white;
-
-  a {
-    color: #000000;
-  }
-}
-
-.podcast-icon {
-  height: 40px;
 }
 
 #hero-poll {
@@ -477,114 +464,25 @@ hr {
   background-color: var(--color-berry);
 }
 
-#container-hex {
-  display: flex;
-  --s: 150px;
-  /* size  */
-}
+// #card-m5-steps-hex {
+//   width: var(--s);
+//   margin: var(--m);
+//   height: calc(var(--s) * 1.1547);
+//   display: inline-flexbox;
+//   font-size: initial;
+//   background-color: var(--color-honey);
+//   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+// }
 
-#card-m5-steps-hex {
-  width: var(--s);
-  margin: var(--m);
-  height: calc(var(--s) * 1.1547);
-  display: inline-flexbox;
-  font-size: initial;
-  background-color: var(--color-honey);
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-}
-
-#card-m5-steps-hex-1 {
-  width: var(--s);
-  margin: var(--m);
-  height: calc(var(--s) * 1.1547);
-  display: inline-flexbox;
-  font-size: initial;
-  background-color: var(--color-honey);
-  clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-}
-
-#FAQ {
-  background-color: var(--color-lgrey);
-}
-
-#newsletter {
-  height: 66.13333129882812px;
-  width: 399px;
-  left: 0px;
-  top: 0px;
-  border-radius: 5px;
-}
-
-#our-community-rectangle {
-  height: 280px;
-  width: 450px;
-  background-color: white;
-}
-
-#our-community {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 55px;
-  line-height: 59px;
-  color: #3a4a92;
-}
-
-#our-community-paragraph {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 170%;
-  letter-spacing: 0.0005em;
-}
-
-#our-team-title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 46px;
-  line-height: 59px;
-  text-align: center;
-}
-
-#team-container {
-  background-color: #ccdaff;
-}
-
-#team-name {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-#team-title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 170%;
-  letter-spacing: 0.0005em;
-}
-
-#card-text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 170%;
-  text-align: center;
-  letter-spacing: 0.0005em;
-}
-
-#jumbotron {
-  background-color: #f9f2d4;
-}
-
-#community {
-  background-color: #f9f2d4;
-}
-
-#empower {
-  height: 400px;
-  align-items: center;
-}
+// #card-m5-steps-hex-1 {
+//   width: var(--s);
+//   margin: var(--m);
+//   height: calc(var(--s) * 1.1547);
+//   display: inline-flexbox;
+//   font-size: initial;
+//   background-color: var(--color-honey);
+//   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+// }
 
 #empower-text {
   color: var(--color-berry);
@@ -605,10 +503,6 @@ hr {
 #wrapper {
   left: 0;
   right: 0;
-}
-
-.image-wrapper {
-  width: auto;
 }
 
 /* Testimonials Carousel */

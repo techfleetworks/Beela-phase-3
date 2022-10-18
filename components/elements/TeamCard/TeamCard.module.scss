@@ -1,0 +1,28 @@
+@import "../../../styles/variables.scss";
+
+.cardContainer {
+  text-align: center;
+  position: relative;
+}
+
+.bodyContainer {
+  margin: 0 3rem 1rem;
+  padding: 4rem;
+  // position: absolute;
+  // top: 20%;
+  z-index: -1;
+  background-color: $TRUE_WHITE;
+  border: 2px solid $PRIMARY_BERRY;
+  border-radius: 5px;
+}
+
+.volunteerBodyContainer {
+  margin: 1 3rem 1rem;
+  padding: 4rem;
+}
+
+@media (max-width: 768px) {
+  .bodyContainer {
+    padding: 4rem 1.5rem 1.5rem;
+  }
+}

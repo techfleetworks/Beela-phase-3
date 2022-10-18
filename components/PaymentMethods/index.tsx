@@ -1,15 +1,14 @@
-import { loadStripe } from '@stripe/stripe-js';
-import {
-  Elements
-} from '@stripe/react-stripe-js';
+import { loadStripe } from "@stripe/stripe-js"
+import { Elements } from "@stripe/react-stripe-js"
 
 // component
-import { SectionWrapper } from "../../layout/SectionWrapper"
-import { Button } from "../../elements/Button"
+import { SectionWrapper } from "../layout/SectionWrapper"
+import { Button } from "../elements/Button"
 import CardDetails from './CardDetails';
 
 // css
 import "./paymentform.module.scss"
+import React, { useState } from 'react';
 const { APP_STRIPE_PUBLIC_KEY } = process.env;
 // let stripePromise: any;
 // if (APP_STRIPE_PUBLIC_KEY) {
@@ -17,15 +16,17 @@ const { APP_STRIPE_PUBLIC_KEY } = process.env;
 // }
 
 // QlzeHnqRWmoM9eV8tKwyaCnXISCFbLN1T3CAElaCrqhQQO1sK8
-const stripePromise = loadStripe('pk_test_51LorkjDYz8H8zXUaIt4Wmaqzxh733VUpQxYgA3sTgF1abExg9FlO3v69yzp7v1EZG3RqVofn36ugrdNg6WCkme2B00eA2cKoyg');
+const stripePromise = loadStripe(
+  "pk_test_51LorkjDYz8H8zXUaIt4Wmaqzxh733VUpQxYgA3sTgF1abExg9FlO3v69yzp7v1EZG3RqVofn36ugrdNg6WCkme2B00eA2cKoyg"
+)
+
+export default function PaymentForm(props: any) {
+  const { amount } = props
 
 
-export default function PaymentForm() {
-
-  const options = {
-    // passing the client secret obtained from the server
-    clientSecret: '{{CLIENT_SECRET}}',
-  };
+  // const handleAmount = (value: any) => {
+  //   setAmount(value)
+  // }
   return (
     <>
       <SectionWrapper
@@ -33,9 +34,11 @@ export default function PaymentForm() {
         padding="hero"
         maxWidth={728}
         className="mx-auto">
-        <h2 className="primary-berry text-center my-4">Bee a Supporter</h2>
+        <h2 className="primary-berry text-center my-4">Your Beela donation :
+          <span className="svg-underline">&nbsp;{amount} kr</span>
+        </h2>
         <div className="my-4 d-flex justify-content-center">
-          <div className="mx-3">
+          {/* <div className="mx-3">
             <input
               className="h4"
               type="radio"
@@ -46,8 +49,8 @@ export default function PaymentForm() {
             <label className="h4 primary-berry" htmlFor="amount-one-time">
               One Time
             </label>
-          </div>
-          <div className="mx-3">
+          </div> */}
+          {/* <div className="mx-3">
             <input
               className="h4"
               type="radio"
@@ -58,27 +61,17 @@ export default function PaymentForm() {
             <label className="h4 primary-berry" htmlFor="amount-monthly">
               Monthly
             </label>
-          </div>
+          </div> */}
         </div>
-        <div className="d-flex justify-content-between">
-          <Button
-            variant="secondary_lightBG"
-            title="200 kr"
-          />
-          <Button
-            variant="secondary_lightBG"
-            title="500 kr"
-          />
-          <Button variant="secondary_lightBG" title="1000 kr" />
-          <Button variant="secondary_lightBG" title="Other Kr" />
-        </div>
+
       </SectionWrapper>
-      <SectionWrapper padding="hero">
+      <div>
         <Elements stripe={stripePromise} >
-          <CardDetails
+          <CardDetails amount={amount}
           />
         </Elements>
-      </SectionWrapper>
+      </div>
+
     </>
   )
 }
