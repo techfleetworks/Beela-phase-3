@@ -9,18 +9,34 @@ type AvatarProps = {
   isIcon?: boolean
   isTeam?: boolean
   isTestimonial?: boolean
+  isVolunteer: boolean
 }
 
 const Avatar = ({
   onClick,
   imgSource = "../icons/bee_happy.svg",
   isTestimonial = false,
+  isVolunteer = false,
 }: AvatarProps): JSX.Element => {
   return (
-    <div className={isTestimonial ? styles.testimonialImageContainer : styles.imageContainer}>
+    <div
+      className={
+        isVolunteer
+          ? styles.volunteerImageContainer
+          : isTestimonial
+          ? styles.testimonialImageContainer
+          : styles.imageContainer
+      }
+    >
       <img
-        height={isTestimonial ? 88 : 167}
-        className={styles.image}
+        // height={isTestimonial ? 88 : 167}
+        className={
+          isVolunteer
+            ? styles.imageVolunteer
+            : isTestimonial
+            ? styles.imageTestimonial
+            : styles.image
+        }
         src={imgSource}
         alt={
           isTestimonial
