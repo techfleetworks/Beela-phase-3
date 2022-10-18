@@ -66,7 +66,7 @@ export default function Footer() {
                       <div className="input-group mb-3">
                         <input type="email"  onChange={(e)=> setEmail(e.target.value)} value={email}   className={`B2 ${styles.input} mb-4 w-75`} placeholder="Enter your email here" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
                         <button type="button" className="input-group-append"   disabled={state == "LOADING"}  onClick={subscribe}>
-                          <span className="input-group-text" id="basic-addon2">Submit</span>
+                          <span className="input-group-text" id="basic-addon2"></span>
                         </button>
                         <br/>
                         </div>
@@ -173,13 +173,13 @@ export default function Footer() {
 
                   <Link href="https://www.linkedin.com/company/tech-fleet-community/mycompany/">
                   <a target="_blank">
-                  <Image alt="TechFleet logo" src={techfleet} width={53} height={33} style={{paddingLeft: '1.5rem' }} />
+                  <Image alt="TechFleet logo" src={techfleet} width={53} height={33} style={{paddingLeft: '0.7rem' , paddingRight: '0.1rem'}} />
                   </a>
                   </Link>
 
                   <Link href="https://beetrootacademy.com/">
                     <a target="_blank">
-                  <Image alt="Academy logo" src={partner2} width={50} height={33} style={{paddingLeft: '0.1rem' }}  />
+                  <Image alt="Academy logo" src={partner2} width={50} height={33} style={{paddingRight: '1rem' }}  />
                   </a>
                   </Link>
                   </div>

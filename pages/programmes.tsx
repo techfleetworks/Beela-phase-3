@@ -10,6 +10,8 @@ import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 
+import Appfaq from "../components/elements/faq";
+
 const Programmes: NextPage = () => {
   return (
     <div>
@@ -180,6 +182,7 @@ const Programmes: NextPage = () => {
         </section>
 
         {/* We are growing with you */}
+        <div>
         <Row id="wearegrowing">
           <Col className="  justify-content-center text-center">
             <Image src="/images/avatar.png" alt="About Beela" width={500} height={340} />
@@ -197,15 +200,9 @@ const Programmes: NextPage = () => {
                 work on real-world projects. Stay tuned for updates on Slack.
               </p>
             </div>
-            <Link href="/#">
-              <a>
-                <button type="button" className="btn  button slack-btn">
-                  Continue to Slack
-                </button>
-              </a>
-            </Link>
           </Col>
         </Row>
+        </div>
 
         <Footer />
       </main>
