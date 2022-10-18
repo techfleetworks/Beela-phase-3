@@ -1,7 +1,7 @@
 /* 
 Component used to wrap around <section></section> elements
 Accepted props:
-  color: "SECONDARY_CREAM", "SECONDARY_CORNFLOWER", "PRIMARY_CORAL", "VIOLET_8"
+  color: "SECONDARY_CREAM", "SECONDARY_CORNFLOWER", "PRIMARY_CORAL", "VIOLET_8", "GRADIENT"
   padding: "main"(default), "hero"
   margin: by default it centers with "margin:auto"
   maxWidth: maximum number of pixels the content inside the section could be
@@ -15,7 +15,6 @@ type SectionWrapperProps = {
   classNameSection?: string
   color?: string
   maxWidth?: number
-
   padding?: string
 }
 

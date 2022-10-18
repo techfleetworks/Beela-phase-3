@@ -12,6 +12,12 @@
 .VIOLET_8 {
   background-color: $VIOLET_8;
 }
+.GRADIENT {
+  background: radial-gradient(circle at 75% 50%, #ccdaff 0, #f7f7f6 39%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
 
 .hero {
   padding: 8rem;
