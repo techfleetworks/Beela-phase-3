@@ -38,14 +38,14 @@ export default function footer() {
                 <li className="S2">Home</li>
                 <li className="S2">Programmes</li>
                 <li className="S2">Stay Connected</li>
-                <li className="S2">About Us</li>
+                <li className="S2">About us</li>
                 <li className="S2">Contact Us</li>
               </ul>
             </div>
 
             <div className="col-12 col-md-3">
               <div className="mb-4">
-                <h4 className="primary-berry mb-4">Beela Community</h4>
+                <h4 className="primary-berry mb-4">Beela Community </h4>
                 <div className="logos mt-2">
                   <Image alt="Spotify logo" src={spotify} width={33} height={33} />
                   <Image alt="LinkedIn logo" src={linkedin} width={33} height={33} />
@@ -55,7 +55,7 @@ export default function footer() {
               </div>
 
               <div className="my-4">
-                <h4 className="primary-berry my-4">Beela Partners</h4>
+                <h4 className="primary-berry my-4"></h4>
                 <div className="logos">
                   <Image alt="Spotify logo" src={partner1} width={33} height={33} />
                   <Image alt="Spotify logo" src={techfleet} width={33} height={33} />

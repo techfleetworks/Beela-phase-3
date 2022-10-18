@@ -12,6 +12,8 @@
   },
   "dependencies": {
     "@mailchimp/mailchimp_marketing": "^3.0.78",
+    "@mui/material": "^5.10.9",
+    "@mui/styled-engine-sc": "^5.10.6",
     "@popperjs/core": "^2.11.5",
     "@stripe/react-stripe-js": "^1.12.0",
     "@stripe/stripe-js": "^1.38.1",
@@ -31,7 +33,7 @@
     "sass": "^1.55.0",
     "sharp": "^0.30.6",
     "stripe": "^10.13.0",
-    "styled-components": "^5.3.5",
+    "styled-components": "^5.3.6",
     "yarn": "^1.22.19"
   },
   "devDependencies": {
