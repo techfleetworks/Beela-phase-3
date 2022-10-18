@@ -6,7 +6,7 @@ import { useRouter } from "next/router"
 import styles from "./Navbar.module.scss"
 
 // Importing Components
-import { Button } from "../elements/Button"
+import { Button } from "../../elements/Button"
 
 // React-Bootstrap Components
 import Navbar from "react-bootstrap/Navbar"
