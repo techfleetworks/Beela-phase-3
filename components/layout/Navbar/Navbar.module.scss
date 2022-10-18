@@ -8,43 +8,76 @@
   top: 0;
 }
 
-@media screen and (min-width: 1200px){
-//NAVIGATION LINKS WRAPPER
-.navlinks {
-  display: flex;
-  margin: 0 auto;
-  align-items: center;
-  width: 100%;
-  justify-content:space-around;
-}
+//DESKTOP
+@media screen and (min-width: 1200px) {
+  //NAVIGATION LINKS WRAPPER
+  .navlinks {
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+  }
 
-//INDIVIDUAL LINKS
-//at xl do this otherwise just show a  ≥1200px
-
-.link {
-  background-color: #ffffff;
-  border: none;
-  border-radius: 25px;
-  font-weight: 600;
-  font-size: 1.8rem;
-  height: 46px;
-  text-transform: capitalize;
-  //width: 18rem;
-  &:hover {
+  //INDIVIDUAL LINKS
+  //at xl do this otherwise just show a  ≥1200px
+  .link {
     background-color: #ffffff;
-    color: #3a4a92;
-    transition: 0.5s;
-  }
-  a{
-    padding-top: 0px;
+    border: 1rem solid transparent;
+    border-radius: 25px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 1.8rem;
+    height: 46px;
+    text-transform: capitalize;
+
+    //width: 18rem;
+    a {
+        padding-top: 0px;
+      }
+
+    &:active {
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+    &:link {
+        background-color: #ffffff;
+        color: #000000;
+      }
+
+    &:hover {
+      background-color: #ffffff;
+      color: #3a4a92;
+    }
+
+    &:visited {
+      background-color: #ffffff;
+      color: #000000;
+    }
   }
 }
-};
 
-.active{
-  color: rgb(255, 0, 0) !important;
+//DROPDOWN MENU LINKS
+.dropdownItem {
+    background-color: #ffffff;
+    font-weight: 500;
+    font-size: 1.6rem;
+    height: 4vh;
+    margin: 1rem;
+    text-transform: capitalize;
+    width: 24vh;
+  }
+
+//CURRENT NAVIGATION LOCATION
+.active {
+  border-bottom: 1rem solid #E7C924;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-left-radius: 0%;
+  border-bottom-right-radius: 0%;
+  color: #3a4a92 !important;
 }
-
 
 //LOGO WRAP
 .logoWrapper {
@@ -54,6 +87,7 @@
 .navbar-nav-wrapper {
   margin: 0 auto;
 }
+
 // this wasnt being called anywhere so i commented it out 
 // .dropdown_item {
 //   color: var(--color-black);
@@ -63,24 +97,6 @@
 //   width: 276px;
 //   position: 10px;
 // }
-
-//DONATE BUTTON
-.donate_button {
-  background-color: var(--color-honey);
-  border: none;
-  border-radius: 25px;
-  font-weight: 500;
-  font-size: 1.8rem;
-  height: 46px;
-  margin-left: 20px;
-  padding: 0px 25px;
-  text-transform: capitalize;
-  width: 18rem;
-    &:hover {
-      background-color: #d0b316;
-      transition: 0.5s;
-    }
-}
 
 /*.nav-link.active::after {
   content: "";
@@ -98,10 +114,11 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: var(--color-black);
+  color: #000000;
 }
 
 @media only screen and (max-width: 1200px) {
+
   // .navbar-nav{
   //   height: fit-content;
   // }
@@ -114,7 +131,7 @@
   //   font-weight: bold;
   //   font-size: 2rem;
   // }
-  .link{
+  .link {
     font-weight: bold;
     font-size: 2rem !important;
   }
@@ -123,9 +140,9 @@
   //   justify-content: center;
   // }
 
-  .donate_button{
+  .donate_button {
     display: flex;
     margin-left: 0px;
-    margin-top:10px;
+    margin-top: 10px;
   }
 }
