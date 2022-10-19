@@ -1,16 +1,71 @@
- [
-    {
-      "id":0,
-      "name":"JULIANA ARAÚJO",
-      "title": "UX Designer",
-      "imgSource": "juliana.png",
-      "description": "Juliana is a Latina immigrant with 8+ years of experience working in tech,leading product teams to develop data-driven products. She has a achelor&apos;s in Information Systems and is currently writing her master thesis in IT Project Management from Stockholm University."
-    },
-    {
-        "id":1,
-        "name":"DENISE MUNIZ",
-        "title": "Fullstack Developer",
-        "imgSource": "denise.png",
-        "description": " Denise is a Latina immigrant and fullstack developer. She has over 10 years of experience working as a business analyst, but decided to change her career path to software development after she moved to Sweden. She has a Bachelor&apos;s in Information Systems and a Master&apos;s in Business & Project Management."
-      }
-  ]
+[
+  {
+    "id": 0,
+    "name": "Juliana Araújo",
+    "title": "Founder & CEO",
+    "imgSource": "../images/juliana.png",
+    "description": "Juliana is a Latina immigrant with 8+ years of experience working in tech, leading product teams to develop data-driven products. She has a Bachelor's in Information Systems and is currently writing her master thesis in IT Project Management from Stockholm University."
+  },
+  {
+    "id": 1,
+    "name": "Denise Muniz",
+    "title": "Co-Founder & COO",
+    "imgSource": "../images/denise.png",
+    "description": "Denise is a Latina immigrant and fullstack developer. She has over 10 years of experience as a business analyst, and pivoted to software development after she moved to Sweden. She has a Bachelor's in Information Systems and a Master's in Business & Project Management."
+  },
+  {
+    "id": 2,
+    "name": "Zoe Xuan Qin",
+    "title": "Marketing & Ops Coordinator",
+    "imgSource": "../images/zoe.png",
+    "isVolunteer": true
+  },
+  {
+    "id": 2,
+    "name": "Zoe Xuan Qin",
+    "title": "Marketing & Ops Coordinator",
+    "imgSource": "../images/zoe.png",
+    "isVolunteer": true
+  },
+  {
+    "id": 2,
+    "name": "Zoe Xuan Qin",
+    "title": "Marketing & Ops Coordinator",
+    "imgSource": "../images/zoe.png",
+    "isVolunteer": true
+  },
+  {
+    "id": 2,
+    "name": "Zoe Xuan Qin",
+    "title": "Marketing & Ops Coordinator",
+    "imgSource": "../images/zoe.png",
+    "isVolunteer": true
+  },
+  {
+    "id": 2,
+    "name": "Zoe Xuan Qin",
+    "title": "Marketing & Ops Coordinator",
+    "imgSource": "../images/zoe.png",
+    "isVolunteer": true
+  },
+  {
+    "id": 2,
+    "name": "Zoe Xuan Qin",
+    "title": "Marketing & Ops Coordinator",
+    "imgSource": "../images/zoe.png",
+    "isVolunteer": true
+  },
+  {
+    "id": 2,
+    "name": "Zoe Xuan Qin",
+    "title": "Marketing & Ops Coordinator",
+    "imgSource": "../images/zoe.png",
+    "isVolunteer": true
+  },
+  {
+    "id": 2,
+    "name": "Zoe Xuan Qin",
+    "title": "Marketing & Ops Coordinator",
+    "isVolunteer": true
+  }
+]

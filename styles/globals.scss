@@ -22,20 +22,18 @@
 }
 
 // stripe element
-.StripeElement { 
-  width: 100%; 
-  border-radius: 3px; 
-  border: 0.75px solid #aaa; 
-  padding: 0 10px; 
-  margin-bottom:10px;
+.StripeElement {
+  width: 100%;
+  border-radius: 3px;
+  border: 0.75px solid #aaa;
+  padding: 0 10px;
+  margin-bottom: 10px;
   background: $WHITE !important;
   border-radius: 1px;
-//   border-left: 1px solid $color-neutral;
-font-size: 20px;
-transition: all 0.4s;
-line-height: 1.5715;
-
-
+  //   border-left: 1px solid $color-neutral;
+  font-size: 20px;
+  transition: all 0.4s;
+  line-height: 1.5715;
 }
 
 :root {

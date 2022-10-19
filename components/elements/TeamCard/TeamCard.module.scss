@@ -6,7 +6,7 @@
 }
 
 .bodyContainer {
-  margin: 0 3rem 1rem;
+  margin: 0 0 1rem;
   padding: 4rem;
   // position: absolute;
   // top: 20%;
@@ -15,14 +15,20 @@
   border: 2px solid $PRIMARY_BERRY;
   border-radius: 5px;
 }
-
+.volunteerCardContainer {
+  text-align: center;
+  position: relative;
+  max-width: 167px;
+}
 .volunteerBodyContainer {
-  margin: 1 3rem 1rem;
-  padding: 4rem;
+  padding: 4rem 0;
 }
 
 @media (max-width: 768px) {
   .bodyContainer {
     padding: 4rem 1.5rem 1.5rem;
+  }
+  .volunteerCardContainer {
+    max-width: 127px;
   }
 }
