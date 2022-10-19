@@ -70,7 +70,7 @@ const About: NextPage = () => {
               </div>
               <div className="col px-5 mx-5">
                 <div className="container">
-                  <h2 id="our-community">Our Name</h2>
+                  <h2 id="our-community" style={{height: 100}}>Our Name</h2>
                 </div>
                 <div className="container">
                   <p id="our-community-paragraph" className="B2">
