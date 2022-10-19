@@ -1,148 +1,131 @@
-//NAVIGATION BAR 
+@import "../../../styles/variables.scss";
+
 .navbar {
   background-color: #ffffff !important;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   display: flex;
-  min-height: 125px;
+  justify-content: center;
+  height: 125px;
   width: 100%;
   top: 0;
 }
+.container.linkContainer {
+  margin: 0;
+  padding: 0;
+}
 
-//DESKTOP
-@media screen and (min-width: 1200px) {
-  //NAVIGATION LINKS WRAPPER
-  .navlinks {
-    display: flex;
-    margin: 0 auto;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
+.linkWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.navlinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.navlinks .link {
+  border-bottom: 0.4rem solid transparent;
+  padding: 0 0 0.6rem;
+  margin: 0 1rem;
+
+  &:hover {
+    color: inherit;
+    border-bottom: 0.4rem solid $PRIMARY_HONEY;
   }
-
-  //INDIVIDUAL LINKS
-  //at xl do this otherwise just show a  ≥1200px
-  .link {
-    background-color: #ffffff;
-    border: 1rem solid transparent;
-    border-radius: 25px;
-    color: #000000;
-    font-weight: 600;
-    font-size: 1.8rem;
-    height: 46px;
-    text-transform: capitalize;
-
-    //width: 18rem;
-    a {
-        padding-top: 0px;
-      }
-
-    &:active {
-        background-color: #ffffff;
-        color: #000000;
-      }
-
-    &:link {
-        background-color: #ffffff;
-        color: #000000;
-      }
-
-    &:hover {
-      background-color: #ffffff;
-      color: #3a4a92;
-    }
-
-    &:visited {
-      background-color: #ffffff;
-      color: #000000;
-    }
+  &.active {
+    border-bottom: 0.4rem solid $PRIMARY_HONEY;
   }
+}
+
+.dropdownLink > a {
+  padding: 0;
+  color: inherit !important;
+}
+.dropdownLink > div {
+  top: 2.3rem !important;
+  border: none;
+  box-shadow: 0px 2.10437px 5.26092px rgb(0 0 0 / 16%);
+  border-radius: 0px 0px 5.26092px 5.26092px;
 }
 
 //DROPDOWN MENU LINKS
 .dropdownItem {
-    background-color: #ffffff;
-    font-weight: 500;
-    font-size: 1.6rem;
-    height: 4vh;
-    margin: 1rem;
-    text-transform: capitalize;
-    width: 24vh;
-  }
-
-//CURRENT NAVIGATION LOCATION
-.active {
-  border-bottom: 1rem solid #E7C924;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  border-bottom-left-radius: 0%;
-  border-bottom-right-radius: 0%;
-  color: #3a4a92 !important;
-}
-
-//LOGO WRAP
-.logoWrapper {
-  margin: 0 auto;
-}
-
-.navbar-nav-wrapper {
-  margin: 0 auto;
-}
-
-// this wasnt being called anywhere so i commented it out 
-// .dropdown_item {
-//   color: var(--color-black);
-//   font-size: 2rem;
-//   font-weight: 500;
-//   margin-left: 15px;
-//   width: 276px;
-//   position: 10px;
-// }
-
-/*.nav-link.active::after {
-  content: "";
-  float: left;
-  background: var(--color-honey);
-  width: 100%;
-  height: 4px;
-  border-radius: 3px;
-  width: 100%;
-} 
-*/
-
-.navbar-expand-lg .navbar-collapse {
-  justify-content: center;
+  font-weight: 500;
+  font-size: 1.6rem;
+  padding: 1rem;
+  margin: 1rem;
+  text-transform: capitalize;
+  width: 24vh;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: #000000;
+  // color: #000000;
 }
 
-@media only screen and (max-width: 1200px) {
+@media (min-width: 1200px) {
+  .navlinks {
+    margin-left: 6rem;
+  }
+}
 
-  // .navbar-nav{
-  //   height: fit-content;
-  // }
-  // .nav-links {
-  //   background-color: var(--color-white);
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: left;
-  //   font-weight: bold;
-  //   font-size: 2rem;
-  // }
-  .link {
-    font-weight: bold;
-    font-size: 2rem !important;
+@media (max-width: 1024px) and (min-width: 576px) {
+  .navbar {
+    height: 111px;
+  }
+}
+@media (max-width: 992px) {
+  .container .linkContainer {
+    padding: 5rem;
+    padding-top: 0;
   }
 
-  // .navbar-nav {
-  //   justify-content: center;
-  // }
+  .linkWrapper {
+    gap: 3rem;
+  }
+  .container > div {
+    background: $TRUE_WHITE;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 100%;
+    margin-top: 111px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  }
+  .navlinks .link {
+    border-bottom: none;
+    // padding: 0 0 0.6rem;
+    margin: 0.5rem;
 
-  .donate_button {
-    display: flex;
-    margin-left: 0px;
-    margin-top: 10px;
+    &:hover {
+      color: inherit;
+      border-bottom: none;
+    }
+    &.active {
+      border-bottom: 0.4rem solid $PRIMARY_HONEY;
+    }
+  }
+  .navlinks {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    height: 90px;
+  }
+  .container > div {
+    background: $TRUE_WHITE;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 100vh;
+    margin-top: 90px;
   }
 }
