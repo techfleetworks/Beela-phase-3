@@ -61,7 +61,7 @@ const About: NextPage = () => {
           </div>
         </div>
         
-        {/* Our Community */}
+        {/* Our Name*/}
         <div className="row" id="community">
           <div className="container">
             <div className="row gx-0 p-5 m-5 align-items-center">
@@ -70,13 +70,14 @@ const About: NextPage = () => {
               </div>
               <div className="col px-5 mx-5">
                 <div className="container">
-                  <h1 id="our-community">Our Community</h1>
+                  <h2 id="our-community">Our Name</h2>
                 </div>
                 <div className="container">
-                  <p id="our-community-paragraph">
-                    To date, two cohorts have gone through our Pollination Mentoring Programme. Many
-                    of the people in the programme landed jobs! We are excited to build on this
-                    success and grow our community.
+                  <p id="our-community-paragraph" className="B2">
+                  Bees are hard workers. Ela means ‘her’ in Portuguese. 
+                  Combine those two words, and you’ve got Beela: 
+                  a non-profit dedicated to helping women and 
+                  non-binary immigrants break into tech in Sweden.
                   </p>
                 </div>
               </div>
