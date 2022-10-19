@@ -15,16 +15,16 @@ interface ITeamCard {
 export const TeamCard = (props: ITeamCard) => {
   const {
     description = "Some description here blah blah",
-    imgSource = "../images/denise.png",
-    isTestimonial = true,
+    imgSource,
+    isTestimonial,
     isVolunteer,
     name = "Beela Volunteer",
     title = "CEO of Meow",
   } = props
   return (
     <div className="d-flex justify-content-center">
-      <div className={styles.cardContainer}>
-        <Avatar imgSource={imgSource} isTestimonial={isTestimonial} />
+      <div className={!isVolunteer ? styles.cardContainer : styles.volunteerCardContainer}>
+        <Avatar isVolunteer={isVolunteer} imgSource={imgSource} isTestimonial={isTestimonial} />
 
         <div className={!isVolunteer ? styles.bodyContainer : styles.volunteerBodyContainer}>
           {!isVolunteer ? <h3>{name}</h3> : <h5 className="h5 primary-berry m-0">{name}</h5>}
