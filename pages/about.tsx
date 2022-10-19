@@ -5,8 +5,10 @@ import Footer from "../components/layout/Footer/footer"
 import avatar from "../public/images/avatar.png"
 import Image from "next/image"
 import AboutBeela from "../components/sections/about/AboutBeela"
+import SupportBeela from "../components/sections/about/SupportBeela"
 import { PageWrapper } from "../components/layout/PageWrapper"
 import React from "react"
+import { SupportBee } from "../components/sections/Donation"
 const About: NextPage = () => {
   return (
     <div>
@@ -172,7 +174,9 @@ const About: NextPage = () => {
             </div>
           </div>
         </div>
-
+        
+<SupportBeela />
+{/*SUPPORT BEELA
         <div className="container-fluid" id="support-beela-about-us">
           <div className="container">
             <div id="support-beela-section1">
@@ -207,7 +211,7 @@ const About: NextPage = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div>*/}
 
         {/* Team */}
         {/* Get Voulnted*/}
