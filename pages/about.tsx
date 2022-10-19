@@ -5,7 +5,7 @@ import Footer from "../components/layout/Footer/footer"
 import avatar from "../public/images/avatar.png"
 import Image from "next/image"
 import AboutBeela from "../components/sections/about/AboutBeela"
-
+import OurTeam from "../components/sections/about/OurTeam"
 import SupportBeela from "../components/sections/about/SupportBeela"
 
 import { PageWrapper } from "../components/layout/PageWrapper"
