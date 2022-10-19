@@ -10,6 +10,7 @@ import slack from "../../../public/icons/slack.svg";
 import partner1 from "../../../public/icons/Partner1.svg";
 import techfleet from "../../../public/icons/techfleet.svg";
 import partner2 from "../../../public/icons/Partner2.svg";
+import {FaGithub} from "react-icons"
 //mailchimp needed the below imports
 import {useState} from "react";
 import axios from "axios"
@@ -66,7 +67,8 @@ export default function Footer() {
                       <div className="input-group mb-3">
                         <input type="email"  onChange={(e)=> setEmail(e.target.value)} value={email}   className={`B2 ${styles.input} mb-4 w-75`} placeholder="Enter your email here" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
                         <button type="button" className="input-group-append"   disabled={state == "LOADING"}  onClick={subscribe}>
-                          <span className="input-group-text" id="basic-addon2"></span>
+                          <span  id="basic-addon2"></span>
+                  
                         </button>
                         <br/>
                         </div>
@@ -173,7 +175,7 @@ export default function Footer() {
 
                   <Link href="https://www.linkedin.com/company/tech-fleet-community/mycompany/">
                   <a target="_blank">
-                  <Image alt="TechFleet logo" src={techfleet} width={53} height={33} style={{paddingLeft: '0.7rem' , paddingRight: '0.1rem'}} />
+                  <Image alt="TechFleet logo" src={techfleet} width={53} height={33} style={{paddingLeft: '0.8rem' , paddingRight: '0.1rem'}} />
                   </a>
                   </Link>
 

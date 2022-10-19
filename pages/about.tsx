@@ -7,6 +7,8 @@ import Image from "next/image"
 import AboutBeela from "../components/sections/about/AboutBeela"
 import { PageWrapper } from "../components/layout/PageWrapper"
 import React from "react"
+import { SectionWrapper } from "../components/layout/SectionWrapper"
+import { dividerClasses } from "@mui/material"
 const About: NextPage = () => {
   return (
     <div>
@@ -61,27 +63,31 @@ const About: NextPage = () => {
           </div>
         </div>
         
-        {/* Our Community */}
+        {/* Our Name */}
         <div className="row" id="community">
-          <div className="container">
+          <div className="container" style={{backgroundColor: '#F9F2D4' }}>
             <div className="row gx-0 p-5 m-5 align-items-center">
               <div className="col px-5 mx-4">
                 <Image src="/images/about-us2 1.png" alt="Our Community" width={520} height={330} />
               </div>
+
               <div className="col px-5 mx-5">
                 <div className="container">
-                  <h1 id="our-community">Our Community</h1>
+                  <h2 id="our-community" className="primary-berry" style={{height: 145}}>Our name</h2>
                 </div>
+
                 <div className="container">
-                  <p id="our-community-paragraph">
-                    To date, two cohorts have gone through our Pollination Mentoring Programme. Many
-                    of the people in the programme landed jobs! We are excited to build on this
-                    success and grow our community.
+                  <p id="our-community" className="B2">
+                  Bees are hard workers. Ela means ‘her’ in Portugese. 
+                  Combine those words, and you’ve got Beela: 
+                  a nonprofit dedicated to helping women and 
+                  non-binary immigrants break into tech in Sweden.
                   </p>
                 </div>
               </div>
             </div>
           </div>
+        
 
           {/* Our Team */}
           <div className="container text-center" id="team-container">
@@ -122,6 +128,7 @@ const About: NextPage = () => {
                       </div>
                     </div>
                   </div>
+                  
                   <div className="col card m-3">
                     <div className="card-body">
                       <div className="card-title">
@@ -145,6 +152,7 @@ const About: NextPage = () => {
                       </div>
                     </div>
                   </div>
+
                   <div className="col card m-3">
                     <div className="card-body">
                       <div className="card-title">
@@ -213,7 +221,7 @@ const About: NextPage = () => {
         {/* Get Voulnted*/}
         <Footer />
       </PageWrapper>
-    </div>
+     </div>
   )
 }
 export default About
