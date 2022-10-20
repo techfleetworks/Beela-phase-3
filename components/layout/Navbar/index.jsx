@@ -1,5 +1,5 @@
 import Link from "next/link"
-import React from "react"
+import { useState } from "react"
 import { useRouter } from "next/router"
 
 // Styles
@@ -15,67 +15,85 @@ import Container from "react-bootstrap/Container"
 import NavDropdown from "react-bootstrap/NavDropdown"
 
 const NavBar = () => {
-  const router = useRouter(); // to set active links
-  const routerResHome = router.asPath == "/" ? styles.active : "" ;
+  const router = useRouter() // to set active links
+  const routerResHome = router.asPath == "/" ? styles.active : ""
 
   // needs to be able to detect any of the links inside the dropdown. needs editing.
-  const routerResStayContected = router.asPath == "/stay-conected" ? styles.active : "";
-  const routerResAboutUs = router.asPath == "/about" ? styles.active : "";
-  const routerResDonate = router.asPath == "/donate" ? styles.active : "";
+  const routerResProgrammes = router.asPath == "/programmes" ? styles.active : ""
+  const routerResStayContected = router.asPath == "/stay-conected" ? styles.active : ""
+  const routerResAboutUs = router.asPath == "/about" ? styles.active : ""
+
+  const [show, setShow] = useState(false)
+  const showDropdown = (e) => {
+    setShow(!show)
+  }
+  const hideDropdown = (e) => {
+    setShow(false)
+  }
+
+  // let screenWidth = window.innerWidth
   return (
     <>
-      <Navbar className={styles.navbar} fixed="top" expand="xl"> 
-      {/* // display: flex; 
-       flex-wrap: inherit; 
-       align-items: center; 
-       justify-content: space-between; */}
-
-      <Container>
+      <Navbar className={styles.navbar} fixed="top" expand="lg">
+        <Container className={styles.container}>
           <Link href="/">
-            <a className=""> 
+            <a className="">
               <img src="/images/logoprimary.png" className={styles.logoWrapper} alt="Beela" />
             </a>
           </Link>
-          
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="justif-items-center" id="basic-navbar-nav">
-            <Container>
-              <Nav>
-                <div className={styles.navlinks}>
-                    <Link href="/" >
-                      <a className={`${styles.link} ${routerResHome}`}>
-                      Home
-                      </a>
-                    </Link>
-                  {/*DROPDOWN SECTION*/}
-                    <NavDropdown title="Programmes" className={styles.link}>
-                      <NavDropdown.Item href="/programmes" className={styles.dropdownItem}>Programmes</NavDropdown.Item>
-                      <NavDropdown.Item href="/pollination-for-mentees" className={styles.dropdownItem}>Polination for Mentees</NavDropdown.Item>
-                      <NavDropdown.Item href="/pollination-for-mentors" className={styles.dropdownItem}>Polination for Mentors</NavDropdown.Item>
-                    </NavDropdown>
-                  
-                    <Link href="/stay-conected">
-                      <a className={`${styles.link} ${routerResStayContected}`}>Stay Connected</a>
-                    </Link>
-                  
-                    <Link href="/about" >
-                      <a className={`${routerResAboutUs} ${styles.link}`}> About Us</a>
-                    </Link>
 
-                <Button
-                    href="/about"
-                    variant="primary_darkBG"
-                    title="Donate"
-                />
+          <Navbar.Toggle id="collapseMenu" aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse className="" id="basic-navbar-nav">
+            <Container className={styles.linkContainer}>
+              <Nav className={styles.linkWrapper}>
+                <div className={styles.navlinks}>
+                  <Link href="/">
+                    <a className={`${styles.link} ${routerResHome} h5`}>Home</a>
+                  </Link>
+                  {/*DROPDOWN SECTION*/}
+                  <NavDropdown
+                    href="/programmes"
+                    show={show}
+                    onMouseEnter={showDropdown}
+                    onMouseLeave={hideDropdown}
+                    onToggle={() => {
+                      window.location.href = "/programmes"
+                    }}
+                    title="Programmes"
+                    className={`${styles.link} h5 ${routerResProgrammes} ${styles.dropdownLink}`}
+                    id="collasible-nav-dropdown"
+                  >
+                    <NavDropdown.Item
+                      href="/pollination-for-mentees"
+                      className={`O1 ${styles.dropdownItem}`}
+                    >
+                      Become a Mentee
+                    </NavDropdown.Item>
+                    <NavDropdown.Item
+                      href="/pollination-for-mentors"
+                      className={`O1 ${styles.dropdownItem}`}
+                    >
+                      Become a Mentor
+                    </NavDropdown.Item>
+                  </NavDropdown>
+
+                  <Link href="/stay-conected">
+                    <a className={`${styles.link} h5 ${routerResStayContected}`}>Stay Connected</a>
+                  </Link>
+
+                  <Link href="/about">
+                    <a className={`${routerResAboutUs} h5 ${styles.link}`}> About Us</a>
+                  </Link>
                 </div>
 
+                <Button href="/about" variant="primary_darkBG" title="Donate" />
               </Nav>
             </Container>
           </Navbar.Collapse>
         </Container>
-      </Navbar> 
+      </Navbar>
     </>
   )
 }
 
-export default NavBar;
+export default NavBar
