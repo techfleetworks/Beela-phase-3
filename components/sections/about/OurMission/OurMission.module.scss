@@ -1,0 +1,48 @@
+.sectionContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9rem;
+  padding: 0 4rem;
+}
+.textContainer {
+  width: 50%;
+}
+
+@media (max-width: 900px) {
+  .sectionContainer {
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 740px) {
+  .sectionContainer {
+    flex-direction: column;
+    gap: 0rem;
+  }
+  .textContainer {
+    width: 500px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 622px) {
+  .textContainer {
+    width: 450px;
+  }
+}
+
+@media (max-width: 575px) {
+  .textContainer {
+    width: 400px;
+  }
+}
+
+@media (max-width: 440px) {
+  .textContainer {
+    width: 100%;
+  }
+  .sectionContainer {
+    padding: 0;
+  }
+}

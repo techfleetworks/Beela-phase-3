@@ -1,16 +1,17 @@
+//Next.js component imports
 import type { NextPage } from "next"
 import Head from "next/head"
+import Image from "next/image"
+
+//Component imports
+import { PageWrapper } from "../components/layout/PageWrapper"
 import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer/footer"
-import avatar from "../public/images/avatar.png"
-import Image from "next/image"
 import AboutBeela from "../components/sections/about/AboutBeela"
+import OurMission from "../components/sections/about/OurMission"
 import OurTeam from "../components/sections/about/OurTeam"
 import SupportBeela from "../components/sections/about/SupportBeela"
 
-import { PageWrapper } from "../components/layout/PageWrapper"
-import React from "react"
-import { SupportBee } from "../components/sections/Donation"
 const About: NextPage = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const About: NextPage = () => {
       <Navbar />
       <PageWrapper>
         <AboutBeela />
+        <OurMission />
         <OurTeam />
 
         {/* Empower */}
@@ -76,23 +78,24 @@ const About: NextPage = () => {
               </div>
               <div className="col px-5 mx-5">
                 <div className="container">
-                  <h2 id="our-community" style={{height: 100}}>Our Name</h2>
+                  <h2 id="our-community" style={{ height: 100 }}>
+                    Our Name
+                  </h2>
                 </div>
                 <div className="container">
                   <p id="our-community-paragraph" className="B2">
-                  Bees are hard workers. Ela means ‘her’ in Portuguese. 
-                  Combine those two words, and you’ve got Beela: 
-                  a non-profit dedicated to helping women and 
-                  non-binary immigrants break into tech in Sweden.
+                    Bees are hard workers. Ela means ‘her’ in Portuguese. Combine those two words,
+                    and you’ve got Beela: a non-profit dedicated to helping women and non-binary
+                    immigrants break into tech in Sweden.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        
-<SupportBeela />
-{/*SUPPORT BEELA
+
+        <SupportBeela />
+        {/*SUPPORT BEELA
         <div className="container-fluid" id="support-beela-about-us">
           <div className="container">
             <div id="support-beela-section1">
