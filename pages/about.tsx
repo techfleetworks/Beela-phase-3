@@ -7,6 +7,7 @@ import Image from "next/image"
 import AboutBeela from "../components/sections/about/AboutBeela"
 import OurTeam from "../components/sections/about/OurTeam"
 import SupportBeela from "../components/sections/about/SupportBeela"
+import EmpowerInformInspire from "../components/sections/about/EmpowerInformInspire"
 
 import { PageWrapper } from "../components/layout/PageWrapper"
 import React from "react"
@@ -22,9 +23,11 @@ const About: NextPage = () => {
       <Navbar />
       <PageWrapper>
         <AboutBeela />
+        <EmpowerInformInspire />
         <OurTeam />
 
-        {/* Empower */}
+
+        {/* Empower 
         <div className="container py-2">
           <div className="row row-cols-1 row-cols-md-3 m-5" id="empower">
             <div className="col px-5">
@@ -64,7 +67,7 @@ const About: NextPage = () => {
               </p>
             </div>
           </div>
-        </div>
+        </div>*/}
 
         {/* Our Name*/}
 
