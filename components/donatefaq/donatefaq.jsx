@@ -97,7 +97,7 @@ export default function Donatefaq() {
                      Is my donation secure?{" "}
                     </span>
                   </Accordion.Header>
-                  <Accordion.Body className="B1">Email us at contact@beela.se!</Accordion.Body>
+                  <Accordion.Body className="B1"></Accordion.Body>
                 </Accordion.Item>
 
                 <Accordion.Item eventKey="9">
