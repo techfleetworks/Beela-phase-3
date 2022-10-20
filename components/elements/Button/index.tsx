@@ -7,6 +7,8 @@ Accepted props:
   "secondary_darkBG"
 */
 
+import Link from "next/link"
+
 import styles from "./Button.module.scss"
 
 interface ButtonProps {
@@ -20,12 +22,20 @@ interface ButtonProps {
 export const Button = (props: ButtonProps) => {
   const { href, title, type = "button", variant, onClick } = props
   return (
-    <div className="">
-      <a href={href} rel="noreferrer">
+    <>
+      {!href ? (
         <button type={type} onClick={onClick} className={`button ${styles[variant]}`}>
           {title}
         </button>
-      </a>
-    </div>
+      ) : (
+        <Link href={`${href}`}>
+          <a rel="noreferrer">
+            <button type={type} onClick={onClick} className={`button ${styles[variant]}`}>
+              {title}
+            </button>
+          </a>
+        </Link>
+      )}
+    </>
   )
 }

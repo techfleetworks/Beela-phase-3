@@ -1,5 +1,3 @@
-import Image from "next/image"
-import { Button } from "../../../elements/Button"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 import { TeamCard } from "../../../elements/TeamCard"
 import data from "../../../../mockdata/team.json"
