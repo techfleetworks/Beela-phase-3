@@ -5,8 +5,12 @@ import Footer from "../components/layout/Footer/footer"
 import avatar from "../public/images/avatar.png"
 import Image from "next/image"
 import AboutBeela from "../components/sections/about/AboutBeela"
+import OurTeam from "../components/sections/about/OurTeam"
+import SupportBeela from "../components/sections/about/SupportBeela"
+
 import { PageWrapper } from "../components/layout/PageWrapper"
 import React from "react"
+import { SupportBee } from "../components/sections/Donation"
 const About: NextPage = () => {
   return (
     <div>
@@ -18,6 +22,7 @@ const About: NextPage = () => {
       <Navbar />
       <PageWrapper>
         <AboutBeela />
+        <OurTeam />
 
         {/* Empower */}
         <div className="container py-2">
@@ -60,8 +65,9 @@ const About: NextPage = () => {
             </div>
           </div>
         </div>
-        
+
         {/* Our Name*/}
+
         <div className="row" id="community">
           <div className="container">
             <div className="row gx-0 p-5 m-5 align-items-center">
@@ -83,97 +89,10 @@ const About: NextPage = () => {
               </div>
             </div>
           </div>
-
-          {/* Our Team */}
-          <div className="container text-center" id="team-container">
-            <div className="col align-items-center border p-5">
-              <div className="d-flex flex-column">
-                <div className="p-1">
-                  <h2 id="our-team-title">Meet our Team</h2>
-                </div>
-                <div className="p-1">
-                  <p id="header-text">
-                    We know from firsthand experience how hard it is to start over in a new country.
-                    All of us are here to support you.
-                  </p>
-                </div>
-              </div>
-
-              <div className="container">
-                <div className="card-deck d-flex flex-row flex-wrap flex-md-nowrap justify-content-center">
-                  <div className="col card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div className="header">
-                          <div className="avatar">
-                            <Image src={avatar} alt="Avatar picture" id="avatar-image" />
-                          </div>
-                        </div>
-                        <span id="team-name">JULIANA ARAÚJO</span>
-                        <p className="text-muted" id="team-title">
-                          {" "}
-                          UX Designer
-                        </p>
-                        <p className="card-text" id="card-text">
-                          Juliana is a Latina immigrant with 8+ years of experience working in tech,
-                          leading product teams to develop data-driven products. She has a
-                          Bachelor&apos;s in Information Systems and is currently writing her master
-                          thesis in IT Project Management from Stockholm University.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div className="header">
-                          <div className="avatar">
-                            <Image src={avatar} alt="Avatar picture" id="avatar-image" />
-                          </div>
-                        </div>
-                        <span id="team-name">DENISE MUNIZ</span>
-                        <p className="text-muted" id="team-title">
-                          {" "}
-                          UX Designer
-                        </p>
-                        <p className="card-text" id="card-text">
-                          Denise is a Latina immigrant and fullstack developer. She has over 10
-                          years of experience working as a business analyst, but decided to change
-                          her career path to software development after she moved to Sweden. She has
-                          a Bachelor&apos;s in Information Systems and a Master&apos;s in Business &
-                          Project Management.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col card m-3">
-                    <div className="card-body">
-                      <div className="card-title">
-                        <div className="header">
-                          <div className="avatar">
-                            <Image src={avatar} alt="Avatar picture" id="avatar-image" />
-                          </div>
-                        </div>
-                        <span id="team-name">MARYAM ARAI</span>
-                        <p className="text-muted" id="team-title">
-                          {" "}
-                          UX Designer
-                        </p>
-                      </div>
-                      <p className="card-text" id="card-text">
-                        Maryam is a social entrepreneur with a passion for diversity, inclusion, and
-                        belonging. She has 8 years of experience in HR-related professions,
-                        including work with Arbetsförmedlingen with a focus on education,
-                        recruitment, and innovation.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-
+        
+<SupportBeela />
+{/*SUPPORT BEELA
         <div className="container-fluid" id="support-beela-about-us">
           <div className="container">
             <div id="support-beela-section1">
@@ -208,7 +127,7 @@ const About: NextPage = () => {
               </a>
             </div>
           </div>
-        </div>
+        </div>*/}
 
         {/* Team */}
         {/* Get Voulnted*/}

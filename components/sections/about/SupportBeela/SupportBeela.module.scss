@@ -1,0 +1,74 @@
+.sectionContainer {
+    position: relative;
+    padding: 0rem;
+    margin: 0rem auto;
+}
+
+.headingContainer {
+    margin: auto;
+    text-align: center;
+    width: 45%;
+}
+
+//ENTIRE WRAPPER FOR VOLUNTEER & DONATE BOXES
+.boxWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+//CONTAINER FOR VOLUNTEER & DONATE BOXES
+.boxContainer {
+    margin: 4rem;
+    text-align: center;
+    width: 35%;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .sectionContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: auto;
+    }
+
+    .boxContainer {
+    margin: 4rem;
+    text-align: center;
+    width: 35%;
+    }
+}
+
+//MOBILE CELLPHONE
+@media only screen and (max-width:500px) {
+
+    .headingContainer {
+        margin: auto;
+        margin-bottom: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .sectionContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: .5rem;
+            margin: auto;
+        }
+
+        .boxContainer {
+            margin: 3rem;
+            margin-top: 5rem;
+            width: 100%;
+        }
+}

@@ -1,0 +1,57 @@
+@import "../../../styles//variables.scss";
+
+.imageContainer {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: -13rem;
+}
+.volunteerImageContainer {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: -13rem;
+}
+.testimonialImageContainer {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: -5rem;
+}
+
+.image {
+  width: 167px;
+  height: 167px;
+  border-radius: 50%;
+  background-color: $TRUE_WHITE;
+}
+.imageVolunteer {
+  width: 167px;
+  height: 167px;
+  border-radius: 50%;
+  background-color: $TRUE_WHITE;
+}
+
+.imageTestimonial {
+  border-radius: 50%;
+  background-color: $TRUE_WHITE;
+  width: 88px;
+  height: 88px;
+}
+
+@media (max-width: 768px) {
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+  .imageVolunteer {
+    width: 127px;
+    height: 127px;
+  }
+  .imageContainer {
+    top: -6rem;
+  }
+  .volunteerImageContainer {
+    top: -9rem;
+  }
+}
