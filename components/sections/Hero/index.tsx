@@ -1,20 +1,23 @@
 // React-Bootstrap imports
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
+import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
 import { Button } from "../../elements/Button"
 import { SectionWrapper } from "../../layout/SectionWrapper"
 
 export const Hero = () => {
   return (
-    <SectionWrapper>
+<Container>
+    <SectionWrapper maxWidth={1400}>
+      <Row >
       <Col
         xs={{ order: 2 }}
         sm={10}
         md={{ span: 6, order: 1 }}
         lg={6}
         xl={5}
-        className="p-5 hero-text-wrapper"
+        className=" hero-text-wrapper mt-4 pt-4"
       >
         <div className="hero-left-section">
           <h2 className="hero-heading">
@@ -42,7 +45,8 @@ export const Hero = () => {
           />
         </div>
       </Col>
+      </Row>
     </SectionWrapper>
-
+    </Container>
   )
 }
