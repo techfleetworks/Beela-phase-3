@@ -14,6 +14,7 @@ import partner2 from "../../../public/icons/Partner2.svg";
 import {useState} from "react";
 import axios from "axios"
 
+
 export default function Footer() {
 
 
@@ -65,9 +66,20 @@ export default function Footer() {
                       </div> */}
                       <div className="input-group mb-3">
                         <input type="email"  onChange={(e)=> setEmail(e.target.value)} value={email}   className={`B2 ${styles.input} mb-4 w-75`} placeholder="Enter your email here" aria-label="Recipient's username" aria-describedby="basic-addon2"/>
-                        <button type="button" className="input-group-append"   disabled={state == "LOADING"}  onClick={subscribe}>
-                          <span className="input-group-text" id="basic-addon2"></span>
-                        </button>
+                        <button type="button" className="input-group-append arrow-right"  disabled={state == "LOADING"}  onClick={subscribe}>
+                        <svg
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                          >
+                        <path
+                          d="M15.0378 6.34317L13.6269 7.76069L16.8972 11.0157L3.29211 11.0293L3.29413 13.0293L16.8619 13.0157L13.6467 16.2459L15.0643 17.6568L20.7079 11.9868L15.0378 6.34317Z"
+                          fill="currentColor"
+                          />
+                        </svg>
+                          </button>
                         <br/>
                         </div>
                         {state == "ERROR" &&( <h4>Please enter a valid email.</h4>)}
