@@ -5,7 +5,7 @@ import Footer from "../components/layout/Footer/footer"
 import { PageWrapper } from "../components/layout/PageWrapper"
 import { Hero } from "../components/sections/donate/Hero"
 import OtherWaysToHelp from "../components/sections/donate/OtherWaysToHelp";
-import Donatefaq from "../components/sections/donate/Donatefaq"
+
 
 
 const Donation: NextPage = () => {
@@ -19,7 +19,7 @@ const Donation: NextPage = () => {
       <PageWrapper>
         <Navbar />
         <Hero />
-        <Donatefaq/>
+       
         <OtherWaysToHelp />
         <Footer />
       </PageWrapper>
