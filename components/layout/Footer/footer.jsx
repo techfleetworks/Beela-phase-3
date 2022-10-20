@@ -13,7 +13,7 @@ import partner2 from "../../../public/icons/Partner2.svg";
 //mailchimp needed the below imports
 import {useState} from "react";
 import axios from "axios"
-import { Translate } from 'react-bootstrap-icons';
+
 
 export default function Footer() {
 
