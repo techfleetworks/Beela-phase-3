@@ -1,3 +1,4 @@
+
 import type { NextPage } from "next"
 import Head from "next/head"
 import Navbar from "../components/layout/Navbar"
@@ -5,6 +6,7 @@ import Footer from "../components/layout/Footer/footer"
 import { PageWrapper } from "../components/layout/PageWrapper"
 import { Hero } from "../components/sections/donate/Hero"
 import OtherWaysToHelp from "../components/sections/donate/OtherWaysToHelp";
+import Donatefaq from "../components/donatefaq/donatefaq"
 
 
 
@@ -19,7 +21,7 @@ const Donation: NextPage = () => {
       <PageWrapper>
         <Navbar />
         <Hero />
-       
+        <Donatefaq/>
         <OtherWaysToHelp />
         <Footer />
       </PageWrapper>
