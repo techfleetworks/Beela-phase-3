@@ -1,10 +1,15 @@
 /* 
-Component used to wrap around <section></section> elements
+Component used to display buttons
 Accepted props:
-  color: "primary_lightBG", 
-  "primary_darkBG", 
-  "secondary_lightBG", 
-  "secondary_darkBG"
+  variant: 
+    - "primary_lightBG"
+    - "primary_darkBG"
+    - "secondary_lightBG"
+    - "secondary_darkBG" 
+  title: [text inside button]
+  type?: [type of button]
+  href?: [link there button click should navigate to]
+
 */
 
 import Link from "next/link"
@@ -27,14 +32,20 @@ export const Button = (props: ButtonProps) => {
         <button type={type} onClick={onClick} className={`button ${styles[variant]}`}>
           {title}
         </button>
-      ) : (
+      ) : href.charAt(0) === "/" ? (
         <Link href={`${href}`}>
-          <a rel="noreferrer">
+          <a>
             <button type={type} onClick={onClick} className={`button ${styles[variant]}`}>
               {title}
             </button>
           </a>
         </Link>
+      ) : (
+        <a href={href} rel="noreferrer" target="_blank">
+          <button type={type} onClick={onClick} className={`button ${styles[variant]}`}>
+            {title}
+          </button>
+        </a>
       )}
     </>
   )
