@@ -1,74 +1,61 @@
 .sectionContainer {
-    position: relative;
-    padding: 0rem;
-    margin: 0rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3.2rem;
 }
 
 .headingContainer {
-    margin: auto;
-    text-align: center;
-    width: 45%;
+  text-align: center;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 //ENTIRE WRAPPER FOR VOLUNTEER & DONATE BOXES
 .boxWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    align-content: center;
+  display: flex;
+  gap: 9rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.boxContainer a {
+  margin-top: auto;
 }
 
 //CONTAINER FOR VOLUNTEER & DONATE BOXES
 .boxContainer {
-    margin: 4rem;
-    text-align: center;
-    width: 35%;
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
-.buttonContainer {
-    display: flex;
-    justify-content: center;
-    padding-top: 1rem;
+@media (max-width: 830px) and (min-width: 740px) {
+  .boxWrapper {
+    gap: 5rem;
+  }
 }
 
-@media (max-width: 768px) {
-    .sectionContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem;
-        margin: auto;
-    }
-
-    .boxContainer {
-    margin: 4rem;
-    text-align: center;
-    width: 35%;
-    }
+@media (max-width: 740px) {
+  .boxWrapper {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .boxContainer {
+    width: 400px;
+  }
 }
 
-//MOBILE CELLPHONE
-@media only screen and (max-width:500px) {
-
-    .headingContainer {
-        margin: auto;
-        margin-bottom: 1rem;
-        text-align: center;
-        width: 100%;
-    }
-
-    .sectionContainer {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: .5rem;
-            margin: auto;
-        }
-
-        .boxContainer {
-            margin: 3rem;
-            margin-top: 5rem;
-            width: 100%;
-        }
+@media (max-width: 500px) {
+  .headingContainer {
+    width: 275px;
+  }
+  .boxContainer {
+    width: 275px;
+  }
 }

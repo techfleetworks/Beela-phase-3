@@ -283,7 +283,7 @@ h5,
 
 // Hero - Left Wrapper
 .hero-left-section {
- // margin-left: 25%;
+  // margin-left: 25%;
   margin-top: 10%;
   text-align: left;
 }
@@ -416,10 +416,6 @@ hr {
   max-width: 350px !important;
 }
 
-.home-pollination__img {
-  line-height: 0%;
-}
-
 #card-m3-testimonials {
   max-width: 390px;
 }
@@ -430,18 +426,6 @@ hr {
 
 #text-color__berry {
   color: var(--color-berry);
-}
-
-#pollination {
-  background-color: var(--color-cream);
-}
-
-.home-pollination__title {
-  padding: 0rem 1rem 0rem 1rem;
-}
-
-.home-pollination__right {
-  margin-right: 80px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -733,7 +717,7 @@ hr {
   background-color: #dabeda;
 }
 .arrow-right {
-  position:absolute;
+  position: absolute;
   left: 71%;
   height: 4rem;
 }

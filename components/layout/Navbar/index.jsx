@@ -38,7 +38,7 @@ const NavBar = () => {
         <Container className={styles.container}>
           <Link href="/">
             <a className="">
-              <img src="/images/logoprimary.png" className={styles.logoWrapper} alt="Beela" />
+              <img src="/icons/logo_primary.svg" className={styles.logoWrapper} alt="Beela" />
             </a>
           </Link>
 
@@ -86,7 +86,7 @@ const NavBar = () => {
                   </Link>
                 </div>
 
-                <Button href="/about" variant="primary_darkBG" title="Donate" />
+                <Button href="/donate" variant="primary_darkBG" title="Donate" />
               </Nav>
             </Container>
           </Navbar.Collapse>
