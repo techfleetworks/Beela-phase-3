@@ -28,6 +28,7 @@ export default function Footer() {
     try {
       const response = await axios.post("/api/newsletter", { email })
       setState("SUCCESS")
+      setEmail("")
     } catch (e) {
       setErrorMessage(e.response.data.error)
       setState("ERROR")
@@ -40,16 +41,6 @@ export default function Footer() {
         <div className={styles.footerContainer}>
           <div className={styles.newsletterContainer}>
             <h4 className="primary-berry">Sign Up for Beelas Newsletter</h4>
-            {/* <input type="email" placeholder="Enter your email here    ->" className={`B2 ${styles.input} mb-4 w-75`} /> */}
-
-            {/* <div className='input-group'>
-                          <input type="email" placeholder="Enter email "  onChange={(e)=> setEmail(e.target.value)} value={email}/>
-                          <button type="button"  disabled={state == "LOADING"} onClick={subscribe}>
-                              Subscribe
-                          </button>
-                          {state == "ERROR" &&(<p>this is error message</p>)}
-                          {state == "SUCCESS" &&(<p>this is success message</p>)}
-                      </div> */}
             <div className="input-group">
               <input
                 type="email"
@@ -75,8 +66,12 @@ export default function Footer() {
               </button>
               <br />
             </div>
-            {state == "ERROR" && <p>Please enter a valid email address</p>}
-            {state == "SUCCESS" && <p>You are now subscribed!</p>}
+            {state == "ERROR" && (
+              <p className={`B2 ${styles.emailValidation}`}>Please enter a valid email address</p>
+            )}
+            {state == "SUCCESS" && (
+              <p className={`B2 ${styles.emailValidation}`}>You are now subscribed!</p>
+            )}
           </div>
           <div className={styles.linksContainer}>
             <div className={styles.sitemapContainer}>
