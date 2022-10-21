@@ -23,10 +23,13 @@
   }
 }
 
+.imageContainer {
+  padding-right: 2.2rem;
+}
+
 .imageContainer > span {
   overflow: visible;
   box-shadow: 22px 24px rgb(230, 198, 25);
-  margin-right: 2rem;
 }
 
 @media (max-width: 1000px) {

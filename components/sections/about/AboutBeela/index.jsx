@@ -1,3 +1,4 @@
+import Image from "next/image"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 import styles from "./AboutBeela.module.scss"
 
@@ -7,7 +8,14 @@ export default function AboutBeela() {
       <div className={styles.sectionContainer}>
         <h1 className="primary-berry">About Beela</h1>
         <div className={styles.imgContainer}>
-          <img className={styles.img} src="images/Denise-Juliana.png" alt="placeholder" />
+          <Image
+            height={369}
+            width={428}
+            layout="intrinsic"
+            className={styles.img}
+            src="images/Denise-Juliana.png"
+            alt="placeholder"
+          />
         </div>
         <div className={styles.textContainer}>
           <p className="B1">
