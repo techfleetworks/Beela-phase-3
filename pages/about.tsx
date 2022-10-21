@@ -6,14 +6,13 @@ import Image from "next/image"
 //Component imports
 import { PageWrapper } from "../components/layout/PageWrapper"
 import Navbar from "../components/layout/Navbar"
-import Footer from "../components/layout/Footer/footer"
+import Footer from "../components/layout/Footer"
 import AboutBeela from "../components/sections/about/AboutBeela"
 import OurMission from "../components/sections/about/OurMission"
 import OurTeam from "../components/sections/about/OurTeam"
 import SupportBeela from "../components/sections/about/SupportBeela"
 
 import EmpowerInformInspire from "../components/sections/about/EmpowerInformInspire"
-
 
 const About: NextPage = () => {
   return (
@@ -29,7 +28,6 @@ const About: NextPage = () => {
 
         <EmpowerInformInspire />
         <OurTeam />
-
 
         {/* Empower 
 
@@ -74,7 +72,6 @@ const About: NextPage = () => {
           </div>
 
         </div>*/}
-
 
         {/* Our Name*/}
 
