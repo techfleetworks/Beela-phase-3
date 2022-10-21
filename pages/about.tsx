@@ -9,10 +9,12 @@ import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer"
 import AboutBeela from "../components/sections/about/AboutBeela"
 import OurMission from "../components/sections/about/OurMission"
+import EmpowerInformInspire from "../components/sections/about/EmpowerInformInspire"
+import OurName from "../components/sections/about/OurName"
 import OurTeam from "../components/sections/about/OurTeam"
 import SupportBeela from "../components/sections/about/SupportBeela"
 
-import EmpowerInformInspire from "../components/sections/about/EmpowerInformInspire"
+
 
 const About: NextPage = () => {
   return (
@@ -25,8 +27,9 @@ const About: NextPage = () => {
       <Navbar />
       <PageWrapper>
         <AboutBeela />
-
+        <OurMission />
         <EmpowerInformInspire />
+        <OurName />
         <OurTeam />
 
         {/* Empower 
@@ -98,45 +101,6 @@ const About: NextPage = () => {
         </div>*/}
 
         <SupportBeela />
-        {/*SUPPORT BEELA
-        <div className="container-fluid" id="support-beela-about-us">
-          <div className="container">
-            <div id="support-beela-section1">
-              <h2 className="no_name_37">Support Beela</h2>
-              <p className="B1">
-                Beela is a 100% volunteer-run organization. <br />
-                We’re grateful for your support in any capacity.{" "}
-              </p>
-            </div>
-            <div id="support-beela-section2" className=" d-flex justify-content-center ">
-              <div className="justify-content-center">
-                <h5 className="text-center">Volunteer</h5>
-                <p className="B2 about-support-p">
-                  Our team is always on the lookout for new volunteers. Tell us about your skills
-                  (this could be writing, social media, or design), and we’ll see if there’s a
-                  match!
-                </p>
-              </div>
-              <div className="justify-content-center">
-                <h5 className="text-center">Donate</h5>
-                <p className="B2 about-support-p">
-                  We are a nonprofit organization, and any monetary donation helps us reach more
-                  female and non-binary immigrants in Sweden.
-                </p>
-              </div>
-            </div>
-            <div className=" d-flex justify-content-center text-center py-5">
-              <a href="mailto:contact@beela.se" target="_blank" rel="noreferrer">
-                <button type="button" className="btn button">
-                  Email Us
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>*/}
-
-        {/* Team */}
-        {/* Get Voulnted*/}
         <Footer />
       </PageWrapper>
     </div>
