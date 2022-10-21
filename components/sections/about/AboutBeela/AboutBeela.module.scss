@@ -10,6 +10,7 @@
 
 .imgContainer {
   position: absolute;
+  text-align: center;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -19,17 +20,20 @@
   max-height: 100%;
 }
 
-@media (max-width: 992px) {
-  .img {
-    width: 380px;
+@media (max-width: 1050px) {
+  .imgContainer {
+    width: 400px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 965px) {
   .imgContainer {
-    right: 2%;
+    width: 360px;
   }
-  .img {
+}
+
+@media (max-width: 830px) {
+  .imgContainer {
     width: 330px;
   }
   .B1.text {
@@ -46,6 +50,7 @@
   }
   .imgContainer {
     margin: 2rem;
+    width: 100%;
   }
 
   .imgContainer {

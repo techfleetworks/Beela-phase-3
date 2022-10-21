@@ -56,11 +56,11 @@ export default function BeelasTalkPodcast() {
         <div className={styles.imageContainer}>
           <Image
             src="/icons/home-podcast.svg"
-            alt="The Podcast image for Beela Talk, an illustraion of two women in Rosie the Riveter pose with the text Beela's Talk underneath them"
+            alt="The Podcast image for Beela Talk, an illustraion with the text Beela's Talk"
             height={257}
             width={469}
             layout="intrinsic"
-            className={styles.image}
+            // className={styles.image}
           />
         </div>
       </div>

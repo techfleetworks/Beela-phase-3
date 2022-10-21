@@ -1,0 +1,20 @@
+.cards {
+    align-items: center;
+    display: flex;
+    gap: 8rem;
+    margin: 6rem; 
+}
+
+@media (max-width: 951px) {
+    .cards {
+        gap: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cards {
+        flex-direction: column;
+        gap: 6rem;
+        margin: 4rem;
+    }
+}
