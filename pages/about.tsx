@@ -11,6 +11,7 @@ import AboutBeela from "../components/sections/about/AboutBeela"
 import OurMission from "../components/sections/about/OurMission"
 import OurTeam from "../components/sections/about/OurTeam"
 import SupportBeela from "../components/sections/about/SupportBeela"
+import OurName from "../components/sections/about/OurName"
 
 const About: NextPage = () => {
   return (
@@ -24,8 +25,6 @@ const About: NextPage = () => {
       <PageWrapper>
         <AboutBeela />
         <OurMission />
-        <OurTeam />
-
         {/* Empower */}
         <div className="container py-2">
           <div className="row row-cols-1 row-cols-md-3 m-5" id="empower">
@@ -67,10 +66,13 @@ const About: NextPage = () => {
             </div>
           </div>
         </div>
+        <OurName/>
+        <OurTeam />
+      
 
         {/* Our Name*/}
 
-        <div className="row" id="community">
+        {/*<div className="row" id="community">
           <div className="container">
             <div className="row gx-0 p-5 m-5 align-items-center">
               <div className="col px-5 mx-4">
@@ -84,15 +86,13 @@ const About: NextPage = () => {
                 </div>
                 <div className="container">
                   <p id="our-community-paragraph" className="B2">
-                    Bees are hard workers. Ela means ‘her’ in Portuguese. Combine those two words,
-                    and you’ve got Beela: a non-profit dedicated to helping women and non-binary
-                    immigrants break into tech in Sweden.
+                    
                   </p>
                 </div>
               </div>
             </div>
           </div>
-        </div>
+        </div>*/}
 
         <SupportBeela />
         {/*SUPPORT BEELA
