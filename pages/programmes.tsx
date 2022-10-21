@@ -1,7 +1,7 @@
 import type { NextPage } from "next"
 import Head from "next/head"
 import Navbar from "../components/layout/Navbar"
-import Footer from "../components/layout/Footer/footer"
+import Footer from "../components/layout/Footer"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -9,7 +9,6 @@ import Row from "react-bootstrap/Row"
 import Container from "react-bootstrap/Container"
 import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
-
 
 const Programmes: NextPage = () => {
   return (
@@ -182,25 +181,25 @@ const Programmes: NextPage = () => {
 
         {/* We are growing with you */}
         <div>
-        <Row id="wearegrowing">
-          <Col className="  justify-content-center text-center">
-            <Image src="/images/avatar.png" alt="About Beela" width={500} height={340} />
-            <h2 className="no_name_37">We are growing with you</h2>
-            <div className="container" id="growing-p">
-              <p className="B1">
-                Responding to the needs of our community is important to us. We are working hard to
-                build programmes to best fit your needs.
-              </p>
-            </div>
-            <h4 className="no_name_37 ">Apprenticeship Programme</h4>
-            <div className="d-flex justify-content-center text-center">
-              <p className="B1 " id="growing-apprentice">
-                Beela is in the process of partnering with companies to provide the opportunity to
-                work on real-world projects. Stay tuned for updates on Slack.
-              </p>
-            </div>
-          </Col>
-        </Row>
+          <Row id="wearegrowing">
+            <Col className="  justify-content-center text-center">
+              <Image src="/images/avatar.png" alt="About Beela" width={500} height={340} />
+              <h2 className="no_name_37">We are growing with you</h2>
+              <div className="container" id="growing-p">
+                <p className="B1">
+                  Responding to the needs of our community is important to us. We are working hard
+                  to build programmes to best fit your needs.
+                </p>
+              </div>
+              <h4 className="no_name_37 ">Apprenticeship Programme</h4>
+              <div className="d-flex justify-content-center text-center">
+                <p className="B1 " id="growing-apprentice">
+                  Beela is in the process of partnering with companies to provide the opportunity to
+                  work on real-world projects. Stay tuned for updates on Slack.
+                </p>
+              </div>
+            </Col>
+          </Row>
         </div>
 
         <Footer />
