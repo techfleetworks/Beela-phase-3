@@ -1,0 +1,83 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 7.7rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 3rem;
+}
+.heading {
+  width: 342px;
+}
+.text {
+  width: 467px;
+}
+
+@media (max-width: 1024px) {
+  .text {
+    width: 350px;
+  }
+}
+@media (max-width: 1124px) and (min-width: 1024px) {
+  .text {
+    width: 380px;
+  }
+}
+@media (max-width: 950px) {
+  .sectionContainer {
+    gap: 4rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .sectionContainer {
+    padding: 0 1rem;
+  }
+  .textContainer h2 {
+    font-size: 3.2rem;
+    line-height: 1.28em;
+  }
+  .textContainer p {
+    font-size: 1.4rem;
+    line-height: 1.7em;
+  }
+  .heading {
+    width: 240px;
+  }
+}
+
+@media (max-width: 912px) and (min-width: 576px) {
+  .textContainer {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0;
+  }
+  .textContainer {
+    align-items: center;
+    text-align: center;
+    max-width: 450px;
+  }
+}
+@media (max-width: 576px) {
+  .textContainer {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 412px) {
+  .text {
+    width: 271px;
+  }
+}

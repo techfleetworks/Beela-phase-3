@@ -38,7 +38,7 @@ const NavBar = () => {
         <Container className={styles.container}>
           <Link href="/">
             <a className="">
-              <img src="/images/logoprimary.png" className={styles.logoWrapper} alt="Beela" />
+              <img src="/icons/logo_primary.svg" className={styles.logoWrapper} alt="Beela" />
             </a>
           </Link>
 
