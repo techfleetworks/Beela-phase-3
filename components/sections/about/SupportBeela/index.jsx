@@ -21,7 +21,7 @@ export default function SupportBeela() {
             and we’ll see if there’s a match!</p>
                 <div className={styles.buttonContainer}>
                 <Button 
-                    href="/about"
+                    href="mailto:email@example.com"
                     variant="primary_lightBG"
                     title="Email Us"
                 />
