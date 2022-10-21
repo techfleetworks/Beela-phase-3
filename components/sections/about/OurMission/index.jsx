@@ -8,7 +8,7 @@ export default function OurMission() {
       <div className={styles.sectionContainer}>
         <Image
           src="/icons/queen_bees.svg"
-          height={364}
+          height={319}
           width={325}
           alt="Our mission icon - an illustration of three women standing next to one another"
         />
