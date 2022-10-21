@@ -9,11 +9,10 @@ import Navbar from "../components/layout/Navbar"
 import Footer from "../components/layout/Footer/footer"
 import AboutBeela from "../components/sections/about/AboutBeela"
 import OurMission from "../components/sections/about/OurMission"
+import EmpowerInformInspire from "../components/sections/about/EmpowerInformInspire"
+import OurName from "../components/sections/about/OurName"
 import OurTeam from "../components/sections/about/OurTeam"
 import SupportBeela from "../components/sections/about/SupportBeela"
-
-import EmpowerInformInspire from "../components/sections/about/EmpowerInformInspire"
-
 
 const About: NextPage = () => {
   return (
@@ -26,120 +25,11 @@ const About: NextPage = () => {
       <Navbar />
       <PageWrapper>
         <AboutBeela />
-
+        <OurMission />
         <EmpowerInformInspire />
+        <OurName />
         <OurTeam />
-
-
-        {/* Empower 
-
-        <div className="container py-2">
-          <div className="row row-cols-1 row-cols-md-3 m-5" id="empower">
-            <div className="col px-5">
-              <span style={{ display: "flex", justifyContent: "center" }}>
-                <Image src="/images/placeholder2.png" alt="Empower" width={72} height={72} />
-              </span>
-              <h3 className="text-center" id="empower-text">
-                Empower
-              </h3>
-              <p className="card-text text-center" id="empower-paragraph">
-                We help immigrant women and non-binary people to achieve all their potential through
-                coaching, mentoring, and networking.
-              </p>
-            </div>
-            <div className="col px-5">
-              <span style={{ display: "flex", justifyContent: "center" }}>
-                <Image src="/images/placeholder2.png" alt="Inform" width={72} height={72} />
-              </span>
-              <h3 className="text-center" id="empower-text">
-                Inform
-              </h3>
-              <p className="card-text text-center" id="empower-paragraph">
-                We spread the word about what’s happening in the tech world: bootcamps, code
-                academies, courses, and events.
-              </p>
-            </div>
-            <div className="col px-5">
-              <span style={{ display: "flex", justifyContent: "center" }}>
-                <Image src="/images/placeholder2.png" alt="Inspire" width={72} height={72} />
-              </span>
-              <h3 className="text-center" id="empower-text">
-                Inspire
-              </h3>
-              <p className="card-text text-center" id="empower-paragraph">
-                We share stories about people who have built a career in tech, as well as employers
-                who have created opportunities for newcomers.
-              </p>
-            </div>
-          </div>
-
-        </div>*/}
-
-
-        {/* Our Name*/}
-
-        {/*<div className="row" id="community">
-          <div className="container">
-            <div className="row gx-0 p-5 m-5 align-items-center">
-              <div className="col px-5 mx-4">
-                <Image src="/images/about-us2 1.png" alt="Our Community" width={520} height={330} />
-              </div>
-              <div className="col px-5 mx-5">
-                <div className="container">
-                  <h2 id="our-community" style={{ height: 100 }}>
-                    Our Name
-                  </h2>
-                </div>
-                <div className="container">
-                  <p id="our-community-paragraph" className="B2">
-                    
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>*/}
-
         <SupportBeela />
-        {/*SUPPORT BEELA
-        <div className="container-fluid" id="support-beela-about-us">
-          <div className="container">
-            <div id="support-beela-section1">
-              <h2 className="no_name_37">Support Beela</h2>
-              <p className="B1">
-                Beela is a 100% volunteer-run organization. <br />
-                We’re grateful for your support in any capacity.{" "}
-              </p>
-            </div>
-            <div id="support-beela-section2" className=" d-flex justify-content-center ">
-              <div className="justify-content-center">
-                <h5 className="text-center">Volunteer</h5>
-                <p className="B2 about-support-p">
-                  Our team is always on the lookout for new volunteers. Tell us about your skills
-                  (this could be writing, social media, or design), and we’ll see if there’s a
-                  match!
-                </p>
-              </div>
-              <div className="justify-content-center">
-                <h5 className="text-center">Donate</h5>
-                <p className="B2 about-support-p">
-                  We are a nonprofit organization, and any monetary donation helps us reach more
-                  female and non-binary immigrants in Sweden.
-                </p>
-              </div>
-            </div>
-            <div className=" d-flex justify-content-center text-center py-5">
-              <a href="mailto:contact@beela.se" target="_blank" rel="noreferrer">
-                <button type="button" className="btn button">
-                  Email Us
-                </button>
-              </a>
-            </div>
-          </div>
-        </div>*/}
-
-        {/* Team */}
-        {/* Get Voulnted*/}
         <Footer />
       </PageWrapper>
     </div>
