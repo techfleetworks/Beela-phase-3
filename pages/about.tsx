@@ -11,7 +11,9 @@ import AboutBeela from "../components/sections/about/AboutBeela"
 import OurMission from "../components/sections/about/OurMission"
 import OurTeam from "../components/sections/about/OurTeam"
 import SupportBeela from "../components/sections/about/SupportBeela"
-import OurName from "../components/sections/about/OurName"
+
+import EmpowerInformInspire from "../components/sections/about/EmpowerInformInspire"
+
 
 const About: NextPage = () => {
   return (
@@ -24,8 +26,13 @@ const About: NextPage = () => {
       <Navbar />
       <PageWrapper>
         <AboutBeela />
-        <OurMission />
-        {/* Empower */}
+
+        <EmpowerInformInspire />
+        <OurTeam />
+
+
+        {/* Empower 
+
         <div className="container py-2">
           <div className="row row-cols-1 row-cols-md-3 m-5" id="empower">
             <div className="col px-5">
@@ -65,10 +72,9 @@ const About: NextPage = () => {
               </p>
             </div>
           </div>
-        </div>
-        <OurName/>
-        <OurTeam />
-      
+
+        </div>*/}
+
 
         {/* Our Name*/}
 
