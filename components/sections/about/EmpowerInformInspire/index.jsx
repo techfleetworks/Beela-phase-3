@@ -4,7 +4,7 @@ import BeeCard from "../../../elements/BeeCard"
 
 export default function EmpowerInformInspire() {
   return (
-    <SectionWrapper padding="main" maxWidth={1200}>
+    <SectionWrapper padding="main">
       <div className={styles.cards}>
         <BeeCard
           src="../icons/bee1.svg"

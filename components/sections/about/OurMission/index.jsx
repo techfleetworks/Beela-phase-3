@@ -15,9 +15,10 @@ export default function OurMission() {
         <div className={styles.textContainer}>
           <h2 className="primary-berry">Our Mission</h2>
           <p className="B2">
-            We are committed to decreasing the unemployment gap between foreign-born women and
-            native Swedes. We empower our community to define their path, get unblocked, and
-            trailblaze into tech careers.{" "}
+            We are committed to bridging the unemployment and skills gap among immigrant women and
+            non-binary people hoping to start tech careers in Sweden. This is why we empower our
+            community members to define their path, get unblocked, and trailblaze into careers in
+            Swedish Tech.
           </p>
         </div>
       </div>
