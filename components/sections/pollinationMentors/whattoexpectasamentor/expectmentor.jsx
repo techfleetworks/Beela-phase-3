@@ -14,16 +14,21 @@ export default function OurTeam() {
         
      <div className="py-4 my-4">
               <div className="d-flex flex-row justify-content-around py-4 my-4  gap-4">
-              <TeamCard 
-                              key={""}
-                              imgSource="/images/expect1.jpg"
-
-                              name={""}
-                              title={""}
-                              description={`Leverage your experience to help women and non-binary  immigrants begin a tech career in Sweden.`}
-                              isVolunteer={""}
-                              bgcolor={"var(--color-honey)"}
+                <div className="container mt-4">
+                  <div className="row">
+                    <div className="col-12 col-md-4 mt-4 ">
+                          <TeamCard 
+                                    key={""}
+                                    imgSource="/images/expect1.jpg"
+                                    name={""}
+                                    title={""}
+                                    description={`Leverage your experience to help women and non-binary  immigrants begin a tech career in Sweden.`}
+                                    isVolunteer={""}
+                                    bgcolor={"var(--color-honey)"}
+                                    
                             />
+                    </div>
+                    <div className="col-12 col-md-4">
                             <TeamCard
                               key={""}
                               imgSource="/images/expect2.jpg"
@@ -32,8 +37,11 @@ export default function OurTeam() {
                               description={"Mentees most often need help with CVs, interviews, and navigating the Swedish job market."}
                               isVolunteer={""}
                               bgcolor={"var(--color-honey)"}
+                              
                             />
-                            <TeamCard 
+                    </div>
+                    <div className="col-12 col-md-4">
+                              <TeamCard 
                               key={""}
                               imgSource="/images/expect3.jpg"
                               name={""}
@@ -42,6 +50,9 @@ export default function OurTeam() {
                               isVolunteer={""}
                               bgcolor={"var(--color-honey)"}
                             />
+                    </div>
+                  </div>
+                </div>       
               </div>
 
      </div>
