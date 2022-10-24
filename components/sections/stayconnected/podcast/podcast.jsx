@@ -40,20 +40,20 @@ export default function podcast() {
                     xl={5}
                     className="p-2 "
                   >
-                    <div className={styles.podcastTextCol}>
+                    <div className={styles.ml4rem}>
                     <h3 className="no_name_37" style={{ textAlign: "start" }}>
                       Podcast
                     </h3>
                     <p className="m-0 B1" style={{ maxWidth: "268px", textAlign: "start" }}>
                     Our podcast is filled with inspiring stories from Swedish immigrants who have broken into tech. Catch up on all the buzz!
                     </p>
-                    <div className="pt-3 left-center-text">
-                    <Button
-                            variant="secondary_lightBG"
-                            title="Sign Up"
-                            href="/pollination-for-mentees"
-                        />
+                    
                     </div>
+                    <div  className={styles.ml4rem} style={{textAlign: "start"}}>
+                      <Image src="/icons/spotify.svg" width={64} height={64}/>
+                      
+                      <Image src="/icons/apple-podcasts.svg" width={64} height={64}/>
+                      <Image src="/icons/google-podcasts.svg" width={64} height={64}/>
                     </div>
                   </Col>
 
