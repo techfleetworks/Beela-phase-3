@@ -4,7 +4,8 @@ import StayConnected from "../components/sections/stayconnected/AboutBeela/index
 import JoinOurCommunity from "../components/sections/stayconnected/joinourcommunity/join"
 import Newsletter from "../components/sections/stayconnected/newsletter/newsletter"
 import Podcast from "../components/sections/stayconnected/podcast/podcast"
-
+import Support from "../components/sections/stayconnected/support/support"
+import Footer from "./../components/layout/Footer/index"
 
 export default function stayconnected() {
 
@@ -17,6 +18,8 @@ export default function stayconnected() {
     <JoinOurCommunity/>
     <Newsletter/>
     <Podcast/>
+    <Support/>
+    <Footer/>
     </div>
   )
 }
