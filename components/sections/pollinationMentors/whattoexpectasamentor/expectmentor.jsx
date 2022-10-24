@@ -22,6 +22,7 @@ export default function OurTeam() {
                               title={""}
                               description={`Leverage your experience to help women and non-binary  immigrants begin a tech career in Sweden.`}
                               isVolunteer={""}
+                              bgcolor={"var(--color-honey)"}
                             />
                             <TeamCard
                               key={""}
@@ -30,6 +31,7 @@ export default function OurTeam() {
                               title={""}
                               description={"Mentees most often need help with CVs, interviews, and navigating the Swedish job market."}
                               isVolunteer={""}
+                              bgcolor={"var(--color-honey)"}
                             />
                             <TeamCard 
                               key={""}
@@ -38,6 +40,7 @@ export default function OurTeam() {
                               title={""}
                               description={"Our mentorship community is here to support you, whether you’re a first-time mentor or very experienced."}
                               isVolunteer={""}
+                              bgcolor={"var(--color-honey)"}
                             />
               </div>
 
