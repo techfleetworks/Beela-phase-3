@@ -7,6 +7,7 @@ import Podcast from "../components/sections/stayconnected/podcast/podcast"
 import Support from "../components/sections/stayconnected/support/support"
 import Footer from "./../components/layout/Footer/index"
 
+// Dont convert to Typescript. for easier collaboration. :D 
 export default function stayconnected() {
 
 
