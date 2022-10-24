@@ -20,10 +20,10 @@ export default function AboutBeela() {
         <div className={styles.textContainer}>
           <h4 style={{marginTop: "5rem", marginBottom: "2rem"}} className="primary-berry">Come join us</h4>
           <p className="B1 mb-4">
-          We're ready to support your tech journey in Sweden in a variety of ways. We want to welcome you and encourage you along the way. 
+          We`&apos;`re ready to support your tech journey in Sweden in a variety of ways. We want to welcome you and encourage you along the way. 
           
           </p>
-          <p className="B1 mt-4 pt-4">We can't wait to connect with you.</p>
+          <p className="B1 mt-4 pt-4">We can`&apos;`t wait to connect with you.</p>
         </div>
       </div>
     </SectionWrapper>
