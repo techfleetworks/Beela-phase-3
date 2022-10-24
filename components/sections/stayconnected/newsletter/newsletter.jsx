@@ -4,12 +4,13 @@ import Link from "next/link"
 import Image from "next/image"
 import { auto } from '@popperjs/core';
 import {Button} from "../../../elements/Button/index"
+import styles from "./news.module.scss"
 
 export default function newsletter() {
   return (
     <div>
          {/* Newsletter  */}
-         <div className="container-fluid  new-mente">
+         <div className={`container-fluid  ${styles.SECONDARY_CORNFLOWER}`} >
           <section id="section-podcast" className="container">
             <Row className="text-center justify-content-center align-content-center">
               <Container className="home-pollination__spacer">
