@@ -16,7 +16,7 @@ export default function stayconnected() {
       <Navbar/>
     <StayConnected/>
     <JoinOurCommunity/>
-    <Newsletter/>
+    <Newsletter />
     <Podcast/>
     <Support/>
     <Footer/>

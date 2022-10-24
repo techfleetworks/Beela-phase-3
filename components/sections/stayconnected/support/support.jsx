@@ -25,7 +25,7 @@ export default function Support() {
            </p>
            <div>
              <Button
-               variant="secondary_lightBG"
+               variant="primary_lightBG"
                title="Email Us"
                href="emailto:contact@beela.se"
              />
@@ -38,8 +38,8 @@ export default function Support() {
            </p>
            <div>
              <Button
-               variant="secondary_lightBG"
-               title="LDonate"
+               variant="primary_lightBG"
+               title="Donate"
                href="/donate"
              />
            </div>
