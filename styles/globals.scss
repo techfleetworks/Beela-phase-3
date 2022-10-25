@@ -23,17 +23,13 @@
 
 // stripe element
 .StripeElement {
-  width: 100%;
-  border-radius: 3px;
-  border: 0.75px solid #aaa;
-  padding: 0 10px;
-  margin-bottom: 10px;
-  background: $WHITE !important;
-  border-radius: 1px;
-  //   border-left: 1px solid $color-neutral;
-  font-size: 20px;
-  transition: all 0.4s;
-  line-height: 1.5715;
+  font: {
+    family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif !important;
+    weight: 400;
+  }
+  line-height: 1.2em;
+  font-size: 1.6rem;
+  line-height: 1.7em;
 }
 
 :root {
@@ -165,6 +161,7 @@ h5,
 
 .B1 {
   font-size: 1.8rem;
+  line-height: 1.7em;
 }
 
 .B2 {
@@ -265,97 +262,12 @@ h5,
   }
 }
 
-/*------HERO SECTION ------*/
-
-// Hero - Gradiant Background + Section Height
-#Hero {
-  background: radial-gradient(
-    circle at 75% 55%,
-    rgba(204, 218, 255, 0.6) 30%,
-    rgba(247, 247, 246, 1) 70%
-  );
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  justify-content: center;
-  height: 90vh;
-}
-
-// Hero - Left Wrapper
-.hero-left-section {
-  // margin-left: 25%;
-  margin-top: 10%;
-  text-align: left;
-}
-
-// Hero - Main Heading
-.hero-heading {
-  color: var(--color-berry);
-  letter-spacing: 0.1rem;
-  line-height: 110%;
-  margin-bottom: 3rem;
-}
-
-// Hero - Subheading
-.hero-text {
-  font-size: 1.6rem;
-  line-height: 175%;
-  margin-bottom: 3rem;
-  width: 50rem;
-}
-
-// Hero - Button
-.hero-button {
-  background-color: var(--color-berry);
-  border: none;
-  border-radius: 25px;
-  color: var(--color-white);
-  font-weight: 500;
-  font-size: 1.8rem;
-  height: 46px;
-  padding: 0px 3rem;
-  text-transform: capitalize;
-  width: 36rem;
-  &:hover {
-    background-color: var(--color-berry-30);
-    transition: 0.5s;
-  }
-
-  &:hover a {
-    color: inherit;
-  }
-}
-
 // Hero - Fancy Yellow Underline
 .svg-underline {
   background: url("../public/images/underline.png") bottom left no-repeat;
   background-size: 100% auto;
   padding-bottom: 0px;
   min-width: 100%;
-}
-
-// Hero - Image
-.hero-image {
-  margin-top: 5%;
-  float: right;
-}
-
-.slack-btn {
-  padding: 13px 50px;
-}
-
-.site-map {
-  /* Auto layout */
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 8px;
-  width: 89px;
-  height: 178px;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
 }
 
 hr {
@@ -397,74 +309,6 @@ hr {
   padding-left: 96px;
   padding-right: 96px;
 } */
-
-.card {
-  border: none !important;
-}
-
-.card-span {
-  white-space: pre-line;
-}
-
-.card-img-top {
-  width: auto;
-  max-height: 138px;
-  align-self: center;
-}
-
-.steps-col {
-  max-width: 350px !important;
-}
-
-#card-m3-testimonials {
-  max-width: 390px;
-}
-
-#bullet-list {
-  text-align: left;
-}
-
-#text-color__berry {
-  color: var(--color-berry);
-}
-
-@media only screen and (max-width: 768px) {
-  .hero-text-wrapper {
-    padding: 0 0 1rem 0 !important;
-  }
-}
-
-#hero-poll {
-  background-color: var(--color-cream);
-}
-
-#poll-img {
-  max-width: 60%;
-}
-
-#apply-btn {
-  background-color: var(--color-berry);
-}
-
-// #card-m5-steps-hex {
-//   width: var(--s);
-//   margin: var(--m);
-//   height: calc(var(--s) * 1.1547);
-//   display: inline-flexbox;
-//   font-size: initial;
-//   background-color: var(--color-honey);
-//   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-// }
-
-// #card-m5-steps-hex-1 {
-//   width: var(--s);
-//   margin: var(--m);
-//   height: calc(var(--s) * 1.1547);
-//   display: inline-flexbox;
-//   font-size: initial;
-//   background-color: var(--color-honey);
-//   clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
-// }
 
 #empower-text {
   color: var(--color-berry);
