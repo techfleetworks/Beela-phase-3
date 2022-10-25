@@ -1,0 +1,19 @@
+@import "../../../styles/variables.scss";
+
+.formGroup {
+  margin-top: 1.5rem;
+}
+.label {
+  margin-bottom: 0.8rem;
+}
+.input {
+  border: 1px solid $PRIMARY_BERRY;
+  border-radius: 25px;
+  padding: 0.15rem 1.5rem;
+}
+
+@media (max-width: 900px) {
+  .formGroup {
+    margin-top: 1rem;
+  }
+}
