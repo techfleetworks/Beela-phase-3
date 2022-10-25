@@ -5,6 +5,7 @@ import { Elements } from "@stripe/react-stripe-js"
 import { SectionWrapper } from "../layout/SectionWrapper"
 import { Button } from "../elements/Button"
 import CardDetails from "./CardDetails"
+import Spacer from "../elements/Spacer"
 
 // css
 import "./paymentform.module.scss"
@@ -21,7 +22,12 @@ const stripePromise = loadStripe(
 )
 
 export default function PaymentForm(props: any) {
-  const { amount } = props
+  const [amount, setAmount] = useState(0)
+
+  const submitAmount = (value: number) => {
+    console.log("check amount", value)
+    setAmount(value)
+  }
 
   // const handleAmount = (value: any) => {
   //   setAmount(value)
@@ -29,12 +35,24 @@ export default function PaymentForm(props: any) {
 
   return (
     <>
-      <SectionWrapper color="SECONDARY_CREAM" padding="hero" maxWidth={728} className="mx-auto">
-        <h2 className="primary-berry text-center my-4">
+      <SectionWrapper color="SECONDARY_CREAM" padding="hero" maxWidth={728} className="">
+        <h1 className="primary-berry text-center my-4">
           Your Beela donation :<span className="svg-underline">&nbsp;{amount} kr</span>
-        </h2>
-        <div className="my-4 d-flex justify-content-center">
-          {/* <div className="mx-3">
+        </h1>
+
+        <div className="d-flex justify-content-between">
+          <Button variant="secondary_lightBG" title="200 kr" onClick={() => submitAmount(200)} />
+          <Spacer type="horizontal" size={10} />
+
+          <Button variant="secondary_lightBG" title="500 kr" onClick={() => submitAmount(500)} />
+          <Spacer type="horizontal" size={10} />
+          <Button variant="secondary_lightBG" title="1000 kr" onClick={() => submitAmount(1000)} />
+          <Spacer type="horizontal" size={10} />
+          <Button variant="secondary_lightBG" title="Other Kr" />
+        </div>
+
+        {/* <div className="my-4 d-flex justify-content-center"> */}
+        {/* <div className="mx-3">
             <input
               className="h4"
               type="radio"
@@ -46,7 +64,7 @@ export default function PaymentForm(props: any) {
               One Time
             </label>
           </div> */}
-          {/* <div className="mx-3">
+        {/* <div className="mx-3">
             <input
               className="h4"
               type="radio"
@@ -58,7 +76,7 @@ export default function PaymentForm(props: any) {
               Monthly
             </label>
           </div> */}
-        </div>
+        {/* </div> */}
       </SectionWrapper>
       <div>
         <Elements
