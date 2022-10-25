@@ -1,7 +1,8 @@
+@import "../../../../styles/variables.scss";
+
 .sectionContainer {
   position: relative;
-
-  margin: 5rem auto;
+  margin-bottom: 8rem;
 }
 .textContainer {
   width: 50%;
@@ -22,9 +23,23 @@
   max-height: 100%;
 }
 
+.sectionDivider {
+  width: 100%;
+  max-width: 766px;
+  height: 1px;
+  margin: 0 auto;
+  background-color: $PRIMARY_HONEY;
+}
+
 @media (max-width: 1050px) {
   .imgContainer {
     width: 430px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sectionContainer {
+    margin-bottom: 5rem;
   }
 }
 
@@ -35,12 +50,18 @@
 }
 
 @media (max-width: 905px) {
+  .sectionContainer {
+    padding: 0 2rem;
+  }
   .sectionHeading {
     margin-bottom: 4rem;
   }
   .imgContainer {
     margin-top: 4rem;
     width: 360px;
+  }
+  .sectionDivider {
+    max-width: 600px;
   }
 }
 
@@ -49,11 +70,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem;
     margin: auto;
   }
   .sectionHeading {
     margin-bottom: 1rem;
+    text-align: center;
   }
   .subheading {
     font-size: 2.4rem;
@@ -73,5 +94,8 @@
     width: 100%;
     max-width: 480px;
     min-width: 275px;
+  }
+  .sectionDivider {
+    display: none;
   }
 }

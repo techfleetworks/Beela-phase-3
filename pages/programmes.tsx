@@ -9,6 +9,7 @@ import Col from "react-bootstrap/Col"
 import Card from "react-bootstrap/Card"
 
 import Hero from "../components/sections/programmes/Hero"
+import PollinationMentoringProgramme from "../components/sections/programmes/PollinationMentoringProgramme"
 
 const Programmes: NextPage = () => {
   return (
