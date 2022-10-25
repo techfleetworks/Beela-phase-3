@@ -56,10 +56,10 @@ const CardDetails = (props: any) => {
   // Stripe Element Base style
   let elementStyles = {
     base: {
-      fontFamily: "sans-serif",
+      fontFamily: "Montserrat",
       fontSize: "16px",
       lineHeight: "27px",
-      fontWeight: "300",
+      fontWeight: "400",
       "::placeholder": {
         color: "#aaa",
       },
