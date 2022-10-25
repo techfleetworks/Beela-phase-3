@@ -17,6 +17,7 @@ import Link from "next/link"
 import styles from "./Button.module.scss"
 
 interface ButtonProps {
+  className?: string
   href?: string
   title: any
   type?: any
@@ -25,11 +26,11 @@ interface ButtonProps {
 }
 
 export const Button = (props: ButtonProps) => {
-  const { href, title, type = "button", variant, onClick } = props
+  const { className, href, title, type = "button", variant, onClick } = props
   return (
     <>
       {!href ? (
-        <button type={type} onClick={onClick} className={`button ${styles[variant]}`}>
+        <button type={type} onClick={onClick} className={`button ${styles[variant]} ${className}`}>
           {title}
         </button>
       ) : href.charAt(0) === "/" ? (

@@ -9,10 +9,15 @@ import "bootstrap/dist/css/bootstrap.min.css"
 // Custom css
 import "../styles/globals.scss"
 
+//Layout Component
+import PageLayout from "../components/layout/PageLayout"
+
 function App({ Component, pageProps }: AppProps) {
   return (
     // <StrapiApolloProvider>
-    <Component {...pageProps} />
+    <PageLayout>
+      <Component {...pageProps} />
+    </PageLayout>
     // </StrapiApolloProvider>
   )
 }

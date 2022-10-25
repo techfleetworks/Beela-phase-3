@@ -1,5 +1,8 @@
 @import "../../../styles/variables.scss";
 
+.TRUE_WHITE {
+  background-color: $TRUE_WHITE;
+}
 .SECONDARY_CREAM {
   background-color: $SECONDARY_CREAM;
 }
@@ -25,10 +28,10 @@
 .main {
   padding: 6rem;
 }
-
-.none {
-  padding: 0;
+.paymentform {
+  padding: 9.6rem 13rem;
 }
+
 .none {
   padding: 0;
 }
@@ -36,6 +39,9 @@
 @media (max-width: 1093px) {
   .hero {
     padding: 7rem;
+  }
+  .paymentform {
+    padding: 7rem 11rem;
   }
 }
 
@@ -46,6 +52,9 @@
   .main {
     padding: 6rem 5rem;
   }
+  .paymentform {
+    padding: 5.6rem 9.6rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -53,6 +62,9 @@
     padding: 5rem 2rem;
   }
   .main {
+    padding: 4rem 2rem;
+  }
+  .paymentform {
     padding: 4rem 2rem;
   }
 }

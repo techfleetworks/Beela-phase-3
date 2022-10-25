@@ -2,7 +2,7 @@
 Component used to wrap around <section></section> elements
 Accepted props:
   color: "SECONDARY_CREAM", "SECONDARY_CORNFLOWER", "PRIMARY_CORAL", "VIOLET_8", "GRADIENT"
-  padding: "main"(default), "hero"
+  padding: "main"(default), "hero", "paymentform"
   margin: by default it centers with "margin:auto"
   maxWidth: maximum number of pixels the content inside the section could be
 */

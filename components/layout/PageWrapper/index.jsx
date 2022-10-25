@@ -5,10 +5,8 @@ Adds margin to allow for sticky navbar
 
 import styles from "./PageWrapper.module.scss"
 
-type PageWrapperProps = {
-  children?: React.ReactNode
-}
-
-export const PageWrapper = ({ children }: PageWrapperProps) => {
+const PageWrapper = ({ children }) => {
   return <main className={styles.mainContainer}>{children}</main>
 }
+
+export default PageWrapper
