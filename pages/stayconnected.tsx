@@ -6,7 +6,8 @@ import  PageWrapper  from "../components/layout/PageWrapper/index"
 
 //Components
 import Navbar from "../components/layout/Navbar/index"
-import StayConnected from "../components/sections/stayconnected/hero/index"
+// import StayConnected from "../components/sections/stayconnected/hero/index"
+import StayConnected from "../components/sections/stayconnected/hero"
 import JoinOurCommunity from "../components/sections/stayconnected/joinourcommunity/join"
 import Newsletter from "../components/sections/stayconnected/newsletter/newsletter"
 import Podcast from "../components/sections/stayconnected/podcast/podcast"
@@ -23,7 +24,7 @@ const stayConnected: NextPage = () => {
       </Head>
       <Navbar />
       <PageWrapper>
-    <StayConnected />
+    <StayConnected/>
     <JoinOurCommunity />
     <Newsletter />
     <Podcast />
