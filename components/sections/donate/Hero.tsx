@@ -66,7 +66,7 @@ export const Hero: FC<any> = ({}) => {
                 onClick={() => handleContinueBtn()}
               />
               <Spacer type="vertical" size={10} />
-              <span className="S2 text-center">How Will my information be used and stored?</span>
+
               <Spacer type="vertical" size={50} />
               <span className={`${styles.supportBeelaHeaderContent} h4 text-center`}>
                 Your gift will help us guide more immigrant women and nonbinary people into tech
