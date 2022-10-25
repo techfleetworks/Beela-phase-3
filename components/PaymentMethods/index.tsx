@@ -4,12 +4,12 @@ import { Elements } from "@stripe/react-stripe-js"
 // component
 import { SectionWrapper } from "../layout/SectionWrapper"
 import { Button } from "../elements/Button"
-import CardDetails from './CardDetails';
+import CardDetails from "./CardDetails"
 
 // css
 import "./paymentform.module.scss"
-import React, { useState } from 'react';
-const { APP_STRIPE_PUBLIC_KEY } = process.env;
+import React, { useState } from "react"
+const { APP_STRIPE_PUBLIC_KEY } = process.env
 // let stripePromise: any;
 // if (APP_STRIPE_PUBLIC_KEY) {
 //     stripePromise = loadStripe(APP_STRIPE_PUBLIC_KEY);
@@ -23,19 +23,15 @@ const stripePromise = loadStripe(
 export default function PaymentForm(props: any) {
   const { amount } = props
 
-
   // const handleAmount = (value: any) => {
   //   setAmount(value)
   // }
+
   return (
     <>
-      <SectionWrapper
-        color="SECONDARY_CREAM"
-        padding="hero"
-        maxWidth={728}
-        className="mx-auto">
-        <h2 className="primary-berry text-center my-4">Your Beela donation :
-          <span className="svg-underline">&nbsp;{amount} kr</span>
+      <SectionWrapper color="SECONDARY_CREAM" padding="hero" maxWidth={728} className="mx-auto">
+        <h2 className="primary-berry text-center my-4">
+          Your Beela donation :<span className="svg-underline">&nbsp;{amount} kr</span>
         </h2>
         <div className="my-4 d-flex justify-content-center">
           {/* <div className="mx-3">
@@ -63,15 +59,12 @@ export default function PaymentForm(props: any) {
             </label>
           </div> */}
         </div>
-
       </SectionWrapper>
       <div>
-        <Elements stripe={stripePromise} >
-          <CardDetails amount={amount}
-          />
+        <Elements stripe={stripePromise}>
+          <CardDetails amount={amount} />
         </Elements>
       </div>
-
     </>
   )
 }
