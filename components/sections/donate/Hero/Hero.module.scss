@@ -1,0 +1,39 @@
+// @import url('./styles/variables.scss');
+@import "/styles/variables";
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7.2rem;
+}
+
+.headingContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 7.2rem;
+  h2,
+  h1 {
+    text-align: center;
+  }
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 4.8rem;
+}
+.paymentButton {
+  width: 22.5rem;
+}
+
+.swishContainer {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+// .supportBeelaHeaderContent {
+//     color: $PRIMARY_BERRY;
+//     width:445px;
+//     line-height: 1.38em;
+// }
