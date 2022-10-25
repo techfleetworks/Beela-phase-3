@@ -4,7 +4,7 @@ import Stripe from "stripe";
 const stripe = new Stripe(process.env.REACT_APP_STRIPE_SECRET_KEY);
 console.log('check intent res running secrete', stripe)
 
-const payment_intents =  async (req, res) => {
+export default async (req, res) => {
   console.log('check intent res running')
   console.log('check intent res running', req)
 
@@ -28,5 +28,3 @@ const payment_intents =  async (req, res) => {
   //   res.status(405).end("Method Not Allowed");
   // }
 };
-
-export default payment_intents
