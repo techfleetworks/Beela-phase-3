@@ -63,15 +63,15 @@ const CardDetails = (props: any) => {
       "::placeholder": {
         color: "#aaa",
       },
-      ":-webkit-autofill": {
-        color: "#e39f48",
-      },
     },
     invalid: {
       iconColor: "red",
       color: "red",
     },
   }
+
+  //Stripe Element - dynamically change the style of an element
+  //https://stripe.com/docs/js/element/other_methods/update?type=card
 
   const handleChange = async (event: any) => {
     // Listen for changes in the CardElement
