@@ -21,10 +21,10 @@ export default function hero() {
         <div className={styles.textContainer}>
           <h4 style={{marginTop: "2rem", marginBottom: "2rem"}} className={styles.h4}>Come Join Us!</h4>
           <p className="B1 mb-4" style={{lineHeight: "170%"}}>
-          We're ready to support your tech journey in Sweden in a variety of ways. 
+          We`&apos;`re ready to support your tech journey in Sweden in a variety of ways. 
           We want to welcome you and encourage you along the way. 
           </p>
-          <p className="B1 mt-4 pt-4">We can't wait to connect with you.</p>
+          <p className="B1 mt-4 pt-4">We can`&apos;`t wait to connect with you.</p>
         </div>
       </div>
       <div className={styles.sectionDivider}></div>
