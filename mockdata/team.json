@@ -9,7 +9,7 @@
   {
     "id": 1,
     "name": "Denise Muniz",
-    "title": "Co-Founder & COO",
+    "title": "Founder & CEO",
     "imgSource": "../images/denise.png",
     "description": "Denise is a Latina immigrant and fullstack developer. She has over 10 years of experience as a business analyst, and pivoted to software development after she moved to Sweden. She has a Bachelor's in Information Systems and a Master's in Business & Project Management."
   },
@@ -21,51 +21,64 @@
     "isVolunteer": true
   },
   {
-    "id": 2,
-    "name": "Zoe Xuan Qin",
-    "title": "Marketing & Ops Coordinator",
-    "imgSource": "../images/zoe.png",
+    "id": 3,
+    "name": "Anja Woracek",
+    "title": "Pollination Programme Manager",
+    "imgSource": "../images/anja.png",
     "isVolunteer": true
   },
   {
-    "id": 2,
-    "name": "Zoe Xuan Qin",
-    "title": "Marketing & Ops Coordinator",
-    "imgSource": "../images/zoe.png",
+    "id": 4,
+    "name": "Estefanny Moran",
+    "title": "Graphic Designer",
+    "imgSource": "../images/estefanny.png",
     "isVolunteer": true
   },
   {
-    "id": 2,
-    "name": "Zoe Xuan Qin",
-    "title": "Marketing & Ops Coordinator",
-    "imgSource": "../images/zoe.png",
+    "id": 5,
+    "name": "Raquel Almeida",
+    "title": "Volunteer",
+    "imgSource": "../images/raquel.png",
     "isVolunteer": true
   },
   {
-    "id": 2,
-    "name": "Zoe Xuan Qin",
-    "title": "Marketing & Ops Coordinator",
-    "imgSource": "../images/zoe.png",
+    "id": 6,
+    "name": "Milena Matrone",
+    "title": "Video & Podcast Producer",
+    "imgSource": "../images/milena.png",
     "isVolunteer": true
   },
   {
-    "id": 2,
-    "name": "Zoe Xuan Qin",
-    "title": "Marketing & Ops Coordinator",
-    "imgSource": "../images/zoe.png",
+    "id": 7,
+    "name": "Marcela Feliz Fortiz",
+    "title": "Software Engineer",
+    "imgSource": "../images/marcela.png",
     "isVolunteer": true
   },
   {
-    "id": 2,
-    "name": "Zoe Xuan Qin",
-    "title": "Marketing & Ops Coordinator",
-    "imgSource": "../images/zoe.png",
+    "id": 8,
+    "name": "Mae Tadena",
+    "title": "Social Media Manager",
+    "imgSource": "../images/mae.png",
     "isVolunteer": true
   },
   {
-    "id": 2,
-    "name": "Zoe Xuan Qin",
-    "title": "Marketing & Ops Coordinator",
+    "id": 9,
+    "name": "Nidhi Pathak",
+    "title": "Volunteer",
+    "imgSource": "../images/nidhi.png",
+    "isVolunteer": true
+  },
+  {
+    "id": 10,
+    "name": "Rebecca",
+    "title": "Volunteer",
+    "isVolunteer": true
+  },
+  {
+    "id": 11,
+    "name": "Hellen",
+    "title": "Volunteer",
     "isVolunteer": true
   }
 ]
