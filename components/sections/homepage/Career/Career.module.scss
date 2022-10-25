@@ -11,18 +11,17 @@
   margin-top: 6rem;
   display: flex;
   align-items: center;
-  gap: 5rem;
 }
 
-@media (max-width: 951px) {
-  .cards {
-    gap: 2.5rem;
+@media (max-width: 992px) {
+  .cards > div > div {
+    max-width: 215px;
   }
 }
 
 @media (max-width: 768px) {
   .cards {
     flex-direction: column;
-    margin-top: 5rem;
+    margin-top: 2rem;
   }
 }
