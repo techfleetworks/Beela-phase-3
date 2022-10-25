@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 import { SectionWrapper } from "../../../layout/SectionWrapper"
-import styles from "./Hero.module.scss"
+import styles from "./heero.module.scss"
 
 export default function hero() {
   return (
