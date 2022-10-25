@@ -28,7 +28,7 @@ const stayConnected: NextPage = () => {
     <Newsletter />
     <Podcast />
     <Support />
-    <Footer />
+    {/* <Footer /> */}
     </PageWrapper>
   </div>
   )
