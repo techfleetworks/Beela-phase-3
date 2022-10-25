@@ -1,7 +1,6 @@
 //Next.js component imports
 import type { NextPage } from "next"
 import Head from "next/head"
-import Image from "next/image"
 
 //Component imports
 import { PageWrapper } from "../components/layout/PageWrapper"
@@ -13,8 +12,6 @@ import EmpowerInformInspire from "../components/sections/about/EmpowerInformInsp
 import OurName from "../components/sections/about/OurName"
 import OurTeam from "../components/sections/about/OurTeam"
 import SupportBeela from "../components/sections/about/SupportBeela"
-
-
 
 const About: NextPage = () => {
   return (
