@@ -1,6 +1,6 @@
 import React from "react"
-import Hero from "../components/sections/pollinationMentors/Hero/hero"
-import WhatToExpectAsaMentor from "../components/sections/pollinationMentors/whattoexpectasamentor/expectmentor"
+import Hero from "../components/sections/pollination-mentor/Hero/hero"
+import WhatToExpectAsaMentor from "../components/sections/pollination-mentor/whattoexpectasamentor/expectmentor"
 
 export default function pollinationMentors() {
   return (
