@@ -16,14 +16,12 @@ export default function Hero() {
         <div className={styles.sectionContainer}>
           <div className={styles.headingContainer}>
             <h1 className={`primary-berry h2 mb-3`}>Pollination For Mentees</h1>
-            <h3 className={`primary-berry ${styles.subheading}`}>
-              Next cohort starts: {data.season}
-            </h3>
+            <h3 className={`primary-berry ${styles.subheading}`}>{data.message}</h3>
           </div>
           <Container fluid className="p-0">
             <Row className={styles.contentContainer}>
               <Col className={styles.textContainer}>
-                <h4 className={`my-4 ${styles.cta}`}>Ready to get into tech? </h4>
+                <h4 className={`mb-4 ${styles.cta}`}>Ready to get into tech? </h4>
                 <p className={`B1 ${styles.infoText}`}>
                   Our free Pollination Mentoring Programme provides a space to grow and blossom.
                 </p>

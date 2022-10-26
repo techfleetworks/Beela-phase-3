@@ -16,10 +16,16 @@
 .list {
   white-space: nowrap;
 }
+@media (max-width: 900px) {
+  .cta {
+    font-size: 2.4rem;
+  }
+}
 
 @media (max-width: 768px) {
   .sectionContainer {
     align-items: center;
+    gap: 2.4rem;
   }
   .headingContainer {
     text-align: center;
