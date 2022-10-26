@@ -3,7 +3,7 @@ import Popper from "@popperjs/core"
 
 import Head from "next/head"
 
-import Testimonials from "../components/sections/homepage/Testimonials"
+import Testimonials from "../components/sections/Homepage/Testimonials"
 import { Hero } from "../components/sections/Homepage/Hero"
 import { TeamCard } from "../components/elements/TeamCard"
 
