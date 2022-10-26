@@ -17,6 +17,8 @@ import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
 import Accordion from "react-bootstrap/Accordion"
 
+import Hero from "../components/sections/pollination-mentor/Hero"
+
 const PollinationForMentors: NextPage = () => {
   return (
     <div>
@@ -27,50 +29,10 @@ const PollinationForMentors: NextPage = () => {
           content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
         />
       </Head>
+      <Hero />
 
       {/* Hero */}
       <div className="container-fluid overflow-hidden" id="wrapper">
-        <div className="row p-5" id="jumbotron">
-          {/* Hero */}
-          <div className="container px-5" id="hero">
-            {/* About Beela */}
-            <div className="row" id="hero-container">
-              <div className="col py-4 px-5 m-5">
-                <div className="conatiner">
-                  <div className="container pb-4 pt-2">
-                    <h1 className="no_name_37">Pollination For Mentors</h1>
-                    <h3 className="no_name_37">Next cohort starts: Autumn 2022</h3>
-                  </div>
-                  <div className="container">
-                    <h4>Ready to get into tech? </h4>
-                    <p id="about-paragraph">
-                      Our free Pollination Mentoring Programme provides a space to grow and blossom.
-                    </p>
-                    <p className="B1">
-                      <ul>
-                        <li>4 month programme</li>
-                        <li>1-on-1 session with a mentor twice a month</li>
-                        <li>Supportive community</li>
-                        <li>3 hours/week time commitment</li>
-                      </ul>
-                      <Link href="https://docs.google.com/forms/d/1hT1ZjogGSzdND-QvlKj6jqj9ZDbfnQSQE6hWymcXA3I/prefill">
-                        <a target="_blank">
-                          <button type="button" className="btn  button slack-btn">
-                            Start your application
-                          </button>
-                        </a>
-                      </Link>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div className="col-5 py-5 px-2 my-5 mx-2">
-                <Image src="mentee-main.png" alt="About Beela" width={500} height={340} />
-              </div>
-            </div>
-          </div>
-        </div>
-
         <Container className="py-5">
           <h2 className="text-center no_name_37 mb-5 py-5">What to expect as a mentor</h2>
           <Row className="mt-4">
