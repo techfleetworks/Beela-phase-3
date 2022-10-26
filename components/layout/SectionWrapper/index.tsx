@@ -31,7 +31,7 @@ export const SectionWrapper = ({
     <section
       className={`${styles[color]} ${styles[padding]} ${classNameSection} d-flex justify-content-center`}
     >
-      <div className={className} style={{ maxWidth: `${maxWidth}px` }}>
+      <div className={` w-100 ${className}`} style={{ maxWidth: `${maxWidth}px` }}>
         {children}
       </div>
     </section>

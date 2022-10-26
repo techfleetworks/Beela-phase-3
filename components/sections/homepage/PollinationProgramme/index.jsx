@@ -6,7 +6,7 @@ import styles from "./PollinationProgramme.module.scss"
 
 function PollinationProgramme(props) {
   return (
-    <SectionWrapper color="SECONDARY_CREAM">
+    <SectionWrapper maxWidth={921} color="SECONDARY_CREAM">
       <div className={styles.sectionContainer}>
         <h2 className="text-center">Pollination Mentoring Programme</h2>
         <div className={styles.headingContainer}>
