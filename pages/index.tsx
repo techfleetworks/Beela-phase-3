@@ -3,8 +3,8 @@ import Popper from "@popperjs/core"
 
 import Head from "next/head"
 
-import Testimonials from "../components/sections/Homepage/Testimonials"
-import { Hero } from "../components/sections/Homepage/Hero"
+import Testimonials from "../components/sections/homepage/Testimonials"
+import { Hero } from "../components/sections/homepage/Hero"
 import { TeamCard } from "../components/elements/TeamCard"
 
 // React-Bootstrap icons

@@ -4,7 +4,7 @@ import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
 
-import Testimonials from "../components/sections/Homepage/Testimonials"
+import Testimonials from "../components/sections/homepage/Testimonials"
 
 // React-Bootstrap icons
 import { ArrowRight } from "react-bootstrap-icons"
