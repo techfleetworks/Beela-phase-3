@@ -1,0 +1,33 @@
+{
+  "session": true,
+  "timeline": [
+    {
+      "id": 0,
+      "event": "Applications Open",
+      "month": "July",
+      "day": 1,
+      "year": 2022
+    },
+    {
+      "id": 1,
+      "event": "Applications Close",
+      "month": "July",
+      "day": 24,
+      "year": 2022
+    },
+    {
+      "id": 2,
+      "event": "Decisions Sent",
+      "month": "August",
+      "day": 11,
+      "year": 2022
+    },
+    {
+      "id": 3,
+      "event": "Kickoff",
+      "month": "August",
+      "day": 25,
+      "year": 2022
+    }
+  ]
+}
