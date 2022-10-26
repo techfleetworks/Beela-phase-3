@@ -1,7 +1,7 @@
 import Stripe from "stripe";
 
 // @ts-ignore
-const stripe = new Stripe(process.env.REACT_APP_STRIPE_SECRET_KEY);
+const stripe = new Stripe(process.env.NEXT_APP_STRIPE_SECRET_KEY);
 console.log('check intent res running secrete', stripe)
 
 export default async (req, res) => {

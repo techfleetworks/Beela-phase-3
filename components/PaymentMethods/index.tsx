@@ -10,6 +10,8 @@ import Spacer from "../elements/Spacer"
 // css
 import "./paymentform.module.scss"
 import React, { useState } from "react"
+import useToggle from "../../hooks/useToggle"
+import { InputField } from "../elements/InputField"
 const { APP_STRIPE_PUBLIC_KEY } = process.env
 // let stripePromise: any;
 // if (APP_STRIPE_PUBLIC_KEY) {
@@ -23,6 +25,8 @@ const stripePromise = loadStripe(
 
 export default function PaymentForm(props: any) {
   const [amount, setAmount] = useState(0)
+  // const [visible, editAmount, submitEditAmount] = useToggle(false)
+
 
   const submitAmount = (value: number) => {
     console.log("check amount", value)
@@ -48,7 +52,18 @@ export default function PaymentForm(props: any) {
           <Spacer type="horizontal" size={10} />
           <Button variant="secondary_lightBG" title="1000 kr" onClick={() => submitAmount(1000)} />
           <Spacer type="horizontal" size={10} />
-          <Button variant="secondary_lightBG" title="Other Kr" />
+          <Button variant="secondary_lightBG" title="Other Kr"  /> :
+
+          {/* {visible ?
+            <Button variant="secondary_lightBG" title="Other Kr" onClick={editAmount} /> :
+            <InputField
+              type="tel"
+              // label="Phone Number"
+              id="PhoneNumber"
+              value="Edit Amount"
+            // onChange={handlePhone}
+            />
+          } */}
         </div>
 
         {/* <div className="my-4 d-flex justify-content-center"> */}

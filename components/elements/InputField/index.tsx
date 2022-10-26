@@ -6,7 +6,7 @@ interface IInputFieldProps {
   disabled?: boolean
   errorMessage?: string
   id?: string
-  label: string
+  label?: string
   onChange?: React.ChangeEventHandler<HTMLInputElement>
   placeholder?: string
   required?: boolean

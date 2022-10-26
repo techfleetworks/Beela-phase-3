@@ -22,6 +22,7 @@ import BeelaLoader from "../elements/Loader"
 import { InputField } from "../elements/InputField"
 import { SectionWrapper } from "../layout/SectionWrapper"
 import { Container, Row, Col } from "react-bootstrap"
+import SelectCountry from "../SelectCountry"
 
 const CardDetails = (props: any) => {
   const { amount } = props
@@ -30,7 +31,6 @@ const CardDetails = (props: any) => {
   const [error, setError] = useState("")
   const [processing, setProcessing] = useState(false)
   const [disabled, setDisabled] = useState(true)
-  const [clientSecret, setClientSecret] = useState("")
   const stripe = useStripe()
   const elements = useElements()
 
@@ -46,8 +46,9 @@ const CardDetails = (props: any) => {
   const [lastName, setLastName] = useState("")
   const [emailAddress, setEmailAddress] = useState("")
   const [phone, setPhone] = useState()
+  const [country, setCountry] = useState("")
 
-  useEffect(() => {}, [
+  useEffect(() => { }, [
     isInputComplete.cardNumber,
     isInputComplete.cardCvc,
     isInputComplete.expiryDate,
@@ -69,9 +70,6 @@ const CardDetails = (props: any) => {
       color: "red",
     },
   }
-
-  //Stripe Element - dynamically change the style of an element
-  //https://stripe.com/docs/js/element/other_methods/update?type=card
 
   const handleChange = async (event: any) => {
     // Listen for changes in the CardElement
@@ -96,29 +94,22 @@ const CardDetails = (props: any) => {
       return
     }
 
-    // test logs
-    console.log("check element", cardElement)
-    console.log("check amount", amount)
-
     try {
       // create Stripe intent
       const { data: clientSecret } = await axios.post("/api/payment_intents", {
         amount: 200 * 100,
       })
 
-      console.log("check secret", clientSecret)
-
       // Create Payment Request
       const paymentMethodReq = await stripe?.createPaymentMethod({
         type: "card",
         card: cardElement || "",
         billing_details: {
-          name: "adfasdf",
-          email: "frank@gmail.com",
+          name: `${firstName} ${lastName}`,
+          email: `${emailAddress}`,
+          phone: `${phone}`,
           address: {
-            city: "Toronto",
-            line1: "sdfa",
-            state: "Ontario",
+            country: `${country}`,
             postal_code: "31434",
           },
         },
@@ -147,6 +138,9 @@ const CardDetails = (props: any) => {
     } catch (err: any) {
       console.log(err.message)
       // setCheckoutError(err.message);
+    }
+    finally {
+      setProcessing(false)
     }
   }
 
@@ -233,6 +227,11 @@ const CardDetails = (props: any) => {
     console.log(value)
     setPhone(value)
   }
+  const handleCountry = (e: any) => {
+    const { value } = e.target
+    console.log(value)
+    setCountry(value)
+  }
 
   return (
     <SectionWrapper padding="paymentform">
@@ -249,7 +248,7 @@ const CardDetails = (props: any) => {
                   id="FirstName"
                   required
                   onChange={handleFirstName}
-                  placeholder="meow"
+                // placeholder="meow"🐝
                 />
               </Col>
               <Col sm={4} md>
@@ -349,7 +348,14 @@ const CardDetails = (props: any) => {
             </Row>
             <Row className={styles.rowSpacing}>
               <Col xs={12} sm={4} md={4}>
-                <InputField type="" label="Country" id="country" />
+                <SelectCountry
+                  name="Select Country"
+                  id="country-code"
+                  // placeholder={t('profileInfo.countryField')}
+                  value={country || ''}
+                  onChange={handleCountry}
+                />
+                {/* <InputField type="" label="Country" id="country" /> */}
               </Col>
               <Col xs={12} sm={4} md={3}>
                 <InputField type="number" label="Post Number" id="postNumber" />
@@ -362,9 +368,10 @@ const CardDetails = (props: any) => {
             className={styles.submitButton}
             type="submit"
             variant="primary_darkBG"
-            // title={<BeelaLoader />}
-            title="Submit Donation"
-          />
+            title={processing ? 'processing..' : 'Submit Donation'}
+          >
+            {processing && <BeelaLoader />}
+          </Button>
           <Link href="/privacy">
             <a className={`S2 ${styles.gdpr}`} target="_blank">
               How Will My Information Be Used And Stored?
