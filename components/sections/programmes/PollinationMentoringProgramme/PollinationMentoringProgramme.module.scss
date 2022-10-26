@@ -64,17 +64,22 @@
 
 @media (max-width: 768px) {
   .sectionContainer {
-    gap: 2rem;
+    gap: 1rem;
   }
   .headingContainer {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    gap: 3rem;
   }
   .headingText {
     width: 100%;
-    padding: 2rem 0 0;
+    padding: 2rem;
+    background-color: $PRIMARY_HONEY;
   }
   .heading {
     font-size: 2.4rem;
+  }
+  .imageContainer {
+    max-width: 350px;
   }
 
   .moreInfoContainer {

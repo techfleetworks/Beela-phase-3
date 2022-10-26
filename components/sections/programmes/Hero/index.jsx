@@ -21,12 +21,12 @@ export default function Hero() {
           </div>
           <div className={styles.textContainer}>
             <h4 className={`primary-berry my-4 ${styles.subheading}`}>How can Beela help?</h4>
-            <p className="B1 mb-5">
+            <p className={`B1 mb-5 ${styles.headingText}`}>
               We offer different programmes to fit your needs depending on where you are in your
               journey.
             </p>
 
-            <ul className="B1">
+            <ul className="B1 ps-4">
               <li>
                 Our Pollination Mentoring Programme connects you with mentors for 1-on-1 guidance
               </li>
