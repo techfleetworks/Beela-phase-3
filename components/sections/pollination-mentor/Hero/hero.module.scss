@@ -1,21 +1,60 @@
-.Hero{
-    //background color
-    //padding top
-    //padding bottom
-    background-color:  var( --color-cream);
-    padding-top: 6.4rem;
-    
-    .HeroSection{
+@import "../../../../styles/variables.scss";
 
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5.2rem;
+}
 
-        .HeroTitle{
+.contentContainer {
+  gap: 3rem;
+  align-items: center;
+}
+.infoText {
+  margin-bottom: 3rem;
+}
 
-        }
-        .HeroLeft{
+.cta {
+  white-space: nowrap;
+}
+@media (max-width: 900px) {
+  .cta {
+    font-size: 2.4rem;
+  }
+}
+@media (max-width: 768px) {
+  .sectionContainer {
+    align-items: center;
+    gap: 2.4rem;
+  }
+  .headingContainer {
+    text-align: center;
+  }
+  .contentContainer {
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    gap: 2.4rem;
+  }
+  .subheading {
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: "Montserrat", Verdana, Geneva, Tahoma, sans-serif !important;
+  }
 
-        }
-        .HeroRight{
+  .infoText {
+    margin-bottom: 1.5rem;
+  }
 
-        }
-    }
+  .cta {
+    white-space: normal;
+  }
+  .list {
+    white-space: inherit;
+    font-size: 1.5rem;
+    padding: 0 1rem;
+  }
+  .applyBtn {
+    margin: 0 auto;
+  }
 }
