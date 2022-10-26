@@ -7,7 +7,7 @@ import { SectionWrapper } from "../../../layout/SectionWrapper"
 import { Button } from "../../../elements/Button"
 
 export default function Hero() {
-  let buttonHref = data.session === true && data.mentee.url
+  let buttonHref = data.session === true && data.mentor.url
   let showButton = data.session === true ? "" : "none"
 
   return (
