@@ -20,7 +20,7 @@ const NavBar = () => {
 
   // needs to be able to detect any of the links inside the dropdown. needs editing.
   const routerResProgrammes = router.asPath == "/programmes" ? styles.active : ""
-  const routerResStayContected = router.asPath == "/stay-conected" ? styles.active : ""
+  const routerResStayContected = router.asPath == "/stayconnected" ? styles.active : ""
   const routerResAboutUs = router.asPath == "/about" ? styles.active : ""
 
   const [show, setShow] = useState(false)

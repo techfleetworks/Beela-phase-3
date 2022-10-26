@@ -19,9 +19,10 @@ const Testimonials = () => {
       centerMode={true}
       centerSlidePercentage={isTabletOrMobile ? 100 : 50}
     >
-      {!!testimonial && testimonial.map(data => {
+      {!!testimonial && testimonial.map(( data,index) => {
         return (
           <TeamCard
+            key={index}
             name={data.name}
             description={`${data.about.substring(0, 200)}...`}
             imgSource={data.img}

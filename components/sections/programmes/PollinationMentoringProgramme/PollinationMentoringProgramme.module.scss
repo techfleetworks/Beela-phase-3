@@ -16,23 +16,20 @@
 }
 .imageContainer > span {
   overflow: visible;
-  box-shadow: 22px 24px $PRIMARY_HONEY;
+  box-shadow: 22px 24px $PRIMARY_CORAL;
 }
 
 .headingText {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   width: 50%;
-  padding-left: 1rem;
+  padding-left: 4rem;
   max-width: 350px;
-  text-align: center;
 }
-
-.sectionDivider {
-  width: 100%;
-  height: 1px;
-  background-color: $GRAY_3;
+.subheading {
+  margin-bottom: 2rem;
 }
 
 .moreInfoContainer {
@@ -71,6 +68,9 @@
   .headingText {
     width: 100%;
     padding: 2rem 0 0;
+  }
+  .heading {
+    font-size: 2.4rem;
   }
 
   .moreInfoContainer {

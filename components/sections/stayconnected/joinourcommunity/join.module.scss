@@ -1,3 +1,95 @@
-.bg{
-    background-color: red;
+@import "../../../../styles/variables.scss";
+.sectionContainer {
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    gap: 5rem;
+    position: relative;
+    padding: 4rem;
+    margin: 4rem auto;
+}
+
+.img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.textContainer {
+    width: 60%;
+}
+
+.h2 {
+color: $PRIMARY_BERRY;
+margin-top: 2rem;
+margin-bottom: 2rem;
+}
+
+.h4 {
+color: $PRIMARY_BERRY;
+width: 100%;
+}
+
+.list {
+    display: none;
+}
+
+.button {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1050px) {
+    .imgContainer {
+        width: 400px;
+    }
+}
+
+@media (max-width: 965px) {
+    .imgContainer {
+        width: 360px;
+    }
+}
+
+@media (max-width: 830px) {
+    .imgContainer {
+        width: 330px;
+    }
+
+    .B1.text {
+        font-size: 1.6rem;
+    }
+}
+
+//Mobile
+@media (max-width: 768px) {
+    .sectionContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        margin: auto;
+        width: 85%;
+    }
+
+    .h2 {
+        color: $PRIMARY_BERRY;
+        text-align: center;
+        }
+
+    .h4 {
+        color: $PRIMARY_BERRY;
+        font-size: 2.6rem;
+    }
+
+    .textContainer {
+        width: 100%;
+    }
+
+    .button {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 4.5rem;
+    }
 }

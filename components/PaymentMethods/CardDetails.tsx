@@ -113,7 +113,7 @@ const CardDetails = (props: any) => {
         type: "card",
         card: cardElement || "",
         billing_details: {
-          name: `${firstName} ${lastName}`,
+          name: "adfasdf",
           email: "frank@gmail.com",
           address: {
             city: "Toronto",
