@@ -14,7 +14,7 @@ const About: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>About - Beela</title>
+        <title>About us - Beela</title>
         <meta
           name="description"
           content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."

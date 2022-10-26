@@ -34,7 +34,7 @@ const Home: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Beela</title>
+        <title>Beela - empowering women in tech</title>
         <meta
           name="description"
           content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
