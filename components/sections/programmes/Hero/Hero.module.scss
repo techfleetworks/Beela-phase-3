@@ -65,20 +65,25 @@
   }
 }
 
+@media (max-width: 900px) {
+  .subheading {
+    font-size: 2.4rem;
+  }
+}
+
 @media (max-width: 768px) {
   .sectionContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: auto;
+    padding: 0;
   }
   .sectionHeading {
     margin-bottom: 1rem;
     text-align: center;
   }
-  .subheading {
-    font-size: 2.4rem;
-  }
+
   .imgContainer {
     margin: 1rem;
     width: 100%;
@@ -96,6 +101,12 @@
     min-width: 275px;
   }
   .sectionDivider {
+    display: none;
+  }
+}
+
+@media (max-width: 730px) {
+  .headingText {
     display: none;
   }
 }
