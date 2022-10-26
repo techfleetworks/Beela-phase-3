@@ -1,11 +1,24 @@
+@import "../../../../styles/variables.scss";
+
+.h4 {
+  color: $PRIMARY_BERRY;
+}
+
 .sectionContainer {
-  position: relative;
   padding: 4rem;
-  margin: 5rem auto;
+  position: relative;
+  margin: 6rem auto;
 }
 
 .textContainer {
   width: 50%;
+}
+
+.sectionDivider {
+  background-color: $PRIMARY_HONEY;
+  height: 1px;
+  margin-top: 8rem;
+  width: 100%;
 }
 
 .imgContainer {
@@ -15,11 +28,8 @@
   right: 0;
   transform: translateY(-50%);
 }
-.img {
-  max-width: 100%;
-  max-height: 100%;
-}
 
+//Responsive Layouts
 @media (max-width: 1050px) {
   .imgContainer {
     width: 400px;
@@ -40,7 +50,28 @@
     font-size: 1.6rem;
   }
 }
+
+//Mobile Design
 @media (max-width: 768px) {
+
+  .imgContainer {
+      margin: 2rem;
+      width: 80%;
+    }
+
+  .h4 {
+      color: $PRIMARY_BERRY;
+      font-size: 2.6rem;
+    }
+    
+  .textContainer {
+      width: 90%;
+    }
+
+  .sectionDivider {
+  display: none;
+}
+    
   .sectionContainer {
     display: flex;
     flex-direction: column;
@@ -48,20 +79,10 @@
     padding: 1rem;
     margin: auto;
   }
-  .imgContainer {
-    margin: 2rem;
-    width: 100%;
-  }
 
   .imgContainer {
     position: relative;
     top: 0;
     transform: translateY(0);
-  }
-
-  .textContainer {
-    width: 100%;
-    max-width: 480px;
-    min-width: 275px;
   }
 }

@@ -1,68 +1,75 @@
-import React from 'react'
-import {Row, Container, Col} from "react-bootstrap";
-import Link from "next/link"
-import Image from "next/image"
-import { auto } from '@popperjs/core';
-import {Button} from "../../../elements/Button/index"
-import styles from "./pod.module.scss"
+// import Image from "next/image"
+// import { SectionWrapper } from "../../../layout/SectionWrapper"
+// import styles from "./podcast.module.scss"
 
 export default function podcast() {
   return (
     <div>
-         {/* Newsletter  */}
-         <div className="container-fluid  new-mente">
-          <section id="section-podcast" className="container">
-            <Row className="text-center justify-content-center align-content-center">
-              <Container className="home-pollination__spacer">
-                <Row xs={1} md={2} className="m-4 align-items-center justify-content-center ">
-                 
-
-                <Col
-                    xs={{ order: 1 }}
-                    sm={10}
-                    md={{ span: 6, order: 1 }}
-                    lg={6}
-                    xl={5}
-                    className="pt-4 pm-4"
-                  >
-                    <div className="image-wrapper">
-                   
-                      <Image  src="/icons/home-podcast.svg" width={600} height={336} alt="The Podcast image for Beela Talk, an illustraion of two women in Rosie the Riveter pose with the text Beela's Talk underneath them"
-                        className="img-fluid home-shadow_img"/>
-                    </div>
-                  </Col>
-
-                  <Col
-                    xs={{ order: 2 }}
-                    sm={10}
-                    md={{ span: 6, order: 2 }}
-                    lg={6}
-                    xl={5}
-                    className="p-2 "
-                  >
-                    <div className={styles.ml4rem}>
-                    <h3 className="no_name_37" style={{ textAlign: "start" }}>
-                      Podcast
-                    </h3>
-                    <p className="m-0 B1" style={{ maxWidth: "268px", textAlign: "start" }}>
-                    Our podcast is filled with inspiring stories from Swedish immigrants who have broken into tech. Catch up on all the buzz!
-                    </p>
-                    
-                    </div>
-                    <div  className={styles.ml4rem} style={{textAlign: "start"}}>
-                      <Image src="/icons/spotify.svg" width={64} height={64}/>
-                      
-                      <Image src="/icons/apple-podcasts.svg" width={64} height={64}/>
-                      <Image src="/icons/google-podcasts.svg" width={64} height={64}/>
-                    </div>
-                  </Col>
-
-                  
-                </Row>
-              </Container>
-            </Row>
-          </section>
-        </div>
+     <h1>asdfasdfasdfsadf</h1><h1>asdfasdfasdfsadf</h1><h1>asdfasdfasdfsadf</h1>
+      <h1>asdfasdfasdfsadf</h1>
     </div>
+    // <SectionWrapper color="PRIMARY_CORAL" padding="none">
+    //   <div className={styles.sectionContainer}>
+    //     <div className={styles.imgContainer}>
+    //       <Image
+    //         height={387}
+    //         width={600}
+    //         className={styles.img}
+    //         src="icons/svg_beela__s_podcast_sticker_illustration_mesa_de_trabajo_1.svg"
+    //         alt="placeholder"
+    //       />
+    //     </div>
+    //     <div className={styles.textContainer}>
+    //       <h3 className="primary-berry" style={{marginTop: "4rem", marginBottom: "2rem"}} >Podcast</h3>
+    //       <p className="B1 mb-4" style={{lineHeight: "170%"}}>
+    //         Our podcast is filled with inspiring stories from Swedish immigrants who have broken into tech.
+    //         Catch up on all the buzz!
+    //       </p>
+
+    //       <div className={styles.iconsWrapper}>
+    //         <a
+    //           href="https://open.spotify.com/show/1B1xgKaplQwslW05BoRDmX?si=aa23a69ce1174786"
+    //           target="_blank"
+    //           rel="noreferrer"
+    //         >
+    //           <Image
+    //             src="/icons/spotify.svg"
+    //             className=""
+    //             height={50}
+    //             width={50}
+    //             alt="Icon for Apple Podcasts, an icon of a person with two semi circles above them"
+    //           />
+    //         </a>
+    //         <a
+    //           href="https://podcasts.apple.com/us/podcast/beelas-talk/id1624447735"
+    //           target="_blank"
+    //           rel="noreferrer"
+    //         >
+    //           <Image
+    //             src="/icons/podcast-apple.svg"
+    //             className=""
+    //             height={50}
+    //             width={50}
+    //             alt="Icon for Apple Podcasts, an icon of a person with two semi circles above them"
+    //           />
+    //         </a>
+    //         <a
+    //           href="https://podcasts.google.com/feed/aHR0cHM6Ly9hbmNob3IuZm0vcy81YTE1NDIwOC9wb2RjYXN0L3Jzcw"
+    //           target="_blank"
+    //           rel="noreferrer"
+    //         >
+    //           <Image
+    //             src="/icons/podcast-google.svg"
+    //             className=""
+    //             height={50}
+    //             width={50}
+    //             alt="Icon for Google Podcasts, an row of five divided lines in a diamond shape"
+    //           />
+    //         </a>
+    //       </div>
+    //     </div>
+    //   </div>
+    // </SectionWrapper>
+
   )
 }
