@@ -21,20 +21,23 @@ export const TeamCard = (props: ITeamCard) => {
     isVolunteer,
     name = "Beela Volunteer",
     title = "CEO of Meow",
-    bgcolor
+    bgcolor,
   } = props
   return (
-    <div className="d-flex justify-content-center">
-      <div className={!isVolunteer ? styles.cardContainer : styles.volunteerCardContainer}>
-        <Avatar isVolunteer={isVolunteer} imgSource={imgSource} isTestimonial={isTestimonial} />
+    // <div className="d-flex justify-content-center">
+    <div className={!isVolunteer ? styles.cardContainer : styles.volunteerCardContainer}>
+      <Avatar isVolunteer={isVolunteer} imgSource={imgSource} isTestimonial={isTestimonial} />
 
-        <div className={!isVolunteer ? styles.bodyContainer : styles.volunteerBodyContainer} style={{backgroundColor: bgcolor}}>
-          {!isVolunteer ? <h3>{name}</h3> : <h5 className="h5 primary-berry m-0">{name}</h5>}
-          <p className={!isVolunteer ? "B2" : "S2 primary-berry"}> {title}</p>
+      <div
+        className={!isVolunteer ? styles.bodyContainer : styles.volunteerBodyContainer}
+        style={{ backgroundColor: bgcolor }}
+      >
+        {!isVolunteer ? <h3>{name}</h3> : <h5 className="h5 primary-berry m-0">{name}</h5>}
+        <p className={!isVolunteer ? "B2" : "S2 primary-berry"}> {title}</p>
 
-          {!isVolunteer && <p className="B2 m-0">{description}</p>}
-        </div>
+        {!isVolunteer && <p className="B2 m-0">{description}</p>}
       </div>
     </div>
+    // </div>
   )
 }
