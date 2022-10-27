@@ -1,16 +1,18 @@
 import Link from "next/link"
-
+import { useRouter } from "next/router"
 //Component Imports
 import styles from "./gdpr.module.scss"
 import { SectionWrapper } from "../../layout/SectionWrapper"
 import { ArrowLeft } from "react-bootstrap-icons"
 
+
 export const PriNotice = () => {
+  const router = useRouter();
   return (
     <SectionWrapper padding="main" color="GDPR_GRADIENT" maxWidth={1050}> 
-            <div>
-                <Link href="HYPERLINK HERE HYPERLINK HERE"> 
-                  <a target="_blank" className="h4"> <ArrowLeft /> Back</a>
+            <div onClick={() => window.history.back()}>
+                <Link href=""> 
+                  <a className="h4"> <ArrowLeft /> Back</a>
                 </Link>
             </div>
 
@@ -296,9 +298,9 @@ export const PriNotice = () => {
                 access to the personal information we collect from you, change that information, or delete it. To request to review, update, or delete your personal 
                 information, please submit email beela us at contact@beela.se.</p>                 
               </div>      
-            <div>
-                <Link href="HYPERLINK HERE HYPERLINK HERE"> 
-                  <a target="_blank" className="h4"> <ArrowLeft /> Back</a>
+            <div onClick={() => window.history.back()}>
+                <Link href=""> 
+                  <a className="h4"> <ArrowLeft /> Back</a>
                 </Link>
             </div>
     </SectionWrapper>
