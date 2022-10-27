@@ -120,8 +120,8 @@ export const PriNotice = () => {
                     you access or use our Services and which we record in log files. Depending on how you interact with us, this log data may include your IP address,
                     device information, browser type, and settings and information about your activity in the Services (such as the date/time stamps associated with
                     your usage, pages and files viewed, searches, and other actions you take such as which features you use), device event information 
-                    (such as system activity, error reports (sometimes called 'crash dumps'), and hardware settings).</li>
-                  <li style={{marginBottom: "0.5rem"}}>Location Data. We collect location data such as information about your device's location, which can be either precise or imprecise. How much 
+                    (such as system activity, error reports (sometimes called &apos;crash dumps&apos;), and hardware settings).</li>
+                  <li style={{marginBottom: "0.5rem"}}>Location Data. We collect location data such as information about your device&apos;s location, which can be either precise or imprecise. How much 
                     information we collect depends on the type and settings of the device you use to access the Services. For example, we may use GPS and other 
                     technologies to collect geolocation data that tells us your current location (based on your IP address). You can opt out of allowing us to 
                     collect this information either by refusing access to the information or by disabling your Location setting on your device. However, if 
@@ -204,7 +204,7 @@ export const PriNotice = () => {
                 and technical security measures.</p>            
                 <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>We will only keep your personal information for as long as it is necessary for the purposes
                  set out in this privacy notice, unless a longer retention period is required or permitted by law (such as tax, accounting, or other legal requirements). 
-                 No purpose in this notice will require us keeping your personal information for longer than three (3) months past the termination of the user's account.</p>         
+                 No purpose in this notice will require us keeping your personal information for longer than three (3) months past the termination of the user&apos;s account.</p>         
                 <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>When we have no ongoing legitimate business need to process your personal information, 
                 we will either delete or anonymise such information, or, if this is not possible (for example, because your personal information has been stored in 
                 backup archives), then we will securely store your personal information and isolate it from any further processing until deletion is possible.</p> 
@@ -213,7 +213,7 @@ export const PriNotice = () => {
               {/* PRIVACY RIGHTS */}
               <div className={styles.sectionWrap}>
                 <h2 className="primary-berry" style={{marginBottom: "1rem"}}>What are your privacy rights?</h2>                 
-                <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>IIn Short: In some regions, such as the EU, you have rights that allow you greater access 
+                <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>In Short: In some regions, such as the EU, you have rights that allow you greater access 
                 to and control over your personal information. You may review, change, or terminate your account at any time.</p>            
                 <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>In some regions (like the EU), you have certain rights under applicable data protection laws.
                  These may include the right (i) to request access and obtain a copy of your personal information, (ii) to request rectification or erasure; (iii) to restrict 
@@ -244,7 +244,7 @@ export const PriNotice = () => {
               <div className={styles.sectionWrap}>
                 <h2 className="primary-berry" style={{marginBottom: "1rem"}}>Controls for do-not-track features</h2>  
                 <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>Most web browsers and some mobile operating systems and mobile applications 
-                include a Do-Not-Track ('DNT') feature or setting you can activate to signal your privacy preference not to have data about your online browsing 
+                include a Do-Not-Track (&apos;DNT&apos;) feature or setting you can activate to signal your privacy preference not to have data about your online browsing 
                 activities monitored and collected. At this stage no uniform technology standard for recognising and implementing DNT signals has been finalised.
                 As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. 
                 If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this privacy 
@@ -256,7 +256,7 @@ export const PriNotice = () => {
                 <h2 className="primary-berry" style={{marginBottom: "1rem"}}>Do California residents have specific privacy rights?</h2>  
                 <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>In Short: Yes, if youpersonal are a resident of California, you are granted 
                 specific rights regarding access to your  information.</p>       
-                <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>California Civil Code Section 1798.83, also known as the 'Shine The Light' law, permits
+                <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>California Civil Code Section 1798.83, also known as the &apos;Shine The Light&apos; law, permits
                 our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information 
                 (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information
                 in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us 
@@ -273,7 +273,7 @@ export const PriNotice = () => {
                 <h2 className="primary-berry" style={{marginBottom: "1rem"}}>Do we make updates to this notice?</h2>  
                 <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>In Short: Yes, we will update this notice as necessary to stay compliant with relevant laws.</p>       
                 <p className="B1" style={{marginBottom: "1rem" , lineHeight: "170%"}}>We may update this privacy notice from time to time. The updated version will be 
-                indicated by an updated 'Revised' date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice,
+                indicated by an updated &apos;Revised&apos; date and the updated version will be effective as soon as it is accessible. If we make material changes to this privacy notice,
                 we may notify you either by prominently posting a notice of such changes or by directly sending you a notification. We encourage you to review this privacy notice 
                 frequently to be informed of how we are protecting your information.</p>                    
               </div>
