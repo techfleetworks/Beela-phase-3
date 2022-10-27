@@ -18,6 +18,7 @@ import Image from "react-bootstrap/Image"
 import Accordion from "react-bootstrap/Accordion"
 
 import Hero from "../components/sections/pollination-mentor/Hero"
+import ExpectCards from "../components/sections/pollination-mentor/ExpectCards"
 
 const PollinationForMentors: NextPage = () => {
   return (
@@ -30,54 +31,10 @@ const PollinationForMentors: NextPage = () => {
         />
       </Head>
       <Hero />
+      <ExpectCards />
 
       {/* Hero */}
       <div className="container-fluid overflow-hidden" id="wrapper">
-        <Container className="py-5">
-          <h2 className="text-center no_name_37 mb-5 py-5">What to expect as a mentor</h2>
-          <Row className="mt-4">
-            <Col md={6} lg={4} className="text-center">
-              <Card style={{ width: "18rem", position: "relative", backgroundColor: "#E6C619" }}>
-                <Card.Img
-                  variant="top"
-                  src="images/mentee-avatar1.png"
-                  className="img-card-relative"
-                />
-                <Card.Body className="py-5">
-                  <Card.Text>
-                    Leverage your experience to help women and non-binary immigrants begin a tech
-                    career in Sweden.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={6} lg={4} className="text-center">
-              <Card style={{ width: "18rem", backgroundColor: "#E6C619" }}>
-                <Card.Img variant="top" src="mentee-avatar2.png" className="img-card-relative" />
-                <Card.Body className="py-5">
-                  <Card.Text>
-                    Mentees most often need help with CVs, interviews, and navigating the Swedish
-                    job market.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={6} lg={4} className="text-center">
-              <Card style={{ width: "18rem", backgroundColor: "#E6C619" }}>
-                <Card.Img variant="top" src="mentee-avatar3.png" className="img-card-relative" />
-                <Card.Body className="py-5">
-                  <Card.Text>
-                    Our mentorship community is here to support you, whether you’re a first-time
-                    mentor or very experienced.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-
         <Container fluid className="py-5" style={{ backgroundColor: "#F9F2D4" }}>
           <Container>
             <h3 className="no_name_37 text-center">Frequently Asked Questions</h3>

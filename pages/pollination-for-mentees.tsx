@@ -18,6 +18,7 @@ import Image from "react-bootstrap/Image"
 import Accordion from "react-bootstrap/Accordion"
 
 import Hero from "../components/sections/pollination-mentee/Hero"
+import ExpectCards from "../components/sections/pollination-mentee/ExpectCards"
 
 const PollinationForMentees: NextPage = () => {
   return (
@@ -31,53 +32,10 @@ const PollinationForMentees: NextPage = () => {
       </Head>
 
       <Hero />
+      <ExpectCards />
 
       {/* Hero */}
       <div className="container-fluid overflow-hidden" id="wrapper">
-        <Container className="py-5">
-          <h2 className="text-center no_name_37 mb-5 py-5">What to expect as a mentee</h2>
-          <Row className="mt-4">
-            <Col md={6} lg={4} className="text-center">
-              <Card style={{ width: "18rem", position: "relative", backgroundColor: "#E6C619" }}>
-                <Card.Img variant="top" src="mentee-avatar1.png" className="img-card-relative" />
-                <Card.Body className="py-5">
-                  <h5>Mentor Matching</h5>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card&apos;s content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={6} lg={4} className="text-center">
-              <Card style={{ width: "18rem", backgroundColor: "#E6C619" }}>
-                <Card.Img variant="top" src="mentee-avatar2.png" className="img-card-relative" />
-                <Card.Body className="py-5">
-                  <h5>Networking</h5>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card&apos;s content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-
-            <Col md={6} lg={4} className="text-center">
-              <Card style={{ width: "18rem", backgroundColor: "#E6C619" }}>
-                <Card.Img variant="top" src="mentee-avatar3.png" className="img-card-relative" />
-                <Card.Body className="py-5">
-                  <h5>Workshops</h5>
-                  <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of the
-                    card&apos;s content.
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Container>
-
         <Container fluid className="py-5" style={{ backgroundColor: "#F9F2D4" }}>
           <Container>
             <h3 className="no_name_37 text-center">Frequently Asked Questions</h3>
