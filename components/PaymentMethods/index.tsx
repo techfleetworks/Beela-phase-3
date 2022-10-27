@@ -12,6 +12,10 @@ import "./paymentform.module.scss"
 import React, { useState } from "react"
 import useToggle from "../../hooks/useToggle"
 import { InputField } from "../elements/InputField"
+
+// scss
+import styles from "./paymentform.module.scss"
+
 const { APP_STRIPE_PUBLIC_KEY } = process.env
 // let stripePromise: any;
 // if (APP_STRIPE_PUBLIC_KEY) {
@@ -25,7 +29,7 @@ const stripePromise = loadStripe(
 
 export default function PaymentForm(props: any) {
   const [amount, setAmount] = useState(0)
-  // const [visible, editAmount, submitEditAmount] = useToggle(false)
+  const [visible, editAmount, submitEditAmount] = useToggle(false)
 
 
   const submitAmount = (value: number) => {
@@ -33,9 +37,13 @@ export default function PaymentForm(props: any) {
     setAmount(value)
   }
 
-  // const handleAmount = (value: any) => {
-  //   setAmount(value)
-  // }
+  const handleEditChange = (e: any) => {
+    const { value } = e.target
+    console.log(value)
+    setAmount(value)
+  }
+
+  const handleEditAmount = () => { visible ? submitEditAmount(): editAmount() }
 
   return (
     <>
@@ -52,19 +60,27 @@ export default function PaymentForm(props: any) {
           <Spacer type="horizontal" size={10} />
           <Button variant="secondary_lightBG" title="1000 kr" onClick={() => submitAmount(1000)} />
           <Spacer type="horizontal" size={10} />
-          <Button variant="secondary_lightBG" title="Other Kr"  /> :
 
-          {/* {visible ?
-            <Button variant="secondary_lightBG" title="Other Kr" onClick={editAmount} /> :
+          <Button
+            variant="secondary_lightBG"
+            // title="Other Kr" 
+            title={visible ? 'Add Amount' : 'Other kr'}
+            onClick={handleEditAmount} />
+        </div>
+        {visible &&
+          (
+            <div className={styles.editAmountWrapper}>
             <InputField
-              type="tel"
+              className={styles.editAmountField}
+              type="number"
               // label="Phone Number"
               id="PhoneNumber"
-              value="Edit Amount"
-            // onChange={handlePhone}
-            />
-          } */}
-        </div>
+              placeholder="200 kr"
+              onChange={handleEditChange}
+              />
+              </div>
+          )}
+
 
         {/* <div className="my-4 d-flex justify-content-center"> */}
         {/* <div className="mx-3">

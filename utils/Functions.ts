@@ -24,6 +24,6 @@ export const GetCountryName = (code: string): string => {
     return item.value === code
   })
 
-  return country?.label || ''
+  return country?.name || ''
 }
 

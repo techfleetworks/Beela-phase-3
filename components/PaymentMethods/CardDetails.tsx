@@ -348,14 +348,18 @@ const CardDetails = (props: any) => {
             </Row>
             <Row className={styles.rowSpacing}>
               <Col xs={12} sm={4} md={4}>
-                <SelectCountry
-                  name="Select Country"
-                  id="country-code"
-                  // placeholder={t('profileInfo.countryField')}
-                  value={country || ''}
-                  onChange={handleCountry}
-                />
-                {/* <InputField type="" label="Country" id="country" /> */}
+                <div className={`form-group ${styles.formGroup}`}>
+                  <label className={`B1 ${styles.label}`}>
+                    Select Country
+                    {/* {required ? "*" : ""} */}
+                  </label>
+                  <SelectCountry
+                    name="Select Country"
+                    id="country-code"
+                    value={country || ''}
+                    onChange={handleCountry}
+                  />
+                </div>
               </Col>
               <Col xs={12} sm={4} md={3}>
                 <InputField type="number" label="Post Number" id="postNumber" />

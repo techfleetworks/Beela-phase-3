@@ -1,0 +1,72 @@
+@import "../../../styles/variables.scss";
+.cardContainer {
+  text-align: center;
+  position: relative;
+}
+.imageContainer {
+  position: absolute;
+  top: -13em;
+  width: 100%;
+}
+.image {
+  border-radius: 50%;
+  width: 100%;
+  top: 100px;
+}
+.bodyContainer {
+  padding: 10rem 3rem 4rem;
+  background-color: $PRIMARY_HONEY;
+}
+
+@media (max-width: 1057px) {
+  .bodyContainer {
+    padding: 10rem 2.4rem 4rem;
+  }
+}
+@media (max-width: 1024px) {
+  .imageContainer {
+    top: -10em;
+  }
+  .imageWrapper {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .bodyContainer {
+    padding: 7rem 2.4rem 4rem;
+  }
+}
+
+@media (max-width: 1001px) {
+  .bodyContainer {
+    padding: 7rem 2rem 4rem;
+  }
+}
+
+@media (max-width: 977px) {
+  .bodyContainer {
+    padding: 7rem 1.7rem 4rem;
+  }
+}
+
+@media (max-width: 958px) {
+  .bodyContainer {
+    height: 22.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .bodyContainer {
+    height: 20.7rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
+    max-width: 268px;
+    margin: 8rem auto 0;
+  }
+  .bodyContainer {
+    height: auto;
+  }
+}

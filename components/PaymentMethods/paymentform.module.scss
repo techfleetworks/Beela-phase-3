@@ -8,6 +8,22 @@ $layout-padding: 80px 48px 48px;
   flex-direction: column;
   gap: 9.6rem;
 }
+.formGroup {
+  margin-top: 1.5rem;
+}
+.editAmountWrapper {
+  display: flex;
+ justify-content: center;
+    div {
+      max-width: 180px;
+    }
+}
+
+@media (max-width: 900px) {
+  .formGroup {
+    margin-top: 1rem;
+  }
+}
 .formGroups {
   display: flex;
   flex-direction: column;
@@ -15,6 +31,9 @@ $layout-padding: 80px 48px 48px;
 }
 .heading {
   // margin-bottom: 1.6rem;
+}
+.editAmountField {
+  width: auto;
 }
 
 .rowSpacing {

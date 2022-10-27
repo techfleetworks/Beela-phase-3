@@ -18,8 +18,10 @@ import styles from "./Button.module.scss"
 
 interface ButtonProps {
   className?: string
+  disabled?: boolean
   href?: string
-  title?: any
+  style?: any
+  title: any
   type?: any
   variant: string
   children?:any
@@ -27,24 +29,42 @@ interface ButtonProps {
 }
 
 export const Button = (props: ButtonProps) => {
-  const { className,children, href, title, type = "button", variant, onClick } = props
+  const { className, disabled, href, style, title, type = "button", variant, onClick } = props
   return (
     <>
       {!href ? (
-        <button type={type} onClick={onClick} className={`button ${styles[variant]} ${className}`}>
-          {title} {children}
+        <button
+          className={`button ${styles[variant]} ${className}`}
+          disabled={disabled}
+          onClick={onClick}
+          style={style}
+          type={type}
+        >
+          {title}
         </button>
       ) : href.charAt(0) === "/" ? (
         <Link href={`${href}`}>
           <a>
-            <button type={type} onClick={onClick} className={`button ${styles[variant]}`}>
+            <button
+              className={`button ${styles[variant]} ${className}`}
+              disabled={disabled}
+              onClick={onClick}
+              style={style}
+              type={type}
+            >
               {title}
             </button>
           </a>
         </Link>
       ) : (
         <a href={href} rel="noreferrer" target="_blank">
-          <button type={type} onClick={onClick} className={`button ${styles[variant]}`}>
+          <button
+            className={`button ${styles[variant]} ${className}`}
+            disabled={disabled}
+            onClick={onClick}
+            style={style}
+            type={type}
+          >
             {title}
           </button>
         </a>

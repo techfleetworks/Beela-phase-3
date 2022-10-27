@@ -21,7 +21,12 @@
   background-repeat: no-repeat;
   background-position: 50%;
 }
-
+.GDPR_GRADIENT {
+  background-image: linear-gradient(180deg, #ccdaff, #f7f7f6);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
 .hero {
   padding: 8rem;
 }
@@ -30,6 +35,10 @@
 }
 .paymentform {
   padding: 9.6rem 13rem;
+}
+
+.pollination {
+  padding: 8rem;
 }
 
 .none {
@@ -43,6 +52,9 @@
   .paymentform {
     padding: 7rem 11rem;
   }
+  .pollination {
+    padding: 6rem 4rem;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -55,6 +67,9 @@
   .paymentform {
     padding: 5.6rem 9.6rem;
   }
+  .pollination {
+    padding: 5rem 3rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -66,5 +81,8 @@
   }
   .paymentform {
     padding: 4rem 2rem;
+  }
+  .pollination {
+    padding: 5rem 2rem;
   }
 }

@@ -7,7 +7,8 @@
 .headingContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 1rem;
 }
 
 .imageContainer {
@@ -67,6 +68,7 @@
   }
   .headingContainer {
     flex-direction: column;
+    gap: 0;
   }
   .headingText {
     width: 100%;

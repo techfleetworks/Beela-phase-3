@@ -5,16 +5,16 @@ import styles from "./selectform.module.scss"
 
 export type SelectOptionsType = {
     value: string
-    label: string
     disabled?: boolean
+    name?: string
 }
+
 
 interface SelectFormProps extends React.SelectHTMLAttributes<HTMLSelectElement> {
     options: SelectOptionsType[]
     readOnly?: boolean
     errorMessage?: string
-    label?: string
-    name?: string
+    
 
 }
 
@@ -33,11 +33,6 @@ const SelectForm = React.forwardRef<HTMLSelectElement, SelectFormProps>((props, 
         ...rest
     } = props
     return (
-        <div className={`form-group ${styles.formGroup}`}>
-            <label className={`B1 ${styles.label}`}>
-                {name}
-                {required ? "*" : ""}
-            </label>
             <select 
             id={id} 
             name={name} 
@@ -51,14 +46,13 @@ const SelectForm = React.forwardRef<HTMLSelectElement, SelectFormProps>((props, 
 
                     return (
                         <option key={key} value={option.value}>
-                            {option.label}
+                            {option.name}
                         </option>
                     )
                 })}
             </select>
-        </div>
     );
 
 })
-
+SelectForm.displayName = 'SelectForm';
 export default SelectForm;
