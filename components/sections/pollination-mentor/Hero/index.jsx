@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Col, Container, Row } from "react-bootstrap"
 
-import styles from "./Hero.module.scss"
+import styles from "./hero.module.scss"
 import data from "../../../../mockdata/pollination.json"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 import { Button } from "../../../elements/Button"
