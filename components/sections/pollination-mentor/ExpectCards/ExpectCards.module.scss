@@ -1,0 +1,23 @@
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 14rem;
+}
+
+@media (max-width: 1024px) {
+  .sectionContainer {
+    gap: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    gap: 0;
+  }
+}
+@media (max-width: 576px) {
+  .heading {
+    font-size: 2.4rem;
+    white-space: nowrap;
+  }
+}

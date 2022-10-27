@@ -6,7 +6,7 @@
 }
 
 .bodyContainer {
-  margin: 0 0 1rem;
+  margin: 0 1rem 1rem;
   padding: 4rem;
   // position: absolute;
   // top: 20%;
@@ -19,6 +19,7 @@
   text-align: center;
   position: relative;
   max-width: 167px;
+  width: 100%;
 }
 .volunteerBodyContainer {
   padding: 4rem 0;
@@ -29,6 +30,6 @@
     padding: 4rem 1.5rem 1.5rem;
   }
   .volunteerCardContainer {
-    max-width: 127px;
+    // max-width: 151px;
   }
 }

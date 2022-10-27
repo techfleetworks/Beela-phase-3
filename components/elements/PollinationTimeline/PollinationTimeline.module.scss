@@ -1,0 +1,35 @@
+@import "../../../styles/variables.scss";
+.sessionContainer {
+  width: 100%;
+}
+.timelineContainer {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+}
+.circleWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  height: 176px;
+  width: 176px;
+  border-radius: 50%;
+  background-color: $PRIMARY_HONEY;
+}
+@media (max-width: 900px) {
+  .circleWrapper {
+    height: 150px;
+    width: 150px;
+    p {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sessionContainer {
+    display: none;
+  }
+}

@@ -7,7 +7,8 @@
 .headingContainer {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 1rem;
 }
 
 .imageContainer {
@@ -16,7 +17,7 @@
 }
 .imageContainer > span {
   overflow: visible;
-  box-shadow: 22px 24px rgb(230, 198, 25);
+  box-shadow: 22px 24px $PRIMARY_HONEY;
 }
 
 .headingText {
@@ -67,6 +68,7 @@
   }
   .headingContainer {
     flex-direction: column;
+    gap: 0;
   }
   .headingText {
     width: 100%;
