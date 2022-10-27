@@ -32,6 +32,10 @@
   padding: 9.6rem 13rem;
 }
 
+.pollination {
+  padding: 8rem;
+}
+
 .none {
   padding: 0;
 }
@@ -42,6 +46,9 @@
   }
   .paymentform {
     padding: 7rem 11rem;
+  }
+  .pollination {
+    padding: 6rem 4rem;
   }
 }
 
@@ -55,6 +62,9 @@
   .paymentform {
     padding: 5.6rem 9.6rem;
   }
+  .pollination {
+    padding: 5rem 3rem;
+  }
 }
 
 @media (max-width: 900px) {
@@ -66,5 +76,8 @@
   }
   .paymentform {
     padding: 4rem 2rem;
+  }
+  .pollination {
+    padding: 5rem 2rem;
   }
 }

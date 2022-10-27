@@ -8,9 +8,11 @@ const Donation: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Beela</title>
-        <meta name="BEELA" content="Beela | " />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Donate - Beela</title>
+        <meta
+          name="description"
+          content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
+        />
       </Head>
       <Hero />
       <Donatefaq />
