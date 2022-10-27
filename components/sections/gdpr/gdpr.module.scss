@@ -1,0 +1,11 @@
+@import '/styles/variables.scss';
+
+.hyperlink {
+    color: $PRIMARY_BERRY;
+    padding-left: 5px;
+    text-decoration: underline;
+}
+
+.sectionWrap {
+    margin-bottom: 3.5rem;
+}
