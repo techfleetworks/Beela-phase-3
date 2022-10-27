@@ -6,10 +6,12 @@ import styles from "./Hero.module.scss"
 
 export default function Hero() {
   return (
+
     <SectionWrapper color="SECONDARY_CREAM" padding="pollination">
       <div className={styles.sectionContainer}>
         <div className={styles.headingContainer}>
           <h1 className={`primary-berry mb-3`}>Beela Programmes</h1>
+
         </div>
         <Container fluid className="p-0">
           <Row className={styles.contentContainer}>

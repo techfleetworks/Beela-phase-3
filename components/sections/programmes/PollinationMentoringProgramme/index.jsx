@@ -2,12 +2,13 @@ import Image from "next/image"
 import { Container, Row, Col } from "react-bootstrap"
 
 import { Button } from "../../../elements/Button"
+import PollinationTimeline from "../../../elements/PollinationTimeline"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 import styles from "./PollinationMentoringProgramme.module.scss"
 
 export default function PollinationMentoringProgramme() {
   return (
-    <SectionWrapper color="SECONDARY_CREAM">
+    <SectionWrapper color="SECONDARY_CREAM" padding="none">
       <div className={styles.sectionContainer}>
         <h2 className={`text-center primary-berry ${styles.heading}`}>
           Pollination Mentoring Programme
@@ -32,11 +33,11 @@ export default function PollinationMentoringProgramme() {
             </p>
           </div>
         </div>
-
+        <PollinationTimeline />
         <div className={styles.moreInfoContainer}>
           <div className={styles.infoWrapper}>
-            <h4 className="primary-berry">Become a Mentee</h4>
-            <p className="B2 text-center">
+            <h4 className="h5">Become a Mentee</h4>
+            <p className="B1 text-center">
               Whether you&apos;re exploring a tech field or applying to jobs, a mentor can help you
               with your individualized needs.
             </p>
@@ -49,8 +50,8 @@ export default function PollinationMentoringProgramme() {
             </div>
           </div>
           <div className={styles.infoWrapper}>
-            <h4 className="primary-berry">Become a Mentor</h4>
-            <p className="B2 text-center">
+            <h4 className="h5">Become a Mentor</h4>
+            <p className="B1 text-center">
               Share your experiences and make a difference in a mentee&apos;s life. Continue to
               learn through mentoring.
             </p>

@@ -46,18 +46,23 @@
   .sectionDivider {
     display: none;
   }
+
   .sectionContainer {
     align-items: center;
+
     margin-bottom: 3rem;
+
   }
   .headingContainer {
     text-align: center;
   }
+
   .contentContainer {
     flex-direction: column-reverse;
     max-width: 500px;
     margin: 0 auto;
     gap: 2.4rem;
+
   }
 
   .infoText {
@@ -70,5 +75,11 @@
   }
   .applyBtn {
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 730px) {
+  .headingText {
+    display: none;
   }
 }
