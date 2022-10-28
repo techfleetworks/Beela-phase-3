@@ -7,7 +7,7 @@
       {
         "id": 0,
         "name": "Yatwan Hui",
-        "imgSource": "poll-test_yatwan.png",
+        "imgSource": "poll-test_yatwan.svg",
         "altText": "Portait of Yatwan Hui",
         "title": "Beela Mentee",
         "description": "I loved the Beela Pollination Programme's focus on immigrant women in Sweden transitioning into tech. This was a clear thread in all of the workshops so that even well-trodden topics like CV writing were much more tailored to our specific needs. It's also exciting to see the programme grow, adapt and experiment with new ideas such as getting involved in real-life projects to practice our new skills."
@@ -15,7 +15,7 @@
       {
         "id": 1,
         "name": "Francisca Alliende",
-        "imgSource": "poll-test_francisca.png",
+        "imgSource": "poll-test_francisca.svg",
         "altText": "Portait of Francisca Alliende",
         "title": "Beela Mentee then Mentor - Data Analyst",
         "description": "When I arrived in Stockholm, I was new to Sweden and looking for a tech job for the first time, I felt insecure, lost and unmotivated, until I joined the Beela mentorship program as a mentee, which helped me better understand the Swedish job market and feel accompanied in this process and soon after that I found a job! Now I am a mentor in Beela and I want to continue participating as much as I can in this wonderful network."
@@ -30,7 +30,7 @@
       {
         "id": 0,
         "name": "Yi Li",
-        "imgSource": "poll-test_yi.png",
+        "imgSource": "poll-test_yi.svg",
         "altText": "Portait of Yi Li",
         "title": "Beela Mentor - UX Designer",
         "description": "I like how we help each other and grow together in Beela. The journey has brought me new reflections, inspirations, and many motivations."
@@ -38,7 +38,7 @@
       {
         "id": 1,
         "name": "Akzharkyn Duisembiyeva",
-        "imgSource": "poll-test_akzharkyn.png",
+        "imgSource": "poll-test_akzharkyn.svg",
         "altText": "Portait of Akzharkyn Duisembiyeva",
         "title": "Beela Mentor - Security Engineer",
         "description": "Beela programme gave me a chance to get to know so many people that are willing to support each other. As a mentor I have met truly inspiring, smart and brave people who are finding their way to Swedish tech field. While mentee can learn from my technical experience, I can also talk to people from various backgrounds and improve my own skills and knowledge."
