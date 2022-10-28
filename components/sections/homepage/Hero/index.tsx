@@ -6,7 +6,12 @@ import styles from "./Hero.module.scss"
 import { Button } from "../../../elements/Button"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 
-export const Hero = () => {
+
+import React from 'react'
+
+
+
+export default function  Hero() {
   return (
     <SectionWrapper padding="hero" color="GRADIENT" maxWidth={955}>
       <div className={styles.sectionContainer}>
