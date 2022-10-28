@@ -45,7 +45,7 @@ const CardDetails = (props: any) => {
   const [firstName, setFirstName] = useState("")
   const [lastName, setLastName] = useState("")
   const [emailAddress, setEmailAddress] = useState("")
-  const [phone, setPhone] = useState()
+  const [phone, setPhone] = useState(0)
   const [country, setCountry] = useState("")
 
   useEffect(() => { }, [
@@ -84,6 +84,7 @@ const CardDetails = (props: any) => {
       return
     }
 
+
     ev.preventDefault()
     setProcessing(true)
 
@@ -97,7 +98,7 @@ const CardDetails = (props: any) => {
     try {
       // create Stripe intent
       const { data: clientSecret } = await axios.post("/api/payment_intents", {
-        amount: 200 * 100,
+        amount: amount * 100,
       })
 
       // Create Payment Request
@@ -109,8 +110,7 @@ const CardDetails = (props: any) => {
           email: `${emailAddress}`,
           phone: `${phone}`,
           address: {
-            country: `${country}`,
-            postal_code: "31434",
+            country: `${country}`
           },
         },
       })
@@ -140,6 +140,10 @@ const CardDetails = (props: any) => {
       // setCheckoutError(err.message);
     }
     finally {
+      setFirstName("")
+      setLastName("")
+      setEmailAddress("")
+      setPhone(0)
       setProcessing(false)
     }
   }
@@ -279,6 +283,19 @@ const CardDetails = (props: any) => {
                   id="emailAddress"
                   onChange={handleEmail}
                 />
+              </Col>
+            </Row>
+            <Row className={styles.rowSpacing}>
+              <Col >
+                {/* <CheckboxForm
+                  id="enabled-message-notifications"
+                  name="check box name"
+                  title="title here"
+                  checked
+                  // onChange={(value: boolean) => {
+                  //   propsController.onChange(value)
+                  // }}
+                /> */}
               </Col>
             </Row>
           </div>

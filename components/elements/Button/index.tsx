@@ -29,7 +29,7 @@ interface ButtonProps {
 }
 
 export const Button = (props: ButtonProps) => {
-  const { className, disabled, href, style, title, type = "button", variant, onClick } = props
+  const { className,children, disabled, href, style, title, type = "button", variant, onClick } = props
   return (
     <>
       {!href ? (
@@ -41,6 +41,7 @@ export const Button = (props: ButtonProps) => {
           type={type}
         >
           {title}
+          {children}
         </button>
       ) : href.charAt(0) === "/" ? (
         <Link href={`${href}`}>
@@ -53,6 +54,7 @@ export const Button = (props: ButtonProps) => {
               type={type}
             >
               {title}
+             {children}
             </button>
           </a>
         </Link>
@@ -66,6 +68,7 @@ export const Button = (props: ButtonProps) => {
             type={type}
           >
             {title}
+            {children}
           </button>
         </a>
       )}
