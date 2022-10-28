@@ -1,0 +1,76 @@
+.outerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sectionWrapper {
+  padding: 6.4rem 0;
+}
+
+.sectionContainer,
+.reverseSectionContainer {
+  align-items: center;
+  gap: 6.6rem;
+}
+.reverseSectionContainer {
+  flex-direction: row-reverse;
+}
+
+.textContainer {
+  max-width: 330px;
+  margin: 0 3rem;
+  padding: 0;
+}
+
+.button {
+  margin-top: 6rem;
+}
+
+@media (max-width: 1024px) {
+  .sectionContainer,
+  .reverseSectionContainer {
+    gap: 2.6rem;
+  }
+  .button {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer,
+  .reverseSectionContainer {
+    gap: 0;
+  }
+}
+
+@media (max-width: 618px) {
+  .sectionWrapper {
+    padding: 3rem 2rem;
+  }
+  .sectionContainer,
+  .reverseSectionContainer {
+    gap: 1rem;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+  .sectionHeading {
+    text-align: center;
+  }
+  .button {
+    margin: 0 auto;
+  }
+  .textContainer {
+    max-width: 32rem;
+    // margin: 0;
+  }
+  .imageContainer {
+    max-width: 33rem;
+  }
+}
+
+@media (max-width: 451px) {
+  .textContainer,
+  .imageContainer {
+    margin: 0 2rem;
+  }
+}
