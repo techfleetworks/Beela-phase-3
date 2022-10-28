@@ -1,0 +1,177 @@
+
+@import '/styles/variables.scss';
+
+$layout-padding:80px 48px 48px;
+
+.setup-card {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  min-height: 570px;
+  flex-wrap: wrap;
+    .setup-card-form {
+      background-color: $WHITE;
+      flex-direction: row;
+      padding: 20px;
+      // flex: 1.5;
+      justify-content: space-between;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+
+      .InputContainer .InputElement {
+        position: absolute;
+        top: 0;
+        background: red;
+    }
+      .btn-wrapper {
+         display: flex;
+         justify-content: flex-end;
+        .btn-continue {
+          box-sizing: content-box;
+          padding: 18px 40px;
+          font-size: 20px;
+          font-weight: 700;
+          border-radius: 8px;
+          // background: #6A29FF;
+          border: none;
+          color: #fff;
+          // cursor: pointer;
+          width: 144px;
+
+          .ant-spin-dot-item {
+            // background-color:$ppl-white;
+          }
+
+      }
+          .ant-btn-primary[disabled],
+          .btn-continue[disabled]:hover {
+            background: #b9a4e6;
+            color: #ffffff;
+            
+          }
+          
+          .btn-continue[disabled]:focus {
+            background: #b9a4e6;
+
+          }
+        
+     
+      }
+      //container for the form inputs
+          input, .StripeElement { 
+            width: 100%; 
+            border-radius: 3px; 
+            border: 0.75px solid #aaa; 
+            padding: 0 10px; 
+            margin-bottom:20px;
+
+            background: #f7f8fe;
+          border-radius: 8px;
+        //   border-left: 1px solid $color-neutral;
+          font-size: 20px;
+
+          transition: all 0.4s;
+          line-height: 1.5715;
+
+          }
+       
+         input { line-height:36px; }
+
+        // styles for Chrome autofill
+          .StripeElement--webkit-autofill { 
+          background: transparent !important; 
+        }
+            //labels
+          label { 
+              display:block; 
+              margin:0 0 4px 0; 
+              line-height:1; height:auto; 
+
+
+              font-family: 'Nunito Sans', sans-serif;
+              // font-style: normal;
+              font-weight: 700;
+              font-size: 16px;
+              // letter-spacing: 0.15em;
+              color: #000000ea;
+              padding-bottom: 5px;
+            }
+      
+      
+    }
+    
+    .setup-card-input-wrapper {
+      // padding: 80px 48px 48px;
+      display: flex;
+      justify-content: space-between;
+      gap: 2%;
+    margin-bottom: 15px;
+
+      div {
+        flex:1;
+        margin-top: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+      }
+
+      .input-field {
+        // width: fit-content;
+        flex: 1;
+      }
+      
+    }
+    .setup-card-info {
+      flex: 1;
+      padding:20px;
+      background: #F7F8FE;
+    }
+    .payment-card-wrapper {
+      width: 320px;
+      height: 198px;
+      border-radius: 8px;
+    //   background: $card-gradient-navy-blue;
+      display: flex;
+      flex-direction: column;
+  
+      .payment-card-header {
+        // background: $card-gradient-navy-blue;
+        border-top-right-radius: 8px;
+        border-top-left-radius: 8px;
+        height: 52px;
+        // color:$ppl-white;
+        padding: 15px;
+    
+      }
+      .payment-card-body {
+        // background:$card-gradient-navy-transparent;
+        border-bottom-right-radius: 8px;
+        border-bottom-left-radius: 8px;
+        height: 100%;
+        // color:$ppl-white;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        .payment-card-number {
+        //   font-size:30px;
+        //   font-weight: $font-weight-bold;
+          margin-bottom: 0.5em;
+        }
+        .payment-card-name {
+          display: flex;
+        //   font-size:$font-size-md;
+        //   font-weight: $font-weight-normal;
+
+          .name{
+            margin:5px
+          }
+          .expiry {
+            margin:5px
+          }
+        }
+      }
+    }
+}

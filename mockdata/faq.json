@@ -1,0 +1,78 @@
+{
+    "Frequently Asked Questions": [
+        {
+         "id": 0,
+         "question": "What background do I need to be a mentor?",
+         "answer": "We ask that you have successfully landed your first tech job in Sweden. Whether you’re in your first tech job or 10th, we believe everyone can offer a valuable perspective."
+        },
+        {
+          "id": 1,
+          "question": "What are you looking in mentors?",
+          "answer": "We are looking for mentors who are eager to share their experiences, encouraging, and knowledgeable about the tech scene in Sweden."  
+        },
+        {
+           "id": 2,
+           "question": "Are the mentor meetings in person or virtual?",
+           "answer": "Most of the mentor sessions are virtual. However, if mentors and mentees live in the same city and feel comfortable meeting up, we encourage that."
+        },
+        {
+           "id": 3,
+           "question": "Will I be paid for mentoring?" ,
+           "answer": "No. The Pollination Mentoring Programme is free for mentees. This programme is a valuable opportunity to enhance your leadership and communication skills within a supportive community."
+        },
+        {
+            "id": 4,
+            "question": "I still have questions. Who should I ask?",
+            "answer": "Email us at contact@beela.se!"
+        },
+        {
+            "Donation FAQ Qestions": [
+                {
+                    "id":0,
+                    "question": "What is Beela’s mission?",
+                    "answer": "Our goal is to integrate women and non-binary people in Sweden into the tech world, while promoting diversity, equity and inclusion."
+                },
+                {
+                    "id": 1,
+                    "question": "Who does my donation help?",
+                    "answer": "Your donation will directly support immigrant women and non-binary people seeking to learn more about the tech industry in Sweden as they travel down the path to find employment opportunities. Donations will specifically help in areas such as covering operational costs and salaries to project leaders. It will also support networking events which will include activities such as career fairs. Our goal is to develop the leadership skills of our mentees as we further prepare them to transition into not only tech careers, but also the Swedish community at large."
+                },
+                {
+                    "id": 2,
+                    "question": "Why donate to Beela?",
+                    "answer": "Beela appreciates every contribution given to our organization. Career transitions can be difficult for anyone, but unfortunately, women and non-binary immigrants, particularly those from non-European countries, struggle more in the Swedish job market than their peers. This employment gap can seem daunting. Beela has made it their mission to close the gap. You can count on us to optimize your donations in a way that is beneficial to further developing the tech careers and personal growth of immigrant women and non-binary people throughout Sweden."
+                },
+                {
+                    "id": 3,
+                    "question": "Is my donation tax deductible?",
+                    "answer": " All donations to Beela from Sweden are tax deductible to the extent allowed by law, as long as no goods or services were exchanged. You will receive an email confirmation immediately after submitting your donation, and this email can serve as a receipt for tax purposes. However, donations made by donors in the United States are not tax deductible. "
+                },
+                {
+                    "id": 4,
+                    "question": "Can I make an anonymous donation?",
+                    "answer": "Yes. When you make an online donation you will be given the option to select, anonymous donation. This ensures that your name will not appear on our website or printed materials. Please note that Beela will keep a record of your name and the information associated with your gift in a secure database for payment processing purposes. Beela will never share this information and will only use it for the purpose of communicating with you directly."
+                },
+                {
+                    "id": 5,
+                    "question": "Can I make a recurring donation?",
+                    "answer": "Yes, donors have the option of scheduling a monthly recurring payment. In fact, this is something we encourage. It’s the fastest and easiest way to support non-binary and women immigrants searching for opportunities in the tech industry."
+                },
+                {
+                    "id": 6,
+                    "question": "How do I cancel or update my monthly donor information?",
+                    "answer": "You can modify or cancel your monthly donation at any time. If you would like to make a change to your monthly donation or update your personal information, please send an email to contact@Beela.se"
+                },
+                {
+                    "id": 7,
+                    "question": "Is my donation secure?",
+                    "answer": "Your security is important to us, and we take every measure to ensure your information is protected Beela's donation process is fully encrypted using industry best practices to ensure your personal data and credit card information is kept private and secure"
+                },
+                {
+                    "id": 8,
+                    "question": " Does Beela sell, rent or trade donor information to other agencies?",
+                    "answer": "No. Beela respects and maintains the privacy of those who have entrusted us with their donations. We will not pass on your email or any contact information to third party vendors, companies or corporations. "
+                }
+            ]
+        }
+    ]
+}
