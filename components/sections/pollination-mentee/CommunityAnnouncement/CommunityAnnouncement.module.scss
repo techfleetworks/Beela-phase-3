@@ -1,0 +1,9 @@
+.sectionContainer {
+  text-align: center;
+}
+
+@media (max-width: 514px) {
+  .sectionContainer h2 {
+    font-size: 2.4rem;
+  }
+}
