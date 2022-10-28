@@ -7,15 +7,15 @@ import { SectionWrapper } from "../../../layout/SectionWrapper"
 import { Button } from "../../../elements/Button"
 
 export default function Hero() {
-  let buttonHref = data.session === true && data.mentor.url
-  let showButton = data.session === true ? "" : "none"
+  let buttonHref = data.mentor.session === true && data.mentor.applicationUrl
+  let showButton = data.mentor.session === true ? "" : "none"
 
   return (
     <SectionWrapper color="SECONDARY_CREAM" padding="pollination">
       <div className={styles.sectionContainer}>
         <div className={styles.headingContainer}>
           <h1 className={`primary-berry h2 mb-3`}>Pollination For Mentors</h1>
-          <h3 className={`primary-berry ${styles.subheading}`}>{data.message}</h3>
+          <h3 className={`primary-berry ${styles.subheading}`}>{data.mentor.message}</h3>
         </div>
         <Container fluid className="p-0">
           <Row className={styles.contentContainer}>

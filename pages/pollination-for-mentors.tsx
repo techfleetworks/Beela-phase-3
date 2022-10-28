@@ -1,26 +1,21 @@
 import type { NextPage } from "next"
-import Popper from "@popperjs/core"
 import Link from "next/link"
 import Head from "next/head"
-import Testimonials from "../components/sections/homepage/Testimonials"
-import React, { Component } from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from "react-responsive-carousel"
-// React-Bootstrap icons
-import { Spotify } from "react-bootstrap-icons"
 
-// React-Bootstrap imports
-import Col from "react-bootstrap/Col"
-import Row from "react-bootstrap/Row"
-import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
-import Image from "react-bootstrap/Image"
 import Accordion from "react-bootstrap/Accordion"
+
+import data from "../mockdata/pollination.json"
 
 import Hero from "../components/sections/pollination-mentor/Hero"
 import ExpectCards from "../components/sections/pollination-mentor/ExpectCards"
+import PollinationCarousel from "../components/elements/PollinationCarousel"
 
 const PollinationForMentors: NextPage = () => {
+  let testimonials = data.mentor.testimonials
+
+  console.log(testimonials)
+
   return (
     <div>
       <Head>
@@ -32,6 +27,7 @@ const PollinationForMentors: NextPage = () => {
       </Head>
       <Hero />
       <ExpectCards />
+      <PollinationCarousel color="SECONDARY_CORNFLOWER" data={testimonials} />
 
       {/* Hero */}
       <div className="container-fluid overflow-hidden" id="wrapper">
@@ -95,56 +91,6 @@ const PollinationForMentors: NextPage = () => {
             </Accordion>
           </Container>
         </Container>
-
-        <Carousel showArrows={true} showThumbs={false} showStatus={false} autoPlay={false}>
-          <div>
-            <div className="hexagon">
-              <img src="/images/testVanessa.png" alt="placeholder" />
-            </div>
-            <div className="myCarousel">
-              <h3>Yi Li</h3>
-              <h4>Beela Mentor - UX Designer</h4>
-              <p>
-                I like how we help each other and grow together in Beela. The journey has brought me
-                new reflections, inspirations, and many motivations.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div className="hexagon">
-              <img src="/images/testIvy.png" alt="placeholder" />
-            </div>
-            <div className="myCarousel">
-              <h3>Akzharkyn Duisembiyeva </h3>
-              <h4>Beela Mentor - Security Engineer</h4>
-              <p>
-                Beela programme gave me a chance to get to know so many people that are willing to
-                support each other. As a mentor I have met truly inspiring, smart and brave people
-                who are finding their way to Swedish tech field. While mentee can learn from my
-                technical experience, I can also talk to people from various backgrounds and improve
-                my own skills and knowledge.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div className="hexagon">
-              <img src="/images/testIvy.png" alt="placeholder" />
-            </div>
-            <div className="myCarousel">
-              <h3>Rachael Ahn </h3>
-              <h4>Beela Mentor - Data Scientist</h4>
-              <p>
-                Beela&apos;s mentorship program allowed me to connect with other immigrant women in
-                Sweden and prompt meaningful discussions about data, adjusting to a new culture,
-                self-assurance in applying for jobs, and more. Highly recommend others entering the
-                tech industry to join the Beela community and especially the mentorship program to
-                grow your network.{" "}
-              </p>
-            </div>
-          </div>
-        </Carousel>
 
         <Container
           style={{

@@ -66,6 +66,9 @@
     max-width: 268px;
     margin: 8rem auto 0;
   }
+}
+
+@media (max-width: 767px) {
   .bodyContainer {
     height: auto;
   }
