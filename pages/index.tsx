@@ -4,7 +4,7 @@ import Popper from "@popperjs/core"
 import Head from "next/head"
 
 import Testimonials from "../components/sections/homepage/Testimonials"
-import  Hero from "../components/sections/Homepage/Hero/index"
+import  Hero from "../components/sections/homepage/Hero/index"
 import { TeamCard } from "../components/elements/TeamCard"
 
 // React-Bootstrap icons
