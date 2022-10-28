@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app"
 import StrapiApolloProvider from "../graphql/apollo"
 import Head from "next/head"
-
+import { SSRProvider } from 'react-bootstrap';
 // Add bootstrap css
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/css/bootstrap.min.css"
@@ -15,9 +15,11 @@ import PageLayout from "../components/layout/PageLayout"
 function App({ Component, pageProps }: AppProps) {
   return (
     // <StrapiApolloProvider>
-    <PageLayout>
-      <Component {...pageProps} />
-    </PageLayout>
+    <SSRProvider>
+      <PageLayout>
+        <Component {...pageProps} />
+      </PageLayout>
+    </SSRProvider>
     // </StrapiApolloProvider>
   )
 }
