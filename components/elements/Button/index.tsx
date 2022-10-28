@@ -24,6 +24,7 @@ interface ButtonProps {
   title: any
   type?: any
   variant: string
+  children?:any
   onClick?: () => void
 }
 

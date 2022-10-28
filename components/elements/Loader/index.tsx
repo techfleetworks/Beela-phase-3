@@ -2,7 +2,9 @@ import { Spinner } from 'react-bootstrap';
 
 const BeelaLoader = (props: any) => {
     return (
-        <Spinner animation="border" variant="info" />
+        <div style={{margin:'10px'}}>
+            <Spinner animation="border" variant="dark" />
+        </div>
     )
 }
 

@@ -1,4 +1,5 @@
 import styles from "./inputfield.module.scss"
+import classNames from 'classnames'
 
 interface IInputFieldProps {
   className?: string
@@ -6,7 +7,7 @@ interface IInputFieldProps {
   disabled?: boolean
   errorMessage?: string
   id?: string
-  label: string
+  label?: string
   onChange?: React.ChangeEventHandler<HTMLInputElement>
   placeholder?: string
   required?: boolean
@@ -23,10 +24,13 @@ export const InputField = (props: IInputFieldProps) => {
     label,
     placeholder,
     required,
+    className,
     ...rest
   } = props
   return (
-    <div className={`form-group ${styles.formGroup}`}>
+    // {classNames('form-input', classNameFormInput, isFocused || inputActive ? 'active' : '')
+    // <div className={`form-group ${styles.formGroup}`}>
+    <div className={classNames('form-group ', styles.formGroup, className ? className : '' )}>
       <label className={`B1 ${styles.label}`}>
         {label}
         {required ? "*" : ""}
