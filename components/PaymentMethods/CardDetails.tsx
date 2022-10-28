@@ -23,7 +23,6 @@ import { InputField } from "../elements/InputField"
 import { SectionWrapper } from "../layout/SectionWrapper"
 import { Container, Row, Col } from "react-bootstrap"
 import SelectCountry from "../SelectCountry"
-import CheckboxForm from "../elements/CheckBox/CheckboxForm"
 
 const CardDetails = (props: any) => {
   const { amount } = props
