@@ -14,7 +14,7 @@ export default async (req, res) => {
 
       const paymentIntent = await stripe.paymentIntents.create({
         amount,
-        currency: "usd"
+        currency: "sek"
       });
 
       console.log('check intent res', paymentIntent)
