@@ -1,26 +1,21 @@
 import type { NextPage } from "next"
-import Popper from "@popperjs/core"
 import Link from "next/link"
 import Head from "next/head"
-import Testimonials from "../components/sections/homepage/Testimonials"
-import React, { Component } from "react"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
-import { Carousel } from "react-responsive-carousel"
-// React-Bootstrap icons
-import { Spotify } from "react-bootstrap-icons"
 
 // React-Bootstrap imports
 import Col from "react-bootstrap/Col"
 import Row from "react-bootstrap/Row"
-import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
-import Image from "react-bootstrap/Image"
 import Accordion from "react-bootstrap/Accordion"
 
+import data from "../mockdata/pollination.json"
 import Hero from "../components/sections/pollination-mentee/Hero"
 import ExpectCards from "../components/sections/pollination-mentee/ExpectCards"
+import PollinationCarousel from "../components/elements/PollinationCarousel"
 
 const PollinationForMentees: NextPage = () => {
+  let testimonials = data.mentee.testimonials
+
   return (
     <div>
       <Head>
@@ -33,6 +28,7 @@ const PollinationForMentees: NextPage = () => {
 
       <Hero />
       <ExpectCards />
+      <PollinationCarousel color="PRIMARY_CORAL" data={testimonials} />
 
       {/* Hero */}
       <div className="container-fluid overflow-hidden" id="wrapper">
@@ -97,43 +93,6 @@ const PollinationForMentees: NextPage = () => {
             </Accordion>
           </Container>
         </Container>
-
-        <Carousel showArrows={true} showThumbs={false} showStatus={false} autoPlay={false}>
-          <div>
-            <div className="hexagon">
-              <img src="/images/testVanessa.png" alt="placeholder" />
-            </div>
-            <div className="myCarousel">
-              <h3>Yatwan Hui</h3>
-              <h4>Mentee</h4>
-              <p>
-                I loved the Beela Pollination Programme&apos;s focus on immigrant women in Sweden
-                transitioning into tech. This was a clear thread in all of the workshops so that
-                even well-trodden topics like CV writing were much more tailored to our specific
-                needs. It&apos;s also exciting to see the programme grow, adapt and experiment with
-                new ideas such as getting involved in real-life projects to practice our new skills.
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <div className="hexagon">
-              <img src="/images/testIvy.png" alt="placeholder" />
-            </div>
-            <div className="myCarousel">
-              <h3>Francisca Alliende </h3>
-              <h4>Beela Mentee then Mentor - Data Analyst</h4>
-              <p>
-                When I arrived in Stockholm, I was new to Sweden and looking for a tech job for the
-                first time, I felt insecure, lost and unmotivated, until I joined the Beela
-                mentorship program as a mentee, which helped me better understand the Swedish job
-                market and feel accompanied in this process and soon after that I found a job! Now I
-                am a mentor in Beela and I want to continue participating as much as I can in this
-                wonderful network.{" "}
-              </p>
-            </div>
-          </div>
-        </Carousel>
 
         <Container style={{ minHeight: "160px", alignItems: "center", marginTop: "3rem" }}>
           <h2 className="no_name_37 text-center " style={{ color: "#623762" }}>
