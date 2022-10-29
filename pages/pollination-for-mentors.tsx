@@ -14,8 +14,6 @@ import PollinationCarousel from "../components/elements/PollinationCarousel"
 const PollinationForMentors: NextPage = () => {
   let testimonials = data.mentor.testimonials
 
-  console.log(testimonials)
-
   return (
     <div>
       <Head>
