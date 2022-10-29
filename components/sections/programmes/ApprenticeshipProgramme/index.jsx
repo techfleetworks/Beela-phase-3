@@ -8,7 +8,7 @@ export default function ApprenticeshipProgramme() {
     <SectionWrapper padding="main" color="PRIMARY_CORAL" maxWidth={603}>
       <div className={styles.sectionContainer}>
         <Image
-          src="/icons/queen_bees.svg"
+          src="/images/queen_bees.png"
           height={319}
           width={325}
           alt="An illustration of three women standing next to one another"

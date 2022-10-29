@@ -17,7 +17,7 @@ export default function EmpowerInformInspire() {
           </Col>
           <Col sm={12} md={4} className="d-flex justify-content-center">
             <BeeCard
-              src="../icons/bee_announcement.svg"
+              src="../icons/bee_announcement.png"
               title="Inform"
               text="We spread the word about what’s happening in the tech world: bootcamps, code academies, courses, 
               and events."

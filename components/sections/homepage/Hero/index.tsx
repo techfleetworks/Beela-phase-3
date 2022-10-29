@@ -6,12 +6,9 @@ import styles from "./Hero.module.scss"
 import { Button } from "../../../elements/Button"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 
+import React from "react"
 
-import React from 'react'
-
-
-
-export default function  Hero() {
+export default function Hero() {
   return (
     <SectionWrapper padding="hero" color="GRADIENT" maxWidth={955}>
       <div className={styles.sectionContainer}>
@@ -19,7 +16,7 @@ export default function  Hero() {
           height={420}
           width={420}
           layout="intrinsic"
-          src="/icons/queen_bees.svg"
+          src="/images/queen_bees.png"
           alt="Illustraion of three women, one wearing glasses and a blue shirt, one wearing a shirt with the letter B and a crown, and the other in a polkadot shirt and a hijab."
         />
         <div className={styles.textContainer}>
