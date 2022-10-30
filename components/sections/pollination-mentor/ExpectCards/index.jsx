@@ -10,21 +10,21 @@ function ExpectCards() {
       id: 0,
       description:
         "Leverage your experience to help women and non-binary immigrants begin a tech career in Sweden.",
-      imgSource: "mentor-expect_1.svg",
+      imgSource: "mentor-expect_1.jpg",
       altText: "Image of a person pointing to something on a laptop for another person",
     },
     {
       id: 1,
       description:
         "Mentees most often need help with CVs, interviews, and navigating the Swedish job market.",
-      imgSource: "mentor-expect_2.svg",
+      imgSource: "mentor-expect_2.jpg",
       altText: "Image of a coffee mug",
     },
     {
       id: 2,
       description:
         "Our mentorship community is here to support you, whether you’re a first-time mentor or very experienced.",
-      imgSource: "mentor-expect_3.svg",
+      imgSource: "mentor-expect_3.jpg",
       altText: "Image of a video conferencing screen with three women as attendees",
     },
   ]

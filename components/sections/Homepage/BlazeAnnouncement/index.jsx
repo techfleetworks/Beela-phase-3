@@ -12,7 +12,7 @@ function BlazeAnnouncement(props) {
     >
       <div className="me-3">
         <Image
-          src="/icons/bee_announcement.svg"
+          src="/icons/bee_announcement.png"
           alt="Illustration of a bee shouting into a blue megaphone"
           height={187}
           width={186}

@@ -9,7 +9,7 @@ function SessionClosed(props) {
         <Col md={3}>
           <Image
             alt="Illustartion of a bee making an announcement using a megaphone"
-            src="../icons/bee_announcement.svg"
+            src="../icons/bee_announcement.png"
             width={186}
             height={186}
           />

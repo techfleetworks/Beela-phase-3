@@ -7,7 +7,7 @@ export default function OurMission() {
     <SectionWrapper color="PRIMARY_CORAL" maxWidth={900}>
       <div className={styles.sectionContainer}>
         <Image
-          src="/icons/queen_bees.svg"
+          src="/images/queen_bees.png"
           height={319}
           width={325}
           alt="Our mission icon - an illustration of three women standing next to one another"

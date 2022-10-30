@@ -8,19 +8,21 @@ import styles from "./Hero.module.scss"
 import { Button } from "../../../elements/Button"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 
-export default function  Hero() {
+
+export default function Hero() {
+
   return (
     <SectionWrapper padding="hero" color="GRADIENT" maxWidth={1200}>
       <div className={styles.sectionContainer}>
-        <div className={styles.imageContainer}>
-          <Image
-            height={420}
-            width={420}
-            layout="intrinsic"
-            src="/icons/queen_bees.svg"
-            alt="Illustraion of three women, one wearing glasses and a blue shirt, one wearing a shirt with the letter B and a crown, and the other in a polkadot shirt and a hijab."
-          />
-        </div>
+
+        <Image
+          height={420}
+          width={420}
+          layout="intrinsic"
+          src="/images/queen_bees.png"
+          alt="Illustraion of three women, one wearing glasses and a blue shirt, one wearing a shirt with the letter B and a crown, and the other in a polkadot shirt and a hijab."
+        />
+
         <div className={styles.textContainer}>
           <h2 className={`primary-berry ${styles.heading}`}>
             Bee <span className="svg-underline"> supported</span>,

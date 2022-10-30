@@ -4,4 +4,10 @@
 
 .imageContainer {
   height: 14rem;
+  width: auto;
+  margin: 0 auto;
+  > img {
+    height: 100%;
+    width: auto;
+  }
 }
