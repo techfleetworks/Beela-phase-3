@@ -1,5 +1,5 @@
 {
-    "Frequently Asked Questions": [
+    "mentorFaq": [
         {
          "id": 0,
          "question": "What background do I need to be a mentor?",
@@ -26,7 +26,7 @@
             "answer": "Email us at contact@beela.se!"
         },
         {
-            "Donation FAQ Qestions": [
+            "Donation FAQ ": [
                 {
                     "id":0,
                     "question": "What is Beela’s mission?",
