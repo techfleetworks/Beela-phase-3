@@ -2,9 +2,13 @@ import type { NextPage } from "next"
 import Head from "next/head"
 import { Hero } from "../components/sections/donate/Hero"
 import OtherWaysToHelp from "../components/sections/donate/OtherWaysToHelp"
-import Donatefaq from "../components/donatefaq/donatefaq"
+import FAQ from "../components/FAQ"
+import data from "../mockdata/allfaq.json"
+import { SectionWrapper } from "../components/layout/SectionWrapper"
+import { Container } from "react-bootstrap"
 
 const Donation: NextPage = () => {
+  let faqs = data.donationFaq
   return (
     <div>
       <Head>
@@ -15,7 +19,7 @@ const Donation: NextPage = () => {
         />
       </Head>
       <Hero />
-      <Donatefaq />
+      <FAQ data={faqs} title="Donation FAQs"/>
       <OtherWaysToHelp />
     </div>
   )

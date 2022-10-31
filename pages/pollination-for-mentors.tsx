@@ -7,7 +7,7 @@ import React, { Component } from "react"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import { Carousel } from "react-responsive-carousel"
 // React-Bootstrap icons
-import { Spotify } from "react-bootstrap-icons"
+
 
 // React-Bootstrap imports
 import Col from "react-bootstrap/Col"
@@ -15,12 +15,14 @@ import Row from "react-bootstrap/Row"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
-import Accordion from "react-bootstrap/Accordion"
 
+import FAQ from "../components/FAQ";
+import data from "../mockdata/allfaq.json"
 import Hero from "../components/sections/pollination-mentor/Hero"
 import ExpectCards from "../components/sections/pollination-mentor/ExpectCards"
 
 const PollinationForMentors: NextPage = () => {
+  let faqs = data.mentorFaq
   return (
     <div>
       <Head>
@@ -32,9 +34,11 @@ const PollinationForMentors: NextPage = () => {
       </Head>
       <Hero />
       <ExpectCards />
+      <FAQ data={faqs} title="Frequently Asked Questions"/>
+
 
       {/* Hero */}
-      <div className="container-fluid overflow-hidden" id="wrapper">
+      {/*<div className="container-fluid overflow-hidden" id="wrapper">
         <Container fluid className="py-5" style={{ backgroundColor: "#F9F2D4" }}>
           <Container>
             <h3 className="no_name_37 text-center">Frequently Asked Questions</h3>
@@ -94,7 +98,7 @@ const PollinationForMentors: NextPage = () => {
               </Accordion.Item>
             </Accordion>
           </Container>
-        </Container>
+        </Container>*/}
 
         <Carousel showArrows={true} showThumbs={false} showStatus={false} autoPlay={false}>
           <div>
@@ -173,7 +177,6 @@ const PollinationForMentors: NextPage = () => {
           </Link>
         </Container>
       </div>
-    </div>
   )
 }
 

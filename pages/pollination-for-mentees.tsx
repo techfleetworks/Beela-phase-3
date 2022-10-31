@@ -15,12 +15,14 @@ import Row from "react-bootstrap/Row"
 import Card from "react-bootstrap/Card"
 import Container from "react-bootstrap/Container"
 import Image from "react-bootstrap/Image"
-import Accordion from "react-bootstrap/Accordion"
+import FAQ from "../components/FAQ"
+import data from "../mockdata/allfaq.json"
 
 import Hero from "../components/sections/pollination-mentee/Hero"
 import ExpectCards from "../components/sections/pollination-mentee/ExpectCards"
 
 const PollinationForMentees: NextPage = () => {
+  let faqs = data.menteeFaq
   return (
     <div>
       <Head>
@@ -33,70 +35,8 @@ const PollinationForMentees: NextPage = () => {
 
       <Hero />
       <ExpectCards />
-
-      {/* Hero */}
-      <div className="container-fluid overflow-hidden" id="wrapper">
-        <Container fluid className="py-5" style={{ backgroundColor: "#F9F2D4" }}>
-          <Container>
-            <h3 className="no_name_37 text-center">Frequently Asked Questions</h3>
-            <Accordion defaultActiveKey="0" className="my-5">
-              <Accordion.Item eventKey="0">
-                <Accordion.Header className="mb-0">
-                  What background do I need to apply for the programme?
-                </Accordion.Header>
-
-                <Accordion.Body className="B1">
-                  We are open to applicants from a range of backgrounds. Diversity only helps
-                  enhance the tech community! We&apos;ve had mentees in our programme who are
-                  exploring tech careers, as well as those who are actively applying to jobs.
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="1">
-                <Accordion.Header className="mb-0">
-                  <span className="mb-0 no_name_37"> What are you looking for in applicants?</span>
-                </Accordion.Header>
-                <Accordion.Body className="B1">
-                  We are looking for applicants who are focused on self-development, curious, and
-                  ready to make a mark on Sweden&apos;s tech scene!
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="2">
-                <Accordion.Header className="mb-0 no_name_37">
-                  <span className="mb-0 no_name_37"> What qualifications will my mentor have?</span>
-                </Accordion.Header>
-                <Accordion.Body className="B1">
-                  We ask that mentors have successfully landed their first tech job in Sweden.
-                  Whether they’re in their first tech job or 10th, we believe everyone can offer a
-                  valuable perspective.
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="3">
-                <Accordion.Header className="mb-0 no_name_37">
-                  <span className="mb-0 no_name_37">
-                    {" "}
-                    Are the mentor meetings in person or virtual?
-                  </span>
-                </Accordion.Header>
-                <Accordion.Body className="B1">
-                  Most of the mentor sessions are virtual. However, if mentors and mentees live in
-                  the same city and feel comfortable meeting up, we encourage that.
-                </Accordion.Body>
-              </Accordion.Item>
-
-              <Accordion.Item eventKey="4">
-                <Accordion.Header className="mb-0 no_name_37">
-                  <span className="mb-0 no_name_37">
-                    I still have questions. Who should I ask?{" "}
-                  </span>
-                </Accordion.Header>
-                <Accordion.Body className="B1">Email us at contact@beela.se!</Accordion.Body>
-              </Accordion.Item>
-            </Accordion>
-          </Container>
-        </Container>
+     
+      <FAQ data={faqs} title="Frequently Asked Questions"/>
 
         <Carousel showArrows={true} showThumbs={false} showStatus={false} autoPlay={false}>
           <div>
@@ -281,7 +221,6 @@ const PollinationForMentees: NextPage = () => {
           </Row>
         </section>
       </div>
-    </div>
   )
 }
 
