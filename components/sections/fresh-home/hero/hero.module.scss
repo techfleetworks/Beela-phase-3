@@ -1,0 +1,132 @@
+.sectionContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 7.7rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+}
+
+.heading {
+    width: 342px;
+}
+
+.text {
+    width: 467px;
+}
+
+@media (max-width: 1024px) {
+    .text {
+        width: 400px;
+        line-height: 1.7em;
+    }
+}
+
+@media (max-width: 1124px) and (min-width: 1024px) {
+    .text {
+        width: 380px;
+        line-height: 1.7em;
+    }
+}
+
+@media (max-width: 950px) {
+    .sectionContainer {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 912px) {
+    .sectionContainer {
+        padding: 0 1rem;
+    }
+
+    .imageContainer {
+        width: 100%;
+    }
+
+    .textContainer h2 {
+        font-size: 4.2rem;
+        line-height: 1.28em;
+        width: 100%;
+    }
+
+    .textContainer p {
+        font-size: 1.6rem;
+        line-height: 1.7em;
+    }
+
+    .heading {
+        width: 240px;
+    }
+}
+
+@media (max-width: 912px) and (min-width: 776px) {
+    .imageContainer {
+        width: 100%;
+    }
+
+    .textContainer {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .sectionContainer {
+        flex-direction: column;
+        gap: 4.6rem;
+    }
+
+    .imageContainer {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .textContainer {
+        align-items: center;
+        text-align: center;
+        max-width: 450px;
+        margin-bottom: 2rem;
+    }
+
+    .textContainer p {
+        font-size: 1.6rem;
+        line-height: 1.7em;
+        width: 100%;
+        margin-bottom: 1.6rem;
+    }
+
+    .textContainer h2 {
+        font-size: 4.4rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .textContainer {
+        gap: 1rem;
+    }
+
+    .textContainer p {
+        font-size: 1.6rem;
+        line-height: 1.7em;
+        width: 80%;
+    }
+}
+
+@media (max-width: 412px) {
+    .text {
+        width: 271px;
+    }
+
+    .textContainer p {
+        font-size: 1.6rem;
+        line-height: 1.7em;
+        width: 80%;
+    }
+}
