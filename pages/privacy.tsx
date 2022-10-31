@@ -5,8 +5,7 @@ import Head from "next/head"
 //Component imports
 import { PriNotice } from "../components/sections/gdpr"
 
-
-const gdpr: NextPage = () => {
+const Privacy: NextPage = () => {
   return (
     <div>
       <Head>
@@ -18,4 +17,4 @@ const gdpr: NextPage = () => {
     </div>
   )
 }
-export default gdpr
+export default Privacy
