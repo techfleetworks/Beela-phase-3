@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Button } from "../../../elements/Button"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
-import styles from "./PollinationProgramme.module.scss"
+import styles from "./programmes.module.scss"
 
 function PollinationProgramme(props) {
   return (

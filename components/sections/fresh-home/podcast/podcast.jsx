@@ -2,7 +2,7 @@ import { Spotify } from "react-bootstrap-icons"
 import Image from "next/image"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 
-import styles from "./BeelasTalkPodcast.module.scss"
+import styles from "./podcast.module.scss"
 
 export default function BeelasTalkPodcast() {
   return (

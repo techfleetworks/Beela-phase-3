@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
-import styles from "./Career.module.scss"
+import styles from "./career.module.scss"
 
 import BeeCard from "../../../elements/BeeCard"
 

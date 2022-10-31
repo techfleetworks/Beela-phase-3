@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
-import styles from "./BlazeAnnouncement.module.scss"
+import styles from "./blaze.module.scss"
 
 function BlazeAnnouncement(props) {
   return (
@@ -19,14 +19,12 @@ function BlazeAnnouncement(props) {
           layout="intrinsic"
         />
       </div>
-
       <h3 className={`primary-berry my-4 ${styles.text}`}>
         Proud to announce Beela won the{" "}
         <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
           2022 BLAZE Catalyst award!
         </a>
       </h3>
-
       <div className="m-5">
         <a href="https://diversify.no/blaze-awards-2022/" target="_blank" rel="noreferrer">
           <Image
