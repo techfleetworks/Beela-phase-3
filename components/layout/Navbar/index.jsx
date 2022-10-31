@@ -86,7 +86,12 @@ const NavBar = () => {
                   </Link>
                 </div>
 
-                <Button href="/donate" variant="primary_darkBG" title="Donate" />
+                <Button
+                  className={styles.donateButton}
+                  href="/donate"
+                  variant="primary_darkBG"
+                  title="Donate"
+                />
               </Nav>
             </Container>
           </Navbar.Collapse>

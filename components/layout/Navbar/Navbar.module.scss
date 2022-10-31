@@ -84,7 +84,11 @@
   }
 
   .linkWrapper {
-    gap: 3rem;
+    width: auto;
+    display: inline-block;
+  }
+  .donateButton {
+    margin-top: 2rem;
   }
   .container > div {
     background: $TRUE_WHITE;
