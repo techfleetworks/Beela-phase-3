@@ -1,13 +1,15 @@
 import Image from "next/image"
 
 import { SectionWrapper } from "../../../layout/SectionWrapper"
-import styles from "./heero.module.scss"
+import styles from "./Hero.module.scss"
 
-export default function hero() {
+export default function Hero() {
   return (
     <SectionWrapper color="SECONDARY_CREAM" padding="none">
       <div className={styles.sectionContainer}>
-        <h2 className="primary-berry" style={{marginTop: "2rem", marginBottom: "2rem"}}>Stay Connected</h2>
+        <h2 className="primary-berry" style={{ marginTop: "2rem", marginBottom: "2rem" }}>
+          Stay Connected
+        </h2>
         <div className={styles.imgContainer}>
           <Image
             height={369}
@@ -19,10 +21,12 @@ export default function hero() {
           />
         </div>
         <div className={styles.textContainer}>
-          <h4 style={{marginTop: "2rem", marginBottom: "2rem"}} className={styles.h4}>Come Join Us!</h4>
-          <p className="B1 mb-4" style={{lineHeight: "170%"}}>
-          We`&apos;`re ready to support your tech journey in Sweden in a variety of ways. 
-          We want to welcome you and encourage you along the way. 
+          <h4 style={{ marginTop: "2rem", marginBottom: "2rem" }} className={styles.h4}>
+            Come Join Us!
+          </h4>
+          <p className="B1 mb-4" style={{ lineHeight: "170%" }}>
+            We`&apos;`re ready to support your tech journey in Sweden in a variety of ways. We want
+            to welcome you and encourage you along the way.
           </p>
           <p className="B1 mt-4 pt-4">We can`&apos;`t wait to connect with you.</p>
         </div>

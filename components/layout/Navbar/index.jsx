@@ -77,7 +77,7 @@ const NavBar = () => {
                     </NavDropdown.Item>
                   </NavDropdown>
 
-                  <Link href="/stayconnected">
+                  <Link href="/stay-connected">
                     <a className={`${styles.link} h5 ${routerResStayContected}`}>Stay Connected</a>
                   </Link>
 
