@@ -36,4 +36,4 @@ yarn-error.log*
 #editor
 /.idea
 .idea
-components/sections/Homepage/BlazeAnnouncement/BlazeAnnouncement.module.scss
+components/sections/Homepage/*
