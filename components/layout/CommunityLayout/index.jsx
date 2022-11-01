@@ -75,7 +75,7 @@ function CommunityLayout({
             {newsletter && (
               <div className={styles.newsletterContainer}>
                 <h4 className={`primary-berry ${styles.newslatterCta}`}>
-                  Sign Up for Beelas Newsletter
+                  Sign Up for Beela&apos;s Newsletter
                 </h4>
                 <div className="input-group">
                   <input

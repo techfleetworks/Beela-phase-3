@@ -33,7 +33,7 @@
         "imgSource": "poll-test_yi.jpg",
         "altText": "Portait of Yi Li",
         "title": "Beela Mentor - UX Designer",
-        "description": "I like how we help each other and grow together in Beela. The journey has brought me new reflections, inspirations, and many motivations."
+        "description": "I like how we help each other and grow together in Beela. The journey has brought me new reflections, inspirations and many motivations."
       },
       {
         "id": 1,
@@ -41,7 +41,7 @@
         "imgSource": "poll-test_akzharkyn.jpg",
         "altText": "Portait of Akzharkyn Duisembiyeva",
         "title": "Beela Mentor - Security Engineer",
-        "description": "Beela programme gave me a chance to get to know so many people that are willing to support each other. As a mentor I have met truly inspiring, smart and brave people who are finding their way to Swedish tech field. While mentee can learn from my technical experience, I can also talk to people from various backgrounds and improve my own skills and knowledge."
+        "description": "Beela programme gave me a chance to get to know so many people that are willing to support each other. As a mentor I have met truly inspiring, smart and brave people who are finding their way to Swedish tech field. While mentees can learn from my technical experience, I can also talk to people from various backgrounds and improve my own skills and knowledge."
       },
       {
         "id": 2,
@@ -49,7 +49,7 @@
         "imgSource": "poll-test_rachael.jpg",
         "altText": "Portait of Rachael Ahn",
         "title": "Beela Mentor - Data Scientist",
-        "description": "Beela's mentorship program allowed me to connect with other immigrant women in Sweden and prompt meaningful discussions about data, adjusting to a new culture, self-assurance in applying for jobs, and more. Highly recommend others entering the tech industry to join the Beela community and especially the mentorship program to grow your network."
+        "description": "Beela's mentorship program allowed me to connect with other immigrant women in Sweden and prompt meaningful discussions about data, adjusting to a new culture, self-assurance in applying for jobs and more. Highly recommend others entering the tech industry to join the Beela community and especially the mentorship program to grow your network."
       }
     ]
   }

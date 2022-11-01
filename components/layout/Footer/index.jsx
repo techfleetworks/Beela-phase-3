@@ -39,7 +39,7 @@ export default function Footer() {
       <div className={styles.footerWrapper}>
         <div className={styles.footerContainer}>
           <div className={styles.newsletterContainer}>
-            <h4 className="primary-berry">Sign Up for Beelas Newsletter</h4>
+            <h4 className="primary-berry">Sign Up for Beela&apos;s Newsletter</h4>
             <div className="input-group">
               <input
                 type="email"
