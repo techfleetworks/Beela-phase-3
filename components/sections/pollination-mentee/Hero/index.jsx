@@ -46,7 +46,7 @@ export default function Hero() {
                 width={462}
                 layout="intrinsic"
                 className={styles.img}
-                src="images/pollination-mentee_hero.svg"
+                src="images/pollination-mentee_hero.png"
                 alt="placeholder"
               />
             </Col>
