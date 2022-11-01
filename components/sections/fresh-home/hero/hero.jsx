@@ -4,7 +4,7 @@ import React from 'react'
 import Image from "next/image"
 
 //Component Imports
-import styles from "./Hero.module.scss"
+import styles from "./hero.module.scss"
 import { Button } from "../../../elements/Button"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 

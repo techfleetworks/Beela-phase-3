@@ -3,8 +3,8 @@ import Popper from "@popperjs/core"
 
 import Head from "next/head"
 
-import Testimonials from "../components/sections/homepage/Testimonials"
-import  Hero from "../components/sections/homepage/Hero/index"
+import Testimonials from "../components/sections/fresh-home/testimonial/testimonial"
+import  Hero from "../components/sections/fresh-home/hero/hero"
 import { TeamCard } from "../components/elements/TeamCard"
 
 // React-Bootstrap icons
@@ -19,10 +19,10 @@ import Container from "react-bootstrap/Container"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
 
-import BlazeAnnouncement from "../components/sections/homepage/BlazeAnnouncement"
-import Career from "../components/sections/homepage/Career"
-import BeelasTalkPodcast from "../components/sections/homepage/BeelasTalkPodcast"
-import PollinationProgramme from "../components/sections/homepage/PollinationProgramme"
+import BlazeAnnouncement from "../components/sections/fresh-home/blaze/blaze"
+import Career from "../components/sections/fresh-home/career/career"
+import BeelasTalkPodcast from "../components/sections/fresh-home/podcast/podcast"
+import PollinationProgramme from "../components/sections/fresh-home/programmes/programmes"
 
 const Home: NextPage = () => {
   // const { data, error, loading } = useTestimonialsQuery()
