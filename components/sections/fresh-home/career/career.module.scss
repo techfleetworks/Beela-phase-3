@@ -1,11 +1,7 @@
 .text {
-    max-width: 630px;
+    max-width: 1000px;
     margin: 1rem auto;
     text-align: center;
-}
-
-.italics {
-    font-style: italic;
 }
 
 .cards {
@@ -21,6 +17,13 @@
 }
 
 @media (max-width: 768px) {
+    .text {
+        max-width: 100%;
+        font-size: 1.6rem;
+        margin: 1rem auto;
+        text-align: center;
+        }
+
     .cards {
         flex-direction: column;
         margin-top: 2rem;

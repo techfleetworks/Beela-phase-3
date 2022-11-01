@@ -54,6 +54,23 @@
     width: 305px;
 }
 
+.subheader {
+    color: $PRIMARY_BERRY;
+}
+
+.paragraphWrapper{
+    display: flex;
+    font-size: 1.6rem;
+    line-height: 170%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.buttonWrapper {
+    margin-top: 3.2rem;
+}
+
+//RESPONSIVE
 @media (max-width: 992px) {
     .moreInfoContainer {
         gap: 12rem;
@@ -64,6 +81,9 @@
     .moreInfoContainer {
         gap: 6rem;
     }
+    .subheader {
+        font-size: 2.4rem;
+    }
 }
 
 @media (max-width: 730px) {
@@ -73,7 +93,7 @@
 
     .headingContainer {
         flex-direction: column;
-        gap: 0;
+        gap: 2rem;
     }
 
     .headingText {
@@ -89,5 +109,9 @@
 
     .sectionDivider {
         display: none;
+    }
+
+    .buttonWrapper {
+        margin-bottom: 3.2rem;
     }
 }

@@ -1,6 +1,5 @@
 import Image from "next/image"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
-
 import styles from "./podcast.module.scss"
 
 export default function BeelasTalkPodcast() {
@@ -26,9 +25,12 @@ export default function BeelasTalkPodcast() {
                 className=""
                 height={43}
                 width={43}
+
                 alt="Icon for Spotify"
+
               />
             </a>
+
             <a
               href="https://podcasts.apple.com/us/podcast/beelas-talk/id1624447735"
               target="_blank"
