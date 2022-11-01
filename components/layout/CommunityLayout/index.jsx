@@ -94,7 +94,7 @@ function CommunityLayout({
                     onClick={subscribe}
                   >
                     <Image
-                      alt="Arrow pointing right that acts as a submit button for nesletter sign up"
+                      alt="Arrow pointing right that acts as a submit button for newsletter sign up"
                       src={arrowright}
                       width={20}
                       height={24}
