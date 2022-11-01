@@ -1,7 +1,7 @@
 .cards {
   display: flex;
   align-items: center;
-  margin: 1.5rem 0;
+  margin: 4rem 0;
 }
 
 @media (max-width: 1086px) {
@@ -10,10 +10,11 @@
   }
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .cards > div > div {
   }
 }
+*/
 
 @media (max-width: 768px) {
   .cards {
