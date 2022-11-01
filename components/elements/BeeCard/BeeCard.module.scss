@@ -1,5 +1,16 @@
+@import '/styles/variables.scss';
+
 .card {
+  display: flex;
   border: none;
+  width: 95%;
+}
+
+.subheader {
+  color: $PRIMARY_BERRY;
+  font-family: Montserrat;
+  font-size: 2.4rem;
+  font-weight: 500;
 }
 
 .imageContainer {
@@ -9,5 +20,36 @@
   > img {
     height: 100%;
     width: auto;
+  }
+}
+
+.font {
+  font-size: 1.6rem;
+}
+
+//RESPONSIVE STYLING SECTION
+
+@media screen and (min-width: 769px) and (max-width: 900px) {
+  .card {
+    display: row;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    display: column;
+    margin-bottom: 4rem;
+  }
+
+  .subheader {
+    color: $PRIMARY_BERRY;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .font {
+    font-size: 1.6rem;
+    line-height: 170%;
+    text-align: center;
   }
 }
