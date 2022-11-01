@@ -24,18 +24,18 @@ interface ButtonProps {
   title: any
   type?: any
   variant: string
-  children?:any
+  children?: any
   onClick?: () => void
 }
 
 export const Button = (props: ButtonProps) => {
-  const { className,children, disabled, href, style, title, type = "button", variant, onClick } = props
+  const { className, children, href, style, title, type = "button", variant, onClick } = props
   return (
     <>
+      {/* Buttons with no href */}
       {!href ? (
         <button
           className={`button ${styles[variant]} ${className}`}
-          disabled={disabled}
           onClick={onClick}
           style={style}
           type={type}
@@ -44,32 +44,24 @@ export const Button = (props: ButtonProps) => {
           {children}
         </button>
       ) : href.charAt(0) === "/" ? (
-        <Link href={`${href}`}>
-          <a>
-            <button
-              className={`button ${styles[variant]} ${className}`}
-              disabled={disabled}
-              onClick={onClick}
-              style={style}
-              type={type}
-            >
-              {title}
-             {children}
-            </button>
+        // Buttons linking to internal pages - navigational links
+        <Link href={href}>
+          <a className={`button ${styles[variant]} ${className}`} style={style}>
+            {title}
+            {children}
           </a>
         </Link>
       ) : (
-        <a href={href} rel="noreferrer" target="_blank">
-          <button
-            className={`button ${styles[variant]} ${className}`}
-            disabled={disabled}
-            onClick={onClick}
-            style={style}
-            type={type}
-          >
-            {title}
-            {children}
-          </button>
+        // Buttons linking to external pages - navigational links
+        <a
+          style={style}
+          href={href}
+          rel="noreferrer"
+          target="_blank"
+          className={`button ${styles[variant]} ${className}`}
+        >
+          {title}
+          {children}
         </a>
       )}
     </>

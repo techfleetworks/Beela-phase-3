@@ -1,0 +1,88 @@
+@import "../../../../styles/variables.scss";
+
+.sectionContainer {
+  padding: 8rem 0 0;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list > li {
+  margin-bottom: 1rem;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.heading {
+  white-space: nowrap;
+}
+
+@media (max-width: 1024px) {
+  .sectionContainer {
+    padding-top: 5rem;
+    gap: 5rem;
+  }
+  .heading {
+    white-space: nowrap;
+    font-size: 3.2rem;
+  }
+  .contentContainer {
+    gap: 3.2rem;
+  }
+  .infoContainer p,
+  .infoContainer ul {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .sectionContainer {
+    gap: 3rem;
+    padding-top: 5rem;
+  }
+  .contentContainer {
+    padding: 0 3rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .sectionContainer {
+    gap: 0;
+  }
+  .contentContainer {
+    gap: 1.5rem;
+  }
+  .subheading {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .sectionContainer {
+    flex-direction: column;
+    max-width: 45rem;
+    margin: 0 auto;
+  }
+  .contentContainer {
+    gap: 1rem;
+  }
+  .textContainer {
+    gap: 0.5rem;
+  }
+  .heading {
+    text-align: center;
+  }
+}

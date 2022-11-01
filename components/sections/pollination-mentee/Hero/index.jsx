@@ -32,13 +32,14 @@ export default function Hero() {
                 <li>Supportive community</li>
                 <li>3 hours/week time commitment</li>
               </ul>
-              <Button
-                style={{ display: showButton }}
-                className={styles.applyBtn}
-                title="Start Your Application"
-                href={buttonHref}
-                variant="primary_lightBG"
-              />
+              <div className={styles.applyBtn}>
+                <Button
+                  style={{ display: showButton }}
+                  title="Start Your Application"
+                  href={buttonHref}
+                  variant="primary_lightBG"
+                />
+              </div>
             </Col>
             <Col className={styles.imgContainer}>
               <Image
@@ -46,7 +47,7 @@ export default function Hero() {
                 width={462}
                 layout="intrinsic"
                 className={styles.img}
-                src="images/pollination-mentee_hero.svg"
+                src="images/pollination-mentee_hero.png"
                 alt="placeholder"
               />
             </Col>

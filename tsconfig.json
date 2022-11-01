@@ -15,6 +15,12 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "api/payment_intents.js", "pages/stayconnected.jsx"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "api/payment_intents.js",
+    "pages/stay-connected.jsx"
+  ],
   "exclude": ["node_modules"]
 }

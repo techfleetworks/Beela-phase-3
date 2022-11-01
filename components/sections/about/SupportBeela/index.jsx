@@ -10,29 +10,37 @@ export default function SupportBeela() {
           <h2 className="primary-berry">Support Beela</h2>
           <p className="B2">
             Beela is a 100% volunteer-run organization. We’re grateful for your support in any
-            capacity.{" "}
+            capacity.
           </p>
         </div>
 
         <div className={styles.boxWrapper}>
           <div className={styles.boxContainer}>
-            <h5 className="TRUE_BLACK">Volunteer</h5>
+            <h5>Volunteer</h5>
             <p className="B2">
               Our team is always on the lookout for new volunteers. Tell us about your skills (this
-              could be writing, social media, or design), and we’ll see if there’s a match!
+              could be writing, social media or design) and we’ll see if there’s a match!
             </p>
 
-            <Button href="/about" variant="primary_lightBG" title="Email Us" />
+            <Button
+              href="mailto:contact@beela.se?subject=I want to support Beela!"
+              variant="primary_lightBG"
+              title="Email Us"
+            />
           </div>
 
           <div className={styles.boxContainer}>
-            <h5 className="TRUE_BLACK">Donate</h5>
+            <h5>Donate</h5>
             <p className="B2">
-              We are a nonprofit organization, and any monetary donation helps us reach more female
-              and non-binary immigrants in Sweden.{" "}
+              We are a nonprofit organization and any monetary donation helps us reach more female
+              and non-binary immigrants in Sweden.
             </p>
-
-            <Button href="/about" variant="primary_lightBG" title="Donate" />
+            <Button
+              className={styles.button}
+              href="/donate"
+              variant="primary_lightBG"
+              title="Donate"
+            />
           </div>
         </div>
       </div>

@@ -13,15 +13,18 @@
   align-items: center;
   justify-content: center;
   padding: 0.5rem;
-  height: 176px;
-  width: 176px;
+  height: 17.6rem;
+  width: 17.6rem;
   border-radius: 50%;
   background-color: $PRIMARY_HONEY;
 }
+.container {
+  border: 0.5rem solid $PRIMARY_HONEY;
+}
 @media (max-width: 900px) {
   .circleWrapper {
-    height: 150px;
-    width: 150px;
+    height: 15rem;
+    width: 15rem;
     p {
       font-size: 1.6rem;
     }

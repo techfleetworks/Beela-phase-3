@@ -19,29 +19,36 @@
   display: flex;
   gap: 9rem;
   justify-content: center;
-  align-items: center;
-}
-
-.boxContainer a {
-  margin-top: auto;
+  align-items: flex-start;
+  height: 21.8rem;
 }
 
 //CONTAINER FOR VOLUNTEER & DONATE BOXES
 .boxContainer {
   display: flex;
   width: 50%;
+  height: 100%;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
+.button {
+  margin-top: auto;
+}
 
-@media (max-width: 830px) and (min-width: 740px) {
+@media (max-width: 900px) {
   .boxWrapper {
-    gap: 5rem;
+    height: auto;
   }
 }
 
-@media (max-width: 740px) {
+// @media (max-width: 830px) and (min-width: 740px) {
+//   .boxWrapper {
+//     gap: 5rem;
+//   }
+// }
+
+@media (max-width: 768px) {
   .boxWrapper {
     flex-direction: column;
     gap: 3rem;

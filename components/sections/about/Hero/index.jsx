@@ -1,8 +1,8 @@
 import Image from "next/image"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
-import styles from "./AboutBeela.module.scss"
+import styles from "./Hero.module.scss"
 
-export default function AboutBeela() {
+export default function Hero() {
   return (
     <SectionWrapper color="SECONDARY_CREAM" padding="hero">
       <div className={styles.sectionContainer}>

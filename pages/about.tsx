@@ -3,7 +3,7 @@ import type { NextPage } from "next"
 import Head from "next/head"
 
 //Component imports
-import AboutBeela from "../components/sections/about/AboutBeela"
+import Hero from "../components/sections/about/Hero"
 import OurMission from "../components/sections/about/OurMission"
 import EmpowerInformInspire from "../components/sections/about/EmpowerInformInspire"
 import OurName from "../components/sections/about/OurName"
@@ -20,7 +20,7 @@ const About: NextPage = () => {
           content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
         />
       </Head>
-      <AboutBeela />
+      <Hero />
       <OurMission />
       <EmpowerInformInspire />
       <OurName />

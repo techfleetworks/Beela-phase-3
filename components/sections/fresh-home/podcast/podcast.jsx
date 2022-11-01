@@ -25,6 +25,9 @@ export default function BeelasTalkPodcast() {
                 className=""
                 height={43}
                 width={43}
+
+                alt="Icon for Spotify"
+
               />
             </a>
 

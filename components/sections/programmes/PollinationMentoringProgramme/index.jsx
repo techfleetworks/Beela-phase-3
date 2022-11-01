@@ -28,7 +28,7 @@ export default function PollinationMentoringProgramme() {
             <h4 className={`primary-berry ${styles.subheading}`}>How can we help you grow?</h4>
             <p className="m-0 B2">
               Unsure about expectations for switching careers in Sweden? Or eager to share your
-              experience?Our free programme offers 1-on-1 mentorship, along with events and
+              experience? Our free programme offers 1-on-1 mentorship, along with events and
               workshops to help mentees get into tech.
             </p>
           </div>
