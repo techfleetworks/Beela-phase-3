@@ -9,7 +9,7 @@ export default function FAQ ({data, title}) {
   return (
     <div>
     {data && (
-      <SectionWrapper color="SECONDARY_CREAM" >
+      <SectionWrapper color='SECONDARY_CREAM'>
       <Container fluid className="py-5">
        <Container>
         <h3 className={styles.title}>{title}</h3>

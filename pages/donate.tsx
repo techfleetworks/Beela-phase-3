@@ -18,7 +18,7 @@ const Donation: NextPage = () => {
           content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
         />
       </Head>
-      <Hero />
+      <Hero/>
       <FAQ data={faqs} title="Donation FAQs"/>
       <OtherWaysToHelp />
     </div>
