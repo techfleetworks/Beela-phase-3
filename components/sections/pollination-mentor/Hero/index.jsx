@@ -45,13 +45,14 @@ export default function Hero() {
                 <li>Networking opportunities</li>
                 <li>Opportunity to refine your leadership and communication skills</li>
               </ul>
-              <Button
-                style={{ display: showButton }}
-                className={styles.applyBtn}
-                title="Start Your Application"
-                href={buttonHref}
-                variant="primary_lightBG"
-              />
+              <div className={styles.applyBtn}>
+                <Button
+                  style={{ display: showButton }}
+                  title="Start Your Application"
+                  href={buttonHref}
+                  variant="primary_lightBG"
+                />
+              </div>
             </Col>
           </Row>
         </Container>

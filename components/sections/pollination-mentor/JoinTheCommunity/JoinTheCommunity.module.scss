@@ -1,0 +1,63 @@
+@import "../../../../styles/variables.scss";
+.sectionContainer {
+  position: relative;
+  margin-top: 5rem;
+}
+.contentContainer {
+  padding: 5rem 6.5rem;
+  background-color: $SECONDARY_CREAM;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  text-align: center;
+}
+.imageContainer {
+  position: absolute;
+  right: -10rem;
+  top: -10rem;
+}
+
+@media (max-width: 1024px) {
+  .sectionContainer {
+    margin-top: 3.6rem;
+    margin-right: 2rem;
+  }
+  .imageContainer {
+    right: -8.75rem;
+    top: -8.75rem;
+    height: 17.5rem;
+    width: 17.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .sectionContainer {
+    margin-top: 4.6rem;
+    margin-right: 0rem;
+  }
+  .contentContainer {
+    gap: 1rem;
+    padding: 5rem 8rem;
+  }
+  .imageContainer {
+    right: -4rem;
+    top: -8.75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .sectionContainer {
+    margin-top: 1rem;
+  }
+  .imageContainer {
+    height: 10rem;
+    width: 10rem;
+    top: -5rem;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+  }
+  .contentContainer {
+    padding: 4rem 1rem 2rem;
+  }
+}

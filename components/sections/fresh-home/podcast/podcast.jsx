@@ -1,4 +1,3 @@
-import { Spotify } from "react-bootstrap-icons"
 import Image from "next/image"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 
@@ -22,7 +21,13 @@ export default function BeelasTalkPodcast() {
               target="_blank"
               rel="noreferrer"
             >
-              <Spotify size={43} className={styles.spotify} />
+              <Image
+                src="/icons/spotify.svg"
+                className=""
+                height={43}
+                width={43}
+                alt="Icon for Spotify"
+              />
             </a>
             <a
               href="https://podcasts.apple.com/us/podcast/beelas-talk/id1624447735"

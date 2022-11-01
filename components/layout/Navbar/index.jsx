@@ -77,7 +77,7 @@ const NavBar = () => {
                     </NavDropdown.Item>
                   </NavDropdown>
 
-                  <Link href="/stayconnected">
+                  <Link href="/stay-connected">
                     <a className={`${styles.link} h5 ${routerResStayContected}`}>Stay Connected</a>
                   </Link>
 
@@ -86,7 +86,12 @@ const NavBar = () => {
                   </Link>
                 </div>
 
-                <Button href="/donate" variant="primary_darkBG" title="Donate" />
+                <Button
+                  className={styles.donateButton}
+                  href="/donate"
+                  variant="primary_darkBG"
+                  title="Donate"
+                />
               </Nav>
             </Container>
           </Navbar.Collapse>

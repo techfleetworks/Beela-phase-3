@@ -181,10 +181,11 @@ h5,
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.3rem 3.8rem;
+  padding: 1.3rem 5rem;
   border-radius: 25px;
   min-width: max-content;
   background-color: $TRUE_WHITE;
+  display: inline-block;
 }
 
 .C1 {

@@ -1,7 +1,7 @@
 @import "../../../styles/variables.scss";
 
 .sectionContainer {
-  min-width: 290px;
+  min-width: 29rem;
 }
 
 .testimonialContainer {
@@ -14,8 +14,8 @@
 }
 
 .image {
-  width: 160px;
-  height: 160px;
+  width: 16rem;
+  height: 16rem;
   border-radius: 50%;
   border: 0.2rem solid $PRIMARY_BERRY;
 }
@@ -104,8 +104,8 @@
     padding: 0 6rem;
   }
   .testimonialRow img {
-    width: 122px;
-    height: 122px;
+    width: 12.2rem;
+    height: 12.2rem;
   }
   .prevIcon,
   .nextIcon {
