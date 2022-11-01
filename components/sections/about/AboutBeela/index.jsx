@@ -6,7 +6,7 @@ export default function AboutBeela() {
   return (
     <SectionWrapper color="SECONDARY_CREAM" padding="hero">
       <div className={styles.sectionContainer}>
-        <h1 className="primary-berry">About Beela</h1>
+        <h1 className={`primary-berry ${styles.headingContainer}`}>About Beela</h1>
         <div className={styles.imgContainer}>
           <Image
             height={369}

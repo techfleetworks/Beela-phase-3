@@ -1,11 +1,17 @@
 .sectionContainer {
   position: relative;
   padding: 4rem;
-  margin: 5rem auto;
+  margin: 6rem auto;
+  margin-top: 0px;
+}
+
+.headingContainer {
+  margin-bottom: 1.6rem;
 }
 
 .textContainer {
-  width: 50%;
+  line-height: 170%;
+  width: 50%;;
 }
 
 .imgContainer {
