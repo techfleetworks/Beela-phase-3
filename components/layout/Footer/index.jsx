@@ -19,7 +19,6 @@ export default function Footer() {
   const [email, setEmail] = useState("")
   const [state, setState] = useState("")
   const [errorMessage, setErrorMessage] = useState(null)
-  const router = useRouter() // to set active links
 
   const subscribe = async () => {
     setState("LOADING")
