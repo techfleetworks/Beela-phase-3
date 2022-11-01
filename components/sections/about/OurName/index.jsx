@@ -4,7 +4,7 @@ import styles from "./OurName.module.scss"
 
 export default function OurName() {
   return (
-    <SectionWrapper color="SECONDARY_CREAM" maxWidth={900}>
+    <SectionWrapper color="SECONDARY_CREAM" maxWidth={900} padding="hero">
       <div className={styles.sectionContainer}>
           <Image src="/images/about-us2 1.png" alt="Our Community" width={520} height={330} />
         <div className={styles.textContainer}>
