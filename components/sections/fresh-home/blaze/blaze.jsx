@@ -1,6 +1,6 @@
 import Image from "next/image"
 import { SectionWrapper } from "../../../layout/SectionWrapper"
-import styles from "./BlazeAnnouncement.module.scss"
+import styles from "./blaze.module.scss"
 
 function BlazeAnnouncement(props) {
   return (
