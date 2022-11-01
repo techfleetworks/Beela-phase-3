@@ -1,28 +1,20 @@
+//Next.js imports
 import type { NextPage } from "next"
-import Popper from "@popperjs/core"
-
 import Head from "next/head"
 
-import Testimonials from "../components/sections/fresh-home/testimonial/testimonial"
-import  Hero from "../components/sections/fresh-home/hero/hero"
-import { TeamCard } from "../components/elements/TeamCard"
-
-// React-Bootstrap icons
-
-// React-Bootstrap imports
-import Col from "react-bootstrap/Col"
-import Row from "react-bootstrap/Row"
-import Container from "react-bootstrap/Container"
-
-// import TestingComponent from "../components/elements/testingcomponent"
+//Strapi imports
 // import { useTestimonialsQuery } from "../graphql/generated"
 // import { usePostsQuery } from "../graphql/generated"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
 
+//Component imports
+import Hero from "../components/sections/fresh-home/hero/hero"
 import BlazeAnnouncement from "../components/sections/fresh-home/blaze/blaze"
 import Career from "../components/sections/fresh-home/career/career"
-import BeelasTalkPodcast from "../components/sections/fresh-home/podcast/podcast"
 import PollinationProgramme from "../components/sections/fresh-home/programmes/programmes"
+import Testimonials from "../components/elements/TestimonialCarousel"
+import BeelasTalkPodcast from "../components/sections/fresh-home/podcast/podcast"
+import { SectionWrapper } from "../components/layout/SectionWrapper"
 
 const Home: NextPage = () => {
   // const { data, error, loading } = useTestimonialsQuery()
@@ -39,35 +31,21 @@ const Home: NextPage = () => {
           name="description"
           content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
         />
+        <script defer src="/node_modules/jquery/dist/jquery.js"></script>
+        <script defer src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
       </Head>
 
       <Hero />
       <BlazeAnnouncement />
       <Career />
       <PollinationProgramme />
-
-      {/* Testimonials */}
-      <section id="section-testimonials">
-        <Row className="text-center justify-content-center align-content-center" id="testimonials">
-          <Container className="align-items-center p-5">
-            <Row className="justify-content-center">
-              <Col sm={8}>
-                <div className="p-1">
-                  <h2>They did it—and so can you</h2>
-                </div>
-                <div className="p-1">
-                  <p id="header-text" className="B2">
-                    We are proud of our podcast guests who have started their tech careers in
-                    Sweden.
-                  </p>
-                </div>
-              </Col>
-            </Row>
-            <Testimonials />
-          </Container>
-        </Row>
-      </section>
-
+      <SectionWrapper color="SECONDARY_CORNFLOWER">
+        <h2 className="text-center">They did it - and so can you!</h2>
+        <p className="B1 text-center">
+          We are proud of our podcast guests who have started their tech careers in Sweden.
+        </p>
+        <Testimonials />
+      </SectionWrapper>
       <BeelasTalkPodcast />
     </div>
   )

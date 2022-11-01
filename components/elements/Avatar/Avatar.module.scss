@@ -13,25 +13,21 @@
   top: -13rem;
 }
 .testimonialImageContainer {
-  // width: 100%;
-  // position: absolute;
-  // text-align: center;
-  // top: -5rem;
-    width: 100%;
-    position: relative;
-    text-align: center;
-    top: 5em;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  top: -5rem;
 }
 
 .image {
-  width: 167px;
-  height: 167px;
+  width: 16.7rem;
+  height: 16.7rem;
   border-radius: 50%;
   background-color: $TRUE_WHITE;
 }
 .imageVolunteer {
-  width: 167px;
-  height: 167px;
+  width: 16.7rem;
+  height: 16.7rem;
   border-radius: 50%;
   background-color: $TRUE_WHITE;
 }
@@ -39,18 +35,18 @@
 .imageTestimonial {
   border-radius: 50%;
   background-color: $TRUE_WHITE;
-  width: 88px;
-  height: 88px;
+  width: 8.8rem;
+  height: 8.8rem;
 }
 
 @media (max-width: 768px) {
   .image {
-    width: 100px;
-    height: 100px;
+    width: 10rem;
+    height: 10rem;
   }
   .imageVolunteer {
-    width: 127px;
-    height: 127px;
+    width: 12.7rem;
+    height: 12.7rem;
   }
   .imageContainer {
     top: -6rem;
