@@ -15,7 +15,7 @@ interface ITeamCard {
 
 export const TeamCard = (props: ITeamCard) => {
   const {
-    description = "Some description here blah blah",
+    description = "",
     imgSource,
     isTestimonial,
     isVolunteer,
