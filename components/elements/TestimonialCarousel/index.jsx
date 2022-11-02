@@ -6,7 +6,6 @@ import styles from "./TestimonialCarousel.module.scss"
 import data from "../../../mockdata/testimonial.json"
 
 function TestimonialCarousel() {
-  console.log(data)
   return (
     <>
       {data && (

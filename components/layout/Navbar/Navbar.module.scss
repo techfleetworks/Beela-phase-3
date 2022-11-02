@@ -2,12 +2,17 @@
 
 .navbar {
   background-color: #ffffff !important;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0.195rem 0.195rem 0.26rem;
   display: flex;
   justify-content: center;
-  height: 125px;
+  height: 12.5rem;
   width: 100%;
   top: 0;
+}
+
+.logoWrapper {
+  height: 4.5rem;
+  width: 17.5rem;
 }
 .container.linkContainer {
   margin: 0;
@@ -24,32 +29,36 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 .navlinks .link {
+  width: fit-content;
   border-bottom: 0.4rem solid transparent;
-  padding: 0 0 0.6rem;
   margin: 0 1rem;
+  color: $TRUE_BLACK !important;
 
   &:hover {
-    color: inherit;
-    border-bottom: 0.4rem solid $PRIMARY_HONEY;
+    color: $PRIMARY_BERRY !important;
   }
   &.active {
     border-bottom: 0.4rem solid $PRIMARY_HONEY;
   }
 }
 
-.dropdownLink > a {
-  padding: 0;
-  color: inherit !important;
+.dropdownMenu {
+  width: auto;
 }
+
+// .dropdownLink > a {
+//   padding: 0;
+//   color: inherit !important;
+// }
 .dropdownLink > div {
   top: 2.3rem !important;
   border: none;
-  box-shadow: 0px 2.10437px 5.26092px rgb(0 0 0 / 16%);
-  border-radius: 0px 0px 5.26092px 5.26092px;
+  box-shadow: 0 0.2rem 0.52rem rgb(0 0 0 / 16%);
+  border-radius: 0 0 0.52rem 0.52rem;
 }
 
 //DROPDOWN MENU LINKS
@@ -59,11 +68,18 @@
   padding: 1rem;
   margin: 1rem;
   text-transform: capitalize;
-  width: 24vh;
+  width: auto;
 }
 
-.navbar-light .navbar-nav .nav-link {
-  // color: #000000;
+.donateButton {
+  padding: 1.3rem 5rem !important;
+  display: flex;
+  background-color: $PRIMARY_HONEY;
+  color: $TRUE_BLACK !important;
+  &:hover {
+    background-color: $HONEY_4;
+    color: $BLACK;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -81,6 +97,11 @@
   .container .linkContainer {
     padding: 5rem;
     padding-top: 0;
+  }
+  .logoWrapper {
+    height: 3.6rem;
+    width: 13.9rem;
+    margin-left: 2.5rem;
   }
 
   .linkWrapper {
@@ -100,22 +121,29 @@
     margin-top: 111px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   }
+  .navlinks {
+    margin-top: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
   .navlinks .link {
-    border-bottom: none;
-    // padding: 0 0 0.6rem;
+    border-bottom: 0.4rem solid transparent;
     margin: 0.5rem;
 
     &:hover {
       color: inherit;
-      border-bottom: none;
     }
     &.active {
       border-bottom: 0.4rem solid $PRIMARY_HONEY;
     }
   }
-  .navlinks {
-    flex-direction: column;
-    align-items: flex-start;
+  .dropdownMenu {
+    display: block !important;
+    border: none;
+    & a {
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
   }
 }
 
