@@ -75,12 +75,16 @@ const NavBar = () => {
                     </Link>
                     <Dropdown.Menu className={styles.dropdownMenu}>
                       <Link href="/pollination-for-mentees" passHref eventKey="2.1">
-                        <Dropdown.Item className={`O1 ${styles.dropdownItem} ${routerResMentees}`}>
+                        <Dropdown.Item
+                          className={`O1 ${styles.dropdownItem} ${routerResMentees} ${styles.link}`}
+                        >
                           Become a Mentee
                         </Dropdown.Item>
                       </Link>
                       <Link href="/pollination-for-mentors" passHref eventKey="2.2">
-                        <Dropdown.Item className={`O1 ${styles.dropdownItem} ${routerResMentors}`}>
+                        <Dropdown.Item
+                          className={`O1 ${styles.dropdownItem} ${routerResMentors} ${styles.link}`}
+                        >
                           Become a Mentor
                         </Dropdown.Item>
                       </Link>

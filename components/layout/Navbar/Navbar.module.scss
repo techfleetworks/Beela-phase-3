@@ -14,14 +14,8 @@
   height: 4.5rem;
   width: 17.5rem;
 }
-.container.linkContainer {
-  margin: 0;
-  padding: 0;
-}
 
 .linkWrapper {
-  width: 100%;
-  display: flex;
   justify-content: space-around;
 }
 
@@ -47,28 +41,30 @@
 }
 
 .dropdownMenu {
-  width: auto;
-}
-
-// .dropdownLink > a {
-//   padding: 0;
-//   color: inherit !important;
-// }
-.dropdownLink > div {
   top: 2.3rem !important;
   border: none;
   box-shadow: 0 0.2rem 0.52rem rgb(0 0 0 / 16%);
   border-radius: 0 0 0.52rem 0.52rem;
+  width: auto;
+  top: 3rem !important;
 }
 
 //DROPDOWN MENU LINKS
-.dropdownItem {
+.dropdownItem,
+.link {
   font-weight: 500;
   font-size: 1.6rem;
   padding: 1rem;
   margin: 1rem;
   text-transform: capitalize;
   width: auto;
+  &:hover {
+    background-color: transparent !important;
+    color: $PRIMARY_BERRY !important;
+  }
+  &:active {
+    background-color: transparent !important;
+  }
 }
 
 .donateButton {
@@ -131,7 +127,8 @@
     margin: 0.5rem;
 
     &:hover {
-      color: inherit;
+      color: $TRUE_BLACK;
+      background-color: transparent !important;
     }
     &.active {
       border-bottom: 0.4rem solid $PRIMARY_HONEY;
@@ -140,9 +137,11 @@
   .dropdownMenu {
     display: block !important;
     border: none;
+    padding: 0;
     & a {
       text-transform: uppercase;
       font-size: 1.5rem;
+      margin: 0.5rem;
     }
   }
 }
