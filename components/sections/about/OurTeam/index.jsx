@@ -18,7 +18,7 @@ export default function OurTeam() {
       </div>
       <Container className="p-0">
         <div className={styles.teamContainer}>
-          <Row className={`p-0 ${styles.leaderContainer}`}>
+          <Row className={`p-0 justify-content-center ${styles.leaderContainer}`}>
             {data &&
               leaders.map((data) => (
                 <Col sm={12} md={6} className="d-flex justify-content-center px-3" key={data.id}>
