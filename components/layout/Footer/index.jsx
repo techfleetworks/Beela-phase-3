@@ -7,9 +7,9 @@ import spotify from "../../../public/icons/spotify.svg"
 import linkedin from "../../../public/icons/linkedin.svg"
 import instagram from "../../../public/icons/instagram.svg"
 import slack from "../../../public/icons/slack.svg"
-import partner1 from "../../../public/icons/Partner1.svg"
-import techfleet from "../../../public/icons/techfleet.svg"
-import partner2 from "../../../public/icons/Partner2.svg"
+import partner1 from "../../../public/icons/partner1.png"
+import partner2 from "../../../public/icons/partner2.png"
+import partner3 from "../../../public/icons/partner3.png"
 import arrowright from "../../../public/icons/arrow-right.svg"
 //mailchimp needed the below imports
 import { useState } from "react"
@@ -97,7 +97,7 @@ export default function Footer() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="https://beela.se/">
+                  <Link href="mailto:contact@beela.se">
                     <a target="_blank" className="B2">
                       Contact Us
                     </a>
@@ -173,7 +173,7 @@ export default function Footer() {
                       <div className={styles.icon}>
                         <Image
                           alt="TechFleet logo"
-                          src={techfleet}
+                          src={partner2}
                           layout="fill"
                           objectFit="cover"
                         />
@@ -184,7 +184,7 @@ export default function Footer() {
                   <Link href="https://beetrootacademy.com/">
                     <a target="_blank">
                       <div className={styles.icon}>
-                        <Image alt="Academy logo" src={partner2} layout="fill" objectFit="cover" />
+                        <Image alt="Academy logo" src={partner3} layout="fill" objectFit="cover" />
                       </div>
                     </a>
                   </Link>

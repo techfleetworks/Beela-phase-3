@@ -54,7 +54,7 @@ const NavBar = () => {
               <Nav className={styles.linkWrapper}>
                 <div className={styles.navlinks}>
                   <Link href="/" eventKey="1" passHref>
-                    <Nav.Link className={`${styles.link} ${routerResHome} h5`}>Home</Nav.Link>
+                    <Nav.Link className={`${styles.link} ${routerResHome} h5 px-0`}>Home</Nav.Link>
                   </Link>
 
                   {/*DROPDOWN SECTION*/}
@@ -66,9 +66,8 @@ const NavBar = () => {
                   >
                     <Link href="/programmes" passHref eventKey="2">
                       <Dropdown.Toggle
-                        show
                         as={NavLink}
-                        className={`${styles.link} h5 ${routerResProgrammes} ${styles.dropdownLink}`}
+                        className={`${styles.link} h5 ${routerResProgrammes} ${styles.dropdownLink} px-0`}
                       >
                         Programmes
                       </Dropdown.Toggle>
@@ -76,14 +75,14 @@ const NavBar = () => {
                     <Dropdown.Menu className={styles.dropdownMenu}>
                       <Link href="/pollination-for-mentees" passHref eventKey="2.1">
                         <Dropdown.Item
-                          className={`O1 ${styles.dropdownItem} ${routerResMentees} ${styles.link}`}
+                          className={`O1 px-0 mx-4 my-2 ${routerResMentees} ${styles.dropdownItem} ${styles.link}`}
                         >
                           Become a Mentee
                         </Dropdown.Item>
                       </Link>
                       <Link href="/pollination-for-mentors" passHref eventKey="2.2">
                         <Dropdown.Item
-                          className={`O1 ${styles.dropdownItem} ${routerResMentors} ${styles.link}`}
+                          className={`O1 px-0 mx-4 my-2 ${routerResMentors} ${styles.dropdownItem} ${styles.link}`}
                         >
                           Become a Mentor
                         </Dropdown.Item>
@@ -92,19 +91,19 @@ const NavBar = () => {
                   </Dropdown>
 
                   <Link href="/stay-connected" passHref eventKey="3">
-                    <Nav.Link className={`${styles.link} h5 ${routerResStayContected}`}>
+                    <Nav.Link className={`h5 px-0 ${routerResStayContected} ${styles.link}`}>
                       Stay Connected
                     </Nav.Link>
                   </Link>
 
                   <Link href="/about" passHref eventKey="4">
-                    <Nav.Link className={`${routerResAboutUs} h5 ${styles.link}`}>
+                    <Nav.Link className={` h5 px-0 ${routerResAboutUs} ${styles.link}`}>
                       About Us
                     </Nav.Link>
                   </Link>
                 </div>
                 <Link href="/donate" passHref eventKey="5">
-                  <Nav.Link className={`${routerResAboutUs} button ${styles.donateButton}`}>
+                  <Nav.Link className={`button ${routerResAboutUs} ${styles.donateButton}`}>
                     Donate
                   </Nav.Link>
                 </Link>

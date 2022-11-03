@@ -1,0 +1,105 @@
+{
+  "mentorFaq": [
+    {
+      "id": 0,
+      "question": "What background do I need to be a mentor?",
+      "answer": "We ask that you have successfully landed your first tech job in Sweden. Whether you’re in your first tech job or 10th, we believe everyone can offer a valuable perspective."
+    },
+    {
+      "id": 1,
+      "question": "What are you looking for in a mentor?",
+      "answer": "We are looking for mentors who are eager to share their experiences and are encouraging and knowledgeable about the tech scene in Sweden."
+    },
+    {
+      "id": 2,
+      "question": "Are the mentoring meetings in person or virtual?",
+      "answer": "Most of the mentoring sessions are virtual. However, if mentors and mentees live in the same city and feel comfortable meeting up we encourage that too."
+    },
+    {
+      "id": 3,
+      "question": "Will I be paid for mentoring?",
+      "answer": "No. The Pollination Mentoring Programme is free for mentees. This programme is a valuable opportunity to enhance your leadership and communication skills within a supportive community."
+    },
+    {
+      "id": 4,
+      "question": "I still have questions. Who should I ask?",
+      "answer": "Email us at contact@beela.se!"
+    }
+  ],
+
+  "menteeFaq": [
+    {
+      "id": 0,
+      "question": "What background do I need to apply for the programme?",
+      "answer": "We are open to applicants from a range of backgrounds. Diversity only helps enhance the tech community! Our mentors are committed to helping mentees with whatever they need."
+    },
+    {
+      "id": 1,
+      "question": "What are you looking for in applicants?",
+      "answer": "We are looking for applicants who are focused on self-development and are curious and ready to make a mark on Sweden's tech scene."
+    },
+    {
+      "id": 2,
+      "question": "What qualifications will my mentor have?",
+      "answer": "We ask that mentors have successfully landed their first tech job in Sweden. Whether they’re in their first tech job or 10th, we believe everyone can offer a valuable perspective."
+    },
+    {
+      "id": 3,
+      "question": "Are the mentor meetings in person or virtual?",
+      "answer": "Most of the mentor sessions are virtual. However, if mentors and mentees live in the same city and feel comfortable meeting up we encourage that too."
+    },
+    {
+      "id": 4,
+      "question": "I still have questions. Who should I ask?",
+      "answer": "Email us at contact@beela.se!"
+    }
+  ],
+
+  "donationFaq": [
+    {
+      "id": 0,
+      "question": "Why donate to Beela?",
+      "answer": "Career transitions can be difficult for anyone, but unfortunately, women and non-binary immigrants, particularly those from non-European countries, struggle more in the Swedish job market than their peers. This employment gap can seem daunting. Beela has made it their mission to close the gap. You can count on us to optimize your donations in a way that is beneficial to further developing the tech careers and personal growth of immigrant women and non-binary people throughout Sweden."
+    },
+    {
+      "id": 1,
+      "question": "Who does my donation help?",
+      "answer": "Your donation will directly fund Beela’s mission to support immigrant women and non-binary people seeking to start careers in the tech industry. Donations will specifically help in areas such as covering operational costs and salaries to project leaders. It will also support networking events like career fairs, in order to help our mentees integrate into the industry. Our goal is to develop the leadership skills of our mentees as we further prepare them to transition into not only tech careers, but also the Swedish community at large."
+    },
+    {
+      "id": 2,
+      "question": "Is my donation tax deductible?",
+      "answer": "All donations to Beela from Swedish residents are tax deductible. You will receive an email confirmation immediately after submitting your donation. This email can serve as a receipt for tax purposes. Donations made by donors in the United States and other countries are not typically tax deductible, please refer to your country’s tax laws."
+    },
+    {
+      "id": 3,
+      "question": "Can I make an anonymous donation?",
+      "answer": "Yes, you will be given the option to donate anonymously. This ensures that your name will not appear on our website or printed materials. Please note that Beela will keep a record of your name and the information associated with your gift in a secure database for payment processing purposes. Beela will never share this information and will only use it for the purpose of communicating with you directly."
+    },
+    {
+      "id": 4,
+      "question": "Can I donate to Beela through my employee Benevity account so that my company can match my donation?",
+      "answer": "Yes, donors have the option of making donations through their employee Benevity account. We appreciate the support of all donors and employer matched donations are one of the fastest and easiest ways to support non-binary and women immigrants searching for opportunities in the tech industry."
+    },
+    {
+      "id": 5,
+      "question": "Can I make a recurring donation?",
+      "answer": "Yes, donors have the option of making a monthly donation."
+    },
+    {
+      "id": 6,
+      "question": "How do I cancel or update my monthly donor information?",
+      "answer": "You can modify or cancel your monthly donation at any time. If you would like to make a change to your monthly donation or update your personal information, please send an email to contact@beela.se."
+    },
+    {
+      "id": 7,
+      "question": "Is my donation secure?",
+      "answer": "Beela's donation process is fully encrypted using industry best practices to ensure your personal data and credit card information is kept private and secure."
+    },
+    {
+      "id": 8,
+      "question": "Does Beela sell, rent or trade donor information to other agencies?",
+      "answer": "No. Beela respects and maintains the privacy of those who have entrusted us with their donations. We will not pass on your email or any contact information to third party vendors, companies or corporations."
+    }
+  ]
+}

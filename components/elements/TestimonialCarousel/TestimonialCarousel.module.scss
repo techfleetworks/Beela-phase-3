@@ -19,11 +19,9 @@
 }
 .nextIcon {
   background-image: url(../../../public/icons/arrow-right-circle.svg);
-  // margin-left: 10rem;
 }
 .prevIcon {
   background-image: url(../../../public/icons/arrow-left-circle.svg);
-  // margin-right: 10rem;
 }
 
 .sectionContainer button {
@@ -31,18 +29,6 @@
   height: 1.2rem !important;
   border-radius: 50%;
   border: 0.1rem solid $PRIMARY_BERRY !important;
-  // & .active {
-  //   background-color: $PRIMARY_BERRY !important;
-  // }
-}
-
-@media (max-width: 1070px) {
-  // .nextIcon {
-  //   margin-left: 3rem;
-  // }
-  // .prevIcon {
-  //   margin-right: 3rem;
-  // }
 }
 
 @media (max-width: 900px) {

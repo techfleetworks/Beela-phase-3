@@ -235,7 +235,7 @@ h5,
   }
 }
 
-// Hero - Fancy Yellow Underline
+// Fancy Yellow Underline
 .svg-underline {
   background: url("../public/icons/underline.svg") bottom left no-repeat;
   background-size: 100% auto;
@@ -252,4 +252,24 @@ h5,
   line-height: 1.2em;
   font-size: 1.6rem;
   line-height: 1.7em;
+}
+
+//BOOSTRAP SPECIFIC STYLING
+
+//FAQ component style override
+.accordion-button:not(.collapsed) {
+  background-color: $TRUE_WHITE;
+  box-shadow: inset 0 -0.1rem 0 $SECONDARY_CORNFLOWER;
+}
+.accordion-button:focus {
+  border-color: $SECONDARY_CORNFLOWER;
+}
+
+.accordion-item {
+  border: 0.1rem solid $SECONDARY_CORNFLOWER;
+}
+
+//Testimonial Carousel
+.carousel-indicators button.active {
+  background-color: $PRIMARY_BERRY;
 }
