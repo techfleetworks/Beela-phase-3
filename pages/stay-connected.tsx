@@ -6,6 +6,7 @@ import PageWrapper from "../components/layout/PageWrapper/index"
 //Components
 
 import Hero from "../components/sections/stay-connected/Hero"
+import Events from "../components/sections/stay-connected/Events"
 import CommunityLayout from "../components/layout/CommunityLayout"
 import SupportBeela from "../components/sections/about/SupportBeela"
 
@@ -13,13 +14,14 @@ const StayConnected: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Connect with us | Beela</title>
+        <title>Connect with us - Beela</title>
         <meta
           name="description"
-          content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
+          content="Are you new to Sweden and wanting to switch to a career in tech? We want to connect with you and help support your journey into tech! Join our Slack community today!"
         />
       </Head>
       <Hero />
+      <Events />
       <CommunityLayout
         altText="Inspire, Empower, Repeat written in a fun font"
         blueTitle
@@ -32,7 +34,7 @@ const StayConnected: NextPage = () => {
       />
 
       <CommunityLayout
-        altText="Beela's Talk Podcast logo"
+        altText="Logo for Beela's Talk Podcast. An illustraion with the text 'Beela's Talk', a bee and the Spotify podcast logo."
         blueTitle
         color="PRIMARY_CORAL"
         imgSource="../images/beelas-talk.png"

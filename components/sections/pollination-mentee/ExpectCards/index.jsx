@@ -1,6 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap"
 
 import styles from "./ExpectCards.module.scss"
+
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 import { ExpectCard } from "../../../elements/ExpectCard"
 
@@ -11,21 +12,23 @@ function ExpectCards() {
       title: "Mentor Matching",
       description: "We carefully match mentees with mentors based on interests and availability.",
       imgSource: "mentee-expect_1.jpg",
-      altText: "Icon of a woman sitting on a chair and looking at her phone.",
+      altText: "Two women working together at a laptop",
     },
     {
       id: 1,
       title: "Networking",
       description: "We offer invaluable networking sessions to facilitate connections.",
       imgSource: "mentee-expect_2.jpg",
-      altText: "Icon of two people shaking hands.",
+      altText:
+        "Three women sitting on stairs holding their phones. One woman is showing another her screen.",
     },
     {
       id: 2,
       title: "Workshops",
       description: "We host career advice and wellness workshops to support Swedish immigrants.",
       imgSource: "mentee-expect_3.jpg",
-      altText: "Icon of a woman sitting down on a couch and looking at a laptop.",
+      altText:
+        "Three women sitting at a conference table, smiling. One is looking at a laptop screen.",
     },
   ]
   return (

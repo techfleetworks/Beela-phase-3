@@ -3,70 +3,70 @@
     "id": 0,
     "name": "Juliana Araújo",
     "title": "Founder & CEO",
-    "imgSource": "../images/juliana.png",
-    "description": "Juliana is a Latina immigrant with 8+ years of experience working in tech, leading product teams to develop data-driven products. She has a Bachelor's in Information Systems and is currently writing her master thesis in IT Project Management from Stockholm University."
+    "imgSource": "../images/team-juliana.jpg",
+    "description": "Juliana is a Latina immigrant with 8+ years of experience working in tech, leading product teams to develop data-driven products. She has a Bachelor's degree in Information Systems and is currently writing her Mester's thesis in IT Project Management at Stockholm University."
   },
   {
     "id": 1,
     "name": "Denise Muniz",
     "title": "Founder & CEO",
-    "imgSource": "../images/denise.png",
-    "description": "Denise is a Latina immigrant and fullstack developer. She has over 10 years of experience as a business analyst, and pivoted to software development after she moved to Sweden. She has a Bachelor's in Information Systems and a Master's in Business & Project Management."
+    "imgSource": "../images/team-denise.jpg",
+    "description": "Denise is a Latina immigrant and fullstack developer. She has over 10 years of experience as a business analyst and pivoted to software development after she moved to Sweden. She has a Bachelor's in Information Systems and a Master's in Business & Project Management."
   },
   {
     "id": 2,
     "name": "Zoe Xuan Qin",
     "title": "Marketing & Ops Coordinator",
-    "imgSource": "../images/zoe.png",
+    "imgSource": "../images/team-zoe.jpg",
     "isVolunteer": true
   },
   {
     "id": 3,
     "name": "Anja Woracek",
     "title": "Pollination Programme Manager",
-    "imgSource": "../images/anja.png",
+    "imgSource": "../images/team-anja.jpg",
     "isVolunteer": true
   },
   {
     "id": 4,
     "name": "Estefanny Moran",
     "title": "Graphic Designer",
-    "imgSource": "../images/estefanny.png",
+    "imgSource": "../images/team-estefanny.jpg",
     "isVolunteer": true
   },
   {
     "id": 5,
     "name": "Raquel Almeida",
     "title": "Volunteer",
-    "imgSource": "../images/raquel.png",
+    "imgSource": "../images/team-raquel.jpg",
     "isVolunteer": true
   },
   {
     "id": 6,
     "name": "Milena Matrone",
     "title": "Video & Podcast Producer",
-    "imgSource": "../images/milena.png",
+    "imgSource": "../images/team-milena.jpg",
     "isVolunteer": true
   },
   {
     "id": 7,
     "name": "Marcela Feliz Fortiz",
     "title": "Software Engineer",
-    "imgSource": "../images/marcela.png",
+    "imgSource": "../images/team-marcela.jpg",
     "isVolunteer": true
   },
   {
     "id": 8,
     "name": "Mae Tadena",
     "title": "Social Media Manager",
-    "imgSource": "../images/mae.png",
+    "imgSource": "../images/team-mae.jpg",
     "isVolunteer": true
   },
   {
     "id": 9,
     "name": "Nidhi Pathak",
     "title": "Volunteer",
-    "imgSource": "../images/nidhi.png",
+    "imgSource": "../images/team-nidhi.jpg",
     "isVolunteer": true
   },
   {

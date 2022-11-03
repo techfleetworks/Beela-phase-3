@@ -17,7 +17,7 @@ const About: NextPage = () => {
         <title>About us - Beela</title>
         <meta
           name="description"
-          content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
+          content="Beela is a non-profit organization that helps immigrant women and non-binary people in Sweden kick start their tech careers. "
         />
       </Head>
       <Hero />

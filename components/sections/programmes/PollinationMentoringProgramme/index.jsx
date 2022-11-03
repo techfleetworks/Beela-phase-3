@@ -27,9 +27,11 @@ export default function PollinationMentoringProgramme() {
           <div className={styles.headingText}>
             <h4 className={`primary-berry ${styles.subheading}`}>How can we help you grow?</h4>
             <p className="m-0 B2">
-              Unsure about expectations for switching careers in Sweden? Or eager to share your
-              experience? Our free programme offers 1-on-1 mentorship, along with events and
-              workshops to help mentees get into tech.
+              Life is often about the connections we make. Beela understands this statement and in
+              response created a programme that offers 1 on 1 mentorships. We match mentees with a
+              mentor based on skill set, personality and specializations of interest. The mentor’s
+              goal is to guide mentees as they learn more about the industry and search for career
+              opportunities in tech.
             </p>
           </div>
         </div>

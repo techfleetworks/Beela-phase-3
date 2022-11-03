@@ -8,15 +8,16 @@ import Head from "next/head"
 // import { fieldNameFromStoreName } from "@apollo/client/cache"
 
 //Component imports
-import Hero from "../components/sections/fresh-home/hero/hero"
-import BlazeAnnouncement from "../components/sections/fresh-home/blaze/blaze"
-import Career from "../components/sections/fresh-home/career/career"
-import PollinationProgramme from "../components/sections/fresh-home/programmes/programmes"
+import Hero from "../components/sections/home/Hero"
+import BlazeAnnouncement from "../components/sections/home/Blaze"
+import Career from "../components/sections/home/Career/Index"
+import PollinationProgramme from "../components/sections/home/Programmes"
 import Testimonials from "../components/elements/TestimonialCarousel"
-import BeelasTalkPodcast from "../components/sections/fresh-home/podcast/podcast"
+import BeelasTalkPodcast from "../components/sections/home/Podcast"
 import { SectionWrapper } from "../components/layout/SectionWrapper"
 
 const Home: NextPage = () => {
+  //Code for Strapi integration / likely will have to be redone
   // const { data, error, loading } = useTestimonialsQuery()
 
   // if (loading) return <main className={styles.main}>Loading...</main>
@@ -29,10 +30,8 @@ const Home: NextPage = () => {
         <title>Beela - empowering women in tech</title>
         <meta
           name="description"
-          content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
+          content="Beela is an inclusive and welcoming community for immigrant women and non-binary people in Sweden who want to start new careers in tech."
         />
-        <script defer src="/node_modules/jquery/dist/jquery.js"></script>
-        <script defer src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
       </Head>
 
       <Hero />

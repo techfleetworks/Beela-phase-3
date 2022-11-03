@@ -1,17 +1,17 @@
 import Image from "next/image"
 import { Container, Row, Col } from "react-bootstrap"
+
+import styles from "./Hero.module.scss"
+
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 import PollinationMentoringProgramme from "../PollinationMentoringProgramme"
-import styles from "./Hero.module.scss"
 
 export default function Hero() {
   return (
-
     <SectionWrapper color="SECONDARY_CREAM" padding="pollination">
       <div className={styles.sectionContainer}>
         <div className={styles.headingContainer}>
           <h1 className={`primary-berry mb-3`}>Beela Programmes</h1>
-
         </div>
         <Container fluid className="p-0">
           <Row className={styles.contentContainer}>
@@ -27,8 +27,8 @@ export default function Hero() {
                   Our Pollination Mentoring Programme connects you with mentors for 1-on-1 guidance
                 </li>
                 <li>
-                  Find projects and apprenticeships to hone your skills in the #announcements,
-                  #job-leads, and #projects-pro-bono Slack channels
+                  Find projects and apprenticeships to hone your skills in the <b>#announcements</b>
+                  , <b>#job-leads</b> and <b>#projects-pro-bono</b> Slack channels
                 </li>
               </ul>
             </Col>
@@ -38,8 +38,8 @@ export default function Hero() {
                 width={459}
                 layout="intrinsic"
                 className={styles.img}
-                src="images/programmes_hero.svg"
-                alt="placeholder"
+                src="images/programmes_hero.png"
+                alt="Three women looking together at a laptop screen. Their image is in black and white and the background has colourful graphic blocks."
               />
             </Col>
           </Row>

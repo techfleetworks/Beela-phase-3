@@ -12,15 +12,16 @@ function TestimonialCarousel() {
         <div className={styles.sectionContainer}>
           <Carousel
             interval={null}
-            // indicators={false}
             nextIcon={
               <span
                 aria-hidden="true"
+                aria-label="next slide"
                 className={`carousel-control-next-icon ${styles.nextIcon}`}
               />
             }
             prevIcon={
               <span
+                aria-label="previous slide"
                 aria-hidden="true"
                 className={`carousel-control-prev-icon ${styles.prevIcon}`}
               />

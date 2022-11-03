@@ -8,7 +8,7 @@
 
 .headingContainer {
   text-align: center;
-  width: 380px;
+  width: 38rem;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
@@ -20,7 +20,6 @@
   gap: 9rem;
   justify-content: center;
   align-items: flex-start;
-  height: 21.8rem;
 }
 
 //CONTAINER FOR VOLUNTEER & DONATE BOXES
@@ -42,27 +41,21 @@
   }
 }
 
-// @media (max-width: 830px) and (min-width: 740px) {
-//   .boxWrapper {
-//     gap: 5rem;
-//   }
-// }
-
 @media (max-width: 768px) {
   .boxWrapper {
     flex-direction: column;
     gap: 3rem;
   }
   .boxContainer {
-    width: 400px;
+    width: 40rem;
   }
 }
 
 @media (max-width: 500px) {
   .headingContainer {
-    width: 275px;
+    width: 27.5rem;
   }
   .boxContainer {
-    width: 275px;
+    width: 27.5rem;
   }
 }

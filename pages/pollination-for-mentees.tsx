@@ -17,7 +17,7 @@ const PollinationForMentees: NextPage = () => {
         <title>Become a Mentee - Beela</title>
         <meta
           name="description"
-          content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
+          content="Are you new to Sweden and wanting to switch to a career in tech? Our free Pollination Mentoring Programme is here to support your journey into tech! We offer 1-on-1 sessions with a mentor, job searching workshops, networking sessions and a supportive online community."
         />
       </Head>
 
@@ -26,7 +26,7 @@ const PollinationForMentees: NextPage = () => {
       <PollinationCarousel color="PRIMARY_CORAL" data={testimonials} />
       <CommunityAnnouncement />
       <CommunityLayout
-        altText="Beela's Talk Podcast logo"
+        altText="Logo for Beela's Talk Podcast. An illustraion with the text 'Beela's Talk', a bee and the Spotify podcast logo."
         button
         buttonTitle="Listen to Beela’s Talk"
         color="VIOLET_9"
@@ -36,7 +36,7 @@ const PollinationForMentees: NextPage = () => {
         text="Audio inspiration is a click away. Absorb unique insights around diversity, equity, and inclusion in the tech industry."
       />
       <CommunityLayout
-        altText="Inspire, Empower, Repeat written in a fun font"
+        altText="Inspire, Empower, Repeat written in a fun font in pink and yellow."
         color="TRUE_WHITE"
         href=""
         imgSource="../images/inspire.jpg"

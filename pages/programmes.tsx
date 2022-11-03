@@ -10,7 +10,7 @@ const Programmes: NextPage = () => {
         <title>Programmes - Beela</title>
         <meta
           name="description"
-          content="Our welcoming community helps women and non-binary Swedish immigrants break into tech."
+          content="Our Pollination Mentoring Programmne connects immigrant women and non-binary people in Sweden to tech. We offer different programmes to fit your needs depending on where you are in your journey. Apply for our Pollination Mentorship Program today!"
         />
       </Head>
       <Hero />

@@ -11,7 +11,7 @@ export default function ApprenticeshipProgramme() {
           src="/images/queen_bees.png"
           height={319}
           width={325}
-          alt="An illustration of three women standing next to one another"
+          alt="Three women standing next to one another. One is wearing glasses and a blue shirt, one is wearing a shirt with the letter B and a crown, and the other in a polkadot shirt and a hijab. Illustration."
         />
         <h2 className={`primary-berry ${styles.heading}`}>We are growing with you</h2>
         <p className="B1 p-0">

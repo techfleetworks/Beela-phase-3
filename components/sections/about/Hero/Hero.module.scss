@@ -1,11 +1,11 @@
 .sectionContainer {
   position: relative;
-  padding: 4rem;
+  padding: 4rem 0;
   margin: 5rem auto;
 }
 
 .textContainer {
-  width: 50%;
+  max-width: 46rem;
 }
 
 .imgContainer {
@@ -21,6 +21,9 @@
 }
 
 @media (max-width: 1050px) {
+  .textContainer {
+    width: 50%;
+  }
   .imgContainer {
     width: 400px;
   }
@@ -29,6 +32,11 @@
 @media (max-width: 965px) {
   .imgContainer {
     width: 360px;
+  }
+}
+@media (max-width: 900px) {
+  .sectionContainer {
+    padding: 4rem;
   }
 }
 

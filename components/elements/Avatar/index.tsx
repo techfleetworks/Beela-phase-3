@@ -14,7 +14,7 @@ type AvatarProps = {
 
 const Avatar = ({
   onClick,
-  imgSource = "../icons/bee_happy.svg",
+  imgSource = "../icons/bee-happy2.png",
   isTestimonial = false,
   isVolunteer = false,
 }: AvatarProps): JSX.Element => {
@@ -38,11 +38,7 @@ const Avatar = ({
             : styles.image
         }
         src={imgSource}
-        alt={
-          isTestimonial
-            ? "Image of Beela member who provided a testimonial "
-            : "Image of Beela team member"
-        }
+        alt={isTestimonial ? "Beela member who provided a testimonial " : "Beela team member"}
       />
     </div>
   )

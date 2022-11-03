@@ -1,0 +1,41 @@
+@import "../../../../styles/variables.scss";
+.sectionContainer {
+  border: 1.6rem solid $PRIMARY_HONEY;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.textContainer {
+  max-width: 50.4rem;
+  margin: 0 2rem;
+  & a {
+    text-decoration: underline;
+  }
+}
+
+.blaze {
+  margin-right: 3rem;
+}
+
+@media (max-width: 1024px) {
+  .textContainer {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .textContainer {
+    text-align: center;
+    margin: 0 1rem;
+  }
+  .blaze {
+    margin: 1rem 2rem;
+  }
+}
