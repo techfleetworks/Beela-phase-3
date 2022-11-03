@@ -25,8 +25,8 @@ export default function Hero() {
                 width={427}
                 layout="intrinsic"
                 className={styles.img}
-                src="images/pollination-mentors_hero.svg"
-                alt="placeholder"
+                src="images/pollination-mentor_hero.png"
+                alt="Two women working together at a laptop. Their image is in black and white and behind them are colourful graphic blocks."
               />
             </Col>
             <Col className={styles.textContainer}>

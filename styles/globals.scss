@@ -254,6 +254,7 @@ h5,
   line-height: 1.7em;
 }
 
+//BOOSTRAP SPECIFIC STYLING
 //FAQ component style override
 .accordion-button:not(.collapsed) {
   background-color: $TRUE_WHITE;
@@ -265,4 +266,9 @@ h5,
 
 .accordion-item {
   border: 0.1rem solid $SECONDARY_CORNFLOWER;
+}
+
+//Testimonial Carousel
+.carousel-indicators button.active {
+  background-color: $PRIMARY_BERRY;
 }

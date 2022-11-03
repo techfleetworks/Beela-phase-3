@@ -12,7 +12,7 @@ function ExpectCards() {
         <div className={styles.imageContainer}>
           <Image
             alt="Beela's logo - an illustration of a bee inside of a yellow hexagon with the words 'guiding immigrant women and non-binary people into tech' written around the hexagon"
-            src="icons/logo-secondary.svg"
+            src="icons/logo-secondary.png"
             width={200}
             height={200}
             layout="intrinsic"
