@@ -253,3 +253,16 @@ h5,
   font-size: 1.6rem;
   line-height: 1.7em;
 }
+
+//FAQ component style override
+.accordion-button:not(.collapsed) {
+  background-color: $TRUE_WHITE;
+  box-shadow: inset 0 -0.1rem 0 $SECONDARY_CORNFLOWER;
+}
+.accordion-button:focus {
+  border-color: $SECONDARY_CORNFLOWER;
+}
+
+.accordion-item {
+  border: 0.1rem solid $SECONDARY_CORNFLOWER;
+}

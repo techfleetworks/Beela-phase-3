@@ -2,14 +2,18 @@ import type { NextPage } from "next"
 import Head from "next/head"
 
 import data from "../mockdata/pollination.json"
+import faqs from "../mockdata/faq.json"
+
 import Hero from "../components/sections/pollination-mentee/Hero"
 import ExpectCards from "../components/sections/pollination-mentee/ExpectCards"
+import FAQ from "../components/elements/FAQ"
 import PollinationCarousel from "../components/elements/PollinationCarousel"
 import CommunityAnnouncement from "../components/sections/pollination-mentee/CommunityAnnouncement"
 import CommunityLayout from "../components/layout/CommunityLayout"
 
 const PollinationForMentees: NextPage = () => {
   let testimonials = data.mentee.testimonials
+  let menteeFaqs = faqs.menteeFaq
 
   return (
     <div>
@@ -17,12 +21,13 @@ const PollinationForMentees: NextPage = () => {
         <title>Become a Mentee - Beela</title>
         <meta
           name="description"
-          content="Are you new to Sweden and wanting to switch to a career in tech? Our free Pollination Mentoring Programme is here to support your journey into tech! We offer 1-on-1 sessions with a mentor, job searching workshops, networking sessions and a supportive online community."
+          content="Are you new to Sweden and wanting to switch to a career in tech? Our free Pollination Mentoring Programme is here to support your journey into tech! We offer 1-on-1 sessions with a mentor, job searching workshops, networking events and a supportive online community to help you on your journey to tech in Sweden."
         />
       </Head>
 
       <Hero />
       <ExpectCards />
+      <FAQ data={menteeFaqs} title="Frequently Asked Questions" />
       <PollinationCarousel color="PRIMARY_CORAL" data={testimonials} />
       <CommunityAnnouncement />
       <CommunityLayout
