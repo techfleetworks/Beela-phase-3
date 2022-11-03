@@ -1,5 +1,6 @@
-import { SectionWrapper } from "../../../layout/SectionWrapper"
 import styles from "./SupportBeela.module.scss"
+
+import { SectionWrapper } from "../../../layout/SectionWrapper"
 import { Button } from "../../../elements/Button"
 
 export default function SupportBeela() {
@@ -18,8 +19,8 @@ export default function SupportBeela() {
           <div className={styles.boxContainer}>
             <h5>Volunteer</h5>
             <p className="B2">
-              Our team is always on the lookout for new volunteers. Tell us about your skills (this
-              could be writing, social media or design) and we’ll see if there’s a match!
+              Our team is always on the lookout for new volunteers. Tell us about your skills - it
+              could be writing, social media or design and we’ll see if there’s a match!
             </p>
 
             <Button
@@ -32,8 +33,8 @@ export default function SupportBeela() {
           <div className={styles.boxContainer}>
             <h5>Donate</h5>
             <p className="B2">
-              We are a nonprofit organization and any monetary donation helps us reach more female
-              and non-binary immigrants in Sweden.
+              We are a non-profit organization and any monetary donation helps us reach more women
+              and non-binary immigrants in Sweden to break into tech.
             </p>
             <Button
               className={styles.button}

@@ -14,15 +14,7 @@ interface ITeamCard {
 }
 
 export const TeamCard = (props: ITeamCard) => {
-  const {
-    description = "Some description here blah blah",
-    imgSource,
-    isTestimonial,
-    isVolunteer,
-    name = "Beela Volunteer",
-    title = "CEO of Meow",
-    bgcolor,
-  } = props
+  const { description, imgSource, isTestimonial, isVolunteer, name, title, bgcolor } = props
   return (
     // <div className="d-flex justify-content-center">
     <div className={!isVolunteer ? styles.cardContainer : styles.volunteerCardContainer}>

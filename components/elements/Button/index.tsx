@@ -32,7 +32,7 @@ export const Button = (props: ButtonProps) => {
   const { className, children, href, style, title, type = "button", variant, onClick } = props
   return (
     <>
-      {/* Buttons with no href */}
+      {/* Buttons with no href -- interactional button */}
       {!href ? (
         <button
           className={`button ${styles[variant]} ${className}`}

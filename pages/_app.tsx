@@ -1,7 +1,7 @@
 import type { AppProps } from "next/app"
 import StrapiApolloProvider from "../graphql/apollo"
-import Head from "next/head"
-import { SSRProvider } from 'react-bootstrap';
+
+import SSRProvider from "react-bootstrap/SSRProvider"
 // Add bootstrap css
 import "bootstrap/dist/css/bootstrap.css"
 import "bootstrap/dist/css/bootstrap.min.css"

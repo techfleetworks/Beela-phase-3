@@ -2,10 +2,12 @@ import { useState } from "react"
 import Image from "next/image"
 import axios from "axios"
 import { Container, Row, Col } from "react-bootstrap"
+
+import arrowright from "../../../public/icons/arrow-right.svg"
+import styles from "./CommunityLayout.module.scss"
+
 import { Button } from "../../elements/Button"
 import { SectionWrapper } from "../SectionWrapper"
-import styles from "./CommunityLayout.module.scss"
-import arrowright from "../../../public/icons/arrow-right.svg"
 
 function CommunityLayout({
   altText,
@@ -120,8 +122,7 @@ function CommunityLayout({
                   rel="noreferrer"
                 >
                   <Image
-                    src="/icons/spotify.svg"
-                    className=""
+                    src="/icons/podcast-spotify.png"
                     height={43}
                     width={43}
                     alt="Icon for Spotify"
@@ -133,11 +134,10 @@ function CommunityLayout({
                   rel="noreferrer"
                 >
                   <Image
-                    src="/icons/podcast-apple.svg"
-                    className=""
+                    src="/icons/podcast-apple.png"
                     height={43}
                     width={43}
-                    alt="Icon for Apple Podcasts, an icon of a person with two semi circles above them"
+                    alt="Icon for Apple Podcasts"
                   />
                 </a>
                 <a
@@ -146,11 +146,10 @@ function CommunityLayout({
                   rel="noreferrer"
                 >
                   <Image
-                    src="/icons/podcast-google.svg"
-                    className=""
+                    src="/icons/podcast-google.png"
                     height={43}
                     width={43}
-                    alt="Icon for Google Podcasts, an row of five divided lines in a diamond shape"
+                    alt="Icon for Google Podcasts"
                   />
                 </a>
               </div>

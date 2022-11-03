@@ -3,20 +3,21 @@
   align-items: center;
   margin: 1.5rem 0;
 }
-
-@media (max-width: 1086px) {
-  .cards > div > div {
-    max-width: 275px;
-  }
+.cards > div > div {
+  max-width: 24rem;
 }
 
 @media (max-width: 992px) {
   .cards > div > div {
+    max-width: 19rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .cards {
     margin-top: 0;
+  }
+  .cards > div > div {
+    max-width: 27.5rem;
   }
 }

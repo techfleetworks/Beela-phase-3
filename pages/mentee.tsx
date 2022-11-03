@@ -4,7 +4,7 @@ import Link from "next/link"
 import Head from "next/head"
 import Image from "next/image"
 
-import Testimonials from "../components/sections/fresh-home/testimonial/testimonial"
+import Testimonials from "../components/sections/home/Testimonial"
 
 // React-Bootstrap icons
 import { ArrowRight } from "react-bootstrap-icons"

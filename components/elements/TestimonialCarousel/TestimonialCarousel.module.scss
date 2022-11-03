@@ -1,0 +1,84 @@
+@import "../../../styles/variables.scss";
+
+.sectionContainer {
+  min-width: 29rem;
+  padding-top: 2rem;
+}
+
+.testimonialContainer {
+  padding: 5rem 0;
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.prevIcon,
+.nextIcon {
+  width: 4rem;
+  height: 4rem;
+  background-size: 4rem;
+}
+.nextIcon {
+  background-image: url(../../../public/icons/arrow-right-circle.svg);
+  // margin-left: 10rem;
+}
+.prevIcon {
+  background-image: url(../../../public/icons/arrow-left-circle.svg);
+  // margin-right: 10rem;
+}
+
+.sectionContainer button {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+  border-radius: 50%;
+  border: 0.1rem solid $PRIMARY_BERRY !important;
+  // & .active {
+  //   background-color: $PRIMARY_BERRY !important;
+  // }
+}
+
+@media (max-width: 1070px) {
+  // .nextIcon {
+  //   margin-left: 3rem;
+  // }
+  // .prevIcon {
+  //   margin-right: 3rem;
+  // }
+}
+
+@media (max-width: 900px) {
+  .sectionContainer {
+    padding-top: 1rem;
+  }
+  .testimonialContainer {
+    max-width: 55rem;
+  }
+
+  .nextIcon {
+    margin-left: 1.5rem;
+  }
+  .prevIcon {
+    margin-right: 1.5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonialContainer {
+    max-width: 47rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .testimonialContainer {
+    max-width: 40rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .testimonialContainer > div > div {
+    margin: 0;
+  }
+  .prevIcon,
+  .nextIcon {
+    display: none;
+  }
+}

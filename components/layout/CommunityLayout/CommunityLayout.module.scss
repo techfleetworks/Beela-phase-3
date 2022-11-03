@@ -1,6 +1,6 @@
 @import "../../../styles/variables.scss";
 .outerContainer {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 0 auto;
 }
 .sectionWrapper,
@@ -54,7 +54,7 @@
   border-bottom-style: groove;
   background-color: transparent;
   border-color: $BERRY_4;
-  border-bottom-width: 2px;
+  border-bottom-width: 0.2rem;
   &::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: $GRAY_1;

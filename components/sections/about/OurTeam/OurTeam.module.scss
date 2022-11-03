@@ -1,16 +1,19 @@
 .headingContainer {
-  max-width: 624px;
+  max-width: 62.4rem;
   text-align: center;
   margin: 0 auto;
 }
 
 .teamContainer {
-  margin: 8rem auto 0;
+  margin: 3rem auto 0;
 }
 
 .leaderContainer > div > div {
-  max-width: 380px;
-  margin: 9rem 0 0;
+  max-width: 42rem;
+  margin: 15rem 0 0;
+}
+.leaderContainer > div > div > div {
+  height: 36rem;
 }
 
 .volunteerContainer {
@@ -32,7 +35,10 @@
 
 @media (max-width: 992px) {
   .leaderContainer > div > div {
-    width: 340px;
+    width: 35rem;
+  }
+  .leaderContainer > div > div > div {
+    height: 43rem;
   }
   .volunteerContainer {
     margin: 11rem 0;
@@ -40,19 +46,14 @@
 }
 
 @media (max-width: 900px) {
-  .leaderContainer > div > div {
-    width: 345px;
-  }
-}
-@media (max-width: 850px) {
-  .leaderContainer > div > div {
-    width: 330px;
+  .leaderContainer > div > div > div {
+    height: 36rem;
   }
 }
 
 @media (max-width: 768px) {
   .headingText {
-    max-width: 500px;
+    max-width: 50rem;
     margin: 0 auto;
   }
   .teamContainer {
@@ -61,7 +62,11 @@
 
   .leaderContainer > div > div {
     width: 100%;
-    max-width: 475px;
+    max-width: 47.5rem;
+    margin-top: 7rem;
+  }
+  .leaderContainer > div > div > div {
+    height: auto;
   }
   .volunteerContainer {
     margin: 7rem 0 0;

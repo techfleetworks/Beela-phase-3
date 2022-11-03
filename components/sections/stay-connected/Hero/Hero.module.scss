@@ -28,7 +28,7 @@
 }
 .sectionDivider {
   width: 100%;
-  max-width: 766px;
+  max-width: 76.6rem;
   height: 1px;
   margin: 0 auto;
   background-color: $PRIMARY_HONEY;
@@ -45,13 +45,13 @@
 
 @media (max-width: 1050px) {
   .imgContainer {
-    width: 400px;
+    width: 40rem;
   }
 }
 
 @media (max-width: 965px) {
   .imgContainer {
-    width: 360px;
+    width: 36rem;
   }
   .sectionContainer {
     margin: 0 auto 3rem;
@@ -68,13 +68,13 @@
     gap: 0.5rem;
   }
   .sectionDivider {
-    max-width: 600px;
+    max-width: 60rem;
   }
 }
 
 @media (max-width: 830px) {
   .imgContainer {
-    width: 330px;
+    width: 33rem;
   }
   .B1.text {
     font-size: 1.6rem;
@@ -103,8 +103,8 @@
   }
   .textContainer {
     width: 100%;
-    max-width: 480px;
-    min-width: 275px;
+    max-width: 48rem;
+    min-width: 27.5rem;
   }
   .sectionDivider {
     display: none;

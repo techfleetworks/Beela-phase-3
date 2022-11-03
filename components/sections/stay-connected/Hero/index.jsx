@@ -1,8 +1,8 @@
 import Image from "next/image"
-import { Container, Row, Col } from "react-bootstrap"
-import { SectionWrapper } from "../../../layout/SectionWrapper"
+
 import styles from "./Hero.module.scss"
 
+import { SectionWrapper } from "../../../layout/SectionWrapper"
 import JoinOurCommunity from "../JoinOurCommunity"
 
 export default function Hero() {
@@ -17,7 +17,7 @@ export default function Hero() {
             layout="intrinsic"
             className={styles.img}
             src="images/stay-connected_hero.png"
-            alt="Two women working together at a desk"
+            alt="Two women working together at a desk. One is sitting in front of a laptop and the other is standing, smiling. Their image is in black and white and behind them are colourful graphic blocks."
           />
         </div>
         <div className={styles.textContainer}>

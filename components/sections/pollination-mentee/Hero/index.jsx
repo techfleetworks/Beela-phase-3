@@ -3,6 +3,7 @@ import { Col, Container, Row } from "react-bootstrap"
 
 import styles from "./Hero.module.scss"
 import data from "../../../../mockdata/pollination.json"
+
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 import { Button } from "../../../elements/Button"
 
@@ -48,7 +49,7 @@ export default function Hero() {
                 layout="intrinsic"
                 className={styles.img}
                 src="images/pollination-mentee_hero.png"
-                alt="placeholder"
+                alt="Two women sitting on a bench together, smiling. Their image is in black and white and behind them are colourful graphic blocks."
               />
             </Col>
           </Row>

@@ -1,8 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap"
-import { SectionWrapper } from "../../../layout/SectionWrapper"
-import { TeamCard } from "../../../elements/TeamCard"
+
 import data from "../../../../mockdata/team.json"
 import styles from "./OurTeam.module.scss"
+
+import { SectionWrapper } from "../../../layout/SectionWrapper"
+import { TeamCard } from "../../../elements/TeamCard"
 
 export default function OurTeam() {
   let leaders = data.filter((member) => member.isVolunteer !== true)
@@ -18,7 +20,7 @@ export default function OurTeam() {
       </div>
       <Container className="p-0">
         <div className={styles.teamContainer}>
-          <Row className={`p-0 ${styles.leaderContainer}`}>
+          <Row className={`p-0 justify-content-center ${styles.leaderContainer}`}>
             {data &&
               leaders.map((data) => (
                 <Col sm={12} md={6} className="d-flex justify-content-center px-3" key={data.id}>

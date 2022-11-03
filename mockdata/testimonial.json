@@ -1,45 +1,44 @@
 [
-    {
-        "id": 0,
-        "img": "../images/testVanessa.png",
-        "name": "Vanessa Sue Smith",
-        "title": "Front-End Developer",
-        "about": "Vanessa is originally from Panamá and always liked creating visuals and playing with design and color. She has a Bachelor’s in Graphic Design and before moving to Sweden, she lived in Belgium for 10 years where she started a career as a Chef and also a food blog where she developed her own recipes and promoted conscious and vegan eating. She worked for 11 years a Chef and Kitchen Manager before she felt a need to reconnect with her creative side and decided to go for a career change and pursue Web Development. She completed the Technigo bootcamp in February 2021 and started a position as a Consultant at Axakon as a Front-End Developer." 
-    },
-    {
-        "id": 1,
-        "img": "../images/testIvy.png",
-        "name": "Aleksandra Geric (Ivy)",
-        "title": "CEO at Moonwise",
-        "about": "When I arrived in Stockholm, I was new to Sweden and looking for a tech job for the first time, I felt insecure, lost and unmotivated, until I joined the Beela mentorship program as a mentee, which helped me better understand the Swedish job market and feel accompanied in this process and soon after that I found a job! Now I am a mentor in Beela and I want to continue participating as much as I can in this wonderful network." 
-    },
-    {
-        "id": 2,
-        "img": "../images/testNatalia.png",
-        "name": "Natália Vilela",
-        "title": "UX Designer",
-        "about": "Natália is a UX Designer, Brazilian, and resilient by default. She started her career in tech from scratch when she decided to move to Stockholm and she learned English  while living in Sweden. Despite all the fears and uncertainties, she started in a new career and today studies at Hyper Island and works as a consultant. In her free time, she loves to visit new places by cycling and trying different foods." 
-    },
-    {
-        "id": 3,
-        "img": "../images/testMeri.png",
-        "name": "Meri M. Vanchovska",
-        "title": "Creative Digital Specialist",
-        "about": "Meri is originally from Skopje, N. Macedonia and is an experienced communication specialist with a great love for project management and relevant experience in social media marketing. She has been a part of building quite a few companies and products. After moving to Stockholm, she worked as the Communications Manager and Digital Diplomacy Officer at the Macedonian Embassy, when she decided it’s time for a change. So she enrolled and studied software development at KTH and worked as a Technical Communicator at Bambuser." 
-    },
-    {
-        "id": 4,
-        "img": "../images/testJinyan.png",
-        "name": "Jinyan Liu",
-        "title": "Android Developer",
-        "about": "Jinyan is a software developer working for Bontouch Sweden. She is from China and has a Bachelor’s degree in Art and Design and a Master’s in Interactive Media Design.After school, she worked as a group exercise instructor at Actic a Swedish gym,teaching Les Mills Body Combat and Body Pump but decided to change her career path and became an Android developer. She loves the cinema and won Best Actress at the 2010 " 
-    },
-    {
-        "id": 5,
-        "img": "../images/testDaniela.png",
-        "name": "Daniela Zacarias",
-        "title": "Web Developer",
-        "about": "Daniela is from Mexico, lived in Canada and now in Sweden for the last 10 years. With a background in Media &amp; Communication and Project Management, she has been working in the cultural sector in different positions, from radio producer and digital marketer to administrator and festival manager.With a growing interest in programming  and UI/UX Design, Daniela realized she was ready for new challenges, a new lifestyle that involved a career shift from culture to Tech. In June 2021, she graduated from  Technigo bootcamp and is ready to start her career as a Web Developer."
-    } 
-
+  {
+    "id": 0,
+    "img": "../images/testVanessa.png",
+    "name": "Vanessa Sue Smith",
+    "title": "Front-End Developer",
+    "about": "Vanessa is originally from Panamá and has always enjoyed being creative. She has a Bachelor’s in Graphic Design and before moving to Sweden, she lived in Belgium. She had worked as a Chef and Kitchen Manager for 11 years when she felt a need to reconnect with her creative side. Vanessa decided to pursue Web Development and she completed the Technigo bootcamp in February 2021. She now works as a Consultant and Developer at Axakon."
+  },
+  {
+    "id": 1,
+    "img": "../images/testIvy.png",
+    "name": "Aleksandra Geric (Ivy)",
+    "title": "CEO at Moonwise",
+    "about": "Ivy is a mindfulness coach trained in nonviolent communication, neuro linguistic programming and psychology. She has extensive experience and practice in meditation, yoga, mindfulness and empathy work as well as long life interest in introspection, neuroscience, spirituality and self-development. She studied software development at KTH and worked as a software development consultant in Stockholm for two years before co-founding Moonwise."
+  },
+  {
+    "id": 2,
+    "img": "../images/testNatalia.png",
+    "name": "Natália Vilela",
+    "title": "UX Designer",
+    "about": "Natália Villela's journey into tech started when she moved from São Paulo, Brazil to Stokholm, Sweden. She overcame the struggles of learning both English and Swedish, adapting to a new country, and a new lifestyle. Not only did she overcome all of these obstacles, but also made this career transition in the middle of a pandemic showing her strength and determination. Natalia is now a UX/UI Designer and recently landed her first job in Sweden."
+  },
+  {
+    "id": 3,
+    "img": "../images/testMeri.png",
+    "name": "Meri M. Vanchovska",
+    "title": "Creative Digital Specialist",
+    "about": "Meri is originally from Skopje, N. Macedonia and is an experienced communication specialist with a great love for project management. After moving to Stockholm she worked as the Communications Manager and Digital Diplomacy Officer at the Macedonian Embassy. In 2019 Mari decided it was time for a change and she began studying software development at KTH and now works as a Technical Communicator at Bambuser."
+  },
+  {
+    "id": 4,
+    "img": "../images/testJinyan.png",
+    "name": "Jinyan Liu",
+    "title": "Android Developer",
+    "about": "Jinyan is a software developer working for Bontouch Sweden. She is originally from China where she received a Bachelor’s degree in Art and Design and a Master’s degree in Interactive Media Design. After finishing her studies Jinyan moved to Sweden where she worked as a group exercise instructor teaching Les Mills Body Combat and Body Pump. In 2017 she decided to change her career path and became an Android developer."
+  },
+  {
+    "id": 5,
+    "img": "../images/testDaniela.png",
+    "name": "Daniela Zacarias",
+    "title": "Web Developer",
+    "about": "Daniela is orinially from Mexico. She has a background in Media & Communication and Project Management and worked in the culture sector in Sweden. With a growing interest in programming and UI/UX Design, Daniela was ready for new challenges that involved a career shift from culture to tech. In June 2021 she graduated from Technigo bootcamp and began her career as a Front-End Developer at Dignisia AB."
+  }
 ]

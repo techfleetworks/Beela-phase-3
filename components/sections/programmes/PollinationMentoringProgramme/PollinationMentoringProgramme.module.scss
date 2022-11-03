@@ -18,7 +18,7 @@
 }
 .imageContainer > span {
   overflow: visible;
-  box-shadow: 22px 24px $PRIMARY_CORAL;
+  box-shadow: 2.2rem 2.4rem $PRIMARY_CORAL;
 }
 
 .headingText {
@@ -46,7 +46,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 305px;
+  width: 30.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -87,9 +87,6 @@
   }
   .heading {
     font-size: 2.4rem;
-  }
-  .imageContainer {
-    // max-width: 350px;
   }
 
   .moreInfoContainer {
