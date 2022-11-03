@@ -235,7 +235,7 @@ h5,
   }
 }
 
-// Hero - Fancy Yellow Underline
+// Fancy Yellow Underline
 .svg-underline {
   background: url("../public/icons/underline.svg") bottom left no-repeat;
   background-size: 100% auto;
@@ -255,6 +255,7 @@ h5,
 }
 
 //BOOSTRAP SPECIFIC STYLING
+
 //FAQ component style override
 .accordion-button:not(.collapsed) {
   background-color: $TRUE_WHITE;

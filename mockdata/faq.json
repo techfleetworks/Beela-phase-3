@@ -58,52 +58,47 @@
   "donationFaq": [
     {
       "id": 0,
-      "question": "What is Beela’s mission?",
-      "answer": "Our goal is to integrate women and non-binary people in Sweden into the tech world, while promoting diversity, equity and inclusion."
+      "question": "Why donate to Beela?",
+      "answer": "Career transitions can be difficult for anyone, but unfortunately, women and non-binary immigrants, particularly those from non-European countries, struggle more in the Swedish job market than their peers. This employment gap can seem daunting. Beela has made it their mission to close the gap. You can count on us to optimize your donations in a way that is beneficial to further developing the tech careers and personal growth of immigrant women and non-binary people throughout Sweden."
     },
     {
       "id": 1,
       "question": "Who does my donation help?",
-      "answer": "Your donation will directly support immigrant women and non-binary people seeking to enter into a tech career in Sweden. Donations will help cover operational costs and salaries to project leaders. They will also help us host events such as career fairs, job searching and wellness workshops and networking events. Our goal is to develop the leadership skills of our mentees and prepare them to transition into not only tech careers, but also the Swedish community at large."
+      "answer": "Your donation will directly fund Beela’s mission to support immigrant women and non-binary people seeking to start careers in the tech industry. Donations will specifically help in areas such as covering operational costs and salaries to project leaders. It will also support networking events like career fairs, in order to help our mentees integrate into the industry. Our goal is to develop the leadership skills of our mentees as we further prepare them to transition into not only tech careers, but also the Swedish community at large."
     },
     {
       "id": 2,
-      "question": "Why donate to Beela?",
-      "answer": "Beela appreciates every contribution given to our organization. Career transitions can be difficult for anyone, and unfortunately, especially for women and non-binary immigrants. Particularly those from non-European countries struggle more in the Swedish job market than their peers. This employment gap can seem daunting. Beela has made it their mission to close the gap. You can count on us to optimize your donations in a way that is beneficial to further developing the tech careers and personal growth of immigrant women and non-binary people throughout Sweden."
+      "question": "Is my donation tax deductible?",
+      "answer": "All donations to Beela from Swedish residents are tax deductible. You will receive an email confirmation immediately after submitting your donation. This email can serve as a receipt for tax purposes. Donations made by donors in the United States and other countries are not typically tax deductible, please refer to your country’s tax laws."
     },
     {
       "id": 3,
-      "question": "Is my donation tax deductible?",
-      "answer": "All donations to Beela from Sweden are tax deductible to the extent allowed by law, as long as no goods or services were exchanged. You will receive an email confirmation immediately after submitting your donation and this email will serve as a receipt for tax purposes. Donations made by donors in the United States are not tax deductible."
+      "question": "Can I make an anonymous donation?",
+      "answer": "Yes, you will be given the option to donate anonymously. This ensures that your name will not appear on our website or printed materials. Please note that Beela will keep a record of your name and the information associated with your gift in a secure database for payment processing purposes. Beela will never share this information and will only use it for the purpose of communicating with you directly."
     },
     {
       "id": 4,
-      "question": "Can I make an anonymous donation?",
-      "answer": "Yes. When you make an online donation you will be given the option to donate anonymously. This ensures that your name will not appear on our website or printed materials. Please note that Beela will keep a record of your name and the information associated with your gift in a secure database for payment processing purposes. Beela will never share this information and will only use it for the purpose of communicating with you directly."
+      "question": "Can I donate to Beela through my employee Benevity account so that my company can match my donation?",
+      "answer": "Yes, donors have the option of making donations through their employee Benevity account. We appreciate the support of all donors and employer matched donations are one of the fastest and easiest ways to support non-binary and women immigrants searching for opportunities in the tech industry."
     },
     {
       "id": 5,
-      "question": "Can I donate to Beela through my employee Benevity account so that my company can match my donation?",
-      "answer": "Yes, donors have the option of making donations through their employee Benevity account. In fact, this is something we encourage. We depend on individual and corporate donations to keep our organization operational. We appreciate the support of all donors and matched donations are one of the fastest and easiest ways to support non-binary and women immigrants searching for opportunities in the tech industry."
+      "question": "Can I make a recurring donation?",
+      "answer": "Yes, donors have the option of making a monthly donation."
     },
     {
       "id": 6,
-      "question": "Can I make a recurring donation?",
-      "answer": "Yes, donors have the option of making a monthly donation. In fact, this is something we encourage. It’s the fastest and easiest way to support non-binary and women immigrants searching for opportunities in the tech industry."
-    },
-    {
-      "id": 7,
       "question": "How do I cancel or update my monthly donor information?",
       "answer": "You can modify or cancel your monthly donation at any time. If you would like to make a change to your monthly donation or update your personal information, please send an email to contact@beela.se."
     },
     {
-      "id": 8,
+      "id": 7,
       "question": "Is my donation secure?",
-      "answer": "Your security is important to us and we take every measure to ensure your information is protected. Beela's donation process is fully encrypted using industry best practices to ensure your personal data and credit card information is kept private and secure."
+      "answer": "Beela's donation process is fully encrypted using industry best practices to ensure your personal data and credit card information is kept private and secure."
     },
     {
-      "id": 9,
-      "question": " Does Beela sell, rent or trade donor information to other agencies?",
+      "id": 8,
+      "question": "Does Beela sell, rent or trade donor information to other agencies?",
       "answer": "No. Beela respects and maintains the privacy of those who have entrusted us with their donations. We will not pass on your email or any contact information to third party vendors, companies or corporations."
     }
   ]
