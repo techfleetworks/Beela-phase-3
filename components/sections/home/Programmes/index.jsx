@@ -22,7 +22,7 @@ function PollinationProgramme() {
             />
           </div>
           <div className={styles.headingText}>
-            <p className="m-0 B2">
+            <p className={styles.paragraphWrapper}>
               Our free programme connects mentors with mentees based on interests and availability.
               It offers 1-on-1 mentorship, along with networking events and career workshops.
             </p>
@@ -32,12 +32,12 @@ function PollinationProgramme() {
 
         <div className={styles.moreInfoContainer}>
           <div className={styles.infoWrapper}>
-            <h4 className="primary-berry">Become a Mentee</h4>
-            <p className="B2 text-center">
+            <h4 className={styles.subheader}>Become a Mentee</h4>
+            <p className={styles.paragraphWrapper}>
               Whether you&apos;re exploring a tech field or applying to jobs, a mentor can help you
               with your individualized needs.
             </p>
-            <div>
+            <div className={styles.buttonWrapper}>
               <Button
                 variant="secondary_lightBG"
                 title="Learn More"
@@ -46,12 +46,12 @@ function PollinationProgramme() {
             </div>
           </div>
           <div className={styles.infoWrapper}>
-            <h4 className="primary-berry">Become a Mentor</h4>
-            <p className="B2 text-center">
+            <h4 className={styles.subheader}>Become a Mentor</h4>
+            <p className={styles.paragraphWrapper}>
               Share your experiences and make a difference in a mentee&apos;s life. Continue to
               learn through mentoring.
             </p>
-            <div>
+            <div className={styles.buttonWrapper}>
               <Button
                 variant="secondary_lightBG"
                 title="Learn More"

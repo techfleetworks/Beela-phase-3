@@ -29,6 +29,7 @@ export default function BeelasTalkPodcast() {
                 alt="Icon for Spotify"
               />
             </a>
+
             <a
               href="https://podcasts.apple.com/us/podcast/beelas-talk/id1624447735"
               target="_blank"
