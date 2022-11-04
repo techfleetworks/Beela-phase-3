@@ -1,5 +1,5 @@
 .text {
-  max-width: 630px;
+  max-width: 61rem;
   margin: 1rem auto;
   text-align: center;
 }
@@ -21,7 +21,7 @@
 }
 @media (max-width: 900px) {
   .cards > div > div {
-    max-width: 19rem;
+    max-width: 23rem;
   }
 }
 
@@ -31,6 +31,6 @@
     margin-top: 2rem;
   }
   .cards > div > div {
-    max-width: 23rem;
+    max-width: 25rem;
   }
 }

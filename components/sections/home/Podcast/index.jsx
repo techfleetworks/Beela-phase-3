@@ -12,9 +12,9 @@ export default function BeelasTalkPodcast() {
         <div className={styles.contentText}>
           <p className={`B2 ${styles.paragraph}`}>
             Our podcast is filled with inspiring stories from Swedish immigrants who have broken
-            into tech. Catch up on all the buzz!
+            into tech.
           </p>
-          <p className={`B2 my-5 ${styles.paragraphHidden}`}>Check it out on these platforms:</p>
+          <p className={`B2 ${styles.cta}`}>Catch up on all the buzz!</p>
 
           <div className={styles.iconsWrapper}>
             <a

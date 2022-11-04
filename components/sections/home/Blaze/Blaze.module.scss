@@ -11,10 +11,14 @@
 
 .textContainer {
   max-width: 50.4rem;
-  margin: 0 2rem;
+  margin-right: 2rem;
   & a {
     text-decoration: underline;
   }
+}
+
+.text {
+  font-size: 3.2rem;
 }
 
 .blaze {
@@ -24,6 +28,12 @@
 @media (max-width: 1024px) {
   .textContainer {
     max-width: 40rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .text {
+    font-size: 2.4rem;
   }
 }
 

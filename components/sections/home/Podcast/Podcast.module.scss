@@ -12,6 +12,9 @@
   max-width: 448px;
 }
 
+.cta {
+  margin: 3rem 0;
+}
 .iconsWrapper {
   display: flex;
   justify-content: space-between;
@@ -37,15 +40,14 @@
     width: 80%;
     align-items: center;
   }
-
   .paragraph {
-    margin: 3rem 0;
+    margin: 2rem 0;
     text-align: center;
     font-size: 1.8rem;
   }
-
-  .paragraphHidden {
-    display: none;
+  .cta {
+    margin: 0 0 2rem;
+    font-size: 1.8rem;
   }
 }
 
