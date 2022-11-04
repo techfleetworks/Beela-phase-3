@@ -273,3 +273,21 @@ h5,
 .carousel-indicators button.active {
   background-color: $PRIMARY_BERRY;
 }
+
+.thank-you_page {
+  width: 100%;
+  height: calc(100vh - 12.5rem);
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .thank-you_page {
+    height: calc(100vh - 11.1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .thank-you_page {
+    height: calc(100vh - 9rem);
+  }
+}
