@@ -13,7 +13,7 @@ export default function OurName() {
           height={330}
         />
         <div className={styles.textContainer}>
-          <h2 className="primary-berry mt-3">Our Name</h2>
+          <h2 className="primary-berry my-3">Our Name</h2>
           <p className="B2">
             Bees are hard workers. Ela means &apos;her&apos; in Portuguese. Combine those two words,
             and you&apos;ve got Beela: a non-profit dedicated to helping women and non-binary

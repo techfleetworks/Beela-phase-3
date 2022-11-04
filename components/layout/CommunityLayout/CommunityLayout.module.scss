@@ -51,9 +51,11 @@
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
-  border-bottom-style: groove;
+  border-bottom-style: solid;
   background-color: transparent;
   border-color: $BERRY_4;
+  border-radius: 0;
+  -webkit-border-radius: 0;
   border-bottom-width: 0.2rem;
   &::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */

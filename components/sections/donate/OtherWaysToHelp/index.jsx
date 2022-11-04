@@ -12,8 +12,8 @@ export default function OtherWaysToHelp() {
             <span className="svg-underline">Other Ways </span>to Support Beela
           </h2>
           <Image
-            src={"../icons/bee_support.svg"}
-            alt={"Icon of two bees happy together"}
+            src="../icons/bee_support.png"
+            alt="Two bees standin next to one another. One is wearing glasses and they are both smiling. Illustration."
             height={68}
             width={66}
             layout="intrinsic"
