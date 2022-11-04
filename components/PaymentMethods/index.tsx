@@ -49,18 +49,13 @@ export default function PaymentForm(props: any) {
     <>
       <SectionWrapper color="SECONDARY_CREAM" padding="hero" maxWidth={728} className="">
         <h1 className="primary-berry text-center my-4">
-          Your Beela donation :<span className="svg-underline">&nbsp;{amount} kr</span>
+          Your Beela donation: <div className={styles.customDonation}><span className="svg-underline">&nbsp;{amount} kr</span></div>
         </h1>
 
-        <div className="d-flex justify-content-between">
+        <div className={styles.buttonContainer}>
           <Button variant="secondary_lightBG" title="200 kr" onClick={() => submitAmount(200)} />
-          <Spacer type="horizontal" size={10} />
-
           <Button variant="secondary_lightBG" title="500 kr" onClick={() => submitAmount(500)} />
-          <Spacer type="horizontal" size={10} />
           <Button variant="secondary_lightBG" title="1000 kr" onClick={() => submitAmount(1000)} />
-          <Spacer type="horizontal" size={10} />
-
           <Button
             variant="secondary_lightBG"
             // title="Other Kr" 
