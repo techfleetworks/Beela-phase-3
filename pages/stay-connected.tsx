@@ -1,7 +1,6 @@
 //Next.js component imports
 import type { NextPage } from "next"
 import Head from "next/head"
-import PageWrapper from "../components/layout/PageWrapper/index"
 
 //Components
 
