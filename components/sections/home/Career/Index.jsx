@@ -10,10 +10,9 @@ export default function Career() {
     <SectionWrapper padding="main" maxWidth={875}>
       <h2 className="primary-berry text-center my-2">3 Steps to Start a New Career</h2>
 
-      <p className={`B1 ${styles.text}`}>
-        We know that it’s not easy to change careers and move to a new country.
-        <br />
-        We are here to support you every step of the way. Bzz: tech isn’t just coding!
+      <p className={`B2 ${styles.text}`}>
+        We know that it’s not easy to change careers and move to a new country. We are here to
+        support you every step of the way. <i>Bzz: tech isn’t just coding!</i>
       </p>
       <Row className={styles.cards}>
         <Col sm={12} md={4} className="d-flex justify-content-center">

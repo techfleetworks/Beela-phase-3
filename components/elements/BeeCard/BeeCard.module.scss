@@ -1,14 +1,10 @@
-@import '/styles/variables.scss';
+@import "/styles/variables.scss";
 
 .card {
-  display: flex;
   border: none;
-  width: 95%;
 }
 
-.subheader {
-  color: $PRIMARY_BERRY;
-  font-family: Montserrat;
+.title {
   font-size: 2.4rem;
   font-weight: 500;
 }
@@ -23,33 +19,28 @@
   }
 }
 
-.font {
-  font-size: 1.6rem;
-}
-
 //RESPONSIVE STYLING SECTION
 
-@media screen and (min-width: 769px) and (max-width: 900px) {
-  .card {
-    display: row;
+@media (max-width: 992px) {
+  .title {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .title {
+    font-size: 1.6rem;
   }
 }
 
 @media (max-width: 768px) {
   .card {
-    display: column;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
   }
 
   .subheader {
     color: $PRIMARY_BERRY;
     font-size: 1.6rem;
     font-weight: 700;
-  }
-
-  .font {
-    font-size: 1.6rem;
-    line-height: 170%;
-    text-align: center;
   }
 }
