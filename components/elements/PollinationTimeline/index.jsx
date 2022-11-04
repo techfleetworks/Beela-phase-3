@@ -10,8 +10,8 @@ function PollinationTimeline(props) {
       <div className={styles.sessionContainer}>
         {data.session === true ? (
           <div className={styles.timelineContainer}>
-            {data.timeline.map((data) => (
-              <div key={data.id} className={styles.circleWrapper}>
+            {data.timeline.map((data, index) => (
+              <div key={index} className={styles.circleWrapper}>
                 <p className="S1 text-center">
                   {data.month} {data.day} <br /> {data.year}
                 </p>
