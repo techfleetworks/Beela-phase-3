@@ -11,6 +11,7 @@ import TestimonialCarousel from "../components/elements/TestimonialCarousel"
 
 const Donation: NextPage = () => {
   let donateFaqs = faqs.donationFaq
+
   return (
     <div>
       <Head>
@@ -21,7 +22,7 @@ const Donation: NextPage = () => {
         />
       </Head>
       <Hero />
-      <FAQ data={donateFaqs} title="Donation FAQs" />
+      <FAQ color="TRUE_WHITE" data={donateFaqs} title="Donation FAQs" />
       <OtherWaysToHelp />
       <SectionWrapper>
         <TestimonialCarousel />

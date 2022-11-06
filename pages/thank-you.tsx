@@ -12,7 +12,7 @@ const ThankYou: NextPage = () => {
         <title>Thank you - from Beela</title>
         <meta
           name="description"
-          content="Your donation will help us continue to support and empower immigrant women and non-binary people in Sweden to begin their careers in tech. You truly make a difference, and we are extremely grateful!"
+          content="Your donation will help us continue to support and empower immigrant women and non-binary people in Sweden to begin their careers in tech. You truly make a difference and we are extremely grateful!"
         />
       </Head>
       <ThankYouMessage />

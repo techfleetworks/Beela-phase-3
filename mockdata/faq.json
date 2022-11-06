@@ -89,12 +89,12 @@
     {
       "id": 6,
       "question": "How do I cancel or update my monthly donor information?",
-      "answer": "You can modify or cancel your monthly donation at any time. If you would like to make a change to your monthly donation or update your personal information, please send an email to contact@beela.se."
+      "answer": "You can modify or cancel your monthly donation at any time. You will receive an email from our partner, DonorBox, immediately after submitting your monthly donation to set up your donor account. Through DonorBox you can modify or cancel your monthly donation."
     },
     {
       "id": 7,
       "question": "Is my donation secure?",
-      "answer": "Beela's donation process is fully encrypted using industry best practices to ensure your personal data and credit card information is kept private and secure."
+      "answer": "Yes. We partner with Donorbox to ensure all online donations are secure. Donorbox is PCI compliant and secured by SSL/TLS encryption. We tokenize all card and bank details and don’t store any data. We also comply with the SCA requirement of European PSD2 regulations."
     },
     {
       "id": 8,
