@@ -1,20 +1,22 @@
 import React, { FC, useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 // component
 import { SectionWrapper } from "../../../layout/SectionWrapper"
 import { Button } from "../../../elements/Button"
-import Spacer from "../../../elements/Spacer"
 
 // scss
 import styles from "./Hero.module.scss"
-import ReactIf from "../../../ReactIf"
-import useToggle from "../../../../hooks/useToggle"
-import PaymentForm from "../../../PaymentMethods"
+//To be used with the custom payment form
+// import ReactIf from "../../../ReactIf"
+// import useToggle from "../../../../hooks/useToggle"
+// import PaymentForm from "../../../PaymentMethods"
 
 export const Hero: FC<any> = ({}) => {
-  // const [visible, initPayment, cancelPayment] = useToggle(false)
   const [viewSwish, setViewSwish] = useState(false)
+  //To be used with the custom payment form
+  // const [visible, initPayment, cancelPayment] = useToggle(false)
 
   // const handleContinueBtn = () => {
   //   initPayment()
@@ -22,7 +24,8 @@ export const Hero: FC<any> = ({}) => {
   // Retrieving product price from stripe (inprogress)
   return (
     <>
-      {/* <ReactIf condition={!visible}> */}
+      {/* To be used with the custom payment form
+      <ReactIf condition={!visible}> */}
       <SectionWrapper
         padding="paymentform"
         maxWidth={728}
@@ -74,9 +77,16 @@ export const Hero: FC<any> = ({}) => {
             </div>
           )}
         </div>
+        <Link href="/privacy">
+          <a className={`S2 ${styles.gdpr}`} target="_blank">
+            How Will My Information Be Used And Stored?
+          </a>
+        </Link>
       </SectionWrapper>
-      {/* </ReactIf> */}
-      {/* <ReactIf condition={visible}>
+      {/* To be used with the custom payment form 
+      </ReactIf> */}
+      {/* To be used with the custom payment form
+      <ReactIf condition={visible}>
         <div>
           <PaymentForm />
         </div>

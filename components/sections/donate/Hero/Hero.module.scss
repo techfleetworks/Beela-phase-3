@@ -32,11 +32,14 @@
   flex-direction: column;
   justify-content: center;
 }
-// .supportBeelaHeaderContent {
-//     color: $PRIMARY_BERRY;
-//     width:445px;
-//     line-height: 1.38em;
-// }
+
+.gdpr {
+  color: $PRIMARY_BERRY;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 4rem;
+  display: block;
+}
 
 @media (max-width: 576px) {
   .headingContainer {
