@@ -18,7 +18,15 @@ $layout-padding: 80px 48px 48px;
       max-width: 180px;
     }
 }
-
+.buttonContainer{
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+}
+.customDonation{
+  display: block;
+  margin-top: 1rem;
+}
 @media (max-width: 900px) {
   .formGroup {
     margin-top: 1rem;
@@ -90,6 +98,12 @@ $layout-padding: 80px 48px 48px;
   }
   .rowSpacing {
     justify-content: center;
+  }
+  .buttonContainer {
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 2rem;
+    width: 60%;
   }
 }
 
