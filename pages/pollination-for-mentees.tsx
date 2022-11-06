@@ -27,7 +27,7 @@ const PollinationForMentees: NextPage = () => {
 
       <Hero />
       <ExpectCards />
-      <FAQ data={menteeFaqs} title="Frequently Asked Questions" />
+      <FAQ data={menteeFaqs} pollination title="Frequently Asked Questions" />
       <PollinationCarousel color="PRIMARY_CORAL" data={testimonials} />
       <CommunityAnnouncement />
       <CommunityLayout

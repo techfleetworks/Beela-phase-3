@@ -25,7 +25,7 @@ const PollinationForMentors: NextPage = () => {
       </Head>
       <Hero />
       <ExpectCards />
-      <FAQ data={mentorFaqs} title="Frequently Asked Questions" />
+      <FAQ data={mentorFaqs} pollination title="Frequently Asked Questions" />
       <PollinationCarousel color="SECONDARY_CORNFLOWER" data={testimonials} />
       <JoinTheCommunity />
     </div>
