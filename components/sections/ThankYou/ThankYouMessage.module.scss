@@ -7,24 +7,23 @@
 .contentWrapper {
   height: 100%;
   width: 100%;
-  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 .contentContainer {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: 100%;
   max-width: 70rem;
   padding: 4.8rem;
-  margin: 2rem;
   background-color: rgba(249, 242, 212, 0.8);
 }
 
 .text {
   max-width: 40rem;
-  margin: 4rem auto;
+  margin: 3.2rem auto;
+  text-align: center;
 }
 
 .button {
@@ -45,5 +44,16 @@
   }
   .text {
     max-width: 35rem;
+    margin: 2.4rem 2.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .text {
+    margin: 2.4rem 0;
+    max-width: 100%;
+  }
+  .contentContainer {
+    padding: 4.8rem 3.6rem;
   }
 }
