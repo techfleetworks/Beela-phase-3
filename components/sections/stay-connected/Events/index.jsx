@@ -1,8 +1,11 @@
+{
+  /* 
+****ADD EVENT MANAGEMENT SYSTEM LINK TO LINE 40 AND DELETE THIS COMMENT****
+Format:
+href="URL" 
+*/
+}
 import Image from "next/image"
-
-import Container from "react-bootstrap/Container"
-import Row from "react-bootstrap/Row"
-import Col from "react-bootstrap/Col"
 
 import styles from "./Events.module.scss"
 
@@ -32,7 +35,11 @@ function Events() {
             network with industry professionals, and learn new skills.
           </p>
           <div className={styles.button}>
-            <Button title="View Events" href="" variant="primary_darkBG" />
+            <Button
+              title="View Events"
+              href="ADD EVENT MANAGEMENT SYSTEM LINK HERE AND DELETE THIS COMMENT"
+              variant="primary_darkBG"
+            />
           </div>
         </div>
       </div>
