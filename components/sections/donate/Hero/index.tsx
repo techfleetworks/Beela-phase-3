@@ -1,3 +1,9 @@
+{
+  /*
+   ****ADD SWISH NUMBER TO LINE 75 AND DELETE THIS COMMENT****
+   ****ADD SVG SWISH QR CODE TO public/icons as "qr-code.svg" AND DELETE THIS COMMENT****
+   */
+}
 import React, { FC, useState } from "react"
 import Image from "next/image"
 import Link from "next/link"
@@ -66,7 +72,7 @@ export const Hero: FC<any> = ({}) => {
           {viewSwish && (
             <div className={styles.swishContainer}>
               <h5>Scan with your Swish app</h5>
-              <p className="B1">Swish number: 1234567890</p>
+              <p className="B1">Swish number: ADD SWISH NUMBER HERE</p>
               <Image
                 src="../icons/qr-code.svg"
                 alt="Swish QR code for making a donation to Beela"
