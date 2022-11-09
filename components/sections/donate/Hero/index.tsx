@@ -56,11 +56,7 @@ export const Hero: FC<any> = ({}) => {
                 setViewSwish(!viewSwish)
               }}
             />
-            <script
-              type="text/javascript"
-              defer
-              src="https://donorbox.org/install-popup-button.js"
-            ></script>
+
             <Button
               className={`${styles.paymentButton} dbox-donation-button`}
               variant="primary_darkBG"
