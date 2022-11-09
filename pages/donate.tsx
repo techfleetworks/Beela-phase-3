@@ -20,6 +20,11 @@ const Donation: NextPage = () => {
           name="description"
           content="Your gift will help guide immigrant women and non-binary people seeking to enter into a tech career in Sweden. We appreciate all support - whether it's through donations, corporate sponsorships, providing meeting spaces, job or networking opportunities. Support Beela today!"
         />
+        <script
+          type="text/javascript"
+          async
+          src="https://donorbox.org/install-popup-button.js"
+        ></script>
       </Head>
       <Hero />
       <FAQ color="TRUE_WHITE" data={donateFaqs} title="Donation FAQs" />
